@@ -3,20 +3,12 @@
     "maps": [
         {
             "name": "Gameplay",
-            "id": "434835eb-a92a-4eea-adfa-580736f20db4",
+            "id": "978a05bd-de2e-42db-9bf6-a19831a53eac",
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Value",
-                    "id": "a95d8c92-0b12-4157-b092-0974cb052a8b",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Place bomb",
                     "type": "Button",
-                    "id": "4e5b679c-1720-491b-812c-1c1ff826f693",
+                    "id": "bb9f7ec2-276f-4a0d-8318-14d2cee4c493",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -24,8 +16,8 @@
             ],
             "bindings": [
                 {
-                    "name": "WASD",
-                    "id": "2d5b6c81-f290-4690-b9e2-022ec9eed2f0",
+                    "name": "2D Vector",
+                    "id": "d047993e-ba2a-4834-8377-e383f9e0cf28",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -36,7 +28,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "64901283-e14a-4f97-b6ac-a6b323027748",
+                    "id": "9c10e80e-6680-4d20-86e3-6d269571c699",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -47,7 +39,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "1aa31e23-7236-4506-9ad2-35ed0f8e023b",
+                    "id": "20933db2-8b68-4865-a50a-437367fe17e8",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +50,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "1c6bb47a-77c6-4eec-abf8-444e135da616",
+                    "id": "089e0ecb-e077-44ca-8f55-0672f4321563",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +61,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "a3a84d80-6509-42b2-86ff-5e279760aa9a",
+                    "id": "bf7501ed-3e09-416b-898f-9916fa182f26",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -77,17 +69,6 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "e5782c61-cdea-4c5c-9e6d-25a26b732325",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Place bomb",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
@@ -96,7 +77,13 @@
         {
             "name": "Keyboard",
             "bindingGroup": "Keyboard",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }
