@@ -9,10 +9,6 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnMoveInput(CallbackContext context)
     {
         RawMovementInput = context.ReadValue<Vector2>();
-
-        Debug.Log(RawMovementInput);
-        Debug.Log(context.performed);
-        Debug.Log("HELLO");
     }
 
     public void OnBombPlacedInput(CallbackContext context)
@@ -25,6 +21,5 @@ public class PlayerInputHandler : MonoBehaviour
         {
             BombPlacedInput = false;
         }
-        Debug.Log(BombPlacedInput);
     }
 }
