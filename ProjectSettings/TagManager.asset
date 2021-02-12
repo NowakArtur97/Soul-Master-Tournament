@@ -44,6 +44,9 @@ TagManager:
   - name: Floor
     uniqueID: 1900188271
     locked: 0
-  - name: Objects
+  - name: Object
     uniqueID: 2321947935
+    locked: 0
+  - name: Soul
+    uniqueID: 1781434621
     locked: 0
