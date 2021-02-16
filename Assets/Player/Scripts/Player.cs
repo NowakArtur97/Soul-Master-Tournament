@@ -4,10 +4,15 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private D_PlayerStats _playerStats;
+    [SerializeField]
+    private GameObject _basicSoul;
 
     private Vector2 _movementInput;
+    private bool _bombPlacedInput;
+
     private Vector2 _workspace;
     private Vector2 _currentVelocity;
+    private Vector2 _bombPosition;
     private int _facingDirection;
 
     private PlayerInputHandler _inputHandler;
@@ -23,6 +28,12 @@ public class Player : MonoBehaviour
     private void Update()
     {
         _movementInput = _inputHandler.RawMovementInput;
+        _bombPlacedInput = _inputHandler.BombPlacedInput;
+
+        if (_bombPlacedInput)
+        {
+            PlaceBomb();
+        }
     }
 
     private void FixedUpdate()
@@ -30,7 +41,18 @@ public class Player : MonoBehaviour
         SetVelocity(_playerStats.movementSpeed * _movementInput);
     }
 
-    public void SetVelocity(Vector2 velocity)
+    private void PlaceBomb()
+    {
+        _bombPosition = SetBombPosition();
+        Instantiate(_basicSoul, _bombPosition, Quaternion.identity);
+    }
+
+    private Vector2 SetBombPosition()
+    {
+        return new Vector2(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
+    }
+
+    private void SetVelocity(Vector2 velocity)
     {
         _workspace.Set(velocity.x, velocity.y);
         _myRigidbody2D.velocity = _workspace;
