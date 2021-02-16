@@ -15,23 +15,26 @@ public class Player : MonoBehaviour
     private Vector2 _bombPosition;
     private int _facingDirection;
 
+    private GameObject _aliveGameObject;
     private PlayerInputHandler _inputHandler;
     private Rigidbody2D _myRigidbody2D;
 
     private void Awake()
     {
-        _myRigidbody2D = GetComponentInChildren<Rigidbody2D>();
         _inputHandler = GetComponent<PlayerInputHandler>();
-    }
 
+        _aliveGameObject = transform.Find("Alive").gameObject;
+        _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
         _movementInput = _inputHandler.RawMovementInput;
-        _bombPlacedInput = _inputHandler.BombPlacedInput;
+        _bombPlacedInput = _inputHandler.BombPlaceInput;
 
         if (_bombPlacedInput)
         {
+            _inputHandler.UseBombPlaceInput();
             PlaceBomb();
         }
     }
@@ -49,7 +52,7 @@ public class Player : MonoBehaviour
 
     private Vector2 SetBombPosition()
     {
-        return new Vector2(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
+        return new Vector2(Mathf.RoundToInt(_aliveGameObject.transform.position.x), Mathf.RoundToInt(_aliveGameObject.transform.position.y));
     }
 
     private void SetVelocity(Vector2 velocity)

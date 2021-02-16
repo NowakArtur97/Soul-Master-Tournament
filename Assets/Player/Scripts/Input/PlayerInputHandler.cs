@@ -7,33 +7,25 @@ public class PlayerInputHandler : MonoBehaviour
     private float _inputHoldTime = 0.2f;
 
     public Vector2 RawMovementInput { get; private set; }
-    public bool BombPlacedInput { get; private set; }
+    public bool BombPlaceInput { get; private set; }
     private float _bombPlacedInputStartTime;
-
-    private void Update()
-    {
-        CheckBombPlacedInput();
-    }
 
     public void OnMoveInput(CallbackContext context)
     {
         RawMovementInput = context.ReadValue<Vector2>();
     }
 
-    public void OnBombPlacedInput(CallbackContext context)
+    public void OnBombPlaceInput(CallbackContext context)
     {
         if (context.started)
         {
-            BombPlacedInput = true;
+            BombPlaceInput = true;
             _bombPlacedInputStartTime = Time.time;
         }
     }
 
-    private void CheckBombPlacedInput()
+    public void UseBombPlaceInput()
     {
-        if (Time.time >= _bombPlacedInputStartTime + _inputHoldTime)
-        {
-            BombPlacedInput = false;
-        }
+        BombPlaceInput = false;
     }
 }

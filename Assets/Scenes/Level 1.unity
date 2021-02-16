@@ -534,7 +534,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1197989902}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnBombPlacedInput
+        m_MethodName: OnBombPlaceInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
