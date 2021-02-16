@@ -15,6 +15,7 @@ public abstract class Soul : MonoBehaviour
     protected bool HasExploded;
     protected bool ShouldStartSpawningExplosions;
     protected Vector2[] ExplosionDirections { get; private set; }
+    protected int ExplosionDirectionIndex;
     private float _timeToExplode;
     private float _startTime;
 
@@ -43,9 +44,14 @@ public abstract class Soul : MonoBehaviour
     protected virtual void Explode()
     {
         MyAnimator.SetBool("explode", true);
+
+        for (ExplosionDirectionIndex = 0; ExplosionDirectionIndex < ExplosionDirections.Length; ExplosionDirectionIndex++)
+        {
+            SpawnExplosion(ExplosionDirections[ExplosionDirectionIndex]);
+        }
     }
 
-    protected virtual void SpawnExplosion(Vector2 explosionDirection) { }
+    protected abstract void SpawnExplosion(Vector2 explosionDirection);
 
     public virtual void ExplodedTrigger()
     {
