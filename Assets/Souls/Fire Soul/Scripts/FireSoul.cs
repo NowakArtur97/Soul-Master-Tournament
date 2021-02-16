@@ -9,7 +9,11 @@ public class FireSoul : Soul
         if (IsExploding)
         {
             Explode();
-            Debug.Log("EXPLODE");
+        }
+
+        if (HasExploded)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -17,10 +21,10 @@ public class FireSoul : Soul
     {
         base.Explode();
 
-        //for (int index = 0; index < ExplosionDirections.Length; index++)
-        //{
-        //    SpawnExplosion(ExplosionDirections[index]);
-        //}
+        for (int index = 0; index < ExplosionDirections.Length; index++)
+        {
+            SpawnExplosion(ExplosionDirections[index]);
+        }
     }
 
     protected override void SpawnExplosion(Vector2 explosionPosition)
@@ -32,7 +36,8 @@ public class FireSoul : Soul
 
         for (int i = 0; i <= explosionRange; i++)
         {
-            //Instantiate(startPosition, );
+            startPosition += ExplosionDirections[i];
+            Instantiate(Explosion, startPosition, Quaternion.identity);
         }
     }
 }
