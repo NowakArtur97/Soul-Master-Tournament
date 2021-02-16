@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoulStats: {fileID: 11400000, guid: c25eded5f36fed54e93d69f1feeb0027, type: 2}
-  Explosion: {fileID: 0}
+  Explosion: {fileID: 5759683244975557170, guid: 3926ba6342eb6044a835e37660de4048, type: 3}
 --- !u!1 &5979218922825202852
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6acff30c350f4488cb05b43ae514c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soul: {fileID: 0}
 --- !u!212 &5979218922825202850
 SpriteRenderer:
   m_ObjectHideFlags: 0

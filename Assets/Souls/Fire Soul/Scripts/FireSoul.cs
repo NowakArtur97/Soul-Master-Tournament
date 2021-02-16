@@ -6,7 +6,7 @@ public class FireSoul : Soul
     {
         base.Update();
 
-        if (IsExploding)
+        if (ShouldStartSpawningExplosions)
         {
             Explode();
         }
@@ -34,10 +34,14 @@ public class FireSoul : Soul
         Vector2 startPosition = new Vector2(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
         int explosionRange = SoulStats.explosionRange;
 
-        for (int i = 0; i <= explosionRange; i++)
+        for (int i = 1; i <= explosionRange; i++)
         {
-            startPosition += ExplosionDirections[i];
-            Instantiate(Explosion, startPosition, Quaternion.identity);
+            startPosition += ExplosionDirections[i - 1];
+            GameObject explosion = Instantiate(Explosion, startPosition, Quaternion.identity);
+
+            string animationBoolName = i != explosionRange ? "middle" : "end";
+
+            explosion.GetComponent<Animator>().SetBool(animationBoolName, true);
         }
     }
 }
