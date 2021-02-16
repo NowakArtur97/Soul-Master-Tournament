@@ -7,7 +7,9 @@ public abstract class Soul : MonoBehaviour
     [SerializeField]
     protected GameObject Explosion;
 
-    private Animator _myAnimator;
+    private GameObject _aliveGameObject;
+    private SoulAnimationToComponent _soulAnimationToComponent;
+    protected Animator MyAnimator { get; private set; }
 
     protected bool IsExploding { get; private set; }
     protected bool HasExploded;
@@ -17,7 +19,11 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Awake()
     {
-        _myAnimator = GetComponentInChildren<Animator>();
+        _aliveGameObject = transform.Find("Alive").gameObject;
+        MyAnimator = _aliveGameObject.GetComponent<Animator>();
+        _soulAnimationToComponent = _aliveGameObject.GetComponent<SoulAnimationToComponent>();
+
+        _soulAnimationToComponent.Soul = this;
 
         ExplosionDirections = SoulStats.directions;
         _timeToExplode = SoulStats.timeToExplode;
@@ -33,10 +39,10 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Explode()
     {
-        _myAnimator.SetBool("explode", true);
+        MyAnimator.SetBool("explode", true);
     }
 
-    protected virtual void SpawnExplosion(Vector2 explosionPosition) { }
+    protected virtual void SpawnExplosion(Vector2 explosionDirection) { }
 
     public virtual void ExplodedTrigger()
     {

@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ExplosionAnimationToComponent : MonoBehaviour
 {
-    public Explosion explosion;
+    public Explosion Explosion;
 
     private void ExplodedTrigger()
     {
-        explosion.ExplodedTrigger();
+        Explosion.ExplodedTrigger();
     }
 }

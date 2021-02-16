@@ -6,14 +6,17 @@ public class FireSoul : Soul
     {
         base.Update();
 
-        if (ShouldStartSpawningExplosions)
-        {
-            Explode();
-        }
-
         if (HasExploded)
         {
             Destroy(gameObject);
+        }
+        else if (ShouldStartSpawningExplosions)
+        {
+            Explode();
+        }
+        else if (IsExploding)
+        {
+            MyAnimator.SetBool("explode", true);
         }
     }
 
@@ -27,21 +30,25 @@ public class FireSoul : Soul
         }
     }
 
-    protected override void SpawnExplosion(Vector2 explosionPosition)
+    protected override void SpawnExplosion(Vector2 explosionDirection)
     {
-        base.SpawnExplosion(explosionPosition);
+        base.SpawnExplosion(explosionDirection);
 
-        Vector2 startPosition = new Vector2(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
         int explosionRange = SoulStats.explosionRange;
 
-        for (int i = 1; i <= explosionRange; i++)
+        Vector2 explosionPosition;
+
+        for (int range = 1; range <= explosionRange; range++)
         {
-            startPosition += ExplosionDirections[i - 1];
-            GameObject explosion = Instantiate(Explosion, startPosition, Quaternion.identity);
+            explosionPosition = (Vector2)transform.position + range * explosionDirection;
 
-            string animationBoolName = i != explosionRange ? "middle" : "end";
+            GameObject explosion = Instantiate(Explosion, explosionPosition, Quaternion.identity);
 
-            explosion.GetComponent<Animator>().SetBool(animationBoolName, true);
+            string animationBoolName = range != explosionRange ? "middle" : "end";
+
+            explosion.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
+
+            Debug.Log(explosionPosition);
         }
     }
 }

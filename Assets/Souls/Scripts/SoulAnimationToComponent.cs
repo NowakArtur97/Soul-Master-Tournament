@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class SoulAnimationToComponent : MonoBehaviour
 {
-    public Soul soul;
+    public Soul Soul;
 
     private void ExplodedTrigger()
     {
-        soul.ExplodedTrigger();
+        Soul.ExplodedTrigger();
     }
 
     private void StartSpawningExplosionsTrigger()
     {
-        soul.StartSpawningExplosionsTrigger();
+        Soul.StartSpawningExplosionsTrigger();
     }
 }
