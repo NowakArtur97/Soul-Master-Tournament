@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Soul : MonoBehaviour
+public abstract class Soul : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    protected D_SoulStats SoulStats;
+
+    private Animator _myAnimator;
+
+    protected bool IsExploding { get; private set; }
+    protected Vector2[] ExplosionDirections { get; private set; }
+    private float _timeToExplode;
+
+    protected virtual void Awake()
     {
-        
+        _myAnimator = GetComponentInChildren<Animator>();
+
+        ExplosionDirections = SoulStats.directions;
+        _timeToExplode = SoulStats.timeToExplode;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
-        
+        if (Time.time > _timeToExplode)
+        {
+            IsExploding = true;
+        }
     }
+
+    protected virtual void Explode() { }
+
+    protected virtual void SpawnExplosion(Vector2 explosionPosition) { }
 }
