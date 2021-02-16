@@ -16,6 +16,7 @@ public abstract class Soul : MonoBehaviour
     protected bool ShouldStartSpawningExplosions;
     protected Vector2[] ExplosionDirections { get; private set; }
     private float _timeToExplode;
+    private float _startTime;
 
     protected virtual void Awake()
     {
@@ -27,11 +28,13 @@ public abstract class Soul : MonoBehaviour
 
         ExplosionDirections = SoulStats.directions;
         _timeToExplode = SoulStats.timeToExplode;
+
+        _startTime = Time.time;
     }
 
     protected virtual void Update()
     {
-        if (Time.time > _timeToExplode)
+        if (Time.time > _startTime + _timeToExplode)
         {
             IsExploding = true;
         }
