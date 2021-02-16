@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class FireSoul : Soul
 {
+    private int _index;
+
     protected override void Update()
     {
         base.Update();
@@ -12,10 +14,12 @@ public class FireSoul : Soul
         }
         else if (ShouldStartSpawningExplosions)
         {
+            ShouldStartSpawningExplosions = false;
             Explode();
         }
         else if (IsExploding)
         {
+            IsExploding = false;
             MyAnimator.SetBool("explode", true);
         }
     }
@@ -24,9 +28,9 @@ public class FireSoul : Soul
     {
         base.Explode();
 
-        for (int index = 0; index < ExplosionDirections.Length; index++)
+        for (_index = 0; _index < ExplosionDirections.Length; _index++)
         {
-            SpawnExplosion(ExplosionDirections[index]);
+            SpawnExplosion(ExplosionDirections[_index]);
         }
     }
 
@@ -37,18 +41,22 @@ public class FireSoul : Soul
         int explosionRange = SoulStats.explosionRange;
 
         Vector2 explosionPosition;
+        Quaternion rotation;
 
         for (int range = 1; range <= explosionRange; range++)
         {
             explosionPosition = (Vector2)transform.position + range * explosionDirection;
 
-            GameObject explosion = Instantiate(Explosion, explosionPosition, Quaternion.identity);
+            rotation = transform.rotation;
+            rotation.z -= 90 * _index;
+
+            GameObject explosion = Instantiate(Explosion, explosionPosition, rotation);
 
             string animationBoolName = range != explosionRange ? "middle" : "end";
 
             explosion.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
 
-            Debug.Log(explosionPosition);
+            Debug.Log(rotation);
         }
     }
 }

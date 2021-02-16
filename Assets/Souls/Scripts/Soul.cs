@@ -11,7 +11,7 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
-    protected bool IsExploding { get; private set; }
+    protected bool IsExploding;
     protected bool HasExploded;
     protected bool ShouldStartSpawningExplosions;
     protected Vector2[] ExplosionDirections { get; private set; }
