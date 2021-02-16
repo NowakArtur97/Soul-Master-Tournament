@@ -15,7 +15,7 @@
                 },
                 {
                     "name": "Place Bomb",
-                    "type": "PassThrough",
+                    "type": "Button",
                     "id": "ce6f46c6-5ea4-4d3f-9356-be980732b05e",
                     "expectedControlType": "Button",
                     "processors": "",
