@@ -18,8 +18,6 @@ public class Explosion : MonoBehaviour
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<ExplosionAnimationToComponent>();
 
         _explosionAnimationToComponent.Explosion = this;
-
-        transform.position += (Vector3)ExplosionStats.positionOffset;
     }
 
     public virtual void ExplodedTrigger()

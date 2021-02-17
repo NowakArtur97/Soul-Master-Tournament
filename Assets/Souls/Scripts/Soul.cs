@@ -32,7 +32,7 @@ public abstract class Soul : MonoBehaviour
 
         _startTime = Time.time;
 
-        transform.position += (Vector3)SoulStats.positionOffset;
+        transform.position += (Vector3)SoulStats.startPositionOffset;
     }
 
     protected virtual void Update()
@@ -46,6 +46,8 @@ public abstract class Soul : MonoBehaviour
     protected virtual void Explode()
     {
         MyAnimator.SetBool("explode", true);
+
+        transform.position += (Vector3)SoulStats.explosionPositionOffset;
 
         for (ExplosionDirectionIndex = 0; ExplosionDirectionIndex < ExplosionDirections.Length; ExplosionDirectionIndex++)
         {

@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
 
     private Vector2 SetBombPosition()
     {
-        return new Vector2(Mathf.RoundToInt(_aliveGameObject.transform.position.x), Mathf.RoundToInt(_aliveGameObject.transform.position.y));
+        return new Vector2(Mathf.FloorToInt(_aliveGameObject.transform.position.x), Mathf.FloorToInt(_aliveGameObject.transform.position.y));
     }
 
     private void SetVelocity(Vector2 velocity)
