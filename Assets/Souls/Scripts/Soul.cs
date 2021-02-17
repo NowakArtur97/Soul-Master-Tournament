@@ -31,6 +31,8 @@ public abstract class Soul : MonoBehaviour
         _timeToExplode = SoulStats.timeToExplode;
 
         _startTime = Time.time;
+
+        transform.position += (Vector3)SoulStats.positionOffset;
     }
 
     protected virtual void Update()

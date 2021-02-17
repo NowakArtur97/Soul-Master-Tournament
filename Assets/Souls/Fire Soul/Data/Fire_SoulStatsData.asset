@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99eaa20d11814749bffc7b702ca8d45, type: 3}
   m_Name: Fire_SoulStatsData
   m_EditorClassIdentifier: 
-  explosionRange: 1
-  timeToExplode: 1
+  explosionRange: 3
+  timeToExplode: 3
   directions:
   - {x: 0, y: 1}
   - {x: 1, y: 0}
