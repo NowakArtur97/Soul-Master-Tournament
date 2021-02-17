@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
+    [SerializeField]
+    protected D_ExplosionStats ExplosionStats;
+
     protected bool HasExploded;
 
     private GameObject _aliveGameObject;
@@ -15,6 +18,8 @@ public class Explosion : MonoBehaviour
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<ExplosionAnimationToComponent>();
 
         _explosionAnimationToComponent.Explosion = this;
+
+        transform.position += (Vector3)ExplosionStats.positionOffset;
     }
 
     public virtual void ExplodedTrigger()
