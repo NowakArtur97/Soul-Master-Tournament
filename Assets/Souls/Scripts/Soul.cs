@@ -47,6 +47,8 @@ public abstract class Soul : MonoBehaviour
     {
         MyAnimator.SetBool("explode", true);
 
+        transform.position = transform.position - (Vector3)SoulStats.startPositionOffset + (Vector3)SoulStats.explosionPositionOffset;
+
         for (ExplosionDirectionIndex = 0; ExplosionDirectionIndex < ExplosionDirections.Length; ExplosionDirectionIndex++)
         {
             SpawnExplosion(ExplosionDirections[ExplosionDirectionIndex]);

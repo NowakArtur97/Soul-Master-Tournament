@@ -7,5 +7,7 @@ public class D_SoulStats : ScriptableObject
     public float timeToExplode = 3;
     public Vector2[] directions;
     public Vector2 startPositionOffset = new Vector2(0, 0);
+    public Vector2 explosionPositionOffset = new Vector2(0, 0);
     public LayerMask[] notAfectedLayerMasks;
+    public LayerMask[] afectedLayerMasks;
 }

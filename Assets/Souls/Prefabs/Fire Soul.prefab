@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5979218921613485505}
   - component: {fileID: 1126199294}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fire Soul
-  m_TagString: Untagged
+  m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +58,10 @@ GameObject:
   - component: {fileID: 925891694199449302}
   - component: {fileID: 5979218922825202850}
   - component: {fileID: 5979218922825202849}
-  m_Layer: 0
+  - component: {fileID: 6899907250285231751}
+  m_Layer: 11
   m_Name: Alive
-  m_TagString: Untagged
+  m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6acff30c350f4488cb05b43ae514c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Soul: {fileID: 0}
+  Soul: {fileID: 1126199294}
 --- !u!212 &5979218922825202850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -129,8 +130,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1973019361
-  m_SortingLayer: 2
+  m_SortingLayerID: 1781434621
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -5826461482442931348, guid: 777cc3b1f9602934eb5bb7dc8de54b14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -162,3 +163,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &6899907250285231751
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979218922825202852}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.028734326, y: -0.24963015}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48996425, y: 0.43608725}
+  m_EdgeRadius: 0

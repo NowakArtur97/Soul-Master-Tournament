@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Explosion
+  - Soul
+  - Obstacles
   layers:
   - Default
   - TransparentFX
@@ -13,10 +16,10 @@ TagManager:
   - UI
   - Wall
   - Floor
-  - 
-  - 
-  - 
-  - 
+  - Obstacles
+  - Explosion
+  - Player
+  - Soul
   - 
   - 
   - 
@@ -50,6 +53,15 @@ TagManager:
   - name: Object
     uniqueID: 2321947935
     locked: 0
+  - name: Obstacles
+    uniqueID: 1717834575
+    locked: 0
+  - name: Player
+    uniqueID: 3464683111
+    locked: 0
   - name: Soul
     uniqueID: 1781434621
+    locked: 0
+  - name: Explosion
+    uniqueID: 2713075981
     locked: 0
