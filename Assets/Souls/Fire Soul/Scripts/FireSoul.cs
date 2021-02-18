@@ -32,6 +32,11 @@ public class FireSoul : Soul
         {
             explosionPosition = (Vector2)transform.position + range * explosionDirection;
 
+            if (CheckIfTouchingWall(range, explosionDirection))
+            {
+                return;
+            }
+
             GameObject explosion = Instantiate(Explosion, explosionPosition, Quaternion.Euler(0, 0, -90 * ExplosionDirectionIndex));
 
             string animationBoolName = range != explosionRange ? "middle" : "end";

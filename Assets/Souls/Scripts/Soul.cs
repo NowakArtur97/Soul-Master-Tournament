@@ -47,8 +47,6 @@ public abstract class Soul : MonoBehaviour
     {
         MyAnimator.SetBool("explode", true);
 
-        transform.position += (Vector3)SoulStats.explosionPositionOffset;
-
         for (ExplosionDirectionIndex = 0; ExplosionDirectionIndex < ExplosionDirections.Length; ExplosionDirectionIndex++)
         {
             SpawnExplosion(ExplosionDirections[ExplosionDirectionIndex]);
@@ -65,5 +63,18 @@ public abstract class Soul : MonoBehaviour
     public virtual void StartSpawningExplosionsTrigger()
     {
         ShouldStartSpawningExplosions = true;
+    }
+
+    protected bool CheckIfTouchingWall(float distance, Vector2 direction)
+    {
+        foreach (LayerMask layerMask in SoulStats.notAfectedLayerMasks)
+        {
+            if (Physics2D.Raycast(_aliveGameObject.transform.position, direction, distance, layerMask))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
