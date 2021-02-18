@@ -3113,6 +3113,7 @@ GameObject:
   - component: {fileID: 1178712282}
   - component: {fileID: 1178712281}
   - component: {fileID: 1178712285}
+  - component: {fileID: 1178712286}
   m_Layer: 8
   m_Name: Obstacles
   m_TagString: Obstacles
@@ -3146,7 +3147,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -3444,6 +3445,138 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!66 &1178712286
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178712279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1178712281}
+    m_ColliderPaths:
+    - - X: 10000000
+        Y: 10000000
+      - X: -10000000
+        Y: 10000000
+      - X: -10000000
+        Y: 0
+      - X: 10000000
+        Y: 0
+    - - X: 20000000
+        Y: -20000000
+      - X: 0
+        Y: -20000000
+      - X: 0
+        Y: -10000000
+      - X: -10000000
+        Y: -10000000
+      - X: -10000000
+        Y: 0
+      - X: -20000000
+        Y: 0
+      - X: -20000000
+        Y: -10000000
+      - X: -30000000
+        Y: -10000000
+      - X: -30000000
+        Y: -20000000
+      - X: -20000000
+        Y: -20000000
+      - X: -20000000
+        Y: -30000000
+      - X: 20000000
+        Y: -30000000
+    - - X: 20000000
+        Y: 0
+      - X: 10000000
+        Y: 0
+      - X: 10000000
+        Y: -10000000
+      - X: 20000000
+        Y: -10000000
+    - - X: 40000000
+        Y: 0
+      - X: 30000000
+        Y: 0
+      - X: 30000000
+        Y: -10000000
+      - X: 40000000
+        Y: -10000000
+    - - X: 30000000
+        Y: -10000000
+      - X: 20000000
+        Y: -10000000
+      - X: 20000000
+        Y: -20000000
+      - X: 30000000
+        Y: -20000000
+    - - X: 80000000
+        Y: -20000000
+      - X: 70000000
+        Y: -20000000
+      - X: 70000000
+        Y: -30000000
+      - X: 80000000
+        Y: -30000000
+    - - X: 30000000
+        Y: -30000000
+      - X: 20000000
+        Y: -30000000
+      - X: 20000000
+        Y: -40000000
+      - X: 30000000
+        Y: -40000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 0.99997073, y: 0}
+      - {x: 0.99997073, y: 1}
+      - {x: -1, y: 0.99997073}
+      - {x: -0.99997073, y: 0}
+    - - {x: 3.999971, y: -1}
+      - {x: 3.999971, y: 0}
+      - {x: 3, y: -0.000029300001}
+      - {x: 3.0000293, y: -1}
+    - - {x: 1.9999708, y: -1}
+      - {x: 1.9999708, y: 0}
+      - {x: 1, y: -0.000029300001}
+      - {x: 1.0000293, y: -1}
+    - - {x: 1.9999708, y: -3}
+      - {x: 1.9999708, y: -2}
+      - {x: 0, y: -1.9999707}
+      - {x: -0.000029300001, y: -1}
+      - {x: -1, y: -0.9999706}
+      - {x: -1.0000293, y: 0}
+      - {x: -2, y: -0.000029300001}
+      - {x: -2.0000293, y: -1}
+      - {x: -3, y: -1.0000293}
+      - {x: -2.999971, y: -2}
+      - {x: -2, y: -2.0000293}
+      - {x: -1.9999708, y: -3}
+    - - {x: 2.999971, y: -2}
+      - {x: 2.999971, y: -1}
+      - {x: 2, y: -1.0000293}
+      - {x: 2.0000293, y: -2}
+    - - {x: 7.9999704, y: -3}
+      - {x: 7.9999704, y: -2}
+      - {x: 7, y: -2.0000293}
+      - {x: 7.0000296, y: -3}
+    - - {x: 2.999971, y: -4}
+      - {x: 2.999971, y: -3}
+      - {x: 2, y: -3.0000293}
+      - {x: 2.0000293, y: -4}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
 --- !u!1 &1197989899
 GameObject:
   m_ObjectHideFlags: 0
