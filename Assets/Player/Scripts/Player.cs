@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private Vector2 _workspace;
     private Vector2 _currentVelocity;
     private Vector2 _bombPosition;
-    private int _facingDirection;
+    private int _facingDirection = 1;
 
     private GameObject _aliveGameObject;
     private PlayerInputHandler _inputHandler;
@@ -29,8 +29,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        _movementInput = _inputHandler.RawMovementInput;
+        _movementInput.Set(_inputHandler.NormalizedInputX, _inputHandler.NormalizedInputY);
         _bombPlacedInput = _inputHandler.BombPlaceInput;
+
+        CheckIfShouldFlip();
 
         if (_bombPlacedInput)
         {
@@ -50,10 +52,8 @@ public class Player : MonoBehaviour
         Instantiate(_basicSoul, _bombPosition, Quaternion.identity);
     }
 
-    private Vector2 SetBombPosition()
-    {
-        return new Vector2(Mathf.FloorToInt(_aliveGameObject.transform.position.x), Mathf.FloorToInt(_aliveGameObject.transform.position.y));
-    }
+    private Vector2 SetBombPosition() =>
+        new Vector2(Mathf.FloorToInt(_aliveGameObject.transform.position.x), Mathf.FloorToInt(_aliveGameObject.transform.position.y));
 
     private void SetVelocity(Vector2 velocity)
     {
@@ -61,4 +61,20 @@ public class Player : MonoBehaviour
         _myRigidbody2D.velocity = _workspace;
         _currentVelocity = _workspace;
     }
+
+    private void CheckIfShouldFlip()
+    {
+        if (ShouldFlip())
+        {
+            Flip();
+        }
+    }
+
+    private void Flip()
+    {
+        _facingDirection *= -1;
+        _aliveGameObject.transform.Rotate(0, 180, 0);
+    }
+
+    private bool ShouldFlip() => _movementInput.x != 0 && _facingDirection != _movementInput.x;
 }

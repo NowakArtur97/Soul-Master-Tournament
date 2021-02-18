@@ -3431,7 +3431,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178712279}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4777,6 +4777,14 @@ PrefabInstance:
     - target: {fileID: 5759683244975557170, guid: 3926ba6342eb6044a835e37660de4048, type: 3}
       propertyPath: m_Name
       value: Fire Soul Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759683244975557170, guid: 3926ba6342eb6044a835e37660de4048, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804988613513962103, guid: 3926ba6342eb6044a835e37660de4048, type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3926ba6342eb6044a835e37660de4048, type: 3}
