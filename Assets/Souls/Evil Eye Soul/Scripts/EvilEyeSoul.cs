@@ -6,25 +6,25 @@ public class EvilEyeSoul : Soul
     {
         base.Update();
 
-        if (HasExploded)
+        if (HasUsedAbility)
         {
             Destroy(gameObject);
         }
-        else if (ShouldStartSpawningExplosions)
+        else if (ShouldStartUsingAbility)
         {
-            ShouldStartSpawningExplosions = false;
-            Explode();
+            ShouldStartUsingAbility = false;
+            StartUsingAbility();
         }
-        else if (IsExploding)
+        else if (IsUsingAbility)
         {
-            IsExploding = false;
-            MyAnimator.SetBool("explode", true);
+            IsUsingAbility = false;
+            MyAnimator.SetBool("ability", true);
         }
     }
 
-    protected override void SpawnExplosion(Vector2 explosionDirection)
+    protected override void UserAbility(Vector2 explosionDirection)
     {
-        int explosionRange = SoulStats.explosionRange;
+        int explosionRange = SoulStats.abilityRange;
 
         Vector2 explosionPosition;
 
@@ -37,7 +37,7 @@ public class EvilEyeSoul : Soul
                 return;
             }
 
-            GameObject explosion = Instantiate(SoulAbility, explosionPosition, Quaternion.identity);
+            SoulAbility explosion = Instantiate(SoulAbility, explosionPosition, Quaternion.identity);
 
             string animationBoolName = range != explosionRange ? "middle" : "end";
 

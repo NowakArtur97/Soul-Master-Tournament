@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4877182738207230062
 Transform:
   m_ObjectHideFlags: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoulStats: {fileID: 11400000, guid: 803249a540b8d4a4f97534eacd287090, type: 2}
-  Explosion: {fileID: 1322950933629822941, guid: d46759bbf33d060418d91832c0a5d08b, type: 3}
+  SoulAbility: {fileID: 275475851530559335, guid: d46759bbf33d060418d91832c0a5d08b, type: 3}
 --- !u!1 &4877182738476309481
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6acff30c350f4488cb05b43ae514c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Soul: {fileID: 0}
+  Soul: {fileID: 4877182738207230063}
 --- !u!212 &4877182738476309485
 SpriteRenderer:
   m_ObjectHideFlags: 0

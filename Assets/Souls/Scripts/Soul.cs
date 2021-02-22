@@ -11,12 +11,12 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
-    protected bool IsExploding;
-    protected bool HasExploded;
-    protected bool ShouldStartSpawningExplosions;
-    protected Vector2[] ExplosionDirections { get; private set; }
-    protected int ExplosionDirectionIndex;
-    private float _timeToExplode;
+    protected bool IsUsingAbility;
+    protected bool HasUsedAbility;
+    protected bool ShouldStartUsingAbility;
+    protected Vector2[] AbilityDirections { get; private set; }
+    protected int AbilityDirectionIndex;
+    private float _abilityCooldown;
     private float _startTime;
 
     protected virtual void Awake()
@@ -27,8 +27,8 @@ public abstract class Soul : MonoBehaviour
 
         _soulAnimationToComponent.Soul = this;
 
-        ExplosionDirections = SoulStats.directions;
-        _timeToExplode = SoulStats.timeToExplode;
+        AbilityDirections = SoulStats.directions;
+        _abilityCooldown = SoulStats.abilityCooldown;
 
         _startTime = Time.time;
 
@@ -37,34 +37,34 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (Time.time > _startTime + _timeToExplode)
+        if (Time.time > _startTime + _abilityCooldown)
         {
-            IsExploding = true;
+            IsUsingAbility = true;
         }
     }
 
-    protected virtual void Explode()
+    protected virtual void StartUsingAbility()
     {
-        MyAnimator.SetBool("explode", true);
+        MyAnimator.SetBool("ability", true);
 
-        transform.position = transform.position - (Vector3)SoulStats.startPositionOffset + (Vector3)SoulStats.explosionPositionOffset;
+        transform.position = transform.position - (Vector3)SoulStats.startPositionOffset + (Vector3)SoulStats.abilityPositionOffset;
 
-        for (ExplosionDirectionIndex = 0; ExplosionDirectionIndex < ExplosionDirections.Length; ExplosionDirectionIndex++)
+        for (AbilityDirectionIndex = 0; AbilityDirectionIndex < AbilityDirections.Length; AbilityDirectionIndex++)
         {
-            SpawnExplosion(ExplosionDirections[ExplosionDirectionIndex]);
+            UserAbility(AbilityDirections[AbilityDirectionIndex]);
         }
     }
 
-    protected abstract void SpawnExplosion(Vector2 explosionDirection);
+    protected abstract void UserAbility(Vector2 abilityDirection);
 
-    public virtual void ExplodedTrigger()
+    public virtual void StartUsingAbilityTrigger()
     {
-        HasExploded = true;
+        ShouldStartUsingAbility = true;
     }
 
-    public virtual void StartSpawningExplosionsTrigger()
+    public virtual void FinishUsingAbilityTrigger()
     {
-        ShouldStartSpawningExplosions = true;
+        HasUsedAbility = true;
     }
 
     protected bool CheckIfTouchingWall(float distance, Vector2 direction)

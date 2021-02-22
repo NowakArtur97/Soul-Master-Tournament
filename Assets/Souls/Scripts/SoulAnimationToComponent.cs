@@ -4,13 +4,13 @@ public class SoulAnimationToComponent : MonoBehaviour
 {
     public Soul Soul;
 
-    private void ExplodedTrigger()
+    private void StartUsingAbilityTrigger()
     {
-        Soul.ExplodedTrigger();
+        Soul.StartUsingAbilityTrigger();
     }
 
-    private void StartSpawningExplosionsTrigger()
+    private void FinishUsingAbilityTrigger()
     {
-        Soul.StartSpawningExplosionsTrigger();
+        Soul.FinishUsingAbilityTrigger();
     }
 }
