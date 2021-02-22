@@ -22,26 +22,26 @@ public class EvilEyeSoul : Soul
         }
     }
 
-    protected override void UserAbility(Vector2 explosionDirection)
+    protected override void UserAbility(Vector2 abilityDirection)
     {
-        int explosionRange = SoulStats.abilityRange;
+        int abilityRange = SoulStats.abilityRange;
 
-        Vector2 explosionPosition;
+        Vector2 abilityPosition;
 
-        for (int range = 1; range <= explosionRange; range++)
+        for (int range = 1; range <= abilityRange; range++)
         {
-            explosionPosition = (Vector2)transform.position + range * explosionDirection;
+            abilityPosition = (Vector2)transform.position + range * abilityDirection;
 
-            if (CheckIfTouchingWall(range, explosionDirection))
+            if (CheckIfTouchingWall(range, abilityDirection))
             {
                 return;
             }
 
-            SoulAbility explosion = Instantiate(SoulAbility, explosionPosition, Quaternion.identity);
+            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex));
 
-            string animationBoolName = range != explosionRange ? "middle" : "end";
+            string animationBoolName = range != abilityRange ? "middle" : "end";
 
-            explosion.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
+            ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
         }
     }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99eaa20d11814749bffc7b702ca8d45, type: 3}
   m_Name: EvilEye_SoulStatsData
   m_EditorClassIdentifier: 
-  explosionRange: 7
-  timeToExplode: 1
+  abilityRange: 3
+  abilityCooldown: 3
   directions:
   - {x: 1, y: 0}
   startPositionOffset: {x: 0.5, y: 0.55}
-  explosionPositionOffset: {x: 0.5, y: 0.5}
+  abilityPositionOffset: {x: 0.5, y: 0.5}
   notAfectedLayerMasks:
   - serializedVersion: 2
     m_Bits: 64
