@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+public class SoulAbility : MonoBehaviour
 {
     [SerializeField]
-    protected D_ExplosionStats ExplosionStats;
+    protected D_SoulAbilityStats AttackStats;
 
     protected bool HasExploded;
 
@@ -18,6 +18,14 @@ public class Explosion : MonoBehaviour
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<ExplosionAnimationToComponent>();
 
         _explosionAnimationToComponent.Explosion = this;
+    }
+
+    private void Update()
+    {
+        if (HasExploded)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public virtual void ExplodedTrigger()

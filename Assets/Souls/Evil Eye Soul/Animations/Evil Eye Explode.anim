@@ -43,6 +43,8 @@ AnimationClip:
       value: {fileID: -3100536925635004120, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
     - time: 1.1
       value: {fileID: -4748491639817763371, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
+    - time: 1.2
+      value: {fileID: -4748491639817763371, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -74,12 +76,13 @@ AnimationClip:
     - {fileID: 3572255079912173084, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
     - {fileID: -3100536925635004120, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
     - {fileID: -4748491639817763371, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
+    - {fileID: -4748491639817763371, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2
+    m_StopTime: 1.3000001
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -98,4 +101,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.2
+    functionName: StartSpawningExplosionsTrigger
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.2
+    functionName: ExplodedTrigger
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

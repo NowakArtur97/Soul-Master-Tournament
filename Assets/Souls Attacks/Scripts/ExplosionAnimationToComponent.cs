@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ExplosionAnimationToComponent : MonoBehaviour
 {
-    public Explosion Explosion;
+    public SoulAbility Explosion;
 
     private void ExplodedTrigger()
     {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6800504069285884552}
   m_Layer: 9
   m_Name: Fire Soul Explosion
-  m_TagString: Explosion
+  m_TagString: Soul Ability
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,10 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5759683244975557170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70347dc65d84684c973310159ed7caf, type: 3}
+  m_Script: {fileID: 11500000, guid: e89b26ca37c18bf47972ccfe04d566ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionStats: {fileID: 11400000, guid: 6688cd5e2e9865943aea5575e9b38619, type: 2}
+  AttackStats: {fileID: 11400000, guid: 6688cd5e2e9865943aea5575e9b38619, type: 2}
 --- !u!1 &5759683245889855635
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 830050064}
   m_Layer: 9
   m_Name: Alive
-  m_TagString: Explosion
+  m_TagString: Soul Ability
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

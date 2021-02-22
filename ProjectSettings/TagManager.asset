@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Explosion
   - Soul
   - Obstacles
+  - Soul Ability
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - Wall
   - Floor
   - Obstacles
-  - Explosion
+  - Soul Ability
   - Player
   - Soul
   - 
@@ -62,6 +62,6 @@ TagManager:
   - name: Soul
     uniqueID: 1781434621
     locked: 0
-  - name: Explosion
+  - name: Soul Ability
     uniqueID: 2713075981
     locked: 0
