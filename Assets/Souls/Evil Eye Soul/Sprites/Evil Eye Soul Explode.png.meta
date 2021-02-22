@@ -44,6 +44,42 @@ TextureImporter:
   - first:
       213: 4059293745854764683
     second: Evil Eye Soul Explode_13
+  - first:
+      213: -2330014638794577346
+    second: Evil Eye Soul Explode_14
+  - first:
+      213: -7878901643515765301
+    second: Evil Eye Soul Explode_15
+  - first:
+      213: -1450011991848930053
+    second: Evil Eye Soul Explode_16
+  - first:
+      213: -4558510988714690917
+    second: Evil Eye Soul Explode_17
+  - first:
+      213: -5662665763827413634
+    second: Evil Eye Soul Explode_18
+  - first:
+      213: -6757691979780191913
+    second: Evil Eye Soul Explode_19
+  - first:
+      213: -7468592228516866772
+    second: Evil Eye Soul Explode_20
+  - first:
+      213: 1789613311327344860
+    second: Evil Eye Soul Explode_21
+  - first:
+      213: 7543858139103512799
+    second: Evil Eye Soul Explode_22
+  - first:
+      213: 3572255079912173084
+    second: Evil Eye Soul Explode_23
+  - first:
+      213: -3100536925635004120
+    second: Evil Eye Soul Explode_24
+  - first:
+      213: -4748491639817763371
+    second: Evil Eye Soul Explode_25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,8 +205,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 48
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -191,7 +227,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -212,7 +248,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -233,7 +269,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -253,8 +289,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -274,8 +310,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -295,8 +331,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 80
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -317,7 +353,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -338,7 +374,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -359,7 +395,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -379,8 +415,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 48
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -400,8 +436,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_12
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 64
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -421,8 +457,8 @@ TextureImporter:
       name: Evil Eye Soul Explode_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -434,6 +470,258 @@ TextureImporter:
       bones: []
       spriteID: b8653a0a722855830800000000000000
       internalID: 4059293745854764683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a603de7002aafd0800000000000000
+      internalID: -2330014638794577346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd500e03b488a290800000000000000
+      internalID: -7878901643515765301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4b9c1a6c580ebe0800000000000000
+      internalID: -1450011991848930053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9632f4686aecb0c0800000000000000
+      internalID: -4558510988714690917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d0d496d7b2a61b0800000000000000
+      internalID: -5662665763827413634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75902bbb2fad732a0800000000000000
+      internalID: -6757691979780191913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25520f30fa3a5890800000000000000
+      internalID: -7468592228516866772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd81afa23dbf5d810800000000000000
+      internalID: 1789613311327344860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd84439220b21b860800000000000000
+      internalID: 7543858139103512799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1eef3d8113339130800000000000000
+      internalID: 3572255079912173084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8293b8ee71ea8f4d0800000000000000
+      internalID: -3100536925635004120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Explode_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d500cd1308f91eb0800000000000000
+      internalID: -4748491639817763371
       vertices: []
       indices: 
       edges: []
