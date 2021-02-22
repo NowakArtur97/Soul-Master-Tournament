@@ -5,7 +5,7 @@ public abstract class Soul : MonoBehaviour
     [SerializeField]
     protected D_SoulStats SoulStats;
     [SerializeField]
-    protected GameObject Explosion;
+    protected SoulAbility SoulAbility;
 
     private GameObject _aliveGameObject;
     private SoulAnimationToComponent _soulAnimationToComponent;

@@ -37,7 +37,7 @@ public class EvilEyeSoul : Soul
                 return;
             }
 
-            GameObject explosion = Instantiate(Explosion, explosionPosition, Quaternion.identity);
+            GameObject explosion = Instantiate(SoulAbility, explosionPosition, Quaternion.identity);
 
             string animationBoolName = range != explosionRange ? "middle" : "end";
 

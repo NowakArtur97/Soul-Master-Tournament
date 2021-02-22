@@ -37,7 +37,7 @@ public class FireSoul : Soul
                 return;
             }
 
-            GameObject explosion = Instantiate(Explosion, explosionPosition, Quaternion.Euler(0, 0, -90 * ExplosionDirectionIndex));
+            SoulAbility explosion = Instantiate(SoulAbility, explosionPosition, Quaternion.Euler(0, 0, -90 * ExplosionDirectionIndex));
 
             string animationBoolName = range != explosionRange ? "middle" : "end";
 
