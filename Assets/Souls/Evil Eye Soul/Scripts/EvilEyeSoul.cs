@@ -39,7 +39,7 @@ public class EvilEyeSoul : Soul
 
             SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex));
 
-            string animationBoolName = range != abilityRange ? "middle" : "end";
+            string animationBoolName = range == abilityRange || CheckIfTouchingWall(range + 1, abilityDirection) ? "end" : "middle";
 
             ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
         }

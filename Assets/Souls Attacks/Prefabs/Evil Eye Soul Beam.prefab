@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 1322950933629822942}
   - component: {fileID: 275475851530559335}
   m_Layer: 9
-  m_Name: Evil Eye Soul Explosion
+  m_Name: Evil Eye Soul Beam
   m_TagString: Soul Ability
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322950933629822941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.276698, y: -0.62, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1322950932715523453}
