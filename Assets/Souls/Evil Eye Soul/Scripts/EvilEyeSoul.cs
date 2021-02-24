@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class EvilEyeSoul : Soul
 {
     protected override void Update()
@@ -22,26 +20,8 @@ public class EvilEyeSoul : Soul
         }
     }
 
-    protected override void UserAbility(Vector2 abilityDirection)
+    protected override string GetAnimationBoolName(int range)
     {
-        int abilityRange = SoulStats.abilityRange;
-
-        Vector2 abilityPosition;
-
-        for (int range = 1; range <= abilityRange; range++)
-        {
-            abilityPosition = (Vector2)transform.position + range * abilityDirection;
-
-            if (CheckIfTouchingWall(range, abilityDirection))
-            {
-                return;
-            }
-
-            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex));
-
-            string animationBoolName = range == abilityRange || CheckIfTouchingWall(range + 1, abilityDirection) ? "end" : "middle";
-
-            ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
-        }
+        return range == AbilityRange || CheckIfTouchingWall(range + 1, AbilityDirection) ? "end" : "middle";
     }
 }

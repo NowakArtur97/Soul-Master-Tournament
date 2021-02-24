@@ -14,8 +14,10 @@ public abstract class Soul : MonoBehaviour
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
     protected bool ShouldStartUsingAbility;
+    protected Vector2 AbilityDirection { get; private set; }
     protected Vector2[] AbilityDirections { get; private set; }
     protected int AbilityDirectionIndex;
+    protected int AbilityRange;
     private float _abilityCooldown;
     private float _startTime;
 
@@ -29,6 +31,7 @@ public abstract class Soul : MonoBehaviour
 
         AbilityDirections = SoulStats.directions;
         _abilityCooldown = SoulStats.abilityCooldown;
+        AbilityRange = SoulStats.abilityRange;
 
         _startTime = Time.time;
 
@@ -51,11 +54,31 @@ public abstract class Soul : MonoBehaviour
 
         for (AbilityDirectionIndex = 0; AbilityDirectionIndex < AbilityDirections.Length; AbilityDirectionIndex++)
         {
-            UserAbility(AbilityDirections[AbilityDirectionIndex]);
+            AbilityDirection = AbilityDirections[AbilityDirectionIndex];
+            UseAbility();
         }
     }
 
-    protected abstract void UserAbility(Vector2 abilityDirection);
+    protected virtual void UseAbility()
+    {
+        Vector2 abilityPosition;
+
+        for (int range = 1; range <= AbilityRange; range++)
+        {
+            abilityPosition = (Vector2)transform.position + range * AbilityDirection;
+
+            if (CheckIfTouchingWall(range, AbilityDirection))
+            {
+                return;
+            }
+
+            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex));
+
+            string animationBoolName = GetAnimationBoolName(range);
+
+            ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
+        }
+    }
 
     public virtual void StartUsingAbilityTrigger()
     {
@@ -79,4 +102,6 @@ public abstract class Soul : MonoBehaviour
 
         return false;
     }
+
+    protected virtual string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
 }
