@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     private void PlaceBomb()
     {
         _bombPosition = SetBombPosition();
-        Instantiate(_basicSoul, _bombPosition, Quaternion.identity);
+        Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
     }
 
     private Vector2 SetBombPosition() =>

@@ -72,7 +72,7 @@ public abstract class Soul : MonoBehaviour
                 return;
             }
 
-            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex));
+            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.identity);
 
             string animationBoolName = GetAnimationBoolName(range);
 
