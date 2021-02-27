@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class Soul : MonoBehaviour
@@ -65,14 +66,14 @@ public abstract class Soul : MonoBehaviour
 
         for (int range = 1; range <= AbilityRange; range++)
         {
-            abilityPosition = (Vector2)transform.position + range * AbilityDirection;
+            abilityPosition = GetSoulPosition(range);
 
             if (CheckIfTouchingWall(range, AbilityDirection))
             {
                 return;
             }
 
-            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, Quaternion.identity);
+            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
 
             string animationBoolName = GetAnimationBoolName(range);
 
@@ -80,15 +81,11 @@ public abstract class Soul : MonoBehaviour
         }
     }
 
-    public virtual void StartUsingAbilityTrigger()
-    {
-        ShouldStartUsingAbility = true;
-    }
+    protected virtual Vector2 GetSoulPosition(int range) => (Vector2)transform.position + range * AbilityDirection;
 
-    public virtual void FinishUsingAbilityTrigger()
-    {
-        HasUsedAbility = true;
-    }
+    protected virtual Quaternion GetSoulRotation() => Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex);
+
+    protected virtual string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
 
     protected bool CheckIfTouchingWall(float distance, Vector2 direction)
     {
@@ -103,5 +100,7 @@ public abstract class Soul : MonoBehaviour
         return false;
     }
 
-    protected virtual string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
+    public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
+
+    public virtual void FinishUsingAbilityTrigger() => HasUsedAbility = true;
 }
