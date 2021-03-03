@@ -18,6 +18,7 @@ public class IceSoul : Soul
         else if (IsUsingAbility)
         {
             IsUsingAbility = false;
+            ShouldStartUsingAbility = true;
             MyAnimator.SetBool("ability", true);
         }
     }

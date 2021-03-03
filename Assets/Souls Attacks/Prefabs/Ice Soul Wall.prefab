@@ -109,7 +109,7 @@ Animator:
   m_GameObject: {fileID: 2882806509787488313}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 32939d03d4a46964f99406d95209be71, type: 2}
+  m_Controller: {fileID: 9100000, guid: ef4cf90f12d3e604d97493451f9df0dc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001795888, y: 0}
+  m_Offset: {x: 0.00048089027, y: -0.028934002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.565392, y: 0.583351}
+  m_Size: {x: 0.8731446, y: 0.9305587}
   m_EdgeRadius: 0
 --- !u!1 &2882806511020542616
 GameObject:
@@ -209,4 +209,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030866542605dc64ab798eeaafff19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackStats: {fileID: 11400000, guid: 3a57f89468e92894ba80d35e91b76ee5, type: 2}
+  AbilityStats: {fileID: 11400000, guid: 3a57f89468e92894ba80d35e91b76ee5, type: 2}
+  _abilityTag: Soul Ability
