@@ -123,71 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &169139494
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2882806511020542616, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_Name
-      value: Ice Soul Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.496236
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.89751
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2882806511020542619, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489284258459029434, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9305587
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489284258459029434, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.028934002
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3674,7 +3609,7 @@ Transform:
   m_Children:
   - {fileID: 602327273}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1197989901
 MonoBehaviour:
@@ -3763,7 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 2882806511020542616, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
+  _basicSoul: {fileID: 7533329418422929363, guid: 48c3b31aefce328408fb7b54ce753ce3, type: 3}
 --- !u!1 &1232523989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4858,5 +4793,5 @@ Transform:
   - {fileID: 978903600}
   - {fileID: 1178712280}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -188,4 +188,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoulStats: {fileID: 11400000, guid: 44d8c407660f03043be910dd4331715a, type: 2}
-  SoulAbility: {fileID: 0}
+  SoulAbility: {fileID: 62526901020136222, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}

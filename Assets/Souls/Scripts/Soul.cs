@@ -63,6 +63,8 @@ public abstract class Soul : MonoBehaviour
     protected virtual void UseAbility()
     {
         Vector2 abilityPosition;
+        string animationBoolName;
+        SoulAbility ability;
 
         for (int range = 1; range <= AbilityRange; range++)
         {
@@ -73,9 +75,9 @@ public abstract class Soul : MonoBehaviour
                 return;
             }
 
-            SoulAbility ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
+            ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
 
-            string animationBoolName = GetAnimationBoolName(range);
+            animationBoolName = GetAnimationBoolName(range);
 
             ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
         }
