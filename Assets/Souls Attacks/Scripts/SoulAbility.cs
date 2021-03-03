@@ -3,7 +3,7 @@ using UnityEngine;
 public class SoulAbility : MonoBehaviour
 {
     [SerializeField]
-    protected D_SoulAbilityStats AttackStats;
+    protected D_SoulAbilityStats AbilityStats;
 
     protected bool HasFinished;
 

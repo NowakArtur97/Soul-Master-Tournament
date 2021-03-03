@@ -4802,6 +4802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2882806509787488315, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ef4cf90f12d3e604d97493451f9df0dc, type: 2}
     - target: {fileID: 2882806511020542616, guid: 9d474eea69afc04479d82b9dfe8d64e1, type: 3}
       propertyPath: m_Name
       value: Ice Soul Wall

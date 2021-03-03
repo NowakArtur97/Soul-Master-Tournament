@@ -5,9 +5,14 @@ using UnityEngine;
 public class IceWall : SoulAbility
 {
     [SerializeField]
-    private int wallHealth;
-    [SerializeField]
     private string _abilityTag;
+
+    private int wallHealth;
+
+    private void Start()
+    {
+        wallHealth = AbilityStats.abilityDexterity;
+    }
 
     private void Update()
     {
