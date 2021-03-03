@@ -5,31 +5,31 @@ public class SoulAbility : MonoBehaviour
     [SerializeField]
     protected D_SoulAbilityStats AttackStats;
 
-    protected bool HasExploded;
+    protected bool HasFinished;
 
     private GameObject _aliveGameObject;
-    private ExplosionAnimationToComponent _explosionAnimationToComponent;
+    private AbilityAnimationToComponent _explosionAnimationToComponent;
     private Animator _myAnimator;
 
     private void Awake()
     {
         _aliveGameObject = transform.Find("Alive").gameObject;
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
-        _explosionAnimationToComponent = _aliveGameObject.GetComponent<ExplosionAnimationToComponent>();
+        _explosionAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
         _explosionAnimationToComponent.Explosion = this;
     }
 
     private void Update()
     {
-        if (HasExploded)
+        if (HasFinished)
         {
             Destroy(gameObject);
         }
     }
 
-    public virtual void ExplodedTrigger()
+    public virtual void FinishTrigger()
     {
-        HasExploded = true;
+        HasFinished = true;
     }
 }

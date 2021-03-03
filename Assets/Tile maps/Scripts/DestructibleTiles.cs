@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 public class DestructibleTiles : MonoBehaviour
 {
     [SerializeField]
-    private string _explosionTag;
+    private string _abilityTag;
 
     private Tilemap _myTilemap;
     private Vector3Int _tilePosition;
@@ -16,7 +16,7 @@ public class DestructibleTiles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(_explosionTag))
+        if (collision.gameObject.CompareTag(_abilityTag))
         {
             _tilePosition = _myTilemap.WorldToCell(collision.transform.position);
             _myTilemap.SetTile(_tilePosition, null);
