@@ -20,7 +20,7 @@ public class SoulAbility : MonoBehaviour
         _explosionAnimationToComponent.Explosion = this;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (HasFinished)
         {

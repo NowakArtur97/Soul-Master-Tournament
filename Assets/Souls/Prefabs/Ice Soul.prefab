@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 7533329418422929360}
   - component: {fileID: 4828653376186476709}
   m_Layer: 11
-  m_Name: Ice  Soul
+  m_Name: Ice Soul
   m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

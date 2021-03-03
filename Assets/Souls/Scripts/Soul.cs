@@ -41,7 +41,7 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (Time.time > _startTime + _abilityCooldown)
+        if (Time.time >= _startTime + _abilityCooldown)
         {
             IsUsingAbility = true;
         }
@@ -68,13 +68,12 @@ public abstract class Soul : MonoBehaviour
 
         for (int range = 1; range <= AbilityRange; range++)
         {
-            abilityPosition = GetSoulPosition(range);
-
             if (CheckIfTouchingWall(range, AbilityDirection))
             {
                 return;
             }
 
+            abilityPosition = GetSoulPosition(range);
             ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
 
             animationBoolName = GetAnimationBoolName(range);

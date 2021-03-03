@@ -12,8 +12,10 @@ public class IceWall : SoulAbility
         wallHealth = AbilityStats.abilityDexterity;
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
+
         if (wallHealth <= 0)
         {
             HasFinished = true;
@@ -27,4 +29,6 @@ public class IceWall : SoulAbility
             wallHealth--;
         }
     }
+
+    public override void FinishTrigger() { }
 }
