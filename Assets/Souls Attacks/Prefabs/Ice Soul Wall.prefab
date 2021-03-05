@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2882806509787488312}
+  - component: {fileID: 5730999528116422212}
   - component: {fileID: 8911732717221943527}
   - component: {fileID: 2882806509787488314}
   - component: {fileID: 2882806509787488315}
-  - component: {fileID: 3990257684916363997}
+  - component: {fileID: 4141572501540403804}
   - component: {fileID: 7489284258459029434}
   m_Layer: 12
   m_Name: Alive
@@ -35,6 +36,18 @@ Transform:
   m_Father: {fileID: 2882806511020542619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5730999528116422212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882806509787488313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c69c51d42d15344690f482dd559812f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8911732717221943527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1581891315
   m_SortingLayer: 7
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 5389920441930245162, guid: 6c8c68724720084488fa038cfc5bd443, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,7 +131,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &3990257684916363997
+--- !u!50 &4141572501540403804
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -133,7 +146,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

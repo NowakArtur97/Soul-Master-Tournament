@@ -28,8 +28,8 @@ public class SoulAbility : MonoBehaviour
         }
     }
 
-    public virtual void FinishTrigger()
-    {
-        HasFinished = true;
-    }
+    // TODO: Ice Wall: If only Ice Wall call OnTriggerEnter2D then change ChildToParentTrggier
+    public virtual void OnTriggerEnter2D(Collider2D collision) { }
+
+    public virtual void FinishTrigger() => HasFinished = true;
 }

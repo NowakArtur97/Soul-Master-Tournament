@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 2036645088224090189}
   - component: {fileID: 5759683245889855632}
   - component: {fileID: 5759683245889855633}
-  - component: {fileID: 5804988613513962103}
+  - component: {fileID: 4856789159259792939}
   - component: {fileID: 830050064}
   m_Layer: 9
   m_Name: Alive
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1581891315
   m_SortingLayer: 7
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1214079047067787562, guid: 9ba36a90dc004f04bbefdbb19fd9f88a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -163,7 +163,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &5804988613513962103
+--- !u!50 &4856789159259792939
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -171,14 +171,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5759683245889855635}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

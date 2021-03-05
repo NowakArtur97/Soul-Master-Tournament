@@ -22,7 +22,7 @@ public class IceWall : SoulAbility
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag(_abilityTag))
         {
