@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public abstract class Soul : MonoBehaviour
@@ -87,11 +86,11 @@ public abstract class Soul : MonoBehaviour
         }
     }
 
-    protected virtual Vector2 GetSoulPosition(int range) => (Vector2)transform.position + range * AbilityDirection;
+    protected abstract Vector2 GetSoulPosition(int range);
 
-    protected virtual Quaternion GetSoulRotation() => Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex);
+    protected abstract Quaternion GetSoulRotation();
 
-    protected virtual string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
+    protected abstract string GetAnimationBoolName(int range);
 
     protected bool CheckIfTouchingWall(float distance, Vector2 direction, LayerMask[] notAfectedLayerMasks) =>
         CheckIfTouching(distance, direction, notAfectedLayerMasks);

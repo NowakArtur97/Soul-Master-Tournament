@@ -1,4 +1,4 @@
-public class FireSoul : Soul
+public class FireSoul : SoulWithDirectionalAbility
 {
     protected override void Update()
     {
@@ -19,4 +19,6 @@ public class FireSoul : Soul
             MyAnimator.SetBool("ability", true);
         }
     }
+
+    protected override string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
 }
