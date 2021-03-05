@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0270c3fab409c4e4da429c74f9c01212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Explosion: {fileID: 6800504069285884552}
+  SoulAbility: {fileID: 6800504069285884552}
 --- !u!212 &5759683245889855632
 SpriteRenderer:
   m_ObjectHideFlags: 0

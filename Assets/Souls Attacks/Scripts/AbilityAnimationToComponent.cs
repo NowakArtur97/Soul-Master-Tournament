@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class AbilityAnimationToComponent : MonoBehaviour
 {
-    public SoulAbility Explosion;
+    public SoulAbility SoulAbility;
 
     private void FinishTrigger()
     {
-        Explosion.FinishTrigger();
+        SoulAbility.FinishTrigger();
     }
 }

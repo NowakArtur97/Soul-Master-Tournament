@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2882806509787488315}
   - component: {fileID: 3990257684916363997}
   - component: {fileID: 7489284258459029434}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Alive
   m_TagString: Soul Ability
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0270c3fab409c4e4da429c74f9c01212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Explosion: {fileID: 0}
+  SoulAbility: {fileID: 62526901020136222}
 --- !u!212 &2882806509787488314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2882806509787488313}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2882806511020542619}
   - component: {fileID: 62526901020136222}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Ice Soul Wall
   m_TagString: Soul Ability
   m_Icon: {fileID: 0}

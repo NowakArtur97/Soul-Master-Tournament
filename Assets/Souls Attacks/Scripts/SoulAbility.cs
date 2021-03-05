@@ -17,7 +17,7 @@ public class SoulAbility : MonoBehaviour
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
-        _explosionAnimationToComponent.Explosion = this;
+        _explosionAnimationToComponent.SoulAbility = this;
     }
 
     protected virtual void Update()

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0270c3fab409c4e4da429c74f9c01212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Explosion: {fileID: 275475851530559335}
+  SoulAbility: {fileID: 275475851530559335}
 --- !u!212 &1322950932715523455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayerID: -1581891315
   m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2658360105539820541, guid: aff4e40ede20f304280b2a1ae6408a14, type: 3}
+  m_Sprite: {fileID: -8934034840615324212, guid: 51bfd93ed00c4a040b7dc80382951206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1322950932715523454
