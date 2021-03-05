@@ -28,6 +28,6 @@ public class EvilEyeSoul : Soul
 
     protected override string GetAnimationBoolName(int range)
     {
-        return range == AbilityRange || CheckIfTouchingWall(range + 1, AbilityDirection) ? "end" : "middle";
+        return range == AbilityRange || CheckIfTouchingWall(range + 1, AbilityDirection, SoulStats.notAfectedLayerMasks) ? "end" : "middle";
     }
 }

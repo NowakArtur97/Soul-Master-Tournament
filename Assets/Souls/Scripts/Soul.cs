@@ -68,13 +68,18 @@ public abstract class Soul : MonoBehaviour
 
         for (int range = 1; range <= AbilityRange; range++)
         {
-            if (CheckIfTouchingWall(range, AbilityDirection))
+            if (CheckIfTouchingWall(range, AbilityDirection, SoulStats.notAfectedLayerMasks))
             {
                 return;
             }
 
             abilityPosition = GetSoulPosition(range);
             ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
+
+            if (CheckIfTouchingObstacle(range, AbilityDirection, SoulStats.afectedLayerMasks))
+            {
+                range = AbilityRange;
+            }
 
             animationBoolName = GetAnimationBoolName(range);
 
@@ -88,9 +93,15 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
 
-    protected bool CheckIfTouchingWall(float distance, Vector2 direction)
+    protected bool CheckIfTouchingWall(float distance, Vector2 direction, LayerMask[] notAfectedLayerMasks) =>
+        CheckIfTouching(distance, direction, notAfectedLayerMasks);
+
+    protected bool CheckIfTouchingObstacle(float distance, Vector2 direction, LayerMask[] afectedLayerMasks) =>
+        CheckIfTouching(distance, direction, afectedLayerMasks);
+
+    private bool CheckIfTouching(float distance, Vector2 direction, LayerMask[] layerMasks)
     {
-        foreach (LayerMask layerMask in SoulStats.notAfectedLayerMasks)
+        foreach (LayerMask layerMask in layerMasks)
         {
             if (Physics2D.Raycast(_aliveGameObject.transform.position, direction, distance, layerMask))
             {

@@ -23,4 +23,6 @@ MonoBehaviour:
     m_Bits: 64
   - serializedVersion: 2
     m_Bits: 256
-  afectedLayerMasks: []
+  afectedLayerMasks:
+  - serializedVersion: 2
+    m_Bits: 4096

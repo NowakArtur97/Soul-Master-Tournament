@@ -27,6 +27,7 @@ public class IceWall : SoulAbility
         if (collision.gameObject.CompareTag(_abilityTag))
         {
             wallHealth--;
+            Debug.Log(wallHealth);
         }
     }
 
