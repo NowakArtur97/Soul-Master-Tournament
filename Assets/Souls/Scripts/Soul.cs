@@ -61,8 +61,6 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void UseAbility()
     {
-        Vector2 abilityPosition;
-        string animationBoolName;
         SoulAbility ability;
 
         for (int range = 1; range <= AbilityRange; range++)
@@ -72,17 +70,14 @@ public abstract class Soul : MonoBehaviour
                 return;
             }
 
-            abilityPosition = GetSoulPosition(range);
-            ability = Instantiate(SoulAbility, abilityPosition, GetSoulRotation());
+            ability = Instantiate(SoulAbility, GetSoulPosition(range), GetSoulRotation());
 
             if (CheckIfTouchingObstacle(range, AbilityDirection, SoulStats.afectedLayerMasks))
             {
                 range = AbilityRange;
             }
 
-            animationBoolName = GetAnimationBoolName(range);
-
-            ability.GetComponentInChildren<Animator>().SetBool(animationBoolName, true);
+            ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(range), true);
         }
     }
 
