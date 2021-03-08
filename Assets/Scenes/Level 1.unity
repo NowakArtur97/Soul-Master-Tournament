@@ -3698,7 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 4877182738207230057, guid: 99a495d8a82ad21468dfb0efc05ac638, type: 3}
+  _basicSoul: {fileID: 5890990982523419645, guid: 80ce75833ff6e4544b2c8bca251072a9, type: 3}
 --- !u!1 &1232523989
 GameObject:
   m_ObjectHideFlags: 0

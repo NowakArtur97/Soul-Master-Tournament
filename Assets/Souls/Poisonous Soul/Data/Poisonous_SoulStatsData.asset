@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityRange: 3
   abilityCooldown: 2
-  directions: []
+  directions:
+  - {x: 1, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 0}
   startPositionOffset: {x: 0.5, y: 0.5}
   abilityPositionOffset: {x: 0.5, y: 0.5}
-  notAfectedLayerMasks: []
+  notAfectedLayerMasks:
+  - serializedVersion: 2
+    m_Bits: 64
   afectedLayerMasks: []
