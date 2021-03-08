@@ -1,5 +1,9 @@
 public class FireSoul : SoulWithDirectionalAbility
 {
+    private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
+    private const string MIDDLE_POS_ANIMATION_BOOL_NAME = "middle";
+    private const string END_POS_ANIMATION_BOOL_NAME = "end";
+
     protected override void Update()
     {
         base.Update();
@@ -16,9 +20,9 @@ public class FireSoul : SoulWithDirectionalAbility
         else if (IsUsingAbility)
         {
             IsUsingAbility = false;
-            MyAnimator.SetBool("ability", true);
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
     }
 
-    protected override string GetAnimationBoolName(int range) => range != AbilityRange ? "middle" : "end";
+    protected override string GetAnimationBoolName(int range) => range != AbilityRange ? MIDDLE_POS_ANIMATION_BOOL_NAME : END_POS_ANIMATION_BOOL_NAME;
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SoulAbility : MonoBehaviour
 {
+    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
     [SerializeField]
     protected D_SoulAbilityStats AbilityStats;
 
@@ -14,7 +15,7 @@ public class SoulAbility : MonoBehaviour
 
     private void Awake()
     {
-        _aliveGameObject = transform.Find("Alive").gameObject;
+        _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
