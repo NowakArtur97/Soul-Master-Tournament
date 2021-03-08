@@ -6,6 +6,7 @@ public class SoulAbility : MonoBehaviour
     protected D_SoulAbilityStats AbilityStats;
 
     protected bool HasFinished;
+    protected float StartTime;
 
     private GameObject _aliveGameObject;
     private AbilityAnimationToComponent _explosionAnimationToComponent;
@@ -18,6 +19,8 @@ public class SoulAbility : MonoBehaviour
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
         _explosionAnimationToComponent.SoulAbility = this;
+
+        StartTime = Time.time;
     }
 
     protected virtual void Update()

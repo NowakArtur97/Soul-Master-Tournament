@@ -4,4 +4,5 @@ using UnityEngine;
 public class D_SoulAbilityStats : ScriptableObject
 {
     public int abilityDexterity = 3;
+    public float activeTime = 10f;
 }

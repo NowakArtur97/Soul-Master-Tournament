@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269421538300492718}
+  - component: {fileID: 6831766626437015837}
   m_Layer: 9
   m_Name: Poisonous Soul Whirl
   m_TagString: Soul Ability
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6831766626437015837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269421538300492717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8057560fc10550418977c9180305135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStats: {fileID: 11400000, guid: 2bf2767ca2d48bd4f8a10290b6e1fa74, type: 2}
 --- !u!1 &269421539231551756
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0270c3fab409c4e4da429c74f9c01212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoulAbility: {fileID: 0}
+  SoulAbility: {fileID: 6831766626437015837}
 --- !u!212 &269421539231551759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -183,7 +197,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001795888, y: 0}
+  m_Offset: {x: -0.0034264326, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -194,5 +208,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.565392, y: 0.583351}
+  m_Size: {x: 1.0047029, y: 1.0115755}
   m_EdgeRadius: 0
