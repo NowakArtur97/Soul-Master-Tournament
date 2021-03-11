@@ -22,6 +22,8 @@ public class SoulAbility : MonoBehaviour
         _explosionAnimationToComponent.SoulAbility = this;
 
         StartTime = Time.time;
+
+        transform.position = transform.position + (Vector3)AbilityStats.positionOffset;
     }
 
     protected virtual void Update()
