@@ -19,12 +19,11 @@ public class EvilEyeSoul : SoulWithLinearAbility
         }
         else if (IsUsingAbility)
         {
-            IsUsingAbility = false;
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
     }
 
     protected override string GetAnimationBoolName(int range) =>
-        range == AbilityRange
-        || CheckIfTouchingWall(range + 1, AbilityDirection, SoulStats.notAfectedLayerMasks) ? END_POS_ANIMATION_BOOL_NAME : MIDDLE_POS_ANIMATION_BOOL_NAME;
+        range == AbilityRange || CheckIfTouchingWall(range + 1, AbilityDirection, SoulStats.notAfectedLayerMasks)
+        ? END_POS_ANIMATION_BOOL_NAME : MIDDLE_POS_ANIMATION_BOOL_NAME;
 }

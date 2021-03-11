@@ -7,11 +7,24 @@ public abstract class SoulWithRandomDirectionAbility : Soul
         base.Awake();
     }
 
+    protected override void StartUsingAbility()
+    {
+        MyAnimator.SetBool("ability", true);
+
+        transform.position = transform.position - (Vector3)SoulStats.startPositionOffset + (Vector3)SoulStats.abilityPositionOffset;
+
+        UseAbility();
+    }
+
     protected override void UseAbility()
     {
-        SoulAbility ability = Instantiate(SoulAbility, GetSoulPosition(6), GetSoulRotation());
+        var pos = GetSoulPosition(6);
+        Debug.Log(pos);
+        SoulAbility ability = Instantiate(SoulAbility, pos, GetSoulRotation());
 
         ability.GetComponentInChildren<Animator>().SetBool("start", true);
+
+        HasUsedAbility = true;
     }
 
     protected override Vector2 GetSoulPosition(int range) => new Vector2(Random.Range(1, range), Random.Range(1, range));

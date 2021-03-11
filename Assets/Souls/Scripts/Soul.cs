@@ -13,13 +13,16 @@ public abstract class Soul : MonoBehaviour
 
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
+    protected bool HasMaxAbilityTimeFinished;
     protected bool ShouldStartUsingAbility;
     protected Vector2 AbilityDirection { get; private set; }
     protected Vector2[] AbilityDirections { get; private set; }
     protected int AbilityDirectionIndex;
     protected int AbilityRange;
     private float _abilityCooldown;
-    private float _startTime;
+    private float _maxAbilityDuration;
+    private bool _isAbilityTriggeredAfterTime;
+    protected float StartTime;
 
     protected virtual void Awake()
     {
@@ -31,18 +34,24 @@ public abstract class Soul : MonoBehaviour
 
         AbilityDirections = SoulStats.directions;
         _abilityCooldown = SoulStats.abilityCooldown;
+        _maxAbilityDuration = SoulStats.maxAbilityDuration;
+        _isAbilityTriggeredAfterTime = SoulStats.isAbilityTriggeredAfterTime;
         AbilityRange = SoulStats.abilityRange;
 
-        _startTime = Time.time;
+        StartTime = Time.time;
 
         transform.position += (Vector3)SoulStats.startPositionOffset;
     }
 
     protected virtual void Update()
     {
-        if (Time.time >= _startTime + _abilityCooldown)
+        if (Time.time >= StartTime + _abilityCooldown && _isAbilityTriggeredAfterTime)
         {
             IsUsingAbility = true;
+        }
+        if (Time.time >= StartTime + _maxAbilityDuration)
+        {
+            HasMaxAbilityTimeFinished = true;
         }
     }
 

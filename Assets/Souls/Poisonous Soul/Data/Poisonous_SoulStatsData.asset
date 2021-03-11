@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityRange: 3
   abilityCooldown: 2
+  maxAbilityDuration: 15
   directions:
   - {x: 1, y: 0}
   - {x: 0, y: 1}

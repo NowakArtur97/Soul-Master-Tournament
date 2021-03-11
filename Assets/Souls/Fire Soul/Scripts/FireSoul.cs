@@ -19,10 +19,10 @@ public class FireSoul : SoulWithDirectionalAbility
         }
         else if (IsUsingAbility)
         {
-            IsUsingAbility = false;
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
     }
 
-    protected override string GetAnimationBoolName(int range) => range != AbilityRange ? MIDDLE_POS_ANIMATION_BOOL_NAME : END_POS_ANIMATION_BOOL_NAME;
+    protected override string GetAnimationBoolName(int range) => range != AbilityRange
+        ? MIDDLE_POS_ANIMATION_BOOL_NAME : END_POS_ANIMATION_BOOL_NAME;
 }

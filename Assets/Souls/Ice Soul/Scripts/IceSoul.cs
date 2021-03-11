@@ -18,7 +18,6 @@ public class IceSoul : SoulWithLinearAbility
         }
         else if (IsUsingAbility)
         {
-            IsUsingAbility = false;
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
     }
