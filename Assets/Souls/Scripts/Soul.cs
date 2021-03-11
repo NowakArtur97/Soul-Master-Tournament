@@ -7,7 +7,7 @@ public abstract class Soul : MonoBehaviour
     [SerializeField]
     protected SoulAbility SoulAbility;
 
-    private GameObject _aliveGameObject;
+    protected GameObject AliveGameObject { get; private set; }
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
@@ -26,9 +26,9 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Awake()
     {
-        _aliveGameObject = transform.Find("Alive").gameObject;
-        MyAnimator = _aliveGameObject.GetComponent<Animator>();
-        _soulAnimationToComponent = _aliveGameObject.GetComponent<SoulAnimationToComponent>();
+        AliveGameObject = transform.Find("Alive").gameObject;
+        MyAnimator = AliveGameObject.GetComponent<Animator>();
+        _soulAnimationToComponent = AliveGameObject.GetComponent<SoulAnimationToComponent>();
 
         _soulAnimationToComponent.Soul = this;
 
@@ -106,7 +106,7 @@ public abstract class Soul : MonoBehaviour
     {
         foreach (LayerMask layerMask in layerMasks)
         {
-            if (Physics2D.Raycast(_aliveGameObject.transform.position, direction, distance, layerMask))
+            if (Physics2D.Raycast(AliveGameObject.transform.position, direction, distance, layerMask))
             {
                 return true;
             }

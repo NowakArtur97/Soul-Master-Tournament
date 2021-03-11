@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityDexterity: 0
   activeTime: 10
-  positionOffset: {x: 0.5, y: 0.5}
+  positionOffset: {x: 0.55, y: 0.5}

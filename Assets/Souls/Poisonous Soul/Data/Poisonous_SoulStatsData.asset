@@ -17,7 +17,10 @@ MonoBehaviour:
   maxAbilityDuration: 15
   isAbilityTriggeredAfterTime: 0
   directions:
-  - {x: -1, y: 0}
+  - {x: 1, y: 1}
+  - {x: -1, y: -1}
+  - {x: 1, y: -1}
+  - {x: -1, y: 1}
   startPositionOffset: {x: 0.5, y: 0.75}
   abilityPositionOffset: {x: 0.5, y: 0.75}
   notAfectedLayerMasks:
