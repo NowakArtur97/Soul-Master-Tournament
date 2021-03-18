@@ -57,7 +57,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ice Soul Wall Create
+  m_Name: Water Soul Shield Create
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -71,7 +71,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 928b425a27fa11f4088d2d89ff8698d1, type: 2}
+  m_Motion: {fileID: 7400000, guid: 20801b7cf5262f748b0db0a18442735c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
