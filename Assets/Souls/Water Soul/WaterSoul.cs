@@ -1,13 +1,13 @@
-public class PoisonousSoul : SoulWithRandomDirectionAbility
+public class WaterSoul : SoulWithPlayerBuff
 {
     private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
-    private const string START_ABILITY_ANIMATION_BOOL_NAME = "start";
+    private const string START_ABILITY_ANIMATION_BOOL_NAME = "create";
 
     protected override void Update()
     {
         base.Update();
 
-        if (HasMaxAbilityTimeFinished)
+        if (HasUsedAbility)
         {
             Destroy(gameObject);
         }
@@ -18,12 +18,9 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
         }
         else if (IsUsingAbility)
         {
-            IsUsingAbility = false;
-            ShouldStartUsingAbility = true;
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
     }
-
-    public override void StartUsingAbilityTrigger() => IsUsingAbility = true;
 
     protected override string GetAnimationBoolName(int range) => START_ABILITY_ANIMATION_BOOL_NAME;
 }

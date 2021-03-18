@@ -1,8 +1,8 @@
 public class FireSoul : SoulWithDirectionalAbility
 {
     private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
-    private const string MIDDLE_POS_ANIMATION_BOOL_NAME = "middle";
-    private const string END_POS_ANIMATION_BOOL_NAME = "end";
+    private const string ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME = "middle";
+    private const string ABILITY_END_POS_ANIMATION_BOOL_NAME = "end";
 
     protected override void Update()
     {
@@ -24,5 +24,5 @@ public class FireSoul : SoulWithDirectionalAbility
     }
 
     protected override string GetAnimationBoolName(int range) => range != AbilityRange
-        ? MIDDLE_POS_ANIMATION_BOOL_NAME : END_POS_ANIMATION_BOOL_NAME;
+        ? ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME : ABILITY_END_POS_ANIMATION_BOOL_NAME;
 }
