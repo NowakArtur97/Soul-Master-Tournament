@@ -16,8 +16,9 @@ MonoBehaviour:
   abilityCooldown: 3
   maxAbilityDuration: 5
   isAbilityTriggeredAfterTime: 1
-  directions: []
-  startPositionOffset: {x: 0.5, y: 0.5}
-  abilityPositionOffset: {x: 0.5, y: 0.5}
+  directions:
+  - {x: 0, y: 0}
+  startPositionOffset: {x: 0.5, y: 1}
+  abilityPositionOffset: {x: 0, y: 0}
   notAfectedLayerMasks: []
   afectedLayerMasks: []

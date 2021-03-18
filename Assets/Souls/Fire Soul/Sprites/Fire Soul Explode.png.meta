@@ -313,8 +313,8 @@ TextureImporter:
       name: Fire Soul Explode_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 32
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -334,8 +334,8 @@ TextureImporter:
       name: Fire Soul Explode_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
+        x: 112
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -355,8 +355,8 @@ TextureImporter:
       name: Fire Soul Explode_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 192
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -376,8 +376,8 @@ TextureImporter:
       name: Fire Soul Explode_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 272
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -397,8 +397,8 @@ TextureImporter:
       name: Fire Soul Explode_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 112
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -418,8 +418,8 @@ TextureImporter:
       name: Fire Soul Explode_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 192
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -439,8 +439,8 @@ TextureImporter:
       name: Fire Soul Explode_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 272
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -460,8 +460,8 @@ TextureImporter:
       name: Fire Soul Explode_7
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 112
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -481,8 +481,8 @@ TextureImporter:
       name: Fire Soul Explode_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 192
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -502,8 +502,8 @@ TextureImporter:
       name: Fire Soul Explode_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 272
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -524,7 +524,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 80
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -544,8 +544,8 @@ TextureImporter:
       name: Fire Soul Explode_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 80
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -565,8 +565,8 @@ TextureImporter:
       name: Fire Soul Explode_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
+        x: 96
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -586,8 +586,8 @@ TextureImporter:
       name: Fire Soul Explode_13
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
+        x: 112
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -607,8 +607,8 @@ TextureImporter:
       name: Fire Soul Explode_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -628,8 +628,8 @@ TextureImporter:
       name: Fire Soul Explode_15
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 144
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -649,8 +649,8 @@ TextureImporter:
       name: Fire Soul Explode_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 160
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -670,8 +670,8 @@ TextureImporter:
       name: Fire Soul Explode_17
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 176
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -691,8 +691,8 @@ TextureImporter:
       name: Fire Soul Explode_18
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 192
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -712,8 +712,8 @@ TextureImporter:
       name: Fire Soul Explode_19
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 208
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -733,8 +733,8 @@ TextureImporter:
       name: Fire Soul Explode_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 224
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -754,8 +754,8 @@ TextureImporter:
       name: Fire Soul Explode_21
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 240
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -775,8 +775,8 @@ TextureImporter:
       name: Fire Soul Explode_22
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 256
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -796,8 +796,8 @@ TextureImporter:
       name: Fire Soul Explode_23
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 272
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -817,8 +817,8 @@ TextureImporter:
       name: Fire Soul Explode_24
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 288
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -838,8 +838,8 @@ TextureImporter:
       name: Fire Soul Explode_25
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 304
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -859,8 +859,8 @@ TextureImporter:
       name: Fire Soul Explode_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 112
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -872,6 +872,888 @@ TextureImporter:
       bones: []
       spriteID: 98590226d23de9ee0800000000000000
       internalID: -1252331454489127543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d320075d66ba8870800000000000000
+      internalID: 8685955412064740309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_28
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2188e8519bae295a0800000000000000
+      internalID: -6515887630200174574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6101aaecee2d3f2c0800000000000000
+      internalID: -4398940487899541482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5750ce1835c3b3ef0800000000000000
+      internalID: -127441835090246283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9194dfa5223ab4d60800000000000000
+      internalID: 7875567741338208537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94e518939ad175d0800000000000000
+      internalID: -3066429543815977829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5978052ac5d92f5d0800000000000000
+      internalID: -3030186578081183851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6472130aa20a800800000000000000
+      internalID: 621543616084919995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_35
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b207d07bc1b809e20800000000000000
+      internalID: 3355334677837475883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1764295af17426460800000000000000
+      internalID: 7233422152757823089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1683f022b643d2dc0800000000000000
+      internalID: -3662213287244777375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0050b952378caa8f0800000000000000
+      internalID: -528389609384901376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_39
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0a2c9b5cb3f8680800000000000000
+      internalID: -8750709830546448164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a731282baf0ccd0800000000000000
+      internalID: -2539754545243522529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed9299105cfb7030800000000000000
+      internalID: 3493663356912573922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b34948f297816f0800000000000000
+      internalID: -713687295943492742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bae8503dfe88700800000000000000
+      internalID: 542947444708518757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2959c3577a07ce0800000000000000
+      internalID: -1409442561397517660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b64a5a83722a360800000000000000
+      internalID: 7179343880232659756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05b84f7ff5afa2a0800000000000000
+      internalID: -6723973201870146289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06cb2d06875ea30800000000000000
+      internalID: 4243930581114314918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01419c74f4a66df90800000000000000
+      internalID: -6929234087923608560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f937a7c9f0c47a4b0800000000000000
+      internalID: -5429287195838352481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfeed2a90e091090800000000000000
+      internalID: -8063398223280148520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_51
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed77ae05ee0f7050800000000000000
+      internalID: 5800371222032645609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46e7d49467a22d20800000000000000
+      internalID: 3252345931350664781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_53
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e26c9b1a58818570800000000000000
+      internalID: 8467198695024911075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faad52b3ebb7ddaf0800000000000000
+      internalID: -370003537408173393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_55
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21aa04292b02cee0800000000000000
+      internalID: -1242418275874594518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dc111afde14d0a0800000000000000
+      internalID: -6857822386749584118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_57
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528a1e0138e2564a0800000000000000
+      internalID: -6600818538382776283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8252801301334e720800000000000000
+      internalID: 2874478606804329768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_59
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616cbbe20bafb94a0800000000000000
+      internalID: -6585394395493972458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f3a8c87b1b206d0800000000000000
+      internalID: -3025660597744550038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_61
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d99fdd17bf494950800000000000000
+      internalID: 6433761190574266838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad8abe7c26a159e0800000000000000
+      internalID: -1634342479723852383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_63
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefe09bceb4cfed90800000000000000
+      internalID: -7066212966582915092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e52ba978bc46370800000000000000
+      internalID: 8314994595309182543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_65
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06360a8a581901590800000000000000
+      internalID: -7705498959185157280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c4ffc11ac603bd0800000000000000
+      internalID: -2652500741289194394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_67
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9979cd7b2e7fbe1b0800000000000000
+      internalID: -5626130756349945959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Soul Explode_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d053b53ed2ec67280800000000000000
+      internalID: -9045816105043806963
       vertices: []
       indices: 
       edges: []

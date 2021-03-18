@@ -25,5 +25,5 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
 
     public override void StartUsingAbilityTrigger() => IsUsingAbility = true;
 
-    protected override string GetAnimationBoolName(int range) => START_ABILITY_ANIMATION_BOOL_NAME;
+    protected override string GetAnimationBoolName() => START_ABILITY_ANIMATION_BOOL_NAME;
 }

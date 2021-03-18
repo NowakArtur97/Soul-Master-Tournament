@@ -19,6 +19,7 @@ public abstract class Soul : MonoBehaviour
     protected Vector2[] AbilityDirections { get; private set; }
     protected int AbilityDirectionIndex;
     protected int AbilityRange;
+    protected int AbilityMaxRange;
     private float _abilityCooldown;
     private float _maxAbilityDuration;
     private bool _isAbilityTriggeredAfterTime;
@@ -36,7 +37,7 @@ public abstract class Soul : MonoBehaviour
         _abilityCooldown = SoulStats.abilityCooldown;
         _maxAbilityDuration = SoulStats.maxAbilityDuration;
         _isAbilityTriggeredAfterTime = SoulStats.isAbilityTriggeredAfterTime;
-        AbilityRange = SoulStats.abilityRange;
+        AbilityMaxRange = SoulStats.abilityRange;
 
         StartTime = Time.time;
 
@@ -72,29 +73,29 @@ public abstract class Soul : MonoBehaviour
     {
         SoulAbility ability;
 
-        for (int range = 1; range <= AbilityRange; range++)
+        for (AbilityRange = 1; AbilityRange <= AbilityMaxRange; AbilityRange++)
         {
-            if (CheckIfTouchingWall(range, AbilityDirection, SoulStats.notAfectedLayerMasks))
+            if (CheckIfTouchingWall(AbilityRange, AbilityDirection, SoulStats.notAfectedLayerMasks))
             {
                 return;
             }
 
-            ability = Instantiate(SoulAbility, GetSoulPosition(range), GetSoulRotation());
+            ability = Instantiate(SoulAbility, GetSoulPosition(), GetSoulRotation());
 
-            if (CheckIfTouchingObstacle(range, AbilityDirection, SoulStats.afectedLayerMasks))
+            if (CheckIfTouchingObstacle(AbilityRange, AbilityDirection, SoulStats.afectedLayerMasks))
             {
-                range = AbilityRange;
+                AbilityRange = AbilityMaxRange;
             }
 
-            ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(range), true);
+            ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(), true);
         }
     }
 
-    protected abstract Vector2 GetSoulPosition(int range);
+    protected abstract Vector2 GetSoulPosition();
 
     protected abstract Quaternion GetSoulRotation();
 
-    protected abstract string GetAnimationBoolName(int range);
+    protected abstract string GetAnimationBoolName();
 
     protected bool CheckIfTouchingWall(float distance, Vector2 direction, LayerMask[] notAfectedLayerMasks) =>
         CheckIfTouching(distance, direction, notAfectedLayerMasks);

@@ -23,6 +23,6 @@ public class FireSoul : SoulWithDirectionalAbility
         }
     }
 
-    protected override string GetAnimationBoolName(int range) => range != AbilityRange
+    protected override string GetAnimationBoolName() => AbilityRange != AbilityMaxRange
         ? ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME : ABILITY_END_POS_ANIMATION_BOOL_NAME;
 }

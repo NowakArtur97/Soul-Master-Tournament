@@ -23,7 +23,7 @@ public class EvilEyeSoul : SoulWithLinearAbility
         }
     }
 
-    protected override string GetAnimationBoolName(int range) =>
-        range == AbilityRange || CheckIfTouchingWall(range + 1, AbilityDirection, SoulStats.notAfectedLayerMasks)
+    protected override string GetAnimationBoolName() =>
+        AbilityRange == AbilityMaxRange || CheckIfTouchingWall(AbilityRange + 1, AbilityDirection, SoulStats.notAfectedLayerMasks)
         ? ABILITY_END_POS_ANIMATION_BOOL_NAME : ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME;
 }

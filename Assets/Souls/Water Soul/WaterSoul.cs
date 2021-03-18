@@ -23,5 +23,5 @@ public class WaterSoul : SoulWithPlayerBuff
         }
     }
 
-    protected override string GetAnimationBoolName(int range) => START_ABILITY_ANIMATION_BOOL_NAME;
+    protected override string GetAnimationBoolName() => START_ABILITY_ANIMATION_BOOL_NAME;
 }
