@@ -18,7 +18,7 @@ MonoBehaviour:
   isAbilityTriggeredAfterTime: 1
   directions:
   - {x: 0, y: 0}
-  startPositionOffset: {x: 0.5, y: 1}
+  startPositionOffset: {x: 0, y: 0}
   abilityPositionOffset: {x: 0, y: 0}
   notAfectedLayerMasks: []
   afectedLayerMasks: []

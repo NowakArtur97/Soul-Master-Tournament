@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 4541153316217489056}
   - component: {fileID: 7829638167548903037}
   - component: {fileID: 7829638167548903036}
-  - component: {fileID: 9065866370474959899}
   - component: {fileID: 8843162358015025541}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Alive
   m_TagString: Soul Ability
   m_Icon: {fileID: 0}
@@ -131,27 +130,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &9065866370474959899
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7829638167548903038}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!58 &8843162358015025541
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -178,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7829638168765175004}
   - component: {fileID: 2463042704213530980}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Water Soul Shield
   m_TagString: Soul Ability
   m_Icon: {fileID: 0}
