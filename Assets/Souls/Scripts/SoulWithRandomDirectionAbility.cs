@@ -23,7 +23,7 @@ public abstract class SoulWithRandomDirectionAbility : Soul
         {
             _soulPosition = GetSoulPosition(AbilityRange);
         }
-        Debug.Log(_soulPosition);
+
         _takenPositions.Add(_soulPosition);
 
         SoulAbility ability = Instantiate(SoulAbility, _soulPosition, GetSoulRotation());

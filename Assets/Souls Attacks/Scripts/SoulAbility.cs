@@ -11,12 +11,12 @@ public class SoulAbility : MonoBehaviour
 
     private GameObject _aliveGameObject;
     private AbilityAnimationToComponent _explosionAnimationToComponent;
-    private Animator _myAnimator;
+    protected Animator MyAnimator { get; private set; }
 
     private void Awake()
     {
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        _myAnimator = _aliveGameObject.GetComponent<Animator>();
+        MyAnimator = _aliveGameObject.GetComponent<Animator>();
         _explosionAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
         _explosionAnimationToComponent.SoulAbility = this;
