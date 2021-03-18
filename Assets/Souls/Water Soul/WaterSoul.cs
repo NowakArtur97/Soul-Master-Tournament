@@ -1,7 +1,7 @@
 public class WaterSoul : SoulWithPlayerBuff
 {
     private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
-    private const string START_ABILITY_ANIMATION_BOOL_NAME = "create";
+    private const string START_ABILITY_ANIMATION_BOOL_NAME = "active";
 
     protected override void Update()
     {
@@ -15,6 +15,7 @@ public class WaterSoul : SoulWithPlayerBuff
         {
             ShouldStartUsingAbility = false;
             StartUsingAbility();
+            HasUsedAbility = true;
         }
         else if (IsUsingAbility)
         {

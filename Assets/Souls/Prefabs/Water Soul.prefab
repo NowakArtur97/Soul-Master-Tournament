@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727aea71effa56145b83618c30c91b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoulStats: {fileID: 0}
-  SoulAbility: {fileID: 0}
+  SoulStats: {fileID: 11400000, guid: dd53c14184d373641aff8f6a7e3e81de, type: 2}
+  SoulAbility: {fileID: 2463042704213530980, guid: bcc97e3fd45596546b6bac9c4f74d869, type: 3}
 --- !u!1 &6361494506268554441
 GameObject:
   m_ObjectHideFlags: 0

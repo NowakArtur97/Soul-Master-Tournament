@@ -1,24 +1,25 @@
 using UnityEngine;
 
-public class IceWall : SoulAbility
+public class WaterShield : SoulAbility
 {
+    //TODO: Ice and Water Soul Ability: Refactor 
     [SerializeField]
     private string _abilityTag;
 
-    private int _wallHealth;
+    private int _shieldHealth;
 
     private void Start()
     {
-        _wallHealth = AbilityStats.abilityDexterity;
+        _shieldHealth = AbilityStats.abilityDexterity;
     }
 
     public override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag(_abilityTag))
         {
-            _wallHealth--;
+            _shieldHealth--;
 
-            if (_wallHealth <= 0)
+            if (_shieldHealth <= 0)
             {
                 HasFinished = true;
             }
