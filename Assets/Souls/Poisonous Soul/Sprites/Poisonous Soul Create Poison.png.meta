@@ -172,7 +172,7 @@ TextureImporter:
         x: 0
         y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +193,7 @@ TextureImporter:
         x: 16
         y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +214,7 @@ TextureImporter:
         x: 32
         y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +235,7 @@ TextureImporter:
         x: 48
         y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,7 +256,7 @@ TextureImporter:
         x: 64
         y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 0
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 16
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 32
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_11
       rect:
         serializedVersion: 2
-        x: 16
+        x: 80
         y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +421,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 0
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_13
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 16
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 32
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 48
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: Poisonous Soul Create Poison_16
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 64
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,90 +518,6 @@ TextureImporter:
       bones: []
       spriteID: dbd5ac64908266030800000000000000
       internalID: 3487518981752511933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Poisonous Soul Create Poison_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc2200f4e54c49a00800000000000000
-      internalID: 762450146263835339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Poisonous Soul Create Poison_18
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb93528d1f2f62af0800000000000000
-      internalID: -421382394585204293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Poisonous Soul Create Poison_19
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f4020d337cab2c40800000000000000
-      internalID: 5488670181825840374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Poisonous Soul Create Poison_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 985e718b8be534c70800000000000000
-      internalID: 8954104631598245257
       vertices: []
       indices: 
       edges: []

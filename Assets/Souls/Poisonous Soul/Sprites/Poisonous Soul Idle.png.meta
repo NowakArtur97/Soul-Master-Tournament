@@ -136,7 +136,7 @@ TextureImporter:
         x: 0
         y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,7 +157,7 @@ TextureImporter:
         x: 16
         y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,7 +178,7 @@ TextureImporter:
         x: 32
         y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: Poisonous Soul Idle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: Poisonous Soul Idle_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 0
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: Poisonous Soul Idle_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 16
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: Poisonous Soul Idle_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: Poisonous Soul Idle_7
       rect:
         serializedVersion: 2
-        x: 16
+        x: 48
         y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,27 +293,6 @@ TextureImporter:
       bones: []
       spriteID: 6d6f5b9c263414e90800000000000000
       internalID: -7043274250660743466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Poisonous Soul Idle_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6f643f49c148eed0800000000000000
-      internalID: -2384583669819609234
       vertices: []
       indices: 
       edges: []
