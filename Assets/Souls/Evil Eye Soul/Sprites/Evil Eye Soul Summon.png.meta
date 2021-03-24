@@ -1,85 +1,58 @@
 fileFormatVersion: 2
-guid: bb071bad693499c409a96ab450807971
+guid: 3e83023d633d9524798726d86862b998
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1320769782849932886
-    second: Evil Eye Soul Attack_0
+      213: 6705790028890560538
+    second: Evil Eye Soul Summon_0
   - first:
-      213: 2460684685615286738
-    second: Evil Eye Soul Attack_1
+      213: 71326754664097459
+    second: Evil Eye Soul Summon_1
   - first:
-      213: -5669825451537218225
-    second: Evil Eye Soul Attack_2
+      213: -8595866616081200251
+    second: Evil Eye Soul Summon_2
   - first:
-      213: 1479369450821979674
-    second: Evil Eye Soul Attack_3
+      213: -7458312841383070567
+    second: Evil Eye Soul Summon_3
   - first:
-      213: -1676550450032043081
-    second: Evil Eye Soul Attack_4
+      213: -5021775717819723037
+    second: Evil Eye Soul Summon_4
   - first:
-      213: -8116472414438509519
-    second: Evil Eye Soul Attack_5
+      213: 4783067266237859595
+    second: Evil Eye Soul Summon_5
   - first:
-      213: 4776162217580812758
-    second: Evil Eye Soul Attack_6
+      213: -4346392079981923174
+    second: Evil Eye Soul Summon_6
   - first:
-      213: 3835150301749764344
-    second: Evil Eye Soul Attack_7
+      213: 952601748788003588
+    second: Evil Eye Soul Summon_7
   - first:
-      213: -2643667951710148190
-    second: Evil Eye Soul Attack_8
+      213: 1388548279245231722
+    second: Evil Eye Soul Summon_8
   - first:
-      213: 7260844517922539815
-    second: Evil Eye Soul Attack_9
+      213: 4110999170421296257
+    second: Evil Eye Soul Summon_9
   - first:
-      213: 4543533156301645534
-    second: Evil Eye Soul Attack_10
+      213: 6740363339105349749
+    second: Evil Eye Soul Summon_10
   - first:
-      213: 3370731251449334407
-    second: Evil Eye Soul Attack_11
+      213: -9054155631429633250
+    second: Evil Eye Soul Summon_11
   - first:
-      213: 5261296734720514328
-    second: Evil Eye Soul Attack_12
+      213: 1202101129407108394
+    second: Evil Eye Soul Summon_12
   - first:
-      213: -7288679810325141595
-    second: Evil Eye Soul Attack_13
+      213: 2225888988035064482
+    second: Evil Eye Soul Summon_13
   - first:
-      213: -4125903378013084986
-    second: Evil Eye Soul Attack_14
+      213: -1571412045603891400
+    second: Evil Eye Soul Summon_14
   - first:
-      213: 2521422623282532416
-    second: Evil Eye Soul Attack_15
+      213: -3554885826544008448
+    second: Evil Eye Soul Summon_15
   - first:
-      213: 5035925147092988593
-    second: Evil Eye Soul Attack_16
-  - first:
-      213: -4119006916680706359
-    second: Evil Eye Soul Attack_17
-  - first:
-      213: 2833617351819393835
-    second: Evil Eye Soul Attack_18
-  - first:
-      213: 2127413535959775671
-    second: Evil Eye Soul Attack_19
-  - first:
-      213: -5546562978190479941
-    second: Evil Eye Soul Attack_20
-  - first:
-      213: -8830915239520747995
-    second: Evil Eye Soul Attack_21
-  - first:
-      213: 7933426382043091218
-    second: Evil Eye Soul Attack_22
-  - first:
-      213: 4387771661363292953
-    second: Evil Eye Soul Attack_23
-  - first:
-      213: -6388870167358911803
-    second: Evil Eye Soul Attack_24
-  - first:
-      213: -4863103646697018039
-    second: Evil Eye Soul Attack_25
+      213: -5045737981430132316
+    second: Evil Eye Soul Summon_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -181,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_0
+      name: Evil Eye Soul Summon_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,125 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65e07d8ae11545210800000000000000
-      internalID: 1320769782849932886
+      spriteID: a18d062a080cf0d50800000000000000
+      internalID: 6705790028890560538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d9c75e2fab162220800000000000000
-      internalID: 2460684685615286738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f45c7a6bacbb051b0800000000000000
-      internalID: -5669825451537218225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_3
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1e0fcf6da6c78410800000000000000
-      internalID: 1479369450821979674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bb91d99f32bbb8e0800000000000000
-      internalID: -1676550450032043081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 134b22c875f7c5f80800000000000000
-      internalID: -8116472414438509519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_6
+      name: Evil Eye Soul Summon_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d9db805b36584240800000000000000
-      internalID: 4776162217580812758
+      spriteID: 3b62cb23e476df000800000000000000
+      internalID: 71326754664097459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_7
+      name: Evil Eye Soul Summon_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f0e60441e0393530800000000000000
-      internalID: 3835150301749764344
+      spriteID: 58b47d30bd855b880800000000000000
+      internalID: -8595866616081200251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_8
+      name: Evil Eye Soul Summon_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a96b32310ecf4bd0800000000000000
-      internalID: -2643667951710148190
+      spriteID: 994b0a19cffbe7890800000000000000
+      internalID: -7458312841383070567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_9
+      name: Evil Eye Soul Summon_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7298d149e93b3c460800000000000000
-      internalID: 7260844517922539815
+      spriteID: 3e25ca557911f4ab0800000000000000
+      internalID: -5021775717819723037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_10
+      name: Evil Eye Soul Summon_5
       rect:
         serializedVersion: 2
         x: 80
-        y: 80
+        y: 64
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,83 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6a19e355fdd0f30800000000000000
-      internalID: 4543533156301645534
+      spriteID: b0708ec365ed06240800000000000000
+      internalID: 4783067266237859595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78a02fbd63e37ce20800000000000000
-      internalID: 3370731251449334407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_12
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81950f23181e30940800000000000000
-      internalID: 5261296734720514328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_13
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a72200645869da90800000000000000
-      internalID: -7288679810325141595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_14
+      name: Evil Eye Soul Summon_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c222f7dcb8ddb6c0800000000000000
-      internalID: -4125903378013084986
+      spriteID: a943b127e638ea3c0800000000000000
+      internalID: -4346392079981923174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_15
+      name: Evil Eye Soul Summon_7
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 040936d4484edf220800000000000000
-      internalID: 2521422623282532416
+      spriteID: 403cce05e32583d00800000000000000
+      internalID: 952601748788003588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_16
+      name: Evil Eye Soul Summon_8
       rect:
         serializedVersion: 2
         x: 32
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b23fe36d3333e540800000000000000
-      internalID: 5035925147092988593
+      spriteID: a6654e99d4d154310800000000000000
+      internalID: 1388548279245231722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_17
+      name: Evil Eye Soul Summon_9
       rect:
         serializedVersion: 2
         x: 48
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,20 +357,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c69edf580956d6c0800000000000000
-      internalID: -4119006916680706359
+      spriteID: 18c03e8e6f33d0930800000000000000
+      internalID: 4110999170421296257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_18
+      name: Evil Eye Soul Summon_10
       rect:
         serializedVersion: 2
         x: 64
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,20 +378,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2bf394e7f7035720800000000000000
-      internalID: 2833617351819393835
+      spriteID: 570b074beb49a8d50800000000000000
+      internalID: 6740363339105349749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_19
+      name: Evil Eye Soul Summon_11
       rect:
         serializedVersion: 2
         x: 80
-        y: 48
+        y: 32
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,83 +399,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b97d35e657168d10800000000000000
-      internalID: 2127413535959775671
+      spriteID: e1bb8879c6d295280800000000000000
+      internalID: -9054155631429633250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evil Eye Soul Attack_20
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbdaf98bb56a603b0800000000000000
-      internalID: -5546562978190479941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_21
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52e38cab069427580800000000000000
-      internalID: -8830915239520747995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_22
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2111469e241391e60800000000000000
-      internalID: 7933426382043091218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evil Eye Soul Attack_23
+      name: Evil Eye Soul Summon_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,8 +420,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91ba51f141f74ec30800000000000000
-      internalID: 4387771661363292953
+      spriteID: a251862bb98bea010800000000000000
+      internalID: 1202101129407108394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2a849cd32f3ee10800000000000000
+      internalID: 2225888988035064482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837920af119313ae0800000000000000
+      internalID: -1571412045603891400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00306c3ec228aaec0800000000000000
+      internalID: -3554885826544008448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a119231a00f9f9b0800000000000000
+      internalID: -5045737981430132316
       vertices: []
       indices: 
       edges: []
