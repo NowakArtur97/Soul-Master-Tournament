@@ -3,11 +3,13 @@ using UnityEngine;
 public class SoulAbility : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
+
     [SerializeField]
     protected D_SoulAbilityStats AbilityStats;
 
     protected bool HasFinished;
-    protected float StartTime;
+    protected bool IsActive;
+    protected float StartTime { get; private set; }
 
     private GameObject _aliveGameObject;
     private AbilityAnimationToComponent _explosionAnimationToComponent;
@@ -36,6 +38,8 @@ public class SoulAbility : MonoBehaviour
 
     // TODO: Ice Wall: If only Ice Wall call OnTriggerEnter2D then change ChildToParentTrggier
     public virtual void OnTriggerEnter2D(Collider2D collision) { }
+
+    public virtual void ActiveTrigger() => IsActive = true;
 
     public virtual void FinishTrigger() => HasFinished = true;
 }
