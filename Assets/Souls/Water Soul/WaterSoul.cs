@@ -1,6 +1,5 @@
 public class WaterSoul : SoulWithPlayerBuff
 {
-    private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
     private const string START_ABILITY_ANIMATION_BOOL_NAME = "active";
 
     protected override void Update()

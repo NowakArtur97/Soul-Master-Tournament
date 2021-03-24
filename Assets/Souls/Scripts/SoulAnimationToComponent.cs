@@ -4,13 +4,9 @@ public class SoulAnimationToComponent : MonoBehaviour
 {
     public Soul Soul;
 
-    private void StartUsingAbilityTrigger()
-    {
-        Soul.StartUsingAbilityTrigger();
-    }
+    private void SummonedTrigger() => Soul.SummonedTrigger();
 
-    private void FinishUsingAbilityTrigger()
-    {
-        Soul.FinishUsingAbilityTrigger();
-    }
+    private void StartUsingAbilityTrigger() => Soul.StartUsingAbilityTrigger();
+
+    private void FinishUsingAbilityTrigger() => Soul.FinishUsingAbilityTrigger();
 }

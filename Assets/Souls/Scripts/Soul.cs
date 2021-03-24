@@ -2,6 +2,9 @@ using UnityEngine;
 
 public abstract class Soul : MonoBehaviour
 {
+    protected const string SUMMON_ANIMATION_BOOL_NAME = "summon";
+    protected const string ABILITY_ANIMATION_BOOL_NAME = "ability";
+
     [SerializeField]
     protected D_SoulStats SoulStats;
     [SerializeField]
@@ -11,6 +14,7 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
+    private bool _isSummoned;
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
     protected bool HasMaxAbilityTimeFinished;
@@ -42,17 +46,22 @@ public abstract class Soul : MonoBehaviour
         StartTime = Time.time;
 
         transform.position += (Vector3)SoulStats.startPositionOffset;
+
+        MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, true);
     }
 
     protected virtual void Update()
     {
-        if (Time.time >= StartTime + _abilityCooldown && _isAbilityTriggeredAfterTime)
+        if (_isSummoned)
         {
-            IsUsingAbility = true;
-        }
-        if (Time.time >= StartTime + _maxAbilityDuration)
-        {
-            HasMaxAbilityTimeFinished = true;
+            if (Time.time >= StartTime + _abilityCooldown && _isAbilityTriggeredAfterTime)
+            {
+                IsUsingAbility = true;
+            }
+            if (Time.time >= StartTime + _maxAbilityDuration)
+            {
+                HasMaxAbilityTimeFinished = true;
+            }
         }
     }
 
@@ -115,6 +124,8 @@ public abstract class Soul : MonoBehaviour
 
         return false;
     }
+
+    public virtual void SummonedTrigger() => _isSummoned = true;
 
     public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
 

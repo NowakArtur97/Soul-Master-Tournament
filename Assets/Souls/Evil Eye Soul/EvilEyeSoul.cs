@@ -1,6 +1,5 @@
 public class EvilEyeSoul : SoulWithLinearAbility
 {
-    private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
     private const string ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME = "middle";
     private const string ABILITY_END_POS_ANIMATION_BOOL_NAME = "end";
 

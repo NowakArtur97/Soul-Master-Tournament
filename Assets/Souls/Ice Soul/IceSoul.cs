@@ -1,6 +1,5 @@
 public class IceSoul : SoulWithLinearAbility
 {
-    private const string ABILITY_ANIMATION_BOOL_NAME = "ability";
     private const string START_ABILITY_ANIMATION_BOOL_NAME = "create";
 
     protected override void Update()
