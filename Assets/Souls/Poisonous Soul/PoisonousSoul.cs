@@ -8,7 +8,7 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
 
         if (HasMaxAbilityTimeFinished)
         {
-            Destroy(gameObject);
+            UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
         {

@@ -8,7 +8,7 @@ public class IceSoul : SoulWithLinearAbility
 
         if (HasUsedAbility)
         {
-            Destroy(gameObject);
+            UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
         {

@@ -9,7 +9,7 @@ public class FireSoul : SoulWithDirectionalAbility
 
         if (HasUsedAbility)
         {
-            Destroy(gameObject);
+            UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
         {

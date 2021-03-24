@@ -4,8 +4,5 @@ public class AbilityAnimationToComponent : MonoBehaviour
 {
     public SoulAbility SoulAbility;
 
-    private void FinishTrigger()
-    {
-        SoulAbility.FinishTrigger();
-    }
+    private void FinishTrigger() => SoulAbility.FinishTrigger();
 }

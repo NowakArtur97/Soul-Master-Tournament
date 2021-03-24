@@ -8,7 +8,7 @@ public class WaterSoul : SoulWithPlayerBuff
 
         if (HasUsedAbility)
         {
-            Destroy(gameObject);
+            UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
         {

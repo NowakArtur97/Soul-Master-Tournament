@@ -9,7 +9,7 @@ public class EvilEyeSoul : SoulWithLinearAbility
 
         if (HasUsedAbility)
         {
-            Destroy(gameObject);
+            UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
         {

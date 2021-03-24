@@ -3,7 +3,9 @@ using UnityEngine;
 public abstract class Soul : MonoBehaviour
 {
     protected const string SUMMON_ANIMATION_BOOL_NAME = "summon";
+    protected const string UNSUMMON_ANIMATION_BOOL_NAME = "unsummon";
     protected const string ABILITY_ANIMATION_BOOL_NAME = "ability";
+    protected const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
     [SerializeField]
     protected D_SoulStats SoulStats;
@@ -31,7 +33,7 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Awake()
     {
-        AliveGameObject = transform.Find("Alive").gameObject;
+        AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         MyAnimator = AliveGameObject.GetComponent<Animator>();
         _soulAnimationToComponent = AliveGameObject.GetComponent<SoulAnimationToComponent>();
 
@@ -67,7 +69,7 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void StartUsingAbility()
     {
-        MyAnimator.SetBool("ability", true);
+        MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
 
         transform.position = transform.position - (Vector3)SoulStats.startPositionOffset + (Vector3)SoulStats.abilityPositionOffset;
 
@@ -98,6 +100,12 @@ public abstract class Soul : MonoBehaviour
 
             ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(), true);
         }
+    }
+
+    protected void UnsummonSoul()
+    {
+        MyAnimator.SetBool(UNSUMMON_ANIMATION_BOOL_NAME, true);
+        Destroy(gameObject);
     }
 
     protected abstract Vector2 GetSoulPosition();
