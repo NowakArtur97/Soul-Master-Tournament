@@ -16,21 +16,22 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
+    protected bool WasSummoned { get; private set; }
     protected bool IsSummoned { get; private set; }
     private bool _isUnsummoned;
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
-    protected bool HasMaxAbilityTimeFinished;
+    protected bool HasMaxAbilityTimeFinished { get; private set; }
     protected bool ShouldStartUsingAbility;
     protected Vector2 AbilityDirection { get; private set; }
     protected Vector2[] AbilityDirections { get; private set; }
-    protected int AbilityDirectionIndex;
-    protected int AbilityRange;
-    protected int AbilityMaxRange;
+    protected int AbilityDirectionIndex { get; private set; }
+    protected int AbilityRange { get; private set; }
+    protected int AbilityMaxRange { get; private set; }
     private float _abilityCooldown;
     private float _maxAbilityDuration;
     private bool _isAbilityTriggeredAfterTime;
-    protected float StartTime;
+    protected float StartTime { get; private set; }
 
     protected virtual void Awake()
     {
@@ -101,6 +102,12 @@ public abstract class Soul : MonoBehaviour
 
             ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(), true);
         }
+    }
+
+    protected virtual void SummonSoul()
+    {
+        MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, false);
+        WasSummoned = true;
     }
 
     protected void UnsummonSoul()

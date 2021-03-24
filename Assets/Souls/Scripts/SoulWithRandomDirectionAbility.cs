@@ -13,6 +13,7 @@ public abstract class SoulWithRandomDirectionAbility : Soul
         base.StartUsingAbility();
     }
 
+    // TODO: SoulWithRandomDirectionAbility: Check if really is random
     protected override void UseAbility()
     {
         int range = GetRandomRange(AbilityMaxRange);

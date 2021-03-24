@@ -4,8 +4,6 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
     private const string START_USING_ABILITY_ANIMATION_BOOL_NAME = "ability";
     private const string FINISH_USING_ABILITY_ANIMATION_BOOL_NAME = "finish";
 
-    private bool _wasSummoned;
-
     protected override void Update()
     {
         base.Update();
@@ -31,12 +29,16 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
             IsUsingAbility = false;
             ShouldStartUsingAbility = true;
         }
-        else if (IsSummoned && !_wasSummoned)
+        else if (IsSummoned && !WasSummoned)
         {
-            _wasSummoned = true;
-            MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, false);
-            MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+            SummonSoul();
         }
+    }
+
+    protected override void SummonSoul()
+    {
+        base.SummonSoul();
+        MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
     }
 
     public override void StartUsingAbilityTrigger() => IsUsingAbility = true;
