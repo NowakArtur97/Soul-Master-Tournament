@@ -10,6 +10,7 @@ public class FireSoul : SoulWithDirectionalAbility
 
         if (HasUsedAbility)
         {
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
             UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)

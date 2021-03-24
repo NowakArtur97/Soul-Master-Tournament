@@ -112,6 +112,7 @@ public abstract class Soul : MonoBehaviour
 
     protected void UnsummonSoul()
     {
+        transform.position = transform.position - (Vector3)SoulStats.abilityPositionOffset + (Vector3)SoulStats.startPositionOffset;
         MyAnimator.SetBool(UNSUMMON_ANIMATION_BOOL_NAME, true);
         if (_isUnsummoned)
         {
