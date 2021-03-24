@@ -16,7 +16,8 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
-    private bool _isSummoned;
+    protected bool IsSummoned { get; private set; }
+    private bool _isUnsummoned;
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
     protected bool HasMaxAbilityTimeFinished;
@@ -54,7 +55,7 @@ public abstract class Soul : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (_isSummoned)
+        if (IsSummoned)
         {
             if (Time.time >= StartTime + _abilityCooldown && _isAbilityTriggeredAfterTime)
             {
@@ -105,7 +106,10 @@ public abstract class Soul : MonoBehaviour
     protected void UnsummonSoul()
     {
         MyAnimator.SetBool(UNSUMMON_ANIMATION_BOOL_NAME, true);
-        Destroy(gameObject);
+        if (_isUnsummoned)
+        {
+            Destroy(gameObject);
+        }
     }
 
     protected abstract Vector2 GetSoulPosition();
@@ -133,7 +137,9 @@ public abstract class Soul : MonoBehaviour
         return false;
     }
 
-    public virtual void SummonedTrigger() => _isSummoned = true;
+    public virtual void SummonedTrigger() => IsSummoned = true;
+
+    public virtual void UnsummonedTrigger() => _isUnsummoned = true;
 
     public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
 
