@@ -104,9 +104,10 @@ public abstract class Soul : MonoBehaviour
         }
     }
 
-    protected virtual void FinishSummoningSoul()
+    protected virtual void FinishSummoningSoul(string nextAnimationBoolName)
     {
         MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, false);
+        MyAnimator.SetBool(nextAnimationBoolName, true);
         HasAppeared = true;
     }
 
@@ -114,6 +115,7 @@ public abstract class Soul : MonoBehaviour
     {
         transform.position = transform.position - (Vector3)SoulStats.abilityPositionOffset + (Vector3)SoulStats.startPositionOffset;
         MyAnimator.SetBool(UNSUMMON_ANIMATION_BOOL_NAME, true);
+
         if (_isUnsummoned)
         {
             Destroy(gameObject);

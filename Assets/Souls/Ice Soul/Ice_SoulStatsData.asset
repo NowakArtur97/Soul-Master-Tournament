@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityRange: 1
   abilityCooldown: 0
+  maxAbilityDuration: 5
+  isAbilityTriggeredAfterTime: 1
   directions:
   - {x: 1, y: 0}
-  startPositionOffset: {x: 0.5, y: 0.7}
-  abilityPositionOffset: {x: 0.5, y: 0.7}
+  startPositionOffset: {x: 0.5, y: -0.75}
+  abilityPositionOffset: {x: 0.5, y: -0.75}
   notAfectedLayerMasks: []
   afectedLayerMasks: []

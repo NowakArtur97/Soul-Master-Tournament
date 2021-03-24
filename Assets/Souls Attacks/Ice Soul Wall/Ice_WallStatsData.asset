@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Ice_WallStatsData
   m_EditorClassIdentifier: 
   abilityDexterity: 3
+  activeTime: 10
+  positionOffset: {x: 0, y: 0}

@@ -31,14 +31,8 @@ public class PoisonousSoul : SoulWithRandomDirectionAbility
         }
         else if (IsSummoned && !HasAppeared)
         {
-            FinishSummoningSoul();
+            FinishSummoningSoul(IDLE_ANIMATION_BOOL_NAME);
         }
-    }
-
-    protected override void FinishSummoningSoul()
-    {
-        base.FinishSummoningSoul();
-        MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
     }
 
     public override void StartUsingAbilityTrigger() => IsUsingAbility = true;

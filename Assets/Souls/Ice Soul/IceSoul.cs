@@ -8,6 +8,7 @@ public class IceSoul : SoulWithLinearAbility
 
         if (HasUsedAbility)
         {
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
             UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
@@ -15,9 +16,9 @@ public class IceSoul : SoulWithLinearAbility
             ShouldStartUsingAbility = false;
             StartUsingAbility();
         }
-        else if (IsUsingAbility)
+        else if (IsSummoned && !HasAppeared)
         {
-            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+            FinishSummoningSoul(ABILITY_ANIMATION_BOOL_NAME);
         }
     }
 
