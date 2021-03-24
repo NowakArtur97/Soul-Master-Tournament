@@ -23,15 +23,15 @@ public class FireSoul : SoulWithDirectionalAbility
             MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
-        else if (IsSummoned && !WasSummoned)
+        else if (IsSummoned && !HasAppeared)
         {
-            SummonSoul();
+            FinishSummoningSoul();
         }
     }
 
-    protected override void SummonSoul()
+    protected override void FinishSummoningSoul()
     {
-        base.SummonSoul();
+        base.FinishSummoningSoul();
         MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
     }
 

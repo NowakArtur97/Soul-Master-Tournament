@@ -16,7 +16,7 @@ public abstract class Soul : MonoBehaviour
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
-    protected bool WasSummoned { get; private set; }
+    protected bool HasAppeared { get; private set; }
     protected bool IsSummoned { get; private set; }
     private bool _isUnsummoned;
     protected bool IsUsingAbility;
@@ -104,10 +104,10 @@ public abstract class Soul : MonoBehaviour
         }
     }
 
-    protected virtual void SummonSoul()
+    protected virtual void FinishSummoningSoul()
     {
         MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, false);
-        WasSummoned = true;
+        HasAppeared = true;
     }
 
     protected void UnsummonSoul()

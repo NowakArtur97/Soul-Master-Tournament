@@ -1,5 +1,6 @@
 public class EvilEyeSoul : SoulWithLinearAbility
 {
+    private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string ABILITY_MIDDLE_POS_ANIMATION_BOOL_NAME = "middle";
     private const string ABILITY_END_POS_ANIMATION_BOOL_NAME = "end";
 
@@ -9,6 +10,7 @@ public class EvilEyeSoul : SoulWithLinearAbility
 
         if (HasUsedAbility)
         {
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
             UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
@@ -18,8 +20,19 @@ public class EvilEyeSoul : SoulWithLinearAbility
         }
         else if (IsUsingAbility)
         {
+            MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
         }
+        else if (IsSummoned && !HasAppeared)
+        {
+            FinishSummoningSoul();
+        }
+    }
+
+    protected override void FinishSummoningSoul()
+    {
+        base.FinishSummoningSoul();
+        MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
     }
 
     protected override string GetAnimationBoolName() =>
