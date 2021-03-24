@@ -5,7 +5,7 @@ public abstract class Soul : MonoBehaviour
     protected const string SUMMON_ANIMATION_BOOL_NAME = "summon";
     protected const string UNSUMMON_ANIMATION_BOOL_NAME = "unsummon";
     protected const string ABILITY_ANIMATION_BOOL_NAME = "ability";
-    protected const string ALIVE_GAME_OBJECT_NAME = "Alive";
+    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
     [SerializeField]
     protected D_SoulStats SoulStats;
