@@ -206,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -227,7 +227,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -248,7 +248,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -269,7 +269,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -290,7 +290,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -311,7 +311,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 208
+        y: 192
         width: 32
         height: 48
       alignment: 0
@@ -331,8 +331,8 @@ TextureImporter:
       name: Water Soul Summon_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 208
+        x: 0
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -352,8 +352,8 @@ TextureImporter:
       name: Water Soul Summon_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 32
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -374,7 +374,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -394,8 +394,8 @@ TextureImporter:
       name: Water Soul Summon_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
+        x: 96
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -415,8 +415,8 @@ TextureImporter:
       name: Water Soul Summon_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
+        x: 128
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -436,8 +436,8 @@ TextureImporter:
       name: Water Soul Summon_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 160
+        y: 144
         width: 32
         height: 48
       alignment: 0
@@ -458,7 +458,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -479,7 +479,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -500,7 +500,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -521,7 +521,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -542,7 +542,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -563,7 +563,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 112
+        y: 96
         width: 32
         height: 48
       alignment: 0
@@ -583,8 +583,8 @@ TextureImporter:
       name: Water Soul Summon_18
       rect:
         serializedVersion: 2
-        x: 192
-        y: 112
+        x: 0
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -604,8 +604,8 @@ TextureImporter:
       name: Water Soul Summon_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 32
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -625,8 +625,8 @@ TextureImporter:
       name: Water Soul Summon_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 64
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -646,8 +646,8 @@ TextureImporter:
       name: Water Soul Summon_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 96
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -667,8 +667,8 @@ TextureImporter:
       name: Water Soul Summon_22
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 128
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -688,8 +688,8 @@ TextureImporter:
       name: Water Soul Summon_23
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 160
+        y: 48
         width: 32
         height: 48
       alignment: 0
@@ -709,8 +709,8 @@ TextureImporter:
       name: Water Soul Summon_24
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 0
+        y: 0
         width: 32
         height: 48
       alignment: 0
@@ -730,8 +730,8 @@ TextureImporter:
       name: Water Soul Summon_25
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 32
+        y: 0
         width: 32
         height: 48
       alignment: 0
@@ -751,8 +751,8 @@ TextureImporter:
       name: Water Soul Summon_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 64
+        y: 0
         width: 32
         height: 48
       alignment: 0
@@ -772,8 +772,8 @@ TextureImporter:
       name: Water Soul Summon_27
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 96
+        y: 0
         width: 32
         height: 48
       alignment: 0
@@ -785,111 +785,6 @@ TextureImporter:
       bones: []
       spriteID: 33365ceb2b50edbf0800000000000000
       internalID: -297794260096949453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Summon_28
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b75a9b457e191170800000000000000
-      internalID: 8149578489832036279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Summon_29
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e6e409bc54ceb0e0800000000000000
-      internalID: -2252146861118527767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Summon_30
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c683ed6545fc8a830800000000000000
-      internalID: 4082741023352961132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Summon_31
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 16
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4f8113e03f6e7c40800000000000000
-      internalID: 5511965249706757967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Summon_32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 16
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7432595043c1ee020800000000000000
-      internalID: 2372865063428367175
       vertices: []
       indices: 
       edges: []
