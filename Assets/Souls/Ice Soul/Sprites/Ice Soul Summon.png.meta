@@ -53,6 +53,18 @@ TextureImporter:
   - first:
       213: -3795145933678294125
     second: Ice Soul Summon_16
+  - first:
+      213: -8246743178346591850
+    second: Ice Soul Summon_17
+  - first:
+      213: -2544054647833560592
+    second: Ice Soul Summon_18
+  - first:
+      213: 4322547454981512153
+    second: Ice Soul Summon_19
+  - first:
+      213: 3705836998497776457
+    second: Ice Soul Summon_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -158,7 +170,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -179,7 +191,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -200,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -221,7 +233,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -242,7 +254,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -263,7 +275,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -284,7 +296,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -305,7 +317,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -326,7 +338,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -347,7 +359,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -368,7 +380,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -389,7 +401,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -410,7 +422,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -431,7 +443,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -452,7 +464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -473,7 +485,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -494,7 +506,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -506,6 +518,90 @@ TextureImporter:
       bones: []
       spriteID: 39b465081eee45bc0800000000000000
       internalID: -3795145933678294125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Soul Summon_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69986ccb5cead8d80800000000000000
+      internalID: -8246743178346591850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Soul Summon_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f2bad6c3b1bcd0800000000000000
+      internalID: -2544054647833560592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Soul Summon_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db11fa2206ccfb30800000000000000
+      internalID: 4322547454981512153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Soul Summon_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943b5f2ad17cd6330800000000000000
+      internalID: 3705836998497776457
       vertices: []
       indices: 
       edges: []

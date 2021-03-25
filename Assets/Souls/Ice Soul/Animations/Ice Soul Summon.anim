@@ -54,7 +54,15 @@ AnimationClip:
     - time: 1.6
       value: {fileID: -3795145933678294125, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
     - time: 1.7
-      value: {fileID: -3795145933678294125, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+      value: {fileID: -8246743178346591850, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - time: 1.8
+      value: {fileID: -2544054647833560592, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - time: 1.9
+      value: {fileID: 4322547454981512153, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - time: 2
+      value: {fileID: 3705836998497776457, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - time: 2.1
+      value: {fileID: 3705836998497776457, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -91,13 +99,17 @@ AnimationClip:
     - {fileID: 4836377198962621687, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
     - {fileID: -827965397364002296, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
     - {fileID: -3795145933678294125, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
-    - {fileID: -3795145933678294125, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - {fileID: -8246743178346591850, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - {fileID: -2544054647833560592, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - {fileID: 4322547454981512153, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - {fileID: 3705836998497776457, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
+    - {fileID: 3705836998497776457, guid: 2499224da19866d4ca984b95f0eb07d7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.8
+    m_StopTime: 2.1999998
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -117,7 +129,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.7
+  - time: 2.1
     functionName: SummonedTrigger
     data: 
     objectReferenceParameter: {fileID: 0}

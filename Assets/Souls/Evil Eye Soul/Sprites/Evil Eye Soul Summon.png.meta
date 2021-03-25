@@ -53,6 +53,15 @@ TextureImporter:
   - first:
       213: -5045737981430132316
     second: Evil Eye Soul Summon_16
+  - first:
+      213: 3765132760039039866
+    second: Evil Eye Soul Summon_17
+  - first:
+      213: 8744836803500858775
+    second: Evil Eye Soul Summon_18
+  - first:
+      213: 7221269425609924076
+    second: Evil Eye Soul Summon_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -158,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -179,7 +188,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -200,7 +209,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -221,7 +230,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -242,7 +251,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -263,7 +272,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 64
+        y: 96
         width: 16
         height: 32
       alignment: 0
@@ -284,7 +293,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -305,7 +314,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -326,7 +335,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -347,7 +356,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -368,7 +377,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -389,7 +398,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 32
+        y: 64
         width: 16
         height: 32
       alignment: 0
@@ -410,7 +419,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -431,7 +440,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -452,7 +461,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -473,7 +482,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -494,7 +503,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -506,6 +515,69 @@ TextureImporter:
       bones: []
       spriteID: 4a119231a00f9f9b0800000000000000
       internalID: -5045737981430132316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a732056fb40704430800000000000000
+      internalID: 3765132760039039866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d5e6b9db6eb5970800000000000000
+      internalID: 8744836803500858775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Eye Soul Summon_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced5edc584a173460800000000000000
+      internalID: 7221269425609924076
       vertices: []
       indices: 
       edges: []
