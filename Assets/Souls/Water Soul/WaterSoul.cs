@@ -1,5 +1,6 @@
 public class WaterSoul : SoulWithPlayerBuff
 {
+    private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string START_ABILITY_ANIMATION_BOOL_NAME = "active";
 
     protected override void Update()
@@ -15,10 +16,16 @@ public class WaterSoul : SoulWithPlayerBuff
             ShouldStartUsingAbility = false;
             StartUsingAbility();
             HasUsedAbility = true;
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
         }
         else if (IsUsingAbility)
         {
+            MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+        }
+        else if (IsSummoned && !HasAppeared)
+        {
+            FinishSummoningSoul(IDLE_ANIMATION_BOOL_NAME);
         }
     }
 
