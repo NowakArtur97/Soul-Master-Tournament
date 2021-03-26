@@ -2,10 +2,11 @@ using UnityEngine;
 
 public abstract class Soul : MonoBehaviour
 {
+    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
+
     protected const string SUMMON_ANIMATION_BOOL_NAME = "summon";
     protected const string UNSUMMON_ANIMATION_BOOL_NAME = "unsummon";
     protected const string ABILITY_ANIMATION_BOOL_NAME = "ability";
-    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
     [SerializeField]
     protected D_SoulStats SoulStats;

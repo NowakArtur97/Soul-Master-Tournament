@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
+
     [SerializeField]
     private D_PlayerStats _playerStats;
     [SerializeField]
@@ -23,7 +25,7 @@ public class Player : MonoBehaviour
     {
         _inputHandler = GetComponent<PlayerInputHandler>();
 
-        _aliveGameObject = transform.Find("Alive").gameObject;
+        _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
     }
 

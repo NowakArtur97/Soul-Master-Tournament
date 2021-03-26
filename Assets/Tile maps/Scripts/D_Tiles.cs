@@ -4,17 +4,17 @@ using UnityEngine;
 public class D_Tiles : ScriptableObject
 {
     [Header("Corners")]
-    public GameObject _upperLeftCorner;
-    public GameObject _upperRightCorner;
-    public GameObject _lowerLeftCorner;
-    public GameObject _lowerRightCorner;
+    public GameObject upperLeftCorner;
+    public GameObject upperRightCorner;
+    public GameObject lowerLeftCorner;
+    public GameObject lowerRightCorner;
 
     [Header("Walls")]
-    public GameObject[] _upperWalls;
-    public GameObject[] _lowerWalls;
-    public GameObject[] _leftWalls;
-    public GameObject[] _rightWalls;
+    public GameObject[] upperWalls;
+    public GameObject[] lowerWalls;
+    public GameObject[] leftWalls;
+    public GameObject[] rightWalls;
 
     [Header("Floor")]
-    public GameObject[] _floors;
+    public GameObject[] floors;
 }
