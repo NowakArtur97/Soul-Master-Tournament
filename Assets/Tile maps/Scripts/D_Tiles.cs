@@ -10,10 +10,10 @@ public class D_Tiles : ScriptableObject
     public GameObject _lowerRightCorner;
 
     [Header("Walls")]
-    public GameObject _upperWall;
-    public GameObject _lowerWall;
-    public GameObject _leftWall;
-    public GameObject _rightWall;
+    public GameObject[] _upperWalls;
+    public GameObject[] _lowerWalls;
+    public GameObject[] _leftWalls;
+    public GameObject[] _rightWalls;
 
     [Header("Floor")]
     public GameObject[] _floors;
