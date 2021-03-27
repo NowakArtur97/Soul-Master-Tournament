@@ -40,7 +40,9 @@ public class TileMapGenerator : MonoBehaviour
     private void GenerateTileMaps()
     {
         Vector3Int position = Vector3Int.zero;
-        int wallIndex = 0;
+        int wallsIndex = 0;
+        int leftSideWallsIndex = 0;
+        int rightSideWallsIndex = 0;
 
         for (int column = 0; column < _tileMapColumns; column++)
         {
@@ -68,23 +70,44 @@ public class TileMapGenerator : MonoBehaviour
                 {
                     if (IsFirstRow(row))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
-                        wallIndex++;
+                        _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallsIndex]);
+                        wallsIndex++;
                     }
                     else if (IsLastRow(row))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.lowerWalls[wallIndex]);
-                        wallIndex++;
+                        _outerWalls.SetTile(_offset + position, _tilesData.lowerWalls[wallsIndex]);
+                        wallsIndex++;
                     }
                     else
                     {
                         _battleGround.SetTile(_offset + position, GetRandomTile(_tilesData.floors));
                     }
                 }
-
-                if (wallIndex >= _tilesData.upperWalls.Length)
+                else
                 {
-                    wallIndex = 0;
+                    if (IsFirstColumn(column))
+                    {
+                        _outerWalls.SetTile(_offset + position, _tilesData.leftWalls[leftSideWallsIndex]);
+                        leftSideWallsIndex++;
+                    }
+                    if (IsLastColumn(column))
+                    {
+                        _outerWalls.SetTile(_offset + position, _tilesData.rightWalls[rightSideWallsIndex]);
+                        rightSideWallsIndex++;
+                    }
+                }
+
+                if (wallsIndex >= _tilesData.upperWalls.Length)
+                {
+                    wallsIndex = 0;
+                }
+                if (leftSideWallsIndex >= _tilesData.leftWalls.Length)
+                {
+                    leftSideWallsIndex = 0;
+                }
+                if (rightSideWallsIndex >= _tilesData.rightWalls.Length)
+                {
+                    rightSideWallsIndex = 0;
                 }
             }
         }
