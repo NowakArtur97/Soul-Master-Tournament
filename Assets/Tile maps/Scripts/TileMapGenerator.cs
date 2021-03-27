@@ -34,20 +34,51 @@ public class TileMapGenerator : MonoBehaviour
 
     private void Start()
     {
-        GenerateFloors();
+        GenerateTileMaps();
     }
 
-    private void GenerateFloors()
+    private void GenerateTileMaps()
     {
-        Tile[] floors = _tilesData.floors;
         Vector3Int position = Vector3Int.zero;
+        int wallIndex = 0;
 
-        for (int row = 0; row < _tileMapRows; row++)
+        for (int column = 0; column < _tileMapColumns; column++)
         {
-            for (int column = 0; column < _tileMapColumns; column++)
+            for (int row = 0; row < _tileMapRows; row++)
             {
-                position.Set(row, column, 0);
-                _battleGround.SetTile(_offset + position, GetRandomTile(floors));
+                position.Set(column, -row, 0);
+
+                if (row == 0 && column == 0)
+                {
+                    _outerWalls.SetTile(_offset + position, _tilesData.upperLeftCorner);
+                }
+                else if (row == 0 && column == _tileMapColumns - 1)
+                {
+                    _outerWalls.SetTile(_offset + position, _tilesData.upperRightCorner);
+                }
+                else if (row == _tileMapRows - 1 && column == 0)
+                {
+                    _outerWalls.SetTile(_offset + position, _tilesData.lowerLeftCorner);
+                }
+                else if (row == _tileMapRows - 1 && column == _tileMapColumns - 1)
+                {
+                    _outerWalls.SetTile(_offset + position, _tilesData.lowerRightCorner);
+                }
+                //else if (row > 0 && row < _tileMapRows - 1 && column == 0)
+                //{
+                //    _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
+                //    wallIndex++;
+                //}
+                //else if (row > 0 && row < _tileMapRows - 1 && column == _tileMapColumns - 1)
+                //{
+                //    _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
+                //    wallIndex++;
+                //}
+
+                if (wallIndex >= _tilesData.upperWalls.Length)
+                {
+                    wallIndex = 0;
+                }
             }
         }
     }
