@@ -16,6 +16,7 @@ public class D_Tiles : ScriptableObject
     public Tile[] leftWalls;
     public Tile[] rightWalls;
 
-    [Header("Floor")]
     public Tile[] floors;
+
+    public Tile[] obstacles;
 }

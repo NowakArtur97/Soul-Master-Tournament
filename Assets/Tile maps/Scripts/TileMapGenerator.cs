@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -21,6 +22,12 @@ public class TileMapGenerator : MonoBehaviour
     [SerializeField]
     private D_Tiles _tilesData;
 
+    [Header("Obstacles Positions")]
+    [SerializeField]
+    private List<Vector2> _reservedPositions;
+    [SerializeField]
+    private int _chanceForObstacle = 70;
+
     private Tilemap _outerWalls;
     private Tilemap _battleGround;
     private Tilemap _obstacles;
@@ -32,14 +39,12 @@ public class TileMapGenerator : MonoBehaviour
         _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
     }
 
-    private void Start()
-    {
-        GenerateTileMaps();
-    }
+    private void Start() => GenerateLevel();
 
-    private void GenerateTileMaps()
+    private void GenerateLevel()
     {
         Vector3Int position = Vector3Int.zero;
+        Vector2 reservedPosition = Vector2.zero;
         int wallsIndex = 0;
         int leftSideWallsIndex = 0;
         int rightSideWallsIndex = 0;
@@ -48,51 +53,53 @@ public class TileMapGenerator : MonoBehaviour
         {
             for (int row = 0; row < _tileMapRows; row++)
             {
-                position.Set(column, -row, 0);
+                position.Set(column + _offset.x, -row + _offset.y, 0);
 
                 if (IsFirstRow(row) && IsFirstColumn(column))
                 {
-                    _outerWalls.SetTile(_offset + position, _tilesData.upperLeftCorner);
+                    _outerWalls.SetTile(position, _tilesData.upperLeftCorner);
                 }
                 else if (IsFirstRow(row) && IsLastColumn(column))
                 {
-                    _outerWalls.SetTile(_offset + position, _tilesData.upperRightCorner);
+                    _outerWalls.SetTile(position, _tilesData.upperRightCorner);
                 }
                 else if (IsLastRow(row) && IsFirstColumn(column))
                 {
-                    _outerWalls.SetTile(_offset + position, _tilesData.lowerLeftCorner);
+                    _outerWalls.SetTile(position, _tilesData.lowerLeftCorner);
                 }
                 else if (IsLastRow(row) && IsLastColumn(column))
                 {
-                    _outerWalls.SetTile(_offset + position, _tilesData.lowerRightCorner);
+                    _outerWalls.SetTile(position, _tilesData.lowerRightCorner);
                 }
                 else if (IsBetweenCorners(column))
                 {
                     if (IsFirstRow(row))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallsIndex]);
+                        _outerWalls.SetTile(position, _tilesData.upperWalls[wallsIndex]);
                         wallsIndex++;
                     }
                     else if (IsLastRow(row))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.lowerWalls[wallsIndex]);
+                        _outerWalls.SetTile(position, _tilesData.lowerWalls[wallsIndex]);
                         wallsIndex++;
                     }
                     else
                     {
-                        _battleGround.SetTile(_offset + position, GetRandomTile(_tilesData.floors));
+                        _battleGround.SetTile(position, GetRandomTile(_tilesData.floors));
+
+                        GenerateObstacle(position, reservedPosition);
                     }
                 }
                 else
                 {
                     if (IsFirstColumn(column))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.leftWalls[leftSideWallsIndex]);
+                        _outerWalls.SetTile(position, _tilesData.leftWalls[leftSideWallsIndex]);
                         leftSideWallsIndex++;
                     }
                     if (IsLastColumn(column))
                     {
-                        _outerWalls.SetTile(_offset + position, _tilesData.rightWalls[rightSideWallsIndex]);
+                        _outerWalls.SetTile(position, _tilesData.rightWalls[rightSideWallsIndex]);
                         rightSideWallsIndex++;
                     }
                 }
@@ -110,6 +117,18 @@ public class TileMapGenerator : MonoBehaviour
                     rightSideWallsIndex = 0;
                 }
             }
+        }
+    }
+
+    private void GenerateObstacle(Vector3Int position, Vector2 reservedPosition)
+    {
+        int randomObstacle = Random.Range(0, 100);
+
+        reservedPosition.Set(position.x, position.y);
+
+        if (randomObstacle < _chanceForObstacle && !_reservedPositions.Contains(reservedPosition))
+        {
+            _obstacles.SetTile(position, GetRandomTile(_tilesData.obstacles));
         }
     }
 
