@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -8,21 +9,20 @@ public class TileMapGenerator : MonoBehaviour
     private const string BATTLE_GROUND_GAME_OBJECT_NAME = "Battle Ground";
     private const string OBSTACLES_GAME_OBJECT_NAME = "Obstacles";
 
-    [Header("Tile Map Size")]
     [SerializeField]
     private int _tileMapRows = 16;
     [SerializeField]
     private int _tileMapColumns = 16;
 
-    [Header("Tile Map Position Offset")]
+    [SerializeField]
+    private float _timeBetweenSpawningTiles = 0.2f;
+
     [SerializeField]
     private Vector3Int _offset = new Vector3Int(-3, -11, 0);
 
-    [Header("Tiles Data")]
     [SerializeField]
     private D_Tiles _tilesData;
 
-    [Header("Obstacles Positions")]
     [SerializeField]
     private List<Vector2> _reservedPositions;
     [SerializeField]
@@ -39,9 +39,9 @@ public class TileMapGenerator : MonoBehaviour
         _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
     }
 
-    private void Start() => GenerateLevel();
+    private void Start() => StartCoroutine(GenerateLevel());
 
-    private void GenerateLevel()
+    private IEnumerator GenerateLevel()
     {
         Vector3Int position = Vector3Int.zero;
         Vector2 reservedPosition = Vector2.zero;
@@ -53,6 +53,7 @@ public class TileMapGenerator : MonoBehaviour
         {
             for (int row = 0; row < _tileMapRows; row++)
             {
+                yield return new WaitForSeconds(_timeBetweenSpawningTiles);
                 position.Set(column + _offset.x, -row + _offset.y, 0);
 
                 if (IsFirstRow(row) && IsFirstColumn(column))
