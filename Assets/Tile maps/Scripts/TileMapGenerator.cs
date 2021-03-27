@@ -48,32 +48,39 @@ public class TileMapGenerator : MonoBehaviour
             {
                 position.Set(column, -row, 0);
 
-                if (row == 0 && column == 0)
+                if (IsFirstRow(row) && IsFirstColumn(column))
                 {
                     _outerWalls.SetTile(_offset + position, _tilesData.upperLeftCorner);
                 }
-                else if (row == 0 && column == _tileMapColumns - 1)
+                else if (IsFirstRow(row) && IsLastColumn(column))
                 {
                     _outerWalls.SetTile(_offset + position, _tilesData.upperRightCorner);
                 }
-                else if (row == _tileMapRows - 1 && column == 0)
+                else if (IsLastRow(row) && IsFirstColumn(column))
                 {
                     _outerWalls.SetTile(_offset + position, _tilesData.lowerLeftCorner);
                 }
-                else if (row == _tileMapRows - 1 && column == _tileMapColumns - 1)
+                else if (IsLastRow(row) && IsLastColumn(column))
                 {
                     _outerWalls.SetTile(_offset + position, _tilesData.lowerRightCorner);
                 }
-                //else if (row > 0 && row < _tileMapRows - 1 && column == 0)
-                //{
-                //    _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
-                //    wallIndex++;
-                //}
-                //else if (row > 0 && row < _tileMapRows - 1 && column == _tileMapColumns - 1)
-                //{
-                //    _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
-                //    wallIndex++;
-                //}
+                else if (IsBetweenCorners(column))
+                {
+                    if (IsFirstRow(row))
+                    {
+                        _outerWalls.SetTile(_offset + position, _tilesData.upperWalls[wallIndex]);
+                        wallIndex++;
+                    }
+                    else if (IsLastRow(row))
+                    {
+                        _outerWalls.SetTile(_offset + position, _tilesData.lowerWalls[wallIndex]);
+                        wallIndex++;
+                    }
+                    else
+                    {
+                        _battleGround.SetTile(_offset + position, GetRandomTile(_tilesData.floors));
+                    }
+                }
 
                 if (wallIndex >= _tilesData.upperWalls.Length)
                 {
@@ -82,6 +89,16 @@ public class TileMapGenerator : MonoBehaviour
             }
         }
     }
+
+    private bool IsBetweenCorners(int column) => column > 0 && column < _tileMapColumns - 1;
+
+    private bool IsFirstColumn(int column) => column == 0;
+
+    private bool IsLastColumn(int column) => column == _tileMapColumns - 1;
+
+    private bool IsFirstRow(int row) => row == 0;
+
+    private bool IsLastRow(int row) => row == _tileMapRows - 1;
 
     private static Tile GetRandomTile(Tile[] tiles) => tiles[Random.Range(0, tiles.Length)];
 }
