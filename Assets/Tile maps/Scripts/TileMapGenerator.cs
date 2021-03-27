@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Linq;
+using System;
 
 public class TileMapGenerator : MonoBehaviour
 {
@@ -24,13 +25,15 @@ public class TileMapGenerator : MonoBehaviour
     private D_Tiles _tilesData;
 
     [SerializeField]
-    private List<Vector2> _reservedPositions;
-    [SerializeField]
     private int _chanceForObstacle = 70;
+
+    private Vector2[] _reservedPositions;
 
     private Tilemap _outerWalls;
     private Tilemap _battleGround;
     private Tilemap _obstacles;
+
+    public Action LevelGeneratedEvent;
 
     private void Awake()
     {
@@ -39,7 +42,12 @@ public class TileMapGenerator : MonoBehaviour
         _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
     }
 
-    private void Start() => StartCoroutine(GenerateLevel());
+    private void Start()
+    {
+        _reservedPositions = FindObjectOfType<PlayerManager>().PlayersPositions;
+
+        StartCoroutine(GenerateLevel());
+    }
 
     private IEnumerator GenerateLevel()
     {
@@ -119,11 +127,13 @@ public class TileMapGenerator : MonoBehaviour
                 }
             }
         }
+
+        LevelGeneratedEvent?.Invoke();
     }
 
     private void GenerateObstacle(Vector3Int position, Vector2 reservedPosition)
     {
-        int randomObstacle = Random.Range(0, 100);
+        int randomObstacle = UnityEngine.Random.Range(0, 100);
 
         reservedPosition.Set(position.x, position.y);
 
@@ -143,5 +153,5 @@ public class TileMapGenerator : MonoBehaviour
 
     private bool IsLastRow(int row) => row == _tileMapRows - 1;
 
-    private static Tile GetRandomTile(Tile[] tiles) => tiles[Random.Range(0, tiles.Length)];
+    private static Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
 }
