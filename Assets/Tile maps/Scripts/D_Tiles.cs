@@ -1,20 +1,21 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 [CreateAssetMenu(fileName = "_TilesData", menuName = "Data/Tiles/Data")]
 public class D_Tiles : ScriptableObject
 {
     [Header("Corners")]
-    public GameObject upperLeftCorner;
-    public GameObject upperRightCorner;
-    public GameObject lowerLeftCorner;
-    public GameObject lowerRightCorner;
+    public Tile upperLeftCorner;
+    public Tile upperRightCorner;
+    public Tile lowerLeftCorner;
+    public Tile lowerRightCorner;
 
     [Header("Walls")]
-    public GameObject[] upperWalls;
-    public GameObject[] lowerWalls;
-    public GameObject[] leftWalls;
-    public GameObject[] rightWalls;
+    public Tile[] upperWalls;
+    public Tile[] lowerWalls;
+    public Tile[] leftWalls;
+    public Tile[] rightWalls;
 
     [Header("Floor")]
-    public GameObject[] floors;
+    public Tile[] floors;
 }

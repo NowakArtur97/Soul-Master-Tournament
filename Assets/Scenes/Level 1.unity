@@ -496,30 +496,30 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 0
-      e01: 2.820354e-39
-      e02: 2.819121e-39
-      e03: 2.819121e-39
-      e10: 0
+      e00: -2.5244127e-29
+      e01: 3.46401e-39
+      e02: 3.462777e-39
+      e03: 3.462777e-39
+      e10: 1e-45
       e11: 0
       e12: 0
       e13: 0
-      e20: 12795.281
-      e21: -8.632926e+9
-      e22: -6.9083424e+19
-      e23: -8.632926e+9
+      e20: 13115.281
+      e21: -8.649671e+9
+      e22: -7.0068586e+19
+      e23: -8.649671e+9
       e30: 1e-45
       e31: 3e-45
       e32: 0
       e33: 3e-45
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: -8.632173e+9, g: -8.632173e+9, b: -8.632173e+9, a: -8.632173e+9}
+    m_Data: {r: -8.648917e+9, g: -8.648917e+9, b: -8.648917e+9, a: -8.648917e+9}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -13, y: -14, z: 0}
-  m_Size: {x: 28, y: 19, z: 1}
+  m_Origin: {x: -30, y: -14, z: 0}
+  m_Size: {x: 53, y: 20, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2250,5 +2250,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileMapRows: 16
   _tileMapColumns: 16
-  _offset: {x: -3.5, y: -11.5}
+  _offset: {x: -4, y: -12, z: 0}
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
