@@ -152,10 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390104c6e23f56b40b4e0a184967aaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfPlayers: 1
   _playerPrefab: {fileID: 5583946401544878203, guid: 479a1d4f34e7cd34f97a5dbbdf61d5f2, type: 3}
   PlayersPositions:
-  - {x: -1.5, y: 2}
+  - {x: -1.5, y: 1.25}
+  - {x: 8.5, y: 1.25}
+  - {x: -1.5, y: -8.75}
+  - {x: 8.5, y: -8.75}
 --- !u!4 &53381524
 Transform:
   m_ObjectHideFlags: 0
@@ -1115,7 +1117,7 @@ MonoBehaviour:
   _timeBetweenSpawningTiles: 0.01
   _tileMapOffset: {x: -5, y: 4, z: 0}
   _environmentObstacleOffset: {x: 0.5, y: 0.55}
-  _reservedPositionOffset: 3
+  _reservedPositionOffset: 1.5
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
   _chanceForObstacle: 60
   _environmentHazardsContainer: {fileID: 1334245975}

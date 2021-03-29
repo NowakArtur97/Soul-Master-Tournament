@@ -4,8 +4,6 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField]
-    private int _numberOfPlayers = 1;
-    [SerializeField]
     private GameObject _playerPrefab;
     [SerializeField]
     public Vector2[] PlayersPositions;
@@ -21,12 +19,12 @@ public class PlayerManager : MonoBehaviour
 
     private void OnLevelGenerated()
     {
-        for (int i = 0; i < _numberOfPlayers; i++)
+        FindObjectOfType<TileMapGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
+
+        for (int i = 0; i < PlayersPositions.Length; i++)
         {
             SpawnPlayer(i);
         }
-
-        FindObjectOfType<TileMapGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
     }
 
     private void SpawnPlayer(int id)
