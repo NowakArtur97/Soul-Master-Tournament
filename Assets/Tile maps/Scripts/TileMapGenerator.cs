@@ -19,14 +19,19 @@ public class TileMapGenerator : MonoBehaviour
     private float _timeBetweenSpawningTiles = 0.2f;
 
     [SerializeField]
-    private Vector3Int _offset = new Vector3Int(-3, -11, 0);
+    private Vector3Int _tileMapOffset = new Vector3Int(-5, 4, 0);
+    [SerializeField]
     private Vector2 _environmentObstacleOffset = new Vector2(0.5f, 0.55f);
+    [SerializeField]
+    private float _reservedPositionOffset = 2f;
 
     [SerializeField]
     private D_Tiles _tilesData;
 
     [SerializeField]
     private int _chanceForObstacle = 70;
+    [SerializeField]
+    private GameObject _environmentHazardsContainer;
     [SerializeField]
     private int _chanceForEnvironmentHazards = 5;
 
@@ -65,7 +70,7 @@ public class TileMapGenerator : MonoBehaviour
             for (int row = 0; row < _tileMapRows; row++)
             {
                 yield return new WaitForSeconds(_timeBetweenSpawningTiles);
-                position.Set(column + _offset.x, -row + _offset.y, 0);
+                position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
 
                 if (IsFirstRow(row) && IsFirstColumn(column))
                 {
@@ -140,12 +145,13 @@ public class TileMapGenerator : MonoBehaviour
 
         positionToCheck.Set(position.x, position.y);
 
-        if (!IsReservedPosition(positionToCheck))
+        if (!IsReservedPosition(position))
         {
             if (randomObstacle < _chanceForEnvironmentHazards)
             {
                 positionToCheck += _environmentObstacleOffset;
-                Instantiate(GetRandomEnvironmentHazard(), positionToCheck, Quaternion.identity);
+                GameObject environmentHazard = Instantiate(GetRandomEnvironmentHazard(), positionToCheck, Quaternion.identity);
+                environmentHazard.transform.parent = _environmentHazardsContainer.transform;
             }
             else if (randomObstacle < _chanceForObstacle)
             {
@@ -164,7 +170,10 @@ public class TileMapGenerator : MonoBehaviour
 
     private bool IsLastRow(int row) => row == _tileMapRows - 1;
 
-    private bool IsReservedPosition(Vector2 reservedPosition) => _reservedPositions.Contains(reservedPosition);
+    private bool IsReservedPosition(Vector3Int reservedPosition) => _reservedPositions.Any(position =>
+    position.x + _reservedPositionOffset > reservedPosition.x && position.x - _reservedPositionOffset < reservedPosition.x
+    && position.y + _reservedPositionOffset > reservedPosition.y && position.y - _reservedPositionOffset < reservedPosition.y
+    );
 
     private Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
 
