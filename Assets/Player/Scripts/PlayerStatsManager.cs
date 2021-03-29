@@ -32,6 +32,7 @@ public class PlayerStatsManager : MonoBehaviour
         }
         else
         {
+            Debug.Log(_playerId);
             DeathEvent?.Invoke(_playerId);
         }
 

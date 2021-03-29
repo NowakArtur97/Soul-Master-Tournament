@@ -18,6 +18,8 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     protected float StartTime { get; private set; }
 
+    private float _idleTime;
+
     private void Awake()
     {
         AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
@@ -31,11 +33,13 @@ public abstract class EnvironmentHazard : MonoBehaviour
         StartTime = Time.time;
 
         MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+
+        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
     }
 
     private void Update()
     {
-        if (Time.time >= StartTime + EnvironmentHazardData.idleTime)
+        if (Time.time >= StartTime + _idleTime)
         {
             ActivateEnvironmentHazard();
         }
@@ -47,6 +51,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
         MyAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, true);
 
         StartTime = 0;
+        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
     }
 
     public void ActivatedTrigger()
