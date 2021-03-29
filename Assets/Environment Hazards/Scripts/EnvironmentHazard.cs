@@ -8,11 +8,13 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private const string ACTIVE_ANIMATION_BOOL_NAME = "active";
 
     [SerializeField]
-    private D_EnvironmentHazardStats _environmentHazardData;
+    protected D_EnvironmentHazardStats EnvironmentHazardData;
 
     protected GameObject AliveGameObject { get; private set; }
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
+
+    protected AttackDetails AttackDetails;
 
     protected float StartTime { get; private set; }
 
@@ -24,6 +26,8 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         _environmentHazardAnimationToComponent.EnvironmentHazard = this;
 
+        AttackDetails.damageAmmount = EnvironmentHazardData.damage;
+
         StartTime = Time.time;
 
         MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
@@ -31,7 +35,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time >= StartTime + _environmentHazardData.idleTime)
+        if (Time.time >= StartTime + EnvironmentHazardData.idleTime)
         {
             ActivateEnvironmentHazard();
         }

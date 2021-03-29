@@ -54,6 +54,11 @@ public class Player : MonoBehaviour
         Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
     }
 
+    public void Damage(AttackDetails attackDetails)
+    {
+        Debug.Log("attackDetails");
+    }
+
     private Vector2 SetBombPosition() =>
         new Vector2(Mathf.FloorToInt(_aliveGameObject.transform.position.x), Mathf.FloorToInt(_aliveGameObject.transform.position.y));
 

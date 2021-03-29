@@ -5,4 +5,5 @@ public class D_EnvironmentHazardStats : ScriptableObject
 {
     public float idleTime;
     public float damage;
+    public LayerMask[] whatIsDamagable;
 }

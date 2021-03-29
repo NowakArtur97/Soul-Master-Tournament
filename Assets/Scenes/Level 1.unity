@@ -262,6 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 945593113}
+  - component: {fileID: 945593117}
   - component: {fileID: 945593116}
   - component: {fileID: 945593115}
   - component: {fileID: 945593114}
@@ -382,6 +383,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &945593117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945593112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097f221fc2c5a0429ef19751129394e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazard: {fileID: 1750905713}
 --- !u!1 &978903599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1750905712}
+  - component: {fileID: 1750905713}
   m_Layer: 0
   m_Name: Dungeon Spikes
   m_TagString: Untagged
@@ -1181,6 +1196,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750905713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750905711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02657a4fb9e7254e836a3a6ce393ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazardData: {fileID: 11400000, guid: ff253306cb034904b8a4037737fcd707, type: 2}
 --- !u!1 &1801125078
 GameObject:
   m_ObjectHideFlags: 0
