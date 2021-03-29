@@ -61,7 +61,12 @@ public class Player : MonoBehaviour
 
     public void Damage(AttackDetails attackDetails)
     {
-        Debug.Log("attackDetails");
+        PlayerStatsManager.TakeDamage(attackDetails);
+
+        if (PlayerStatsManager.IsDead)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private Vector2 SetBombPosition() =>

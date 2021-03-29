@@ -26,7 +26,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         _environmentHazardAnimationToComponent.EnvironmentHazard = this;
 
-        AttackDetails.damageAmmount = EnvironmentHazardData.damage;
+        AttackDetails.damageAmount = EnvironmentHazardData.damage;
 
         StartTime = Time.time;
 

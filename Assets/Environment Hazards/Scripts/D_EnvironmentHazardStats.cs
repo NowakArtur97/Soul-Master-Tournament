@@ -4,6 +4,6 @@ using UnityEngine;
 public class D_EnvironmentHazardStats : ScriptableObject
 {
     public float idleTime;
-    public float damage;
+    public int damage;
     public LayerMask[] whatIsDamagable;
 }

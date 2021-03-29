@@ -9,6 +9,7 @@ public class PlayerStatsManager : MonoBehaviour
 
     public bool IsDead { get; private set; }
 
+    public Action<int> PermamentDeathEvent;
     public Action<int> DeathEvent;
 
     public PlayerStatsManager(D_PlayerStats playerStatsData, int playerId)
@@ -19,14 +20,21 @@ public class PlayerStatsManager : MonoBehaviour
         _playerId = playerId;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(AttackDetails attackDetails)
     {
-        _currentHealth--;
+        _currentHealth -= attackDetails.damageAmount;
 
+        // TODO: Player: Check if has shield
         if (_currentHealth <= 0)
         {
-            IsDead = true;
+            // TODO: Player: Stop Spawning Player
+            PermamentDeathEvent?.Invoke(_playerId);
+        }
+        else
+        {
             DeathEvent?.Invoke(_playerId);
         }
+
+        IsDead = true;
     }
 }
