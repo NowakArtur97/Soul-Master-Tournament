@@ -22,7 +22,7 @@ TagManager:
   - Soul
   - Destructible Obstacle
   - Player Soul Ability
-  - 
+  - Environment Hazard
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Obstacles
     uniqueID: 1717834575
+    locked: 0
+  - name: Environment Hazard
+    uniqueID: 1808362087
     locked: 0
   - name: Player
     uniqueID: 3464683111

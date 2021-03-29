@@ -20,12 +20,15 @@ public class TileMapGenerator : MonoBehaviour
 
     [SerializeField]
     private Vector3Int _offset = new Vector3Int(-3, -11, 0);
+    private Vector2 _environmentObstacleOffset = new Vector2(0.5f, 0.55f);
 
     [SerializeField]
     private D_Tiles _tilesData;
 
     [SerializeField]
     private int _chanceForObstacle = 70;
+    [SerializeField]
+    private int _chanceForEnvironmentHazards = 5;
 
     private Vector2[] _reservedPositions;
 
@@ -52,7 +55,7 @@ public class TileMapGenerator : MonoBehaviour
     private IEnumerator GenerateLevel()
     {
         Vector3Int position = Vector3Int.zero;
-        Vector2 reservedPosition = Vector2.zero;
+        Vector2 positionToCheck = Vector2.zero;
         int wallsIndex = 0;
         int leftSideWallsIndex = 0;
         int rightSideWallsIndex = 0;
@@ -96,7 +99,7 @@ public class TileMapGenerator : MonoBehaviour
                     {
                         _battleGround.SetTile(position, GetRandomTile(_tilesData.floors));
 
-                        GenerateObstacle(position, reservedPosition);
+                        GenerateObstacle(position, positionToCheck);
                     }
                 }
                 else
@@ -131,15 +134,23 @@ public class TileMapGenerator : MonoBehaviour
         LevelGeneratedEvent?.Invoke();
     }
 
-    private void GenerateObstacle(Vector3Int position, Vector2 reservedPosition)
+    private void GenerateObstacle(Vector3Int position, Vector2 positionToCheck)
     {
         int randomObstacle = UnityEngine.Random.Range(0, 100);
 
-        reservedPosition.Set(position.x, position.y);
+        positionToCheck.Set(position.x, position.y);
 
-        if (randomObstacle < _chanceForObstacle && !_reservedPositions.Contains(reservedPosition))
+        if (!IsReservedPosition(positionToCheck))
         {
-            _obstacles.SetTile(position, GetRandomTile(_tilesData.obstacles));
+            if (randomObstacle < _chanceForEnvironmentHazards)
+            {
+                positionToCheck += _environmentObstacleOffset;
+                Instantiate(GetRandomEnvironmentHazard(), positionToCheck, Quaternion.identity);
+            }
+            else if (randomObstacle < _chanceForObstacle)
+            {
+                _obstacles.SetTile(position, GetRandomTile(_tilesData.obstacles));
+            }
         }
     }
 
@@ -153,5 +164,9 @@ public class TileMapGenerator : MonoBehaviour
 
     private bool IsLastRow(int row) => row == _tileMapRows - 1;
 
-    private static Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
+    private bool IsReservedPosition(Vector2 reservedPosition) => _reservedPositions.Contains(reservedPosition);
+
+    private Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
+
+    private GameObject GetRandomEnvironmentHazard() => _tilesData.environmentHazards[UnityEngine.Random.Range(0, _tilesData.environmentHazards.Length)];
 }

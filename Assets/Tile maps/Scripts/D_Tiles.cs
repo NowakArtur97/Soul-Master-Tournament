@@ -19,4 +19,6 @@ public class D_Tiles : ScriptableObject
     public Tile[] floors;
 
     public Tile[] obstacles;
+
+    public GameObject[] environmentHazards;
 }
