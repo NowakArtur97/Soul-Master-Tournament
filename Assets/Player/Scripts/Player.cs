@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
+    public int ID;
 
     [SerializeField]
     private D_PlayerStats _playerStats;
@@ -21,12 +22,16 @@ public class Player : MonoBehaviour
     private PlayerInputHandler _inputHandler;
     private Rigidbody2D _myRigidbody2D;
 
+    public PlayerStatsManager PlayerStatsManager { get; private set; }
+
     private void Awake()
     {
         _inputHandler = GetComponent<PlayerInputHandler>();
 
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+
+        PlayerStatsManager = new PlayerStatsManager(_playerStats, ID);
     }
 
     private void Update()
