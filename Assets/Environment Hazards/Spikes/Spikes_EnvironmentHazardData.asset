@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleTime: 0
   damage: 0
-  whatIsDamagable: []
+  whatIsDamagable:
+  - serializedVersion: 2
+    m_Bits: 1024
