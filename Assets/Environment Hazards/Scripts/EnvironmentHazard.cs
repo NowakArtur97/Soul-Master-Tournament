@@ -51,7 +51,6 @@ public abstract class EnvironmentHazard : MonoBehaviour
         MyAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, true);
 
         StartTime = 0;
-        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
     }
 
     public void ActivatedTrigger()

@@ -31,7 +31,7 @@ public class PlayerManager : MonoBehaviour
     {
         GameObject playerGO = Instantiate(_playerPrefab, PlayersPositions[id], Quaternion.identity);
         Player player = playerGO.GetComponent<Player>();
-        player.ID = id;
+        player.CreateStatsManager(id);
         player.PlayerStatsManager.DeathEvent += OnPlayerDeath;
         _players.Add(player);
     }

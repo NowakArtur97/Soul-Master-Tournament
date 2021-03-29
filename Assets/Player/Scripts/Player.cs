@@ -3,7 +3,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
-    public int ID;
 
     [SerializeField]
     private D_PlayerStats _playerStats;
@@ -30,8 +29,6 @@ public class Player : MonoBehaviour
 
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
-
-        PlayerStatsManager = new PlayerStatsManager(_playerStats, ID);
     }
 
     private void Update()
@@ -94,4 +91,6 @@ public class Player : MonoBehaviour
     }
 
     private bool ShouldFlip() => _movementInput.x != 0 && _facingDirection != _movementInput.x;
+
+    public void CreateStatsManager(int id) => PlayerStatsManager = new PlayerStatsManager(_playerStats, id);
 }
