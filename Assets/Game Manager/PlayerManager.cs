@@ -31,14 +31,19 @@ public class PlayerManager : MonoBehaviour
     {
         GameObject playerGO = Instantiate(_playerPrefab, PlayersPositions[id], Quaternion.identity);
         Player player = playerGO.GetComponent<Player>();
+
         player.CreateStatsManager(id);
         player.PlayerStatsManager.DeathEvent += OnPlayerDeath;
+        player.PlayerStatsManager.PermamentDeathEvent += OnPermamentDeath;
+
         _players.Add(player);
     }
 
-    private void OnPlayerDeath(int id)
+    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id];
+
+    private void OnPermamentDeath(int id)
     {
         _players[id].PlayerStatsManager.DeathEvent -= OnPlayerDeath;
-        SpawnPlayer(id);
+        _players[id].PlayerStatsManager.PermamentDeathEvent -= OnPlayerDeath;
     }
 }

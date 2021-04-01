@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
     {
         PlayerStatsManager.TakeDamage(attackDetails);
 
-        if (PlayerStatsManager.IsDead)
+        if (PlayerStatsManager.IsPermamentDead)
         {
             Destroy(gameObject);
         }

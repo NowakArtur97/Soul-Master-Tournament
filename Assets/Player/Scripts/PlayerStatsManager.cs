@@ -7,7 +7,7 @@ public class PlayerStatsManager : MonoBehaviour
     private float _maxHealth;
     private float _currentHealth;
 
-    public bool IsDead { get; private set; }
+    public bool IsPermamentDead { get; private set; }
 
     public Action<int> PermamentDeathEvent;
     public Action<int> DeathEvent;
@@ -27,15 +27,12 @@ public class PlayerStatsManager : MonoBehaviour
         // TODO: Player: Check if has shield
         if (_currentHealth <= 0)
         {
-            // TODO: Player: Stop Spawning Player
             PermamentDeathEvent?.Invoke(_playerId);
+            IsPermamentDead = true;
         }
         else
         {
-            Debug.Log(_playerId);
             DeathEvent?.Invoke(_playerId);
         }
-
-        IsDead = true;
     }
 }
