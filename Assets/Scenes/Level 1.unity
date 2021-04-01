@@ -1116,7 +1116,7 @@ MonoBehaviour:
   _tileMapColumns: 18
   _timeBetweenSpawningTiles: 0.01
   _tileMapOffset: {x: -5, y: 4, z: 0}
-  _environmentObstacleOffset: {x: 0.5, y: 0.55}
+  _environmentHazardOffset: {x: 0.5, y: 0.55}
   _reservedPositionOffset: 1.5
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
   _chanceForObstacle: 60

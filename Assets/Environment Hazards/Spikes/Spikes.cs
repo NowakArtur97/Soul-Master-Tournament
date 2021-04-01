@@ -4,10 +4,8 @@ public class Spikes : EnvironmentHazard
 {
     private GameObject _toDamage;
 
-    protected override void ActivateEnvironmentHazard()
+    protected override void UseEnvironmentHazard()
     {
-        base.ActivateEnvironmentHazard();
-
         if (CheckIfPlayerInMinAgro())
         {
             _toDamage.transform.parent.SendMessage("Damage", AttackDetails);

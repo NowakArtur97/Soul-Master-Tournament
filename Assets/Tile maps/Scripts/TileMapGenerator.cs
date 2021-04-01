@@ -21,7 +21,7 @@ public class TileMapGenerator : MonoBehaviour
     [SerializeField]
     private Vector3Int _tileMapOffset = new Vector3Int(-5, 4, 0);
     [SerializeField]
-    private Vector2 _environmentObstacleOffset = new Vector2(0.5f, 0.55f);
+    private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.4f);
     [SerializeField]
     private float _reservedPositionOffset = 2f;
 
@@ -149,7 +149,7 @@ public class TileMapGenerator : MonoBehaviour
         {
             if (randomObstacle < _chanceForEnvironmentHazards)
             {
-                positionToCheck += _environmentObstacleOffset;
+                positionToCheck += _environmentHazardOffset;
                 GameObject environmentHazard = Instantiate(GetRandomEnvironmentHazard(), positionToCheck, Quaternion.identity);
                 environmentHazard.transform.parent = _environmentHazardsContainer.transform;
             }

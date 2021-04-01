@@ -1,7 +1,6 @@
 using System;
-using UnityEngine;
 
-public class PlayerStatsManager : MonoBehaviour
+public class PlayerStatsManager
 {
     private int _playerId;
     private float _maxHealth;
