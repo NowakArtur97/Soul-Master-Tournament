@@ -4,7 +4,7 @@ public class EnvironmentHazardAnimationToComponent : MonoBehaviour
 {
     public EnvironmentHazard EnvironmentHazard;
 
-    private void UseEnvironmentHazardTrigger() => EnvironmentHazard.UseEnvironmentHazardTrigger();
+    private void StartUsingEnvironmentHazardTrigger() => EnvironmentHazard.StartUsingEnvironmentHazardTrigger();
 
     private void StopUsingEnvironmentHazardTrigger() => EnvironmentHazard.StopUsingEnvironmentHazardTrigger();
 }

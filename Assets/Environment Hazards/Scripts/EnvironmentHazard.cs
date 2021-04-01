@@ -17,6 +17,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     protected AttackDetails AttackDetails;
 
     protected bool IsFinished;
+    protected bool IsActive;
     private float _activeTime;
     private float _idleTime;
 
@@ -35,6 +36,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
         _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
         _activeTime = Time.time;
         IsFinished = true;
+        IsActive = false;
     }
 
     private void Update()
@@ -45,6 +47,11 @@ public abstract class EnvironmentHazard : MonoBehaviour
             SetIfEnvironmentHazardIsActivate(true);
             _activeTime = Time.time;
         }
+
+        if (IsActive)
+        {
+            UseEnvironmentHazard();
+        }
     }
 
     protected void SetIfEnvironmentHazardIsActivate(bool isActive)
@@ -53,15 +60,18 @@ public abstract class EnvironmentHazard : MonoBehaviour
         MyAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
     }
 
-    protected abstract void UseEnvironmentHazard();
+    private void StartUsingEnvironmentHazard() => IsActive = true;
 
-    protected void StopUsingEnvironmentHazard()
+    private void StopUsingEnvironmentHazard()
     {
         IsFinished = true;
+        IsActive = false;
         SetIfEnvironmentHazardIsActivate(false);
     }
 
-    public void UseEnvironmentHazardTrigger() => UseEnvironmentHazard();
+    protected abstract void UseEnvironmentHazard();
+
+    public void StartUsingEnvironmentHazardTrigger() => StartUsingEnvironmentHazard();
 
     public void StopUsingEnvironmentHazardTrigger() => StopUsingEnvironmentHazard();
 }
