@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamagable
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 

@@ -7,5 +7,9 @@ public class Ballista : EnvironmentHazard
     [SerializeField]
     private Transform projectileStartingPosition;
 
-    protected override void UseEnvironmentHazard() => Instantiate(projectile, projectileStartingPosition.position, Quaternion.identity);
+    protected override void UseEnvironmentHazard()
+    {
+        Instantiate(projectile, projectileStartingPosition.position, Quaternion.identity);
+        IsActive = false;
+    }
 }

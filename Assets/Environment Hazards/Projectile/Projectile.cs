@@ -45,7 +45,7 @@ public class Projectile : MonoBehaviour
 
             if (_damageHit)
             {
-                _damageHit.gameObject.GetComponent<IDamagable>()?.Damage(_attackDetails);
+                _damageHit.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage(_attackDetails);
             }
             else if (_groundHit)
             {
@@ -67,6 +67,7 @@ public class Projectile : MonoBehaviour
 
             if (collider)
             {
+                Debug.Log(collider.transform.parent.name);
                 return collider;
             }
         }
