@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "_StatsData", menuName = "Data/Souls Abilities/Stats")]
+[CreateAssetMenu(fileName = "_SoulAbilityStatsData", menuName = "Data/Souls Abilities")]
 public class D_SoulAbilityStats : ScriptableObject
 {
     public int abilityDexterity = 3;

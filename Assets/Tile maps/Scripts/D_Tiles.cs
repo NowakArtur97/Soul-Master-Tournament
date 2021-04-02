@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-[CreateAssetMenu(fileName = "_TilesData", menuName = "Data/Tiles/Data")]
+[CreateAssetMenu(fileName = "_TilesData", menuName = "Data/Tiles")]
 public class D_Tiles : ScriptableObject
 {
     [Header("Corners")]

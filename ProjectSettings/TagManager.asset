@@ -56,6 +56,9 @@ TagManager:
   - name: Obstacles
     uniqueID: 1717834575
     locked: 0
+  - name: Projectile
+    uniqueID: 2572963937
+    locked: 0
   - name: Environment Hazard
     uniqueID: 1808362087
     locked: 0

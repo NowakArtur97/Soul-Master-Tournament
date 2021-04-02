@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "_SoulStatsData", menuName = "Data/Soul/Stats")]
+[CreateAssetMenu(fileName = "_SoulStatsData", menuName = "Data/Soul")]
 public class D_SoulStats : ScriptableObject
 {
     public int abilityRange = 3;
