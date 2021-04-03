@@ -3,13 +3,13 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
-    private const string ATTACK_POSITION_GAME_OBJECT_NAME = "Alive";
 
     [SerializeField]
     private D_ProjectileStats _projectileStatsData;
+    [SerializeField]
+    private Transform _attackPosition;
 
     private GameObject _aliveGameObject;
-    private Vector2 _attackPosition;
 
     private Rigidbody2D _myRigidBody2d;
     private AttackDetails _attackDetails;
@@ -24,7 +24,6 @@ public class Projectile : MonoBehaviour
     private void Awake()
     {
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        _attackPosition = transform.Find(ATTACK_POSITION_GAME_OBJECT_NAME).position;
 
         _myRigidBody2d = _aliveGameObject.GetComponent<Rigidbody2D>();
 
@@ -40,8 +39,8 @@ public class Projectile : MonoBehaviour
     {
         if (!_hasHitGround)
         {
-            _damageHit = CheckIfTouch(_whatIsDamagable);
-            _groundHit = CheckIfTouch(_whatIsGround);
+            _damageHit = CheckIfIsTouching(_whatIsDamagable);
+            _groundHit = CheckIfIsTouching(_whatIsGround);
 
             if (_damageHit)
             {
@@ -59,15 +58,14 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private Collider2D CheckIfTouch(LayerMask[] layerMasks)
+    private Collider2D CheckIfIsTouching(LayerMask[] layerMasks)
     {
         foreach (var layerMask in layerMasks)
         {
-            Collider2D collider = Physics2D.OverlapCircle(_attackPosition, _damageRadius, layerMask);
+            Collider2D collider = Physics2D.OverlapCircle(_attackPosition.position, _damageRadius, layerMask);
 
             if (collider)
             {
-                Debug.Log(collider.transform.parent.name);
                 return collider;
             }
         }

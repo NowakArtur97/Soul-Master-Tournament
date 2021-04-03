@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -830284185
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 4233633538006590056, guid: bcac5332062fe3b449651e720b371022, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00072175264, y: -0.6695953}
+  m_Offset: {x: -0.0075398088, y: -0.675103}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8057641, y: 0.9219502}
+  m_Size: {x: 0.72865593, y: 0.8503498}
   m_EdgeRadius: 0
 --- !u!1 &5583946401544878203
 GameObject:
@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac0238a8f07c9c4ca6095426d725aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
   _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
 --- !u!114 &5583946401544878205

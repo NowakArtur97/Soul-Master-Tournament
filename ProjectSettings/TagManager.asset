@@ -23,7 +23,7 @@ TagManager:
   - Destructible Obstacle
   - Player Soul Ability
   - Environment Hazard
-  - 
+  - Projectile
   - 
   - 
   - 
@@ -56,9 +56,6 @@ TagManager:
   - name: Obstacles
     uniqueID: 1717834575
     locked: 0
-  - name: Projectile
-    uniqueID: 2572963937
-    locked: 0
   - name: Environment Hazard
     uniqueID: 1808362087
     locked: 0
@@ -70,4 +67,7 @@ TagManager:
     locked: 0
   - name: Soul Ability
     uniqueID: 2713075981
+    locked: 0
+  - name: Projectile
+    uniqueID: 2572963937
     locked: 0
