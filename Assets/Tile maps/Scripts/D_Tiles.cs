@@ -21,4 +21,6 @@ public class D_Tiles : ScriptableObject
     public Tile[] obstacles;
 
     public GameObject[] environmentHazards;
+
+    public GameObject[] environmentHazardsWithRandomRotation;
 }

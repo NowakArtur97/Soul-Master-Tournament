@@ -48,6 +48,7 @@ MonoBehaviour:
   EnvironmentHazardData: {fileID: 11400000, guid: bdf33ccc8e0e5bb4b9ebfed5487df22f, type: 2}
   projectile: {fileID: 7050799240284997836, guid: 2e7b04a62e28db74092917b1ced996dc, type: 3}
   projectileStartingPosition: {fileID: 6913884582997332447}
+  _environmentHazardsContainer: {fileID: 5128137991941333155, guid: 8434658290b98554bba74ae274829b06, type: 3}
 --- !u!1 &2307848969339233721
 GameObject:
   m_ObjectHideFlags: 0

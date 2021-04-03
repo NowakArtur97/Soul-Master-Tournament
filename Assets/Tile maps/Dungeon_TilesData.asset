@@ -60,4 +60,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12dd351ba5e7c014faedf3cb0b48f923, type: 2}
   environmentHazards:
   - {fileID: 478484686562754215, guid: 78e2e01e5435fc94f860db890b5b47cf, type: 3}
+  environmentHazardsWithRandomRotation:
   - {fileID: 2307848967997050318, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}

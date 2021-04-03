@@ -149,8 +149,22 @@ public class TileMapGenerator : MonoBehaviour
         {
             if (randomObstacle < _chanceForEnvironmentHazards)
             {
+                randomObstacle = UnityEngine.Random.Range(0, 100);
+
                 positionToCheck += _environmentHazardOffset;
-                GameObject environmentHazard = Instantiate(GetRandomEnvironmentHazard(), positionToCheck, Quaternion.identity);
+
+                GameObject environmentHazard;
+
+                if (randomObstacle < 50)
+                {
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity) as GameObject;
+                }
+                else
+                {
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation())
+                         as GameObject;
+                }
+
                 environmentHazard.transform.parent = _environmentHazardsContainer.transform;
             }
             else if (randomObstacle < _chanceForObstacle)
@@ -177,5 +191,8 @@ public class TileMapGenerator : MonoBehaviour
 
     private Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
 
-    private GameObject GetRandomEnvironmentHazard() => _tilesData.environmentHazards[UnityEngine.Random.Range(0, _tilesData.environmentHazards.Length)];
+    private GameObject GetRandomEnvironmentHazard(GameObject[] environmentHazards) => environmentHazards[UnityEngine.Random.Range(0,
+        _tilesData.environmentHazards.Length)];
+
+    private Quaternion GetRandomRotation() => Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 4) * 90);
 }

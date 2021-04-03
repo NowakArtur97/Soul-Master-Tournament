@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour
     private float _damageRadius;
     private LayerMask[] _whatIsGround;
     private LayerMask[] _whatIsDamagable;
+    private Vector2 _direction;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class Projectile : MonoBehaviour
 
         _myRigidBody2d = _aliveGameObject.GetComponent<Rigidbody2D>();
 
-        _myRigidBody2d.velocity = transform.right * _projectileStatsData.speed;
+        _myRigidBody2d.velocity = _direction * _projectileStatsData.speed;
 
         _attackDetails.damageAmount = _projectileStatsData.damage;
         _damageRadius = _projectileStatsData.damageRadius;
@@ -71,5 +72,11 @@ public class Projectile : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void SetDirection(Vector3 direction)
+    {
+        _direction = direction;
+        Debug.Log(direction);
     }
 }
