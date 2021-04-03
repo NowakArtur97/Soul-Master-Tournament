@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   damage: 1
-  damageRadius: 0.2
+  damageRadius: 0.1
   whatIsDamagable:
   - serializedVersion: 2
     m_Bits: 1024

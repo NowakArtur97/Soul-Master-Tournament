@@ -11,8 +11,7 @@ public class Ballista : EnvironmentHazard
 
     protected override void UseEnvironmentHazard()
     {
-        _projectile = Instantiate(projectile, projectileStartingPosition.position, Quaternion.identity) as GameObject;
-        _projectile.GetComponent<Projectile>().SetDirection(transform.rotation.eulerAngles);
+        _projectile = Instantiate(projectile, projectileStartingPosition.position, transform.rotation) as GameObject;
         IsActive = false;
     }
 }
