@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4106387594337052010}
   - component: {fileID: 4106387594337052015}
   - component: {fileID: 4106387594337052008}
-  - component: {fileID: 4106387594337052009}
-  m_Layer: 14
+  - component: {fileID: 5151679160383485628}
+  m_Layer: 16
   m_Name: Alive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &4106387594337052009
+--- !u!61 &5151679160383485628
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.033281326, y: -0.028289795}
@@ -138,7 +138,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4106387595679223043}
-  m_Layer: 14
+  - component: {fileID: 7941447054350840999}
+  - component: {fileID: 7012579268396849603}
+  m_Layer: 16
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,3 +162,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7941447054350840999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4106387595679223068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6256e8eec194a4479da337d98117ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazardData: {fileID: 11400000, guid: 99dfa848277e22b4cb7e26cb71a115fd, type: 2}
+  _connectedPortal: {fileID: 0}
+--- !u!50 &7012579268396849603
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4106387595679223068}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

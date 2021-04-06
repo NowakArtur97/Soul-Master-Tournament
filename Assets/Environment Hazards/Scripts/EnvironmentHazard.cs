@@ -27,7 +27,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
         MyAnimator = AliveGameObject.GetComponent<Animator>();
         _environmentHazardAnimationToComponent = AliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
-        _environmentHazardAnimationToComponent.EnvironmentHazard = this;
+        if (_environmentHazardAnimationToComponent)
+        {
+            _environmentHazardAnimationToComponent.EnvironmentHazard = this;
+        }
 
         AttackDetails.damageAmount = EnvironmentHazardData.damage;
 

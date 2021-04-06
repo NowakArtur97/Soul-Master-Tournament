@@ -29,6 +29,8 @@ public class TileMapGenerator : MonoBehaviour
     private D_Tiles _tilesData;
 
     [SerializeField]
+    private bool _shouldGenerateEnvironmentHazards = true;
+    [SerializeField]
     private int _chanceForObstacle = 70;
     [SerializeField]
     private GameObject _environmentHazardsContainer;
@@ -141,6 +143,11 @@ public class TileMapGenerator : MonoBehaviour
 
     private void GenerateObstacle(Vector3Int position, Vector2 positionToCheck)
     {
+        if (!_shouldGenerateEnvironmentHazards)
+        {
+            return;
+        }
+
         int randomObstacle = UnityEngine.Random.Range(0, 100);
 
         positionToCheck.Set(position.x, position.y);

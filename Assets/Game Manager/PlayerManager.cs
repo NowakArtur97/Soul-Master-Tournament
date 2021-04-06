@@ -6,6 +6,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private GameObject _playerPrefab;
     [SerializeField]
+    private int _numberOfPlayers = 1;
+    [SerializeField]
     public Vector2[] PlayersPositions;
 
     private List<Player> _players;
@@ -21,7 +23,7 @@ public class PlayerManager : MonoBehaviour
     {
         FindObjectOfType<TileMapGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
 
-        for (int i = 0; i < PlayersPositions.Length; i++)
+        for (int i = 0; i < _numberOfPlayers; i++)
         {
             SpawnPlayer(i);
         }
