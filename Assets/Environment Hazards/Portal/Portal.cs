@@ -7,6 +7,8 @@ public class Portal : EnvironmentHazard
     private Portal _connectedPortal;
     [SerializeField]
     private float _timeBeforeTeleportation = 1.0f;
+    [SerializeField]
+    private Vector2 _teleportationOffset = new Vector2(0, 1);
 
     private GameObject _toTeleport;
     private Coroutine _teleportCoroutine;
@@ -32,7 +34,7 @@ public class Portal : EnvironmentHazard
 
         if (_toTeleport)
         {
-            _toTeleport.transform.position = _connectedPortal.transform.position;
+            _toTeleport.transform.position = (Vector2)_connectedPortal.transform.position + _teleportationOffset;
         }
     }
 

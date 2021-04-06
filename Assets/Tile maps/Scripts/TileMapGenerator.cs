@@ -158,7 +158,7 @@ public class TileMapGenerator : MonoBehaviour
 
         if (!IsReservedPosition(position))
         {
-            if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
+            if (randomObstacle < 100 - _tilesData.chanceForObstacle)
             {
                 randomObstacle = UnityEngine.Random.Range(0, 100);
 
@@ -166,11 +166,7 @@ public class TileMapGenerator : MonoBehaviour
 
                 GameObject environmentHazard = null;
 
-                if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
-                {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity);
-                }
-                else if (randomObstacle < _tilesData.chanceForEnvironmentHazardsWithRandomRotation)
+                if (randomObstacle < _tilesData.chanceForEnvironmentHazardsWithRandomRotation)
                 {
                     environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation());
                 }
@@ -192,6 +188,11 @@ public class TileMapGenerator : MonoBehaviour
                         _lastPortalGameObject = environmentHazard;
                     }
                 }
+                else if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
+                {
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity);
+                }
+
                 if (environmentHazard)
                 {
                     environmentHazard.transform.parent = _environmentHazardsContainer.gameObject.transform;

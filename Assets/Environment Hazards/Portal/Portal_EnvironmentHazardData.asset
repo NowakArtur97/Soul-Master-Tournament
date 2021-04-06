@@ -18,3 +18,4 @@ MonoBehaviour:
   whatIsDamagable:
   - serializedVersion: 2
     m_Bits: 1024
+  shouldActivateAfterTime: 0

@@ -177,6 +177,7 @@ MonoBehaviour:
   EnvironmentHazardData: {fileID: 11400000, guid: 99dfa848277e22b4cb7e26cb71a115fd, type: 2}
   _connectedPortal: {fileID: 0}
   _timeBeforeTeleportation: 1
+  _teleportationOffset: {x: 0, y: 0.65}
 --- !u!50 &7012579268396849603
 Rigidbody2D:
   serializedVersion: 4
