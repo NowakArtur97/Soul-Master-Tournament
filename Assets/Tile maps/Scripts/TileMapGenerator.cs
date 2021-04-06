@@ -41,7 +41,7 @@ public class TileMapGenerator : MonoBehaviour
 
     public Action LevelGeneratedEvent;
 
-    private Portal _lastPortal;
+    private GameObject _lastPortalGameObject;
     private int _numberOfPortals;
 
     private void Awake()
@@ -139,7 +139,7 @@ public class TileMapGenerator : MonoBehaviour
 
         if (_numberOfPortals == 1)
         {
-            Destroy(_lastPortal);
+            Destroy(_lastPortalGameObject);
         }
 
         LevelGeneratedEvent?.Invoke();
@@ -182,13 +182,14 @@ public class TileMapGenerator : MonoBehaviour
                     if (_numberOfPortals == 2)
                     {
                         Portal newPortal = environmentHazard.GetComponent<Portal>();
-                        _lastPortal.SetConnectedPortal(newPortal);
-                        newPortal.SetConnectedPortal(_lastPortal);
+                        Portal lastPortal = _lastPortalGameObject.GetComponent<Portal>();
+                        lastPortal.SetConnectedPortal(newPortal);
+                        newPortal.SetConnectedPortal(lastPortal);
                         _numberOfPortals = 0;
                     }
                     else
                     {
-                        _lastPortal = environmentHazard.GetComponent<Portal>();
+                        _lastPortalGameObject = environmentHazard;
                     }
                 }
                 if (environmentHazard)
