@@ -157,15 +157,14 @@ public class TileMapGenerator : MonoBehaviour
 
                 if (randomObstacle < 50)
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity) as GameObject;
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity);
                 }
                 else
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation())
-                         as GameObject;
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation());
                 }
 
-                environmentHazard.transform.parent = _environmentHazardsContainer.transform;
+                environmentHazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
             }
             else if (randomObstacle < _chanceForObstacle)
             {

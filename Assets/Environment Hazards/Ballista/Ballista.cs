@@ -11,7 +11,7 @@ public class Ballista : EnvironmentHazard
 
     protected override void UseEnvironmentHazard()
     {
-        _projectile = Instantiate(projectile, projectileStartingPosition.position, transform.rotation) as GameObject;
+        _projectile = Instantiate(projectile, projectileStartingPosition.position, transform.rotation);
         IsActive = false;
     }
 }
