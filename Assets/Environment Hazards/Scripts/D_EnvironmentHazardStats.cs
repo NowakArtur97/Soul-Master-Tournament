@@ -7,4 +7,5 @@ public class D_EnvironmentHazardStats : ScriptableObject
     public float maxIdleTime = 6f;
     public int damage = 1;
     public LayerMask[] whatIsDamagable;
+    public bool shouldActivateAfterTime = true;
 }

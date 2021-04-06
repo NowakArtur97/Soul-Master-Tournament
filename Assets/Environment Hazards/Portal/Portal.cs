@@ -9,6 +9,7 @@ public class Portal : EnvironmentHazard
     private float _timeBeforeTeleportation = 1.0f;
 
     private GameObject _toTeleport;
+    private Coroutine _teleportCoroutine;
 
     private void Start()
     {
@@ -17,7 +18,12 @@ public class Portal : EnvironmentHazard
 
     protected override void UseEnvironmentHazard()
     {
-        StartCoroutine(Teleport());
+        if (_teleportCoroutine != null)
+        {
+            StopCoroutine(_teleportCoroutine);
+        }
+        IsActive = false;
+        _teleportCoroutine = StartCoroutine(Teleport());
     }
 
     private IEnumerator Teleport()
