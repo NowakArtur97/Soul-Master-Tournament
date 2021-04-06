@@ -31,11 +31,7 @@ public class TileMapGenerator : MonoBehaviour
     [SerializeField]
     private bool _shouldGenerateEnvironmentHazards = true;
     [SerializeField]
-    private int _chanceForObstacle = 70;
-    [SerializeField]
     private GameObject _environmentHazardsContainer;
-    [SerializeField]
-    private int _chanceForEnvironmentHazards = 5;
 
     private Vector2[] _reservedPositions;
 
@@ -44,6 +40,9 @@ public class TileMapGenerator : MonoBehaviour
     private Tilemap _obstacles;
 
     public Action LevelGeneratedEvent;
+
+    private Portal _lastPortal;
+    private int _numberOfPortals;
 
     private void Awake()
     {
@@ -138,6 +137,11 @@ public class TileMapGenerator : MonoBehaviour
             }
         }
 
+        if (_numberOfPortals == 1)
+        {
+            Destroy(_lastPortal);
+        }
+
         LevelGeneratedEvent?.Invoke();
     }
 
@@ -154,26 +158,45 @@ public class TileMapGenerator : MonoBehaviour
 
         if (!IsReservedPosition(position))
         {
-            if (randomObstacle < _chanceForEnvironmentHazards)
+            if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
             {
                 randomObstacle = UnityEngine.Random.Range(0, 100);
 
                 positionToCheck += _environmentHazardOffset;
 
-                GameObject environmentHazard;
+                GameObject environmentHazard = null;
 
-                if (randomObstacle < 50)
+                if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
                 {
                     environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity);
                 }
-                else
+                else if (randomObstacle < _tilesData.chanceForEnvironmentHazardsWithRandomRotation)
                 {
                     environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation());
                 }
+                else if (randomObstacle < _tilesData.chanceForPortals)
+                {
+                    environmentHazard = Instantiate(_tilesData.portal, positionToCheck, Quaternion.identity);
+                    _numberOfPortals++;
 
-                environmentHazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                    if (_numberOfPortals == 2)
+                    {
+                        Portal newPortal = environmentHazard.GetComponent<Portal>();
+                        _lastPortal.SetConnectedPortal(newPortal);
+                        newPortal.SetConnectedPortal(_lastPortal);
+                        _numberOfPortals = 0;
+                    }
+                    else
+                    {
+                        _lastPortal = environmentHazard.GetComponent<Portal>();
+                    }
+                }
+                if (environmentHazard)
+                {
+                    environmentHazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                }
             }
-            else if (randomObstacle < _chanceForObstacle)
+            else if (randomObstacle < _tilesData.chanceForObstacle)
             {
                 _obstacles.SetTile(position, GetRandomTile(_tilesData.obstacles));
             }

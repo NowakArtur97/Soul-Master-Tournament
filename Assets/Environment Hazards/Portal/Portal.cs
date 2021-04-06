@@ -48,4 +48,6 @@ public class Portal : EnvironmentHazard
         StopUsingEnvironmentHazardTrigger();
         _toTeleport = null;
     }
+
+    public void SetConnectedPortal(Portal connectedPortal) => _connectedPortal = connectedPortal;
 }
