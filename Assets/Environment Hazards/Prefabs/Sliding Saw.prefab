@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1375096733838861826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4113153622942591717}
+  m_Layer: 14
+  m_Name: Rails Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4113153622942591717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375096733838861826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2654617926786976277}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2654617926786976266
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2654617926786976277}
+  - component: {fileID: 5749375782666116862}
   m_Layer: 14
   m_Name: Sliding Saw
   m_TagString: Untagged
@@ -28,9 +59,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2654617928129159804}
+  - {fileID: 4113153622942591717}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5749375782666116862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654617926786976266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa76d60ee2cd8d48b377c94d83682bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazardData: {fileID: 11400000, guid: 593cede596248a04e8db5e8ebbb4a7d2, type: 2}
+  _whatIsRails:
+    serializedVersion: 2
+    m_Bits: 0
+  _sawSpeed: 0
+  _railsCheckDistance: 0
+  _railsCheck: {fileID: 4113153622942591717}
 --- !u!1 &2654617928129159805
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +95,7 @@ GameObject:
   - component: {fileID: 2654617928129159801}
   - component: {fileID: 2654617928129159806}
   - component: {fileID: 2654617928129159807}
+  - component: {fileID: 5749375783471429259}
   m_Layer: 14
   m_Name: Alive
   m_TagString: Untagged
@@ -117,8 +169,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1808362087
   m_SortingLayer: 5
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 3911664205820134229, guid: eb33d988cc6903a43a5c67ffe290b8bc, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 4253520193100741781, guid: 9104a33e9950a584da10ebd0c675638a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 2654617928129159805}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7f0ee443fab18a34b98029694bdb0138, type: 2}
+  m_Controller: {fileID: 9100000, guid: bea4d7ee420858547b91e6bfe35a489d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -161,16 +213,37 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07600057, y: 0.058965907}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1782081, y: 0.614756}
   m_EdgeRadius: 0
+--- !u!50 &5749375783471429259
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654617928129159805}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

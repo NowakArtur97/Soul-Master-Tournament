@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149bf92237915c04b9d7b224c4a3c473, type: 3}
   m_Name: SlidingSaw_EnvironmentHazardData
   m_EditorClassIdentifier: 
-  minIdleTime: 3
-  maxIdleTime: 6
+  minIdleTime: 1
+  maxIdleTime: 3
   damage: 1
-  whatIsDamagable: []
+  whatIsDamagable:
+  - serializedVersion: 2
+    m_Bits: 1024
   shouldActivateAfterTime: 1

@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -2311997002035635419
     second: Sliding Saw Rails_0
+  - first:
+      213: 1195317576562383008
+    second: Sliding Saw Rails_1
+  - first:
+      213: 4876732681254843569
+    second: Sliding Saw Rails_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,7 +117,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -122,6 +128,48 @@ TextureImporter:
       bones: []
       spriteID: 52bd5e3e9f22aefd0800000000000000
       internalID: -2311997002035635419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliding Saw Rails_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a818c8b00f969010800000000000000
+      internalID: 1195317576562383008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliding Saw Rails_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4bbba1982ada340800000000000000
+      internalID: 4876732681254843569
       vertices: []
       indices: 
       edges: []

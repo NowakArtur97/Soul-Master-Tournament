@@ -44,19 +44,24 @@ public abstract class EnvironmentHazard : MonoBehaviour
         IsActive = false;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        if (Time.time >= _activeTime + _idleTime && IsFinished && EnvironmentHazardData.shouldActivateAfterTime)
+        if (IsIdleTimeOver() && IsFinished && EnvironmentHazardData.shouldActivateAfterTime)
         {
-            IsFinished = false;
-            SetIfEnvironmentHazardIsActivate(true);
-            _activeTime = Time.time;
+            IdleTimeIsOver();
         }
 
         if (IsActive)
         {
             UseEnvironmentHazard();
         }
+    }
+
+    protected virtual void IdleTimeIsOver()
+    {
+        IsFinished = false;
+        SetIfEnvironmentHazardIsActivate(true);
+        _activeTime = Time.time;
     }
 
     protected abstract void UseEnvironmentHazard();
@@ -79,4 +84,6 @@ public abstract class EnvironmentHazard : MonoBehaviour
     public void StartUsingEnvironmentHazardTrigger() => StartUsingEnvironmentHazard();
 
     public void StopUsingEnvironmentHazardTrigger() => StopUsingEnvironmentHazard();
+
+    protected bool IsIdleTimeOver() => Time.time >= _activeTime + _idleTime;
 }
