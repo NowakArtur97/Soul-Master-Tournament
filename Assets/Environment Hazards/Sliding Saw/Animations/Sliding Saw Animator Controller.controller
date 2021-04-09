@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Portal Inactive
+  m_Name: Sliding Saw Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1164e66435b79334eafb29f023380ff2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2745c9f81bd4bb94d9a2fa34836aff34, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -94,7 +94,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Portal Animator Controller
+  m_Name: Sliding Saw Animator Controller
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: active
@@ -129,7 +129,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Portal Active
+  m_Name: Sliding Saw Active
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -143,7 +143,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: aeed021da79e1e34b8c592bab6c4b1e4, type: 2}
+  m_Motion: {fileID: 7400000, guid: 77bf78aa2a2808841a95641c80a3805d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
