@@ -13,6 +13,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     protected GameObject AliveGameObject { get; private set; }
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
+    protected Rigidbody2D MyRigidbody2D { get; private set; }
 
     protected AttackDetails AttackDetails;
 
@@ -25,6 +26,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     {
         AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         MyAnimator = AliveGameObject.GetComponent<Animator>();
+        MyRigidbody2D = AliveGameObject.GetComponent<Rigidbody2D>();
         _environmentHazardAnimationToComponent = AliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
         if (_environmentHazardAnimationToComponent)

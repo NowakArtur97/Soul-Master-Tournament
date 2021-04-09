@@ -1143,6 +1143,32 @@ MonoBehaviour:
   _railsLayerMask:
     serializedVersion: 2
     m_Bits: 131072
+--- !u!1 &5749375783471429258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2654617928129159805, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+  m_PrefabInstance: {fileID: 7718881829298214135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &5749375783471429259
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749375783471429258}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &7718881829298214135
 PrefabInstance:
   m_ObjectHideFlags: 0
