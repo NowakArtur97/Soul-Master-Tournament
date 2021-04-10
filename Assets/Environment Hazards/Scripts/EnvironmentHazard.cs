@@ -73,6 +73,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
         IsFinished = true;
         IsActive = false;
         SetIfEnvironmentHazardIsActivate(false);
+        _activeTime = Time.time;
     }
 
     protected void SetIfEnvironmentHazardIsActivate(bool isActive)

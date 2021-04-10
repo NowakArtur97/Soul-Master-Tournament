@@ -13,10 +13,7 @@ public class Portal : EnvironmentHazard
     private GameObject _toTeleport;
     private Coroutine _teleportCoroutine;
 
-    private void Start()
-    {
-        SetIfEnvironmentHazardIsActivate(false);
-    }
+    private void Start() => SetIfEnvironmentHazardIsActivate(false);
 
     protected override void UseEnvironmentHazard()
     {
