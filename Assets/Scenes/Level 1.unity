@@ -547,6 +547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4540986206940602100, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4540986206940602102, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
@@ -1116,11 +1120,37 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!4 &1659977694 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4113153622942591717, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-  m_PrefabInstance: {fileID: 7718881829298214135}
+--- !u!1 &1255018873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4129954217149343011, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+  m_PrefabInstance: {fileID: 2032915329977515264}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1255018876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255018873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.22145772, y: -0.24857484}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.55708456, y: 0.5028503}
+  m_EdgeRadius: 0
 --- !u!1 &1801125078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1283,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4129954217149343010, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1300,6 +1334,10 @@ PrefabInstance:
     - target: {fileID: 4129954218491514196, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
       propertyPath: m_Name
       value: Sliding Saw Rails - Left End
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514196, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
@@ -1367,10 +1405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1375096733838861826, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_Name
-      value: Floor Check
-      objectReference: {fileID: 0}
     - target: {fileID: 2654617926786976266, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
       propertyPath: m_Name
       value: Sliding Saw
@@ -1381,7 +1415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.213
+      value: 0.671
       objectReference: {fileID: 0}
     - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1418,42 +1452,6 @@ PrefabInstance:
     - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2654617928129159805, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_Layer
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113153622942591717, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.154
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113153622942591717, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.249
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113153622942591717, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5749375782666116862, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: _sawSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5749375782666116862, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: _floorCheck
-      value: 
-      objectReference: {fileID: 1659977694}
-    - target: {fileID: 5749375782666116862, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: _floorCheckDistance
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5749375782666116862, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: _railsCheckDistance
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5749375783471429259, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
-      propertyPath: m_BodyType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}

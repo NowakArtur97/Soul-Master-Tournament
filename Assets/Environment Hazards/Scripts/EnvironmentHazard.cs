@@ -44,7 +44,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
         IsActive = false;
     }
 
-    protected virtual void Update()
+    private void Update()
     {
         if (IsIdleTimeOver() && IsFinished && EnvironmentHazardData.shouldActivateAfterTime)
         {
