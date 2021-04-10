@@ -81,6 +81,8 @@ MonoBehaviour:
   _sawSpeed: 4
   _railsCheckDistance: 0.39
   _railsCheck: {fileID: 4113153622942591717}
+  _minMoveTime: 4
+  _maxMoveTime: 7
 --- !u!1 &2654617928129159805
 GameObject:
   m_ObjectHideFlags: 0

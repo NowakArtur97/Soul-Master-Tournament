@@ -27,6 +27,8 @@ public class TileMapGenerator : MonoBehaviour
 
     [SerializeField]
     private D_Tiles _tilesData;
+    [SerializeField]
+    private D_LevelEnvironmentHazards _levelEnvironmentHazardsData;
 
     [SerializeField]
     private bool _shouldGenerateEnvironmentHazards = true;
@@ -158,7 +160,7 @@ public class TileMapGenerator : MonoBehaviour
 
         if (!IsReservedPosition(position))
         {
-            if (randomObstacle < 100 - _tilesData.chanceForObstacle)
+            if (randomObstacle < 100 - _levelEnvironmentHazardsData.chanceForObstacle)
             {
                 randomObstacle = UnityEngine.Random.Range(0, 100);
 
@@ -166,13 +168,14 @@ public class TileMapGenerator : MonoBehaviour
 
                 GameObject environmentHazard = null;
 
-                if (randomObstacle < _tilesData.chanceForEnvironmentHazardsWithRandomRotation)
+                if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazardsWithRandomRotation)
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazardsWithRandomRotation), positionToCheck, GetRandomRotation());
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazardsWithRandomRotation), positionToCheck,
+                        GetRandomRotation());
                 }
-                else if (randomObstacle < _tilesData.chanceForPortals)
+                else if (randomObstacle < _levelEnvironmentHazardsData.chanceForPortals)
                 {
-                    environmentHazard = Instantiate(_tilesData.portal, positionToCheck, Quaternion.identity);
+                    environmentHazard = Instantiate(_levelEnvironmentHazardsData.portal, positionToCheck, Quaternion.identity);
                     _numberOfPortals++;
 
                     if (_numberOfPortals == 2)
@@ -188,9 +191,9 @@ public class TileMapGenerator : MonoBehaviour
                         _lastPortalGameObject = environmentHazard;
                     }
                 }
-                else if (randomObstacle < _tilesData.chanceForEnvironmentHazards)
+                else if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazards)
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_tilesData.environmentHazards), positionToCheck, Quaternion.identity);
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazards), positionToCheck, Quaternion.identity);
                 }
 
                 if (environmentHazard)
@@ -198,7 +201,7 @@ public class TileMapGenerator : MonoBehaviour
                     environmentHazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
                 }
             }
-            else if (randomObstacle < _tilesData.chanceForObstacle)
+            else if (randomObstacle < _levelEnvironmentHazardsData.chanceForObstacle)
             {
                 _obstacles.SetTile(position, GetRandomTile(_tilesData.obstacles));
             }
@@ -223,7 +226,7 @@ public class TileMapGenerator : MonoBehaviour
     private Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
 
     private GameObject GetRandomEnvironmentHazard(GameObject[] environmentHazards) => environmentHazards[UnityEngine.Random.Range(0,
-        _tilesData.environmentHazards.Length)];
+        _levelEnvironmentHazardsData.environmentHazards.Length)];
 
     private Quaternion GetRandomRotation() => Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 4) * 90);
 }
