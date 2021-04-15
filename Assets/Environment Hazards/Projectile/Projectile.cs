@@ -12,7 +12,6 @@ public class Projectile : MonoBehaviour
     private GameObject _aliveGameObject;
 
     private Rigidbody2D _myRigidBody2d;
-    private AttackDetails _attackDetails;
 
     private bool _hasHitGround;
     private Collider2D _groundHit;
@@ -29,7 +28,6 @@ public class Projectile : MonoBehaviour
 
         _myRigidBody2d.velocity = transform.right * _projectileStatsData.speed;
 
-        _attackDetails.damageAmount = _projectileStatsData.damage;
         _damageRadius = _projectileStatsData.damageRadius;
         _whatIsGround = _projectileStatsData.whatIsGround;
         _whatIsDamagable = _projectileStatsData.whatIsDamagable;
@@ -44,7 +42,7 @@ public class Projectile : MonoBehaviour
 
             if (_damageHit)
             {
-                _damageHit.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage(_attackDetails);
+                _damageHit.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage();
             }
             else if (_groundHit)
             {

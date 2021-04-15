@@ -19,9 +19,9 @@ public class PlayerStatsManager
         _playerId = playerId;
     }
 
-    public void TakeDamage(AttackDetails attackDetails)
+    public void TakeDamage()
     {
-        _currentHealth -= attackDetails.damageAmount;
+        _currentHealth--;
 
         // TODO: Player: Check if has shield
         if (_currentHealth <= 0)

@@ -56,9 +56,9 @@ public class Player : MonoBehaviour, IDamagable
         Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
     }
 
-    public void Damage(AttackDetails attackDetails)
+    public void Damage()
     {
-        PlayerStatsManager.TakeDamage(attackDetails);
+        PlayerStatsManager.TakeDamage();
 
         if (PlayerStatsManager.IsPermamentDead)
         {

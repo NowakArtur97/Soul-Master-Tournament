@@ -38,7 +38,7 @@ public class SlidingSaw : EnvironmentHazardDamagingOnContact
 
         if (CheckIfPlayerInMinAgro(out toDamage))
         {
-            toDamage.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage(AttackDetails);
+            toDamage.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage();
         }
 
         if (!CheckIfTouchingRails())

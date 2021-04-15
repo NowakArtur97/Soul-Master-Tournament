@@ -1,19 +1,15 @@
 using System.Collections;
 using UnityEngine;
 
-public class Portal : EnvironmentHazard
+public class Portal : EnvironmentHazardActiveOnContact
 {
     [SerializeField]
     private Portal _connectedPortal;
-    [SerializeField]
-    private float _timeBeforeTeleportation = 1.0f;
     [SerializeField]
     private Vector2 _teleportationOffset = new Vector2(0, 1);
 
     private GameObject _toTeleport;
     private Coroutine _teleportCoroutine;
-
-    private void Start() => SetIfEnvironmentHazardIsActivate(false);
 
     protected override void UseEnvironmentHazard()
     {
@@ -21,13 +17,12 @@ public class Portal : EnvironmentHazard
         {
             StopCoroutine(_teleportCoroutine);
         }
-        IsActive = false;
         _teleportCoroutine = StartCoroutine(Teleport());
     }
 
     private IEnumerator Teleport()
     {
-        yield return new WaitForSeconds(_timeBeforeTeleportation);
+        yield return new WaitForSeconds(EnvironmentHazardData.timeBeforeActivation);
 
         if (_toTeleport)
         {
@@ -35,17 +30,18 @@ public class Portal : EnvironmentHazard
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        StartUsingEnvironmentHazardTrigger();
+        base.OnTriggerEnter2D(collision);
+
         _toTeleport = collision.gameObject;
-        SetIfEnvironmentHazardIsActivate(true);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    protected override void OnTriggerExit2D(Collider2D collision)
     {
-        StopUsingEnvironmentHazardTrigger();
-        _toTeleport = null;
+        base.OnTriggerExit2D(collision);
+
+        _toTeleport = collision.gameObject;
     }
 
     public void SetConnectedPortal(Portal connectedPortal) => _connectedPortal = connectedPortal;

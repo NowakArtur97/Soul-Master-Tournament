@@ -7,84 +7,74 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string ACTIVE_ANIMATION_BOOL_NAME = "active";
 
-    [SerializeField]
-    protected D_EnvironmentHazardStats EnvironmentHazardData;
-
-    protected GameObject AliveGameObject { get; private set; }
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
-    protected Animator MyAnimator { get; private set; }
-    protected Rigidbody2D MyRigidbody2D { get; private set; }
+    private GameObject _aliveGameObject;
+    private Animator _myAnimator;
+    private Rigidbody2D _myRigidbody2D;
 
-    protected AttackDetails AttackDetails;
+    protected enum Status { TRIGGERED, ACTIVE, FINISHED, EMPTY }
 
-    protected bool IsFinished;
-    protected bool IsActive;
-    private float _activeTime;
-    private float _idleTime;
+    protected Status CurrentStatus;
 
     private void Awake()
     {
-        AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        MyAnimator = AliveGameObject.GetComponent<Animator>();
-        MyRigidbody2D = AliveGameObject.GetComponent<Rigidbody2D>();
-        _environmentHazardAnimationToComponent = AliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
+        _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
+        _myAnimator = _aliveGameObject.GetComponent<Animator>();
+        _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+        _environmentHazardAnimationToComponent = _aliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
         if (_environmentHazardAnimationToComponent)
         {
             _environmentHazardAnimationToComponent.EnvironmentHazard = this;
         }
 
-        AttackDetails.damageAmount = EnvironmentHazardData.damage;
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
 
-        MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
-
-        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
-        _activeTime = Time.time;
-        IsFinished = true;
-        IsActive = false;
+        CurrentStatus = Status.FINISHED;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        if (IsIdleTimeOver() && IsFinished && EnvironmentHazardData.shouldActivateAfterTime)
+        if (CurrentStatus == Status.TRIGGERED)
         {
-            IdleTimeIsOver();
+            CurrentStatus = Status.EMPTY;
+            SetIsAnimationActive(true);
         }
-
-        if (IsActive)
+        else if (CurrentStatus == Status.ACTIVE)
         {
             UseEnvironmentHazard();
         }
-    }
-
-    protected virtual void IdleTimeIsOver()
-    {
-        IsFinished = false;
-        SetIfEnvironmentHazardIsActivate(true);
-        _activeTime = Time.time;
+        else if (CurrentStatus == Status.FINISHED)
+        {
+            SetIsAnimationActive(false);
+        }
     }
 
     protected abstract void UseEnvironmentHazard();
 
-    private void StartUsingEnvironmentHazard() => IsActive = true;
-
-    private void StopUsingEnvironmentHazard()
+    private void SetIsAnimationActive(bool isActive)
     {
-        IsFinished = true;
-        IsActive = false;
-        SetIfEnvironmentHazardIsActivate(false);
-        _activeTime = Time.time;
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
+        _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
     }
 
-    protected void SetIfEnvironmentHazardIsActivate(bool isActive)
+    public virtual void StartUsingEnvironmentHazardTrigger() => CurrentStatus = Status.ACTIVE;
+
+    public virtual void StopUsingEnvironmentHazardTrigger() => CurrentStatus = Status.FINISHED;
+
+    protected bool CheckIfPlayerInMinAgro(out GameObject toInteract, LayerMask[] whatIsInteractable)
     {
-        MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
-        MyAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
+        foreach (LayerMask damagableLayerMask in whatIsInteractable)
+        {
+            Collider2D collision = Physics2D.OverlapBox(_aliveGameObject.transform.position, Vector2.one, 0f, damagableLayerMask);
+            if (collision)
+            {
+                toInteract = collision.gameObject;
+                return true;
+            }
+        }
+
+        toInteract = null;
+        return false;
     }
-
-    public void StartUsingEnvironmentHazardTrigger() => StartUsingEnvironmentHazard();
-
-    public void StopUsingEnvironmentHazardTrigger() => StopUsingEnvironmentHazard();
-
-    protected bool IsIdleTimeOver() => Time.time >= _activeTime + _idleTime;
 }

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Linq;
 using System;
+using System.Collections.Generic;
 
 public class TileMapGenerator : MonoBehaviour
 {
@@ -44,7 +45,12 @@ public class TileMapGenerator : MonoBehaviour
     public Action LevelGeneratedEvent;
 
     private GameObject _lastPortalGameObject;
-    private int _numberOfPortals;
+    private int _numberOfPortals = 0;
+    private int _numberOfRails = 0;
+    [SerializeField]
+    private int _maxNumberOfRails = 5;
+    private List<List<GameObject>> _rails = new List<List<GameObject>>();
+    private Quaternion _railRotation;
 
     private void Awake()
     {
@@ -144,10 +150,17 @@ public class TileMapGenerator : MonoBehaviour
             Destroy(_lastPortalGameObject);
         }
 
+        for (int i = 0; i < _rails.Count; i++)
+        {
+            List<GameObject> rails = _rails[i];
+            GameObject randomRail = rails[UnityEngine.Random.Range(0, rails.Count)];
+            Instantiate(_levelEnvironmentHazardsData.slidingSaw, randomRail.transform.position, randomRail.transform.rotation);
+        }
+
         LevelGeneratedEvent?.Invoke();
     }
 
-    private void GenerateObstacle(Vector3Int position, Vector2 positionToCheck)
+    private void GenerateObstacle(Vector3Int position, Vector2 obstaclePosition)
     {
         if (!_shouldGenerateEnvironmentHazards)
         {
@@ -156,26 +169,51 @@ public class TileMapGenerator : MonoBehaviour
 
         int randomObstacle = UnityEngine.Random.Range(0, 100);
 
-        positionToCheck.Set(position.x, position.y);
+        obstaclePosition.Set(position.x, position.y);
 
         if (!IsReservedPosition(position))
         {
-            if (randomObstacle < 100 - _levelEnvironmentHazardsData.chanceForObstacle)
+            if (randomObstacle < 100 - _levelEnvironmentHazardsData.chanceForObstacle || _numberOfRails < _maxNumberOfRails)
             {
                 randomObstacle = UnityEngine.Random.Range(0, 100);
 
-                positionToCheck += _environmentHazardOffset;
+                obstaclePosition += _environmentHazardOffset;
 
                 GameObject environmentHazard = null;
 
-                if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazardsWithRandomRotation)
+                if (randomObstacle < _levelEnvironmentHazardsData.chanceForSlidingSaw || _numberOfRails < _maxNumberOfRails)
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazardsWithRandomRotation), positionToCheck,
+                    if (_numberOfRails == 0)
+                    {
+                        _railRotation = GetRandomRotation();
+                        _rails[_rails.Count] = new List<GameObject>();
+                    }
+
+                    GameObject rail = _numberOfRails == 0 ? _levelEnvironmentHazardsData.leftEndRail
+                        : _numberOfRails == _maxNumberOfRails ? _levelEnvironmentHazardsData.rightEndRail
+                        : _levelEnvironmentHazardsData.middleRail;
+                    environmentHazard = Instantiate(rail, obstaclePosition, _railRotation);
+
+                    _numberOfRails++;
+
+                    if (_numberOfRails >= _maxNumberOfRails)
+                    {
+                        _numberOfRails = 0;
+                        _rails[_rails.Count + 1].Add(environmentHazard);
+                    }
+                    else
+                    {
+                        _rails[_rails.Count].Add(environmentHazard);
+                    }
+                }
+                else if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazardsWithRandomRotation)
+                {
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazardsWithRandomRotation), obstaclePosition,
                         GetRandomRotation());
                 }
                 else if (randomObstacle < _levelEnvironmentHazardsData.chanceForPortals)
                 {
-                    environmentHazard = Instantiate(_levelEnvironmentHazardsData.portal, positionToCheck, Quaternion.identity);
+                    environmentHazard = Instantiate(_levelEnvironmentHazardsData.portal, obstaclePosition, Quaternion.identity);
                     _numberOfPortals++;
 
                     if (_numberOfPortals == 2)
@@ -193,7 +231,7 @@ public class TileMapGenerator : MonoBehaviour
                 }
                 else if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazards)
                 {
-                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazards), positionToCheck, Quaternion.identity);
+                    environmentHazard = Instantiate(GetRandomEnvironmentHazard(_levelEnvironmentHazardsData.environmentHazards), obstaclePosition, Quaternion.identity);
                 }
 
                 if (environmentHazard)

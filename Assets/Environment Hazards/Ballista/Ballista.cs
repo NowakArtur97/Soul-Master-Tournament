@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ballista : EnvironmentHazard
+public class Ballista : EnvironmentHazardOld
 {
     [SerializeField]
     private GameObject projectile;
