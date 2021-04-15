@@ -15,5 +15,5 @@ MonoBehaviour:
   whatIsInteractable:
   - serializedVersion: 2
     m_Bits: 1024
-  minIdleTime: 1
-  maxIdleTime: 2
+  minIdleTime: 2
+  maxIdleTime: 3

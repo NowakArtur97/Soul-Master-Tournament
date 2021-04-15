@@ -15,6 +15,3 @@ MonoBehaviour:
   health: 1
   maxHealth: 1
   movementSpeed: 10
-  maxMovementSpeed: 14
-  numberOfBombs: 1
-  maxNumberOfBombs: 8

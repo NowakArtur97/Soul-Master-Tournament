@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149bf92237915c04b9d7b224c4a3c473, type: 3}
-  m_Name: Spikes_EnvironmentHazardData
+  m_Script: {fileID: 11500000, guid: 9349d4cb74153a54ba72634615570f2e, type: 3}
+  m_Name: Ballista_EnvironmentHazardActiveAfterTimeData
   m_EditorClassIdentifier: 
-  minIdleTime: 4
-  maxIdleTime: 9
-  damage: 1
-  whatIsDamagable:
-  - serializedVersion: 2
-    m_Bits: 1024
+  whatIsInteractable: []
+  minIdleTime: 3
+  maxIdleTime: 6

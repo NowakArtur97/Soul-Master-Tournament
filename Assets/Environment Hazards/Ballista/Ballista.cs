@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ballista : EnvironmentHazardOld
+public class Ballista : EnvironmentHazardActiveAfterTime
 {
     [SerializeField]
     private GameObject projectile;
@@ -12,6 +12,6 @@ public class Ballista : EnvironmentHazardOld
     protected override void UseEnvironmentHazard()
     {
         _projectile = Instantiate(projectile, projectileStartingPosition.position, transform.rotation);
-        IsActive = false;
+        CurrentStatus = Status.FINISHED;
     }
 }
