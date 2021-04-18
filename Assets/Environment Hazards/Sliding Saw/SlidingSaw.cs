@@ -38,17 +38,15 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
         if (Time.time >= _startActiveTime + _moveTime)
         {
             StopUsingEnvironmentHazardTrigger();
-            SetVelocity(0.0f);
+            SetVelocityZero();
         }
     }
 
     private void ChangeDirection()
     {
         _movingDirection *= -1;
-        SetVelocity(_sawSpeed);
+        SetVelocity(_sawSpeed, _movingDirection);
     }
-
-    private void SetVelocity(float speed) => MyRigidbody2D.velocity = new Vector2(_movingDirection * speed, 0);
 
     private bool CheckIfTouchingRails() => Physics2D.Raycast(_railsCheck.position, Vector2.right * _movingDirection, _railsCheckDistance, _whatIsRails);
 

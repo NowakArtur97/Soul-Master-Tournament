@@ -11,9 +11,9 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     private GameObject _aliveGameObject;
     private Animator _myAnimator;
-    protected Rigidbody2D MyRigidbody2D { get; private set; }
+    private Rigidbody2D _myRigidbody2D;
 
-    protected Coroutine _idleCoroutine;
+    protected Coroutine IdleCoroutine;
     protected enum Status { TRIGGERED, ACTIVE, FINISHED, EMPTY }
 
     protected Status CurrentStatus;
@@ -22,7 +22,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     {
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
-        MyRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+        _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
         _environmentHazardAnimationToComponent = _aliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
         if (_environmentHazardAnimationToComponent)
@@ -36,9 +36,24 @@ public abstract class EnvironmentHazard : MonoBehaviour
     }
 
     protected abstract void UseEnvironmentHazard();
-    protected abstract IEnumerator WaitBeforeAction();
 
-    protected void SetIsAnimationActive(bool isActive)
+    protected virtual void TriggerEnvironmentHazard() => SetIsAnimationActive(true);
+
+    protected virtual void FinishUsingEnvironmentHazard() => SetIsAnimationActive(false);
+
+    protected virtual IEnumerator WaitBeforeAction(float timeToWait, Status statusAfterWaiting)
+    {
+        CurrentStatus = Status.EMPTY;
+
+        yield return new WaitForSeconds(timeToWait);
+
+        CurrentStatus = Status.TRIGGERED;
+        CurrentStatus = statusAfterWaiting;
+
+        StopCoroutine(IdleCoroutine);
+    }
+
+    private void SetIsAnimationActive(bool isActive)
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
         _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
@@ -47,6 +62,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
     public virtual void StartUsingEnvironmentHazardTrigger() => CurrentStatus = Status.ACTIVE;
 
     public virtual void StopUsingEnvironmentHazardTrigger() => CurrentStatus = Status.FINISHED;
+
+    protected void SetVelocityZero() => _myRigidbody2D.velocity = Vector2.zero;
+
+    protected void SetVelocity(float speed, int direction) => _myRigidbody2D.velocity = new Vector2(direction * speed, 0);
 
     protected bool CheckIfPlayerInMinAgro(out GameObject toInteract, LayerMask[] whatIsInteractable)
     {

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
@@ -10,9 +9,7 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     {
         if (CurrentStatus == Status.TRIGGERED)
         {
-            SetIsAnimationActive(true);
-
-            _idleCoroutine = StartCoroutine(WaitBeforeAction());
+            TriggerEnvironmentHazard();
         }
         else if (CurrentStatus == Status.ACTIVE)
         {
@@ -20,24 +17,25 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
         }
         else if (CurrentStatus == Status.FINISHED)
         {
-            SetIsAnimationActive(false);
-
-            if (_idleCoroutine != null)
-            {
-                StopCoroutine(_idleCoroutine);
-            }
+            FinishUsingEnvironmentHazard();
         }
     }
 
-    protected override IEnumerator WaitBeforeAction()
+    protected override void TriggerEnvironmentHazard()
     {
-        CurrentStatus = Status.EMPTY;
+        base.TriggerEnvironmentHazard();
 
-        yield return new WaitForSeconds(EnvironmentHazardData.timeBeforeActivation);
+        IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, Status.ACTIVE));
+    }
 
-        CurrentStatus = Status.ACTIVE;
+    protected override void FinishUsingEnvironmentHazard()
+    {
+        base.FinishUsingEnvironmentHazard();
 
-        StopCoroutine(_idleCoroutine);
+        if (IdleCoroutine != null)
+        {
+            StopCoroutine(IdleCoroutine);
+        }
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D collision) => CurrentStatus = Status.TRIGGERED;

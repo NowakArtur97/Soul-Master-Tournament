@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
@@ -17,8 +16,7 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
     {
         if (CurrentStatus == Status.TRIGGERED)
         {
-            CurrentStatus = Status.EMPTY;
-            SetIsAnimationActive(true);
+            TriggerEnvironmentHazard();
         }
         else if (CurrentStatus == Status.ACTIVE)
         {
@@ -26,19 +24,21 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
         }
         else if (CurrentStatus == Status.FINISHED)
         {
-            SetIsAnimationActive(false);
-            _idleCoroutine = StartCoroutine(WaitBeforeAction());
+            FinishUsingEnvironmentHazard();
         }
     }
 
-    protected override IEnumerator WaitBeforeAction()
+    protected override void TriggerEnvironmentHazard()
     {
+        base.TriggerEnvironmentHazard();
+
         CurrentStatus = Status.EMPTY;
+    }
 
-        yield return new WaitForSeconds(_idleTime);
+    protected override void FinishUsingEnvironmentHazard()
+    {
+        base.FinishUsingEnvironmentHazard();
 
-        CurrentStatus = Status.TRIGGERED;
-
-        StopCoroutine(_idleCoroutine);
+        IdleCoroutine = StartCoroutine(WaitBeforeAction(_idleTime, Status.TRIGGERED));
     }
 }
