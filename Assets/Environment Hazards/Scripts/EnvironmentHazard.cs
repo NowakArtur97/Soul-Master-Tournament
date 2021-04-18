@@ -47,7 +47,6 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         yield return new WaitForSeconds(timeToWait);
 
-        CurrentStatus = Status.TRIGGERED;
         CurrentStatus = statusAfterWaiting;
 
         StopCoroutine(IdleCoroutine);

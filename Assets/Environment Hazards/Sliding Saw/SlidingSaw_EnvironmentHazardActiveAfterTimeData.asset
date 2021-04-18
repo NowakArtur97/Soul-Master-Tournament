@@ -17,3 +17,4 @@ MonoBehaviour:
     m_Bits: 1024
   minIdleTime: 3
   maxIdleTime: 5
+  isActiveOnTrigger: 1

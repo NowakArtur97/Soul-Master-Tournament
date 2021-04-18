@@ -16,4 +16,5 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Bits: 1024
   minIdleTime: 2
-  maxIdleTime: 3
+  maxIdleTime: 4
+  isActiveOnTrigger: 1

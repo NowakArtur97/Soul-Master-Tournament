@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class SlidingSaw : EnvironmentHazardActiveAfterTime
@@ -16,10 +17,16 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
     private float _maxMoveTime = 7;
 
     private int _movingDirection = 1;
-    private float _startActiveTime;
     private float _moveTime;
+    private Coroutine _moveCoroutine;
+    private bool isMoving = false;
 
-    private void Start() => _moveTime = Random.Range(_minMoveTime, _maxMoveTime);
+    protected override void Start()
+    {
+        base.Start();
+
+        _moveTime = Random.Range(_minMoveTime, _maxMoveTime);
+    }
 
     protected override void UseEnvironmentHazard()
     {
@@ -35,11 +42,29 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
             ChangeDirection();
         }
 
-        if (Time.time >= _startActiveTime + _moveTime)
+        if (!isMoving && CurrentStatus == Status.ACTIVE)
         {
-            StopUsingEnvironmentHazardTrigger();
-            SetVelocityZero();
+            if (_moveCoroutine != null)
+            {
+                StopCoroutine(_moveCoroutine);
+            }
+            _moveCoroutine = StartCoroutine(Move());
         }
+    }
+
+    private IEnumerator Move()
+    {
+        isMoving = true;
+
+        SetVelocity(_sawSpeed, _movingDirection);
+
+        yield return new WaitForSeconds(_moveTime);
+
+        SetVelocityZero();
+
+        isMoving = false;
+
+        StopUsingEnvironmentHazardTrigger();
     }
 
     private void ChangeDirection()

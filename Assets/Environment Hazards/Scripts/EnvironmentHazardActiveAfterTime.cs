@@ -7,10 +7,7 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
 
     private float _idleTime;
 
-    private void Start()
-    {
-        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
-    }
+    protected virtual void Start() => _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
 
     private void Update()
     {
@@ -32,13 +29,18 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
-        CurrentStatus = Status.EMPTY;
+        // if it activates via animation, wait for the trigger, otherwise activate
+        CurrentStatus = EnvironmentHazardData.isActiveOnTrigger ? Status.EMPTY : Status.ACTIVE;
     }
 
     protected override void FinishUsingEnvironmentHazard()
     {
         base.FinishUsingEnvironmentHazard();
 
+        if (IdleCoroutine != null)
+        {
+            StopCoroutine(IdleCoroutine);
+        }
         IdleCoroutine = StartCoroutine(WaitBeforeAction(_idleTime, Status.TRIGGERED));
     }
 }

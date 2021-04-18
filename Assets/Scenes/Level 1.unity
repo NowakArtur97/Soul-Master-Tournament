@@ -171,8 +171,122 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &126008848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2654617926786976266, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654617926786976277, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+--- !u!1001 &469153202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4540986206135301763, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw Rails - Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
 --- !u!1001 &495578986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,7 +296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -227,6 +341,10 @@ PrefabInstance:
     - target: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7941447054350840999, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: _connectedPortal
@@ -317,6 +435,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &696793578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4540986206135301763, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw Rails - Middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
 --- !u!1001 &733509380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,9 +503,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754215, guid: 78e2e01e5435fc94f860db890b5b47cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 478484686562754232, guid: 78e2e01e5435fc94f860db890b5b47cf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 478484686562754232, guid: 78e2e01e5435fc94f860db890b5b47cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -394,7 +573,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -440,12 +619,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7941447054350840999, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
       propertyPath: _connectedPortal
       value: 
       objectReference: {fileID: 898531906}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
+--- !u!1001 &957352726
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4540986206135301763, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw Rails - Middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
 --- !u!1 &978903599
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178712279
 GameObject:
@@ -1255,6 +1495,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6256e8eec194a4479da337d98117ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1504977248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2218978391610587624, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw Rails - Right End
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218978391610587639, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+--- !u!1001 &1786821322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2307848967997050318, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_Name
+      value: Ballista
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050318, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.828675
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1237355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
 --- !u!1 &1801125078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1658,7 @@ Transform:
   - {fileID: 978903600}
   - {fileID: 1178712280}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801125081
 MonoBehaviour:
@@ -1325,3 +1683,60 @@ MonoBehaviour:
   _shouldGenerateEnvironmentHazards: 0
   _environmentHazardsContainer: {fileID: 1072147211}
   _maxNumberOfRails: 0
+--- !u!1001 &1936183729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514187, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129954218491514196, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+      propertyPath: m_Name
+      value: Sliding Saw Rails - Left End
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
