@@ -29,8 +29,7 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
-        // if it activates via animation, wait for the trigger, otherwise activate
-        CurrentStatus = EnvironmentHazardData.isActiveOnTrigger ? Status.EMPTY : Status.ACTIVE;
+        CurrentStatus = Status.ACTIVE;
     }
 
     protected override void FinishUsingEnvironmentHazard()

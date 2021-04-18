@@ -42,7 +42,7 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
             ChangeDirection();
         }
 
-        if (!isMoving && CurrentStatus == Status.ACTIVE)
+        if (!isMoving)
         {
             if (_moveCoroutine != null)
             {
