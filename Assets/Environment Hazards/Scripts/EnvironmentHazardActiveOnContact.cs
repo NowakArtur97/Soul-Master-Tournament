@@ -6,26 +6,38 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     [SerializeField]
     protected D_EnvironmentHazardActiveOnContactStats EnvironmentHazardData;
 
-    private Coroutine _idleCoroutine;
-
-    protected override void Update()
+    private void Update()
     {
-        base.Update();
-
         if (CurrentStatus == Status.TRIGGERED)
         {
+            SetIsAnimationActive(true);
+
+            _idleCoroutine = StartCoroutine(WaitBeforeAction());
+        }
+        else if (CurrentStatus == Status.ACTIVE)
+        {
+            UseEnvironmentHazard();
+        }
+        else if (CurrentStatus == Status.FINISHED)
+        {
+            SetIsAnimationActive(false);
+
             if (_idleCoroutine != null)
             {
                 StopCoroutine(_idleCoroutine);
             }
-            _idleCoroutine = StartCoroutine(WaitBeforeAction());
         }
     }
 
-    private IEnumerator WaitBeforeAction()
+    protected override IEnumerator WaitBeforeAction()
     {
+        CurrentStatus = Status.EMPTY;
+
         yield return new WaitForSeconds(EnvironmentHazardData.timeBeforeActivation);
+
         CurrentStatus = Status.ACTIVE;
+
+        StopCoroutine(_idleCoroutine);
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D collision) => CurrentStatus = Status.TRIGGERED;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SlidingSaw : EnvironmentHazardDamagingOnContact
+public class SlidingSaw : EnvironmentHazardActiveAfterTime
 {
     [SerializeField]
     private LayerMask _whatIsRails;
@@ -21,22 +21,11 @@ public class SlidingSaw : EnvironmentHazardDamagingOnContact
 
     private void Start() => _moveTime = Random.Range(_minMoveTime, _maxMoveTime);
 
-    protected override void IdleTimeIsOver()
-    {
-        base.IdleTimeIsOver();
-
-        IsActive = true;
-
-        SetVelocity(_sawSpeed);
-
-        _startActiveTime = Time.time;
-    }
-
     protected override void UseEnvironmentHazard()
     {
         GameObject toDamage;
 
-        if (CheckIfPlayerInMinAgro(out toDamage))
+        if (CheckIfPlayerInMinAgro(out toDamage, EnvironmentHazardData.whatIsInteractable))
         {
             toDamage.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage();
         }

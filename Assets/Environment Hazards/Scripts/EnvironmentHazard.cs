@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public abstract class EnvironmentHazard : MonoBehaviour
@@ -10,8 +11,9 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     private GameObject _aliveGameObject;
     private Animator _myAnimator;
-    private Rigidbody2D _myRigidbody2D;
+    protected Rigidbody2D MyRigidbody2D { get; private set; }
 
+    protected Coroutine _idleCoroutine;
     protected enum Status { TRIGGERED, ACTIVE, FINISHED, EMPTY }
 
     protected Status CurrentStatus;
@@ -20,7 +22,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     {
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
-        _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+        MyRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
         _environmentHazardAnimationToComponent = _aliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
         if (_environmentHazardAnimationToComponent)
@@ -33,26 +35,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
         CurrentStatus = Status.FINISHED;
     }
 
-    protected virtual void Update()
-    {
-        if (CurrentStatus == Status.TRIGGERED)
-        {
-            CurrentStatus = Status.EMPTY;
-            SetIsAnimationActive(true);
-        }
-        else if (CurrentStatus == Status.ACTIVE)
-        {
-            UseEnvironmentHazard();
-        }
-        else if (CurrentStatus == Status.FINISHED)
-        {
-            SetIsAnimationActive(false);
-        }
-    }
-
     protected abstract void UseEnvironmentHazard();
+    protected abstract IEnumerator WaitBeforeAction();
 
-    private void SetIsAnimationActive(bool isActive)
+    protected void SetIsAnimationActive(bool isActive)
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
         _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);

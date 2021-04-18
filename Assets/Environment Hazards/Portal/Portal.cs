@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Portal : EnvironmentHazardActiveOnContact
@@ -13,17 +12,6 @@ public class Portal : EnvironmentHazardActiveOnContact
 
     protected override void UseEnvironmentHazard()
     {
-        if (_teleportCoroutine != null)
-        {
-            StopCoroutine(_teleportCoroutine);
-        }
-        _teleportCoroutine = StartCoroutine(Teleport());
-    }
-
-    private IEnumerator Teleport()
-    {
-        yield return new WaitForSeconds(EnvironmentHazardData.timeBeforeActivation);
-
         if (_toTeleport)
         {
             _toTeleport.transform.position = (Vector2)_connectedPortal.transform.position + _teleportationOffset;
@@ -41,7 +29,7 @@ public class Portal : EnvironmentHazardActiveOnContact
     {
         base.OnTriggerExit2D(collision);
 
-        _toTeleport = collision.gameObject;
+        _toTeleport = null;
     }
 
     public void SetConnectedPortal(Portal connectedPortal) => _connectedPortal = connectedPortal;

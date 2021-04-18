@@ -183,28 +183,28 @@ public class TileMapGenerator : MonoBehaviour
 
                 if (randomObstacle < _levelEnvironmentHazardsData.chanceForSlidingSaw || _numberOfRails < _maxNumberOfRails)
                 {
-                    if (_numberOfRails == 0)
-                    {
-                        _railRotation = GetRandomRotation();
-                        _rails[_rails.Count] = new List<GameObject>();
-                    }
+                    //if (_numberOfRails == 0)
+                    //{
+                    //    _railRotation = GetRandomRotation();
+                    //    _rails[_rails.Count] = new List<GameObject>();
+                    //}
 
-                    GameObject rail = _numberOfRails == 0 ? _levelEnvironmentHazardsData.leftEndRail
-                        : _numberOfRails == _maxNumberOfRails ? _levelEnvironmentHazardsData.rightEndRail
-                        : _levelEnvironmentHazardsData.middleRail;
-                    environmentHazard = Instantiate(rail, obstaclePosition, _railRotation);
+                    //GameObject rail = _numberOfRails == 0 ? _levelEnvironmentHazardsData.leftEndRail
+                    //    : _numberOfRails == _maxNumberOfRails ? _levelEnvironmentHazardsData.rightEndRail
+                    //    : _levelEnvironmentHazardsData.middleRail;
+                    //environmentHazard = Instantiate(rail, obstaclePosition, _railRotation);
 
-                    _numberOfRails++;
+                    //_numberOfRails++;
 
-                    if (_numberOfRails >= _maxNumberOfRails)
-                    {
-                        _numberOfRails = 0;
-                        _rails[_rails.Count + 1].Add(environmentHazard);
-                    }
-                    else
-                    {
-                        _rails[_rails.Count].Add(environmentHazard);
-                    }
+                    //if (_numberOfRails >= _maxNumberOfRails)
+                    //{
+                    //    _numberOfRails = 0;
+                    //    _rails[_rails.Count + 1].Add(environmentHazard);
+                    //}
+                    //else
+                    //{
+                    //    _rails[_rails.Count].Add(environmentHazard);
+                    //}
                 }
                 else if (randomObstacle < _levelEnvironmentHazardsData.chanceForEnvironmentHazardsWithRandomRotation)
                 {

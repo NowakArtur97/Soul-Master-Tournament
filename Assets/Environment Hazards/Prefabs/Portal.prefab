@@ -174,9 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6256e8eec194a4479da337d98117ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnvironmentHazardData: {fileID: 11400000, guid: 99dfa848277e22b4cb7e26cb71a115fd, type: 2}
+  EnvironmentHazardData: {fileID: 11400000, guid: 71b5681f87d6f8745a7a6f75881c5880, type: 2}
   _connectedPortal: {fileID: 0}
-  _timeBeforeTeleportation: 1
   _teleportationOffset: {x: 0, y: 0.65}
 --- !u!50 &7012579268396849603
 Rigidbody2D:

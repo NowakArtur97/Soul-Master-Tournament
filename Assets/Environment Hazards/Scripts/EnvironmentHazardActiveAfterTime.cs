@@ -6,7 +6,6 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
     [SerializeField]
     protected D_EnvironmentHazardActiveAfterTimeStats EnvironmentHazardData;
 
-    private Coroutine _idleCoroutine;
     private float _idleTime;
 
     private void Start()
@@ -14,17 +13,25 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
         _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
     }
 
-    protected override void Update()
+    private void Update()
     {
-        base.Update();
-
-        if (CurrentStatus == Status.FINISHED)
+        if (CurrentStatus == Status.TRIGGERED)
         {
-            _idleCoroutine = StartCoroutine(Idle());
+            CurrentStatus = Status.EMPTY;
+            SetIsAnimationActive(true);
+        }
+        else if (CurrentStatus == Status.ACTIVE)
+        {
+            UseEnvironmentHazard();
+        }
+        else if (CurrentStatus == Status.FINISHED)
+        {
+            SetIsAnimationActive(false);
+            _idleCoroutine = StartCoroutine(WaitBeforeAction());
         }
     }
 
-    private IEnumerator Idle()
+    protected override IEnumerator WaitBeforeAction()
     {
         CurrentStatus = Status.EMPTY;
 

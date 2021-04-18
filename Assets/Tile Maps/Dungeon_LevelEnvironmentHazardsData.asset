@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8b8b86e08b54e4cbf21ba14586a62e, type: 3}
   m_Name: Dungeon_LevelEnvironmentHazardsData
   m_EditorClassIdentifier: 
-  chanceForObstacle: 70
+  chanceForObstacle: 1
   chanceForEnvironmentHazards: 20
   chanceForEnvironmentHazardsWithRandomRotation: 5
   chanceForPortals: 10
-  chanceForSlidingSaw: 35
+  chanceForSlidingSaw: 4
   environmentHazards:
   - {fileID: 478484686562754215, guid: 78e2e01e5435fc94f860db890b5b47cf, type: 3}
-  environmentHazardsWithRandomRotation: []
-  slidingSaw: {fileID: 0}
-  leftEndRail: {fileID: 0}
-  rightEndRail: {fileID: 0}
-  middleRail: {fileID: 0}
-  portal: {fileID: 0}
+  environmentHazardsWithRandomRotation:
+  - {fileID: 2307848967997050318, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
+  slidingSaw: {fileID: 2654617926786976266, guid: bfacd6c7028c4294e9ac6bf583cfbd91, type: 3}
+  leftEndRail: {fileID: 4129954218491514196, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
+  rightEndRail: {fileID: 2218978391610587624, guid: ab54d4865522fb844a3985991cd140c6, type: 3}
+  middleRail: {fileID: 4540986206135301763, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
+  portal: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}

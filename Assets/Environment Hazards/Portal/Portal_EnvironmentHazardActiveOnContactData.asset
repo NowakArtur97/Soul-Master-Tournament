@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9349d4cb74153a54ba72634615570f2e, type: 3}
-  m_Name: Ballista_EnvironmentHazardActiveAfterTimeData
+  m_Script: {fileID: 11500000, guid: f72363a391a43964386cc3d92f46fafd, type: 3}
+  m_Name: Portal_EnvironmentHazardActiveOnContactData
   m_EditorClassIdentifier: 
   whatIsInteractable:
   - serializedVersion: 2
     m_Bits: 1024
-  minIdleTime: 3
-  maxIdleTime: 6
+  timeBeforeActivation: 2
