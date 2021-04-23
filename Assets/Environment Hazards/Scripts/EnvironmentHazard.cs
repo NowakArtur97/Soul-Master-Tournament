@@ -18,7 +18,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     protected Status CurrentStatus;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myAnimator = AliveGameObject.GetComponent<Animator>();

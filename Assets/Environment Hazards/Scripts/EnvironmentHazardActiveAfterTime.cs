@@ -7,7 +7,12 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
 
     private float _idleTime;
 
-    protected virtual void Start() => _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
+    protected override void Awake()
+    {
+        base.Awake();
+
+        _idleTime = Random.Range(EnvironmentHazardData.minIdleTime, EnvironmentHazardData.maxIdleTime);
+    }
 
     private void Update()
     {
