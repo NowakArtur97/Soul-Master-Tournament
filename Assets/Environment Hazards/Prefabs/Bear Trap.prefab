@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnvironmentHazardData: {fileID: 11400000, guid: f9818f97fb985b5479b935263bc1c49a, type: 2}
-  _trappedOffset: {x: 0, y: 1}
+  _afterBeingTrappedOffset: {x: -0.05, y: 1}
   immobilityTime: 2
 --- !u!50 &1984431716767013354
 Rigidbody2D:
@@ -199,7 +199,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0040052533, y: -0.09459019}
+  m_Offset: {x: -0.0000308156, y: -0.124263644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -210,5 +210,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6253594, y: 0.43879795}
+  m_Size: {x: 0.50359404, y: 0.37945104}
   m_EdgeRadius: 0

@@ -1771,14 +1771,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 478484687129102515, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: immobilityTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 478484687129102515, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: _trappedOffset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7858054498318414639, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1826,22 +1818,6 @@ PrefabInstance:
     - target: {fileID: 7858054498318414640, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
       propertyPath: m_Name
       value: Bear Trap
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.24267328
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.37945104
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0009354949
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.124263644
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}

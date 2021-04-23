@@ -9,7 +9,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private const string ACTIVE_ANIMATION_BOOL_NAME = "active";
 
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
-    private GameObject _aliveGameObject;
+    protected GameObject AliveGameObject { get; private set; }
     private Animator _myAnimator;
     private Rigidbody2D _myRigidbody2D;
 
@@ -20,10 +20,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     private void Awake()
     {
-        _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        _myAnimator = _aliveGameObject.GetComponent<Animator>();
-        _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
-        _environmentHazardAnimationToComponent = _aliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
+        AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
+        _myAnimator = AliveGameObject.GetComponent<Animator>();
+        _myRigidbody2D = AliveGameObject.GetComponent<Rigidbody2D>();
+        _environmentHazardAnimationToComponent = AliveGameObject.GetComponent<EnvironmentHazardAnimationToComponent>();
 
         if (_environmentHazardAnimationToComponent)
         {
@@ -70,7 +70,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     {
         foreach (LayerMask damagableLayerMask in whatIsInteractable)
         {
-            Collider2D collision = Physics2D.OverlapBox(_aliveGameObject.transform.position, Vector2.one, 0f, damagableLayerMask);
+            Collider2D collision = Physics2D.OverlapBox(AliveGameObject.transform.position, Vector2.one, 0f, damagableLayerMask);
             if (collision)
             {
                 toInteract = collision.gameObject;

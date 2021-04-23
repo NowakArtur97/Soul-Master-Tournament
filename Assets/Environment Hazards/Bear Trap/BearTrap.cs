@@ -4,7 +4,7 @@ using UnityEngine;
 public class BearTrap : EnvironmentHazardActiveOnContact
 {
     [SerializeField]
-    private Vector2 _trappedOffset = new Vector2(0, 1);
+    private Vector2 _afterBeingTrappedOffset = new Vector2(0, 0.3f);
 
     [SerializeField]
     private float immobilityTime = 2.0f;
@@ -20,7 +20,7 @@ public class BearTrap : EnvironmentHazardActiveOnContact
             if (player != null)
             {
                 player.PlayerStatsManager.Immobilize(immobilityTime);
-                player.transform.position += (Vector3)_trappedOffset;
+                _toInteract.transform.position = gameObject.transform.position + (Vector3)_afterBeingTrappedOffset;
             }
         }
 
@@ -30,6 +30,7 @@ public class BearTrap : EnvironmentHazardActiveOnContact
         {
             StopCoroutine(_trappedCoroutine);
         }
+
         _trappedCoroutine = StartCoroutine(TrapPlayer());
     }
 
