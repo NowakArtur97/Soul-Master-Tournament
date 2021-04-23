@@ -16,3 +16,4 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Bits: 1024
   timeBeforeActivation: 2
+  isActiveOnTrigger: 0

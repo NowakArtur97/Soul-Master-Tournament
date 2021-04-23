@@ -27,26 +27,14 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
-        if (EnvironmentHazardData.isActiveOnTrigger)
+        if (!EnvironmentHazardData.isActiveOnTrigger)
         {
             IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, Status.ACTIVE));
         }
         else
         {
+            // Wait for Animation Trigger
             CurrentStatus = Status.EMPTY;
-        }
-
-        //IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, EnvironmentHazardData.isActiveOnTrigger
-        //    ? Status.EMPTY : Status.ACTIVE));
-    }
-
-    protected override void FinishUsingEnvironmentHazard()
-    {
-        base.FinishUsingEnvironmentHazard();
-
-        if (IdleCoroutine != null)
-        {
-            StopCoroutine(IdleCoroutine);
         }
     }
 

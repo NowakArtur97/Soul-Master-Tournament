@@ -17,5 +17,15 @@ public class Portal : EnvironmentHazardActiveOnContact
         }
     }
 
+    protected override void FinishUsingEnvironmentHazard()
+    {
+        base.FinishUsingEnvironmentHazard();
+
+        if (IdleCoroutine != null)
+        {
+            StopCoroutine(IdleCoroutine);
+        }
+    }
+
     public void SetConnectedPortal(Portal connectedPortal) => _connectedPortal = connectedPortal;
 }

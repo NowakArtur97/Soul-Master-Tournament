@@ -52,7 +52,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
         StopCoroutine(IdleCoroutine);
     }
 
-    private void SetIsAnimationActive(bool isActive)
+    protected void SetIsAnimationActive(bool isActive)
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
         _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
