@@ -55,6 +55,11 @@ public class Player : MonoBehaviour, IDamagable
         {
             PlayerStatsManager.UnlockMovement();
         }
+        // When Player is Immobilize
+        else if (_currentVelocity != Vector2.zero)
+        {
+            SetVelocity(Vector2.zero);
+        }
     }
 
     private void PlaceBomb()

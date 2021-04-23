@@ -16,15 +16,6 @@ public class PlayerStatsManager
     public Action<int> PermamentDeathEvent;
     public Action<int> DeathEvent;
 
-    public void Immobilize(float immobilityTime)
-    {
-        CanMove = false;
-        ImmobilityTime = immobilityTime;
-        ImmobilityStartTime = Time.time;
-    }
-
-    public void UnlockMovement() => CanMove = true;
-
     public PlayerStatsManager(D_PlayerStats playerStatsData, int playerId)
     {
         _maxHealth = playerStatsData.maxHealth;
@@ -49,4 +40,13 @@ public class PlayerStatsManager
             DeathEvent?.Invoke(_playerId);
         }
     }
+
+    public void Immobilize(float immobilityTime)
+    {
+        CanMove = false;
+        ImmobilityTime = immobilityTime;
+        ImmobilityStartTime = Time.time;
+    }
+
+    public void UnlockMovement() => CanMove = true;
 }
