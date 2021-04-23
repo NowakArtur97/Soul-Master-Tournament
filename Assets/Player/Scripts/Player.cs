@@ -47,7 +47,14 @@ public class Player : MonoBehaviour, IDamagable
 
     private void FixedUpdate()
     {
-        SetVelocity(_playerStats.movementSpeed * _movementInput);
+        if (PlayerStatsManager.CanMove)
+        {
+            SetVelocity(_playerStats.movementSpeed * _movementInput);
+        }
+        else if (Time.time >= PlayerStatsManager.ImmobilityStartTime + PlayerStatsManager.ImmobilityTime)
+        {
+            PlayerStatsManager.UnlockMovement();
+        }
     }
 
     private void PlaceBomb()
@@ -66,8 +73,9 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    private Vector2 SetBombPosition() =>
-        new Vector2(Mathf.FloorToInt(_aliveGameObject.transform.position.x), Mathf.FloorToInt(_aliveGameObject.transform.position.y));
+    private Vector2 SetBombPosition() => new Vector2(
+        Mathf.FloorToInt(_aliveGameObject.transform.position.x),
+        Mathf.FloorToInt(_aliveGameObject.transform.position.y));
 
     private void SetVelocity(Vector2 velocity)
     {

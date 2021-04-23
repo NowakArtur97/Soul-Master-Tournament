@@ -5,6 +5,8 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     [SerializeField]
     protected D_EnvironmentHazardActiveOnContactStats EnvironmentHazardData;
 
+    protected GameObject _toInteract;
+
     private void Update()
     {
         if (CurrentStatus == Status.TRIGGERED)
@@ -25,7 +27,17 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
-        IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, Status.ACTIVE));
+        if (EnvironmentHazardData.isActiveOnTrigger)
+        {
+            IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, Status.ACTIVE));
+        }
+        else
+        {
+            CurrentStatus = Status.EMPTY;
+        }
+
+        //IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation, EnvironmentHazardData.isActiveOnTrigger
+        //    ? Status.EMPTY : Status.ACTIVE));
     }
 
     protected override void FinishUsingEnvironmentHazard()
@@ -38,7 +50,15 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
         }
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D collision) => CurrentStatus = Status.TRIGGERED;
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        CurrentStatus = Status.TRIGGERED;
+        _toInteract = collision.gameObject;
+    }
 
-    protected virtual void OnTriggerExit2D(Collider2D collision) => CurrentStatus = Status.FINISHED;
+    protected virtual void OnTriggerExit2D(Collider2D collision)
+    {
+        CurrentStatus = Status.FINISHED;
+        _toInteract = null;
+    }
 }

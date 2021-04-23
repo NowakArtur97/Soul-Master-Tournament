@@ -1700,7 +1700,7 @@ MonoBehaviour:
   _reservedPositionOffset: 1.5
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
   _levelEnvironmentHazardsData: {fileID: 11400000, guid: 4b37348af75600245a2da17912a2036f, type: 2}
-  _shouldGenerateEnvironmentHazards: 1
+  _shouldGenerateEnvironmentHazards: 0
   _environmentHazardsContainer: {fileID: 1072147211}
   _maxNumberOfRails: 0
 --- !u!1001 &1936183729
@@ -1771,6 +1771,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478484687129102515, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: immobilityTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484687129102515, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: _trappedOffset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7858054498318414639, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1818,6 +1826,22 @@ PrefabInstance:
     - target: {fileID: 7858054498318414640, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
       propertyPath: m_Name
       value: Bear Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24267328
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.37945104
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0009354949
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858054499123714885, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.124263644
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
