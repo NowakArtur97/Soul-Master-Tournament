@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef126fb74b760e40acc132e46827330, type: 3}
-  m_Name: Javelin_ProjectileData
+  m_Name: PoisonArrow_ProjectileData
   m_EditorClassIdentifier: 
-  speed: 9
-  damage: 1
+  speed: 10
+  damage: 0
   damageRadius: 0.1
   whatIsDamagable:
   - serializedVersion: 2
