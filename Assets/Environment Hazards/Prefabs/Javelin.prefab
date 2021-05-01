@@ -144,7 +144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7050799240284997843}
-  - component: {fileID: -5374338519852084051}
+  - component: {fileID: 910933077074725597}
   m_Layer: 15
   m_Name: Javelin
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5374338519852084051
+--- !u!114 &910933077074725597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7050799240284997836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3262bec766d0e045973946bb79aefff, type: 3}
+  m_Script: {fileID: 11500000, guid: 249567da53fb7f94ca687dffe66b939f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _projectileStatsData: {fileID: 11400000, guid: a1d04577fac6a764aa85e95d7780841a, type: 2}

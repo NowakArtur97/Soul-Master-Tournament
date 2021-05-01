@@ -7,7 +7,7 @@ public class BearTrap : EnvironmentHazardActiveOnContact
     private Vector2 _afterBeingTrappedOffset = new Vector2(0, 0.3f);
 
     [SerializeField]
-    private float immobilityTime = 2.0f;
+    private float _immobilityTime = 2.0f;
 
     private Coroutine _trappedCoroutine;
 
@@ -19,7 +19,8 @@ public class BearTrap : EnvironmentHazardActiveOnContact
 
             if (player != null)
             {
-                player.PlayerStatsManager.Immobilize(immobilityTime);
+                PlayerStatus immobilizedStatus = new ImmobilizedStatus(_immobilityTime);
+                player.PlayerStatusesManager.AddStatus(immobilizedStatus);
                 _toInteract.transform.position = gameObject.transform.position + (Vector3)_afterBeingTrappedOffset;
             }
         }
@@ -44,7 +45,7 @@ public class BearTrap : EnvironmentHazardActiveOnContact
 
     private IEnumerator TrapPlayer()
     {
-        yield return new WaitForSeconds(immobilityTime);
+        yield return new WaitForSeconds(_immobilityTime);
 
         SetIsAnimationActive(false);
     }

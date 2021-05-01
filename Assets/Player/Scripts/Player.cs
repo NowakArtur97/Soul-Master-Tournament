@@ -22,6 +22,7 @@ public class Player : MonoBehaviour, IDamagable
     private Rigidbody2D _myRigidbody2D;
 
     public PlayerStatsManager PlayerStatsManager { get; private set; }
+    public PlayerStatusesManager PlayerStatusesManager { get; private set; }
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour, IDamagable
 
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+
+        PlayerStatusesManager = new PlayerStatusesManager();
     }
 
     private void Update()
@@ -43,19 +46,25 @@ public class Player : MonoBehaviour, IDamagable
             _inputHandler.UseBombPlaceInput();
             PlaceBomb();
         }
+
+        if (PlayerStatusesManager.HasAnyStatusActive())
+        {
+            PlayerStatusesManager.CheckStatuses();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (PlayerStatsManager.CanMove)
+        if (PlayerStatusesManager.HasReversedControls)
+        {
+            _movementInput *= -1;
+        }
+
+        if (PlayerStatusesManager.CanMove)
         {
             SetVelocity(_playerStats.movementSpeed * _movementInput);
         }
-        else if (Time.time >= PlayerStatsManager.ImmobilityStartTime + PlayerStatsManager.ImmobilityTime)
-        {
-            PlayerStatsManager.UnlockMovement();
-        }
-        // When Player is Immobilize
+        // When Player is Immobilized
         else if (_currentVelocity != Vector2.zero)
         {
             SetVelocity(Vector2.zero);

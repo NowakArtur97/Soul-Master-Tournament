@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 public class PlayerStatsManager
 {
@@ -7,10 +6,6 @@ public class PlayerStatsManager
     private float _maxHealth;
     private float _currentHealth;
 
-    // TODO: Move to statuses manager
-    public bool CanMove { get; private set; }
-    public float ImmobilityTime { get; private set; }
-    public float ImmobilityStartTime { get; private set; }
     public bool IsPermamentDead { get; private set; }
 
     public Action<int> PermamentDeathEvent;
@@ -22,7 +17,6 @@ public class PlayerStatsManager
         _currentHealth = _maxHealth;
 
         _playerId = playerId;
-        CanMove = true;
     }
 
     public void TakeDamage()
@@ -40,13 +34,4 @@ public class PlayerStatsManager
             DeathEvent?.Invoke(_playerId);
         }
     }
-
-    public void Immobilize(float immobilityTime)
-    {
-        CanMove = false;
-        ImmobilityTime = immobilityTime;
-        ImmobilityStartTime = Time.time;
-    }
-
-    public void UnlockMovement() => CanMove = true;
 }

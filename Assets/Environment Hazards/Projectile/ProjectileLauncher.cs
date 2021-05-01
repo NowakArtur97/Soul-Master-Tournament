@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ballista : EnvironmentHazardActiveAfterTime
+public class ProjectileLauncher : EnvironmentHazardActiveAfterTime
 {
     [SerializeField]
     private GameObject projectile;
@@ -15,3 +15,4 @@ public class Ballista : EnvironmentHazardActiveAfterTime
         CurrentStatus = Status.FINISHED;
     }
 }
+
