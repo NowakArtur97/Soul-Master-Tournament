@@ -8,6 +8,6 @@ public class PoisonArrow : Projectile
     protected override void ApplyProjectileEffect()
     {
         PlayerStatus reversedControlsStatus = new ReversedControlsStatus(_timeBeingPoisoned);
-        DamageHit.gameObject.transform.parent.GetComponent<Player>()?.PlayerStatusesManager.AddStatus(reversedControlsStatus);
+        DamageHit.gameObject.transform.parent.GetComponent<Player>()?.AddStatus(reversedControlsStatus);
     }
 }

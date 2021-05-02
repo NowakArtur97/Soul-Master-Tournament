@@ -20,7 +20,7 @@ public class BearTrap : EnvironmentHazardActiveOnContact
             if (player != null)
             {
                 PlayerStatus immobilizedStatus = new ImmobilizedStatus(_immobilityTime);
-                player.PlayerStatusesManager.AddStatus(immobilizedStatus);
+                player.AddStatus(immobilizedStatus);
                 _toInteract.transform.position = gameObject.transform.position + (Vector3)_afterBeingTrappedOffset;
             }
         }

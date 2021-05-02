@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -25,9 +26,8 @@ public class Player : MonoBehaviour, IDamagable
     private Animator _myAnimator;
 
     public PlayerStatsManager PlayerStatsManager { get; private set; }
-    public PlayerStatusesManager PlayerStatusesManager { get; private set; }
-
-    private bool _canPlaceSoul;
+    private PlayerStatusesManager _playerStatusesManager;
+    private PlayerSoulsManager _playerSoulsManager;
 
     private void Awake()
     {
@@ -37,11 +37,10 @@ public class Player : MonoBehaviour, IDamagable
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
 
-        PlayerStatusesManager = new PlayerStatusesManager();
+        _playerStatusesManager = new PlayerStatusesManager();
+        _playerSoulsManager = new PlayerSoulsManager(_playerStats);
 
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
-
-        _canPlaceSoul = true;
     }
 
     private void Update()
@@ -51,26 +50,29 @@ public class Player : MonoBehaviour, IDamagable
 
         CheckIfShouldFlip();
 
-        if (_bombPlacedInput && _canPlaceSoul)
+        if (_bombPlacedInput)
         {
+            if (_playerSoulsManager.CanPlaceSoul())
+            {
+                SummonSoul();
+            }
             _inputHandler.UseBombPlaceInput();
-            SummonSoul();
         }
 
-        if (PlayerStatusesManager.HasAnyStatusActive())
+        if (_playerStatusesManager.HasAnyStatusActive())
         {
-            PlayerStatusesManager.CheckStatuses();
+            _playerStatusesManager.CheckStatuses();
         }
     }
 
     private void FixedUpdate()
     {
-        if (PlayerStatusesManager.HasReversedControls)
+        if (_playerStatusesManager.HasReversedControls)
         {
             _movementInput *= -1;
         }
 
-        if (PlayerStatusesManager.CanMove)
+        if (_playerStatusesManager.CanMove)
         {
             SetVelocity(_playerStats.movementSpeed * _movementInput);
         }
@@ -86,12 +88,12 @@ public class Player : MonoBehaviour, IDamagable
         _bombPosition = SetBombPosition();
         GameObject soul = Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
-        _canPlaceSoul = false;
+        _playerSoulsManager.ReduceNumberOfSoulsToPlace();
     }
 
     public void Damage()
     {
-        if (PlayerStatusesManager.HasShield)
+        if (_playerStatusesManager.HasShield)
         {
             // TODO: Player: Destroy shield
             return;
@@ -140,5 +142,9 @@ public class Player : MonoBehaviour, IDamagable
 
     public void CreateStatsManager(int id) => PlayerStatsManager = new PlayerStatsManager(_playerStats, id);
 
-    public void LetPlacingSouls() => _canPlaceSoul = true;
+    public void LetPlacingSouls() => _playerSoulsManager.IncreaseNumberOfSoulsToPlace();
+
+    public void AddStatus(PlayerStatus status) => _playerStatusesManager.AddStatus(status);
+
+    public void RemoveStatus(PlayerStatus status) => _playerStatusesManager.RemoveStatus(status);
 }

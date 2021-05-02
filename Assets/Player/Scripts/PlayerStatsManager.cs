@@ -13,10 +13,10 @@ public class PlayerStatsManager
 
     public PlayerStatsManager(D_PlayerStats playerStatsData, int playerId)
     {
+        _playerId = playerId;
+
         _maxHealth = playerStatsData.maxHealth;
         _currentHealth = _maxHealth;
-
-        _playerId = playerId;
     }
 
     public void TakeDamage()

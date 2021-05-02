@@ -19,7 +19,7 @@ public class WaterShield : SoulAbility
         _shieldHealth = _shieldDexterity;
         _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
         _protectedStatus = new ProtectedStatus(_activeShieldTime);
-        _player.PlayerStatusesManager.AddStatus(_protectedStatus);
+        _player.AddStatus(_protectedStatus);
     }
 
     protected override void Update()
@@ -31,7 +31,7 @@ public class WaterShield : SoulAbility
             HasFinished = true;
 
             _player.SetProtectedState(false);
-            _player.PlayerStatusesManager.RemoveStatus(_protectedStatus);
+            _player.RemoveStatus(_protectedStatus);
         }
     }
 
