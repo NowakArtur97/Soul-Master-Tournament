@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5749375782666116862}
   m_Layer: 14
   m_Name: Sliding Saw
-  m_TagString: Untagged
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

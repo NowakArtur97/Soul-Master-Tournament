@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Soul
   - Obstacles
-  - Soul Ability
+  - Damagable
   layers:
   - Default
   - TransparentFX

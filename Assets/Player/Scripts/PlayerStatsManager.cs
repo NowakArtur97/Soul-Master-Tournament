@@ -23,7 +23,6 @@ public class PlayerStatsManager
     {
         _currentHealth--;
 
-        // TODO: Player: Check if has shield
         if (_currentHealth <= 0)
         {
             PermamentDeathEvent?.Invoke(_playerId);

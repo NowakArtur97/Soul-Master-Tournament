@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6831766626437015837}
   m_Layer: 9
   m_Name: Poisonous Soul Whirl
-  m_TagString: Soul Ability
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8057560fc10550418977c9180305135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AbilityStats: {fileID: 11400000, guid: 2bf2767ca2d48bd4f8a10290b6e1fa74, type: 2}
+  _positionOffset: {x: 0.5, y: 0.55}
+  _activeTime: 10
 --- !u!1 &269421539231551756
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1581891315
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: 1195623175528328065, guid: bbf5b60517e39d4499036826febb2eb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

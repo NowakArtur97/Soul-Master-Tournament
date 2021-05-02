@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public abstract class Projectile : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
@@ -14,8 +15,8 @@ public class Projectile : MonoBehaviour
     private Rigidbody2D _myRigidBody2d;
 
     private bool _hasHitGround;
+    protected Collider2D DamageHit { get; private set; }
     private Collider2D _groundHit;
-    private Collider2D _damageHit;
     private float _damageRadius;
     private LayerMask[] _whatIsGround;
     private LayerMask[] _whatIsDamagable;
@@ -37,12 +38,12 @@ public class Projectile : MonoBehaviour
     {
         if (!_hasHitGround)
         {
-            _damageHit = CheckIfIsTouching(_whatIsDamagable);
+            DamageHit = CheckIfIsTouching(_whatIsDamagable);
             _groundHit = CheckIfIsTouching(_whatIsGround);
 
-            if (_damageHit)
+            if (DamageHit)
             {
-                _damageHit.gameObject.transform.parent.GetComponent<IDamagable>()?.Damage();
+                ApplyProjectileEffect();
             }
             else if (_groundHit)
             {
@@ -50,11 +51,13 @@ public class Projectile : MonoBehaviour
             }
         }
 
-        if (_damageHit || _groundHit)
+        if (DamageHit || _groundHit)
         {
             Destroy(gameObject);
         }
     }
+
+    protected abstract void ApplyProjectileEffect();
 
     private Collider2D CheckIfIsTouching(LayerMask[] layerMasks)
     {

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
 
 public class PlayerStatusesManager
 {
@@ -7,18 +6,26 @@ public class PlayerStatusesManager
 
     public bool CanMove { get; private set; }
     public bool HasReversedControls { get; private set; }
+    public bool HasShield { get; private set; }
 
     public PlayerStatusesManager()
     {
         _statuses = new List<PlayerStatus>();
         CanMove = true;
         HasReversedControls = false;
+        HasShield = false;
     }
 
     public void AddStatus(PlayerStatus status)
     {
         status.ApplyStatus(this);
         _statuses.Add(status);
+    }
+
+    public void RemoveStatus(PlayerStatus status)
+    {
+        status.CancelStatus(this);
+        _statuses.Remove(status);
     }
 
     public void CheckStatuses()
@@ -43,4 +50,7 @@ public class PlayerStatusesManager
 
     public void ReverseControls() => HasReversedControls = true;
     public void CancelReversingControls() => HasReversedControls = false;
+
+    public void ActivateShield() => HasShield = true;
+    public void DectivateShield() => HasShield = false;
 }

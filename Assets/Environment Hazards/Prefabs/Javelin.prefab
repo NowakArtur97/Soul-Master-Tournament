@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 910933077074725597}
   m_Layer: 15
   m_Name: Javelin
-  m_TagString: Untagged
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

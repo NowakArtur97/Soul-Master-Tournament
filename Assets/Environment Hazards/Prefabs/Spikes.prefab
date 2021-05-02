@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 478484686562754232}
   - component: {fileID: 478484686562754233}
   m_Layer: 14
-  m_Name: Dungeon Spikes
-  m_TagString: Untagged
+  m_Name: Spikes
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Player : MonoBehaviour, IDamagable
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
+    private const string IDLE_ANIMATION_BOOL_NAME = "idle";
+    private const string PROTECTED_ANIMATION_BOOL_NAME = "protect";
 
     [SerializeField]
     private D_PlayerStats _playerStats;
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour, IDamagable
     private GameObject _aliveGameObject;
     private PlayerInputHandler _inputHandler;
     private Rigidbody2D _myRigidbody2D;
+    private Animator _myAnimator;
 
     public PlayerStatsManager PlayerStatsManager { get; private set; }
     public PlayerStatusesManager PlayerStatusesManager { get; private set; }
@@ -30,8 +33,11 @@ public class Player : MonoBehaviour, IDamagable
 
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
+        _myAnimator = _aliveGameObject.GetComponent<Animator>();
 
         PlayerStatusesManager = new PlayerStatusesManager();
+
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
     }
 
     private void Update()
@@ -79,12 +85,30 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage()
     {
+        if (PlayerStatusesManager.HasShield)
+        {
+            // TODO: Player: Destroy shield
+            return;
+        }
+
         PlayerStatsManager.TakeDamage();
 
         if (PlayerStatsManager.IsPermamentDead)
         {
             Destroy(gameObject);
         }
+    }
+
+    public void TranslateToProtectedState()
+    {
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
+        _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, true);
+    }
+
+    public void ExitProtectedState()
+    {
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+        _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, false);
     }
 
     private Vector2 SetBombPosition() => new Vector2(
