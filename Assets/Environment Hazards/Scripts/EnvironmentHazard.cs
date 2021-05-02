@@ -73,6 +73,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
             Collider2D collision = Physics2D.OverlapBox(AliveGameObject.transform.position, Vector2.one, 0f, damagableLayerMask);
             if (collision)
             {
+                Debug.Log(collision.gameObject.name);
                 toInteract = collision.gameObject;
                 return true;
             }

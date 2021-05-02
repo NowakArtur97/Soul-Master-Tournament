@@ -21,6 +21,7 @@ public class WaterSoul : SoulWithPlayerBuff
         {
             MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+            Player.TranslateToProtectedState();
         }
         else if (IsSummoned && !HasAppeared)
         {

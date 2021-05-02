@@ -13,6 +13,7 @@ public abstract class Soul : MonoBehaviour
     [SerializeField]
     protected SoulAbility SoulAbility;
 
+    protected Player Player { get; private set; }
     protected GameObject AliveGameObject { get; private set; }
     private SoulAnimationToComponent _soulAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
@@ -156,4 +157,6 @@ public abstract class Soul : MonoBehaviour
     public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
 
     public virtual void FinishUsingAbilityTrigger() => HasUsedAbility = true;
+
+    public void SetPlayer(Player player) => Player = player;
 }

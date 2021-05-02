@@ -80,7 +80,8 @@ public class Player : MonoBehaviour, IDamagable
     private void PlaceBomb()
     {
         _bombPosition = SetBombPosition();
-        Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
+        GameObject soul = Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
+        soul.GetComponent<Soul>().SetPlayer(this);
     }
 
     public void Damage()
