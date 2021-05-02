@@ -12,6 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf3914c0ec3a74ba9e7e7b558f9152, type: 3}
   m_Name: Water_ShieldStatsData
   m_EditorClassIdentifier: 
-  abilityDexterity: 1
-  activeTime: 10
-  positionOffset: {x: 0, y: 0}

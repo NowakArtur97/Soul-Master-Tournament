@@ -127,7 +127,8 @@ public abstract class Soul : MonoBehaviour
 
     protected abstract Quaternion GetSoulRotation();
 
-    protected abstract string GetAnimationBoolName();
+    // Empty for abilities without animators
+    protected virtual string GetAnimationBoolName() => "";
 
     protected bool CheckIfTouchingWall(float distance, Vector2 direction, LayerMask[] notAfectedLayerMasks) =>
         CheckIfTouching(distance, direction, notAfectedLayerMasks);

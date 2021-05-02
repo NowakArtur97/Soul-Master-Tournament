@@ -17,7 +17,7 @@ public class WaterShield : SoulAbility
     private void Start()
     {
         _shieldHealth = _shieldDexterity;
-        _player = GetComponentInParent<Player>();
+        _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
         _protectedStatus = new ProtectedStatus(_activeShieldTime);
         _player.PlayerStatusesManager.AddStatus(_protectedStatus);
         _player.TranslateToProtectedState();

@@ -4,12 +4,14 @@ public class IceWall : SoulAbility
 {
     [SerializeField]
     private string _abilityTag;
+    [SerializeField]
+    private int _wallDexterity;
 
     private int _wallHealth;
 
     private void Start()
     {
-        _wallHealth = AbilityStats.abilityDexterity;
+        _wallHealth = _wallDexterity;
     }
 
     public override void OnTriggerEnter2D(Collider2D collision)

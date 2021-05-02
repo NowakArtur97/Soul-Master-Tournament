@@ -1,7 +1,6 @@
 public class WaterSoul : SoulWithPlayerBuff
 {
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
-    private const string START_ABILITY_ANIMATION_BOOL_NAME = "active";
 
     protected override void Update()
     {
@@ -28,6 +27,4 @@ public class WaterSoul : SoulWithPlayerBuff
             FinishSummoningSoul(IDLE_ANIMATION_BOOL_NAME);
         }
     }
-
-    protected override string GetAnimationBoolName() => START_ABILITY_ANIMATION_BOOL_NAME;
 }

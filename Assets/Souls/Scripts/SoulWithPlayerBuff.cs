@@ -20,7 +20,7 @@ public abstract class SoulWithPlayerBuff : Soul
     {
         SoulAbility ability = Instantiate(SoulAbility, GetSoulPosition(), GetSoulRotation());
 
-        ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(), true);
+        ability.GetComponentInChildren<Animator>()?.SetBool(GetAnimationBoolName(), true);
 
         ability.transform.parent = _playerAliveGameObject.transform;
     }

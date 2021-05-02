@@ -5,27 +5,27 @@ public class SoulAbility : MonoBehaviour
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
     [SerializeField]
-    protected D_SoulAbilityStats AbilityStats;
+    private Vector2 _positionOffset = new Vector2(0, 0);
 
     protected bool HasFinished;
     protected bool IsActive;
     protected float StartTime { get; private set; }
 
-    private GameObject _aliveGameObject;
+    protected GameObject AliveGameObject { get; private set; }
     private AbilityAnimationToComponent _abilityAnimationToComponent;
     protected Animator MyAnimator { get; private set; }
 
-    private void Awake()
+    protected virtual void Awake()
     {
-        _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        MyAnimator = _aliveGameObject.GetComponent<Animator>();
-        _abilityAnimationToComponent = _aliveGameObject.GetComponent<AbilityAnimationToComponent>();
+        AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
+        MyAnimator = AliveGameObject.GetComponent<Animator>();
+        _abilityAnimationToComponent = AliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
         _abilityAnimationToComponent.SoulAbility = this;
 
         StartTime = Time.time;
 
-        transform.position = transform.position + (Vector3)AbilityStats.positionOffset;
+        transform.position = transform.position + (Vector3)_positionOffset;
     }
 
     protected virtual void Update()
