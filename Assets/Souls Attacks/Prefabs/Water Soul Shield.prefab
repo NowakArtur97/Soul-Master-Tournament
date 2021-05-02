@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _positionOffset: {x: 0, y: 0}
   _abilityTag: Damagable
-  _activeShieldTime: 100
+  _activeShieldTime: 3
   _shieldDexterity: 1
 --- !u!50 &7953074428746010929
 Rigidbody2D:

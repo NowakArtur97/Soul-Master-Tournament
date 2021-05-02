@@ -27,6 +27,8 @@ public class Player : MonoBehaviour, IDamagable
     public PlayerStatsManager PlayerStatsManager { get; private set; }
     public PlayerStatusesManager PlayerStatusesManager { get; private set; }
 
+    private bool _canPlaceSoul;
+
     private void Awake()
     {
         _inputHandler = GetComponent<PlayerInputHandler>();
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour, IDamagable
         PlayerStatusesManager = new PlayerStatusesManager();
 
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+
+        _canPlaceSoul = true;
     }
 
     private void Update()
@@ -47,10 +51,10 @@ public class Player : MonoBehaviour, IDamagable
 
         CheckIfShouldFlip();
 
-        if (_bombPlacedInput)
+        if (_bombPlacedInput && _canPlaceSoul)
         {
             _inputHandler.UseBombPlaceInput();
-            PlaceBomb();
+            SummonSoul();
         }
 
         if (PlayerStatusesManager.HasAnyStatusActive())
@@ -77,11 +81,12 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    private void PlaceBomb()
+    private void SummonSoul()
     {
         _bombPosition = SetBombPosition();
         GameObject soul = Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
+        _canPlaceSoul = false;
     }
 
     public void Damage()
@@ -100,16 +105,10 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    public void TranslateToProtectedState()
+    public void SetProtectedState(bool isInProtectedState)
     {
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
-        _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, true);
-    }
-
-    public void ExitProtectedState()
-    {
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
-        _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, false);
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isInProtectedState);
+        _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, isInProtectedState);
     }
 
     private Vector2 SetBombPosition() => new Vector2(
@@ -140,4 +139,6 @@ public class Player : MonoBehaviour, IDamagable
     private bool ShouldFlip() => _movementInput.x != 0 && _facingDirection != _movementInput.x;
 
     public void CreateStatsManager(int id) => PlayerStatsManager = new PlayerStatsManager(_playerStats, id);
+
+    public void LetPlacingSouls() => _canPlaceSoul = true;
 }
