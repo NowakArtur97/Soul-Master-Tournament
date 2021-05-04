@@ -12,4 +12,5 @@ public class D_SoulStats : ScriptableObject
     public Vector2 abilityPositionOffset = new Vector2(0.5f, 0.5f);
     public LayerMask[] notAfectedLayerMasks;
     public LayerMask[] afectedLayerMasks;
+    public bool canPlayerSummonAfterDestroy = true;
 }

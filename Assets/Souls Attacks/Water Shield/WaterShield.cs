@@ -39,6 +39,7 @@ public class WaterShield : SoulAbility
         {
             _player.SetProtectedState(false);
             _player.RemoveStatus(_protectedStatus);
+            _player.LetPlacingSouls();
 
             HasFinished = true;
         }

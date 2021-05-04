@@ -53,18 +53,24 @@ public class Player : MonoBehaviour, IDamagable
 
         CheckIfShouldFlip();
 
+        HandleSummoning();
+
+        if (_playerStatusesManager.HasAnyStatusActive())
+        {
+            _playerStatusesManager.CheckStatuses();
+        }
+    }
+
+    private void HandleSummoning()
+    {
         if (_bombPlacedInput)
         {
             if (_playerSoulsManager.CanPlaceSoul())
             {
                 SummonSoul();
             }
-            _inputHandler.UseBombPlaceInput();
-        }
 
-        if (_playerStatusesManager.HasAnyStatusActive())
-        {
-            _playerStatusesManager.CheckStatuses();
+            _inputHandler.UseBombPlaceInput();
         }
     }
 

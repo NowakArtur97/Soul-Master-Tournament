@@ -22,3 +22,4 @@ MonoBehaviour:
   abilityPositionOffset: {x: 0, y: 0}
   notAfectedLayerMasks: []
   afectedLayerMasks: []
+  canPlayerSummonAfterDestroy: 0

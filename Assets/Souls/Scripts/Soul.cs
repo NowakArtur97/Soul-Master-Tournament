@@ -120,7 +120,10 @@ public abstract class Soul : MonoBehaviour
 
         if (_isUnsummoned)
         {
-            Player.LetPlacingSouls();
+            if (SoulStats.canPlayerSummonAfterDestroy)
+            {
+                Player.LetPlacingSouls();
+            }
             Destroy(gameObject);
         }
     }
