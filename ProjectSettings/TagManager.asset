@@ -60,15 +60,15 @@ TagManager:
   - name: Environment Hazard
     uniqueID: 1808362087
     locked: 0
+  - name: Projectile
+    uniqueID: 2572963937
+    locked: 0
   - name: Soul
     uniqueID: 1781434621
-    locked: 0
-  - name: Player
-    uniqueID: 3464683111
     locked: 0
   - name: Soul Ability
     uniqueID: 2713075981
     locked: 0
-  - name: Projectile
-    uniqueID: 2572963937
+  - name: Player
+    uniqueID: 3464683111
     locked: 0

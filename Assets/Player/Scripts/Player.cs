@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -28,6 +27,7 @@ public class Player : MonoBehaviour, IDamagable
     public PlayerStatsManager PlayerStatsManager { get; private set; }
     private PlayerStatusesManager _playerStatusesManager;
     private PlayerSoulsManager _playerSoulsManager;
+    private PlayerAnimationToComponent _playerAnimationToComponent;
 
     private void Awake()
     {
@@ -41,6 +41,9 @@ public class Player : MonoBehaviour, IDamagable
         _playerSoulsManager = new PlayerSoulsManager(_playerStats);
 
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+
+        _playerAnimationToComponent = _aliveGameObject.GetComponent<PlayerAnimationToComponent>();
+        _playerAnimationToComponent.Player = this;
     }
 
     private void Update()
@@ -77,7 +80,7 @@ public class Player : MonoBehaviour, IDamagable
             SetVelocity(_playerStats.movementSpeed * _movementInput);
         }
         // When Player is Immobilized
-        else if (_currentVelocity != Vector2.zero)
+        else if (IsNotMoving)
         {
             SetVelocity(Vector2.zero);
         }
@@ -95,7 +98,7 @@ public class Player : MonoBehaviour, IDamagable
     {
         if (_playerStatusesManager.HasShield)
         {
-            // TODO: Player: Destroy shield
+            GetComponentInChildren<WaterShield>()?.DealDamage();
             return;
         }
 
@@ -147,4 +150,8 @@ public class Player : MonoBehaviour, IDamagable
     public void AddStatus(PlayerStatus status) => _playerStatusesManager.AddStatus(status);
 
     public void RemoveStatus(PlayerStatus status) => _playerStatusesManager.RemoveStatus(status);
+
+    public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
+
+    private bool IsNotMoving => _currentVelocity != Vector2.zero;
 }

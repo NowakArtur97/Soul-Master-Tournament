@@ -10,9 +10,4 @@ public class ProtectedStatus : PlayerStatus
 
         playerStatusesManager.ActivateShield();
     }
-
-    public override void CancelStatus(PlayerStatusesManager playerStatusesManager)
-    {
-        playerStatusesManager.DectivateShield();
-    }
 }

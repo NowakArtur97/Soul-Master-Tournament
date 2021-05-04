@@ -6,7 +6,7 @@ public abstract class SoulWithPlayerBuff : Soul
 
     private void Start()
     {
-        _playerAliveGameObject = FindObjectOfType<Player>().transform.Find("Alive").gameObject;
+        _playerAliveGameObject = Player.transform.Find("Alive").gameObject;
     }
 
     protected override void Update()
@@ -30,5 +30,6 @@ public abstract class SoulWithPlayerBuff : Soul
     protected override Quaternion GetSoulRotation() => Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex);
 
     private void LockToPlayerPosition() =>
-        transform.position = new Vector2(_playerAliveGameObject.transform.position.x, _playerAliveGameObject.transform.position.y) + SoulStats.startPositionOffset;
+        transform.position = new Vector2(_playerAliveGameObject.transform.position.x, _playerAliveGameObject.transform.position.y)
+        + SoulStats.startPositionOffset;
 }

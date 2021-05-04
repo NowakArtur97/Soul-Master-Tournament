@@ -60,11 +60,11 @@ public abstract class Soul : MonoBehaviour
     {
         if (IsSummoned)
         {
-            if (Time.time >= StartTime + _abilityCooldown && _isAbilityTriggeredAfterTime)
+            if (IsAbilityCooldownOver() && _isAbilityTriggeredAfterTime)
             {
                 IsUsingAbility = true;
             }
-            if (Time.time >= StartTime + _maxAbilityDuration)
+            if (IsMaxAbilityDurationFinished())
             {
                 HasMaxAbilityTimeFinished = true;
             }
@@ -160,4 +160,8 @@ public abstract class Soul : MonoBehaviour
     public virtual void FinishUsingAbilityTrigger() => HasUsedAbility = true;
 
     public void SetPlayer(Player player) => Player = player;
+
+    private bool IsAbilityCooldownOver() => Time.time >= StartTime + _abilityCooldown;
+
+    private bool IsMaxAbilityDurationFinished() => Time.time >= StartTime + _maxAbilityDuration;
 }

@@ -4,8 +4,6 @@ public class WaterShield : SoulAbility
 {
     //TODO: Ice and Water Soul Ability: Refactor 
     [SerializeField]
-    private string _abilityTag;
-    [SerializeField]
     private float _activeShieldTime = 10.0f;
     [SerializeField]
     private int _shieldDexterity = 1;
@@ -17,8 +15,9 @@ public class WaterShield : SoulAbility
     private void Start()
     {
         _shieldHealth = _shieldDexterity;
-        _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
+
         _protectedStatus = new ProtectedStatus(_activeShieldTime);
+        _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
         _player.AddStatus(_protectedStatus);
     }
 
@@ -26,28 +25,26 @@ public class WaterShield : SoulAbility
     {
         base.Update();
 
-        if (Time.time >= StartTime + _activeShieldTime)
+        if (HasTimeFinished())
         {
             HasFinished = true;
+        }
+    }
 
+    public void DealDamage()
+    {
+        _shieldHealth--;
+
+        if (IsDestroyed())
+        {
             _player.SetProtectedState(false);
             _player.RemoveStatus(_protectedStatus);
+
+            HasFinished = true;
         }
     }
 
-    public override void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log(gameObject.name);
-        if (collision.gameObject.CompareTag(_abilityTag))
-        {
-            _shieldHealth--;
+    private bool HasTimeFinished() => Time.time >= StartTime + _activeShieldTime;
 
-            if (_shieldHealth <= 0)
-            {
-                HasFinished = true;
-            }
-        }
-    }
-
-    public override void FinishTrigger() { }
+    private bool IsDestroyed() => _shieldHealth <= 0;
 }
