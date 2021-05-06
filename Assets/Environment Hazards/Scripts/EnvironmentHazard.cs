@@ -30,7 +30,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
             _environmentHazardAnimationToComponent.EnvironmentHazard = this;
         }
 
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+        if (_myAnimator)
+        {
+            _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+        }
 
         CurrentStatus = Status.FINISHED;
     }

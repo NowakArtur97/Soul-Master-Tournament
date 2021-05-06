@@ -11,9 +11,9 @@ public class Portal : EnvironmentHazardActiveOnContact
 
     protected override void UseEnvironmentHazard()
     {
-        if (_toInteract)
+        if (ToInteract)
         {
-            _toInteract.transform.position = (Vector2)_connectedPortal.transform.position + _teleportationOffset;
+            ToInteract.transform.position = (Vector2)_connectedPortal.transform.position + _teleportationOffset;
         }
     }
 

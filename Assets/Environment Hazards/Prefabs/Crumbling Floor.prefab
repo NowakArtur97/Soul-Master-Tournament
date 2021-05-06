@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4872386547651543345}
+  - component: {fileID: 7284862145780773318}
   - component: {fileID: 3826165290600688628}
   m_Layer: 16
   m_Name: Crumbling Floor
@@ -32,6 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7284862145780773318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872386547651543342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4b21587fcd1e14aa758f4c9cff96b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazardData: {fileID: 11400000, guid: b60cedd15bf8ef1448b0eeb35ab1bc70, type: 2}
+  _floorSprites:
+  - {fileID: -6195831871325182475, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -5767713150283047413, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 1377228174335228338, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -7014034013913597549, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -2862596257359966036, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 287750240270106552, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -3856755851395624713, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -3939630453560752522, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 418919602515006411, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -1432027165035863715, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 5821270386945487462, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 5272187427086059800, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: -5868709666124207304, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  - {fileID: 3085994589677117412, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
+  _timeBeforeCrumblingOnStay: 0.5
 --- !u!50 &3826165290600688628
 Rigidbody2D:
   serializedVersion: 4
@@ -50,8 +80,8 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &4872386548993730905
 GameObject:
@@ -139,7 +169,7 @@ SpriteRenderer:
   m_SortingLayerID: 1808362087
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5750343230141804739, guid: 10103afd633be7c49a07909550e9bfbd, type: 3}
+  m_Sprite: {fileID: -3939630453560752522, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,7 +193,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000308156, y: -0.124263644}
+  m_Offset: {x: 0.031381845, y: -0.002802372}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -174,5 +204,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50359404, y: 0.37945104}
+  m_Size: {x: 0.81353045, y: 0.74802303}
   m_EdgeRadius: 0

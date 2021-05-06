@@ -13,15 +13,15 @@ public class BearTrap : EnvironmentHazardActiveOnContact
 
     protected override void UseEnvironmentHazard()
     {
-        if (_toInteract)
+        if (ToInteract)
         {
-            Player player = _toInteract.GetComponentInParent<Player>();
+            Player player = ToInteract.GetComponentInParent<Player>();
 
             if (player != null)
             {
                 PlayerStatus immobilizedStatus = new ImmobilizedStatus(_immobilityTime);
                 player.AddStatus(immobilizedStatus);
-                _toInteract.transform.position = gameObject.transform.position + (Vector3)_afterBeingTrappedOffset;
+                ToInteract.transform.position = gameObject.transform.position + (Vector3)_afterBeingTrappedOffset;
             }
         }
 

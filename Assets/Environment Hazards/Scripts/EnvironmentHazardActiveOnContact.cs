@@ -5,7 +5,17 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     [SerializeField]
     protected D_EnvironmentHazardActiveOnContactStats EnvironmentHazardData;
 
-    protected GameObject _toInteract;
+    protected GameObject ToInteract;
+    protected float TimeBeforeActivation;
+    private Status _statusAfterWaiting;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        TimeBeforeActivation = EnvironmentHazardData.timeBeforeActivation;
+        _statusAfterWaiting = EnvironmentHazardData.isActiveOnTrigger ? Status.EMPTY : Status.ACTIVE;
+    }
 
     private void Update()
     {
@@ -27,19 +37,18 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
-        IdleCoroutine = StartCoroutine(WaitBeforeAction(EnvironmentHazardData.timeBeforeActivation,
-            EnvironmentHazardData.isActiveOnTrigger ? Status.EMPTY : Status.ACTIVE));
+        IdleCoroutine = StartCoroutine(WaitBeforeAction(TimeBeforeActivation, _statusAfterWaiting));
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         CurrentStatus = Status.TRIGGERED;
-        _toInteract = collision.gameObject;
+        ToInteract = collision.gameObject;
     }
 
-    protected virtual void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         CurrentStatus = Status.FINISHED;
-        _toInteract = null;
+        ToInteract = null;
     }
 }
