@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whatIsInteractable: []
   minIdleTime: 1
-  maxIdleTime: 6
+  maxIdleTime: 2
