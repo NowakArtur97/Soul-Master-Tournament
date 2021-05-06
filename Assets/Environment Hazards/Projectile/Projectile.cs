@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public abstract class Projectile : MonoBehaviour
@@ -61,7 +60,7 @@ public abstract class Projectile : MonoBehaviour
 
     private Collider2D CheckIfIsTouching(LayerMask[] layerMasks)
     {
-        foreach (var layerMask in layerMasks)
+        foreach (LayerMask layerMask in layerMasks)
         {
             Collider2D collider = Physics2D.OverlapCircle(_attackPosition.position, _damageRadius, layerMask);
 
