@@ -13,7 +13,10 @@ public abstract class SoulWithPlayerBuff : Soul
     {
         base.Update();
 
-        LockToPlayerPosition();
+        if (Player != null)
+        {
+            LockToPlayerPosition();
+        }
     }
 
     protected override void UseAbility()

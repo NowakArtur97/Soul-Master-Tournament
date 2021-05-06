@@ -68,6 +68,11 @@ public abstract class Soul : MonoBehaviour
             {
                 HasMaxAbilityTimeFinished = true;
             }
+            if (Player == null)
+            {
+                DisableAllBoolParametersInAnimator();
+                HasUsedAbility = true;
+            }
         }
     }
 
@@ -161,6 +166,14 @@ public abstract class Soul : MonoBehaviour
     public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
 
     public virtual void FinishUsingAbilityTrigger() => HasUsedAbility = true;
+
+    private void DisableAllBoolParametersInAnimator()
+    {
+        foreach (AnimatorControllerParameter parameter in MyAnimator.parameters)
+        {
+            MyAnimator.SetBool(parameter.name, false);
+        }
+    }
 
     public void SetPlayer(Player player) => Player = player;
 
