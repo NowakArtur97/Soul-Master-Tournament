@@ -924,7 +924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1072147212
 Transform:
   m_ObjectHideFlags: 0
@@ -1700,6 +1700,7 @@ GameObject:
   - component: {fileID: 1801125080}
   - component: {fileID: 1801125079}
   - component: {fileID: 1801125081}
+  - component: {fileID: 1801125082}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1743,7 +1744,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801125078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd338b7cc1b29ff40b5f933f5b89d74d, type: 3}
   m_Name: 
@@ -1759,6 +1760,23 @@ MonoBehaviour:
   _shouldGenerateEnvironmentHazards: 0
   _environmentHazardsContainer: {fileID: 1072147211}
   _maxNumberOfRails: 0
+--- !u!114 &1801125082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801125078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fde70141ed9b3e408b90515cfcbf2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileMapRows: 18
+  _tileMapColumns: 18
+  _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
+  _timeBeforeSpawningTiles: 0.001
+  _tileMapOffset: {x: -5, y: 4}
 --- !u!4 &1849279529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
