@@ -24,7 +24,7 @@ public class TileMapGenerator : MonoBehaviour
     [SerializeField]
     private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.4f);
     [SerializeField]
-    private float _reservedPositionOffset = 2f;
+    private Vector2 _reservedPositionOffset = new Vector2(1.5f, 1f);
 
     [SerializeField]
     private D_Tiles _tilesData;
@@ -171,7 +171,7 @@ public class TileMapGenerator : MonoBehaviour
 
         obstaclePosition.Set(position.x, position.y);
 
-        if (!IsReservedPosition(position))
+        if (GeneratorUtil.IsFreePosition(position, _reservedPositions, _reservedPositionOffset))
         {
             if (randomObstacle < 100 - _levelEnvironmentHazardsData.chanceForObstacle || _numberOfRails < _maxNumberOfRails)
             {
@@ -255,11 +255,6 @@ public class TileMapGenerator : MonoBehaviour
     private bool IsFirstRow(int row) => row == 0;
 
     private bool IsLastRow(int row) => row == _tileMapRows - 1;
-
-    private bool IsReservedPosition(Vector3Int reservedPosition) => _reservedPositions.Any(position =>
-    position.x + _reservedPositionOffset > reservedPosition.x && position.x - _reservedPositionOffset < reservedPosition.x
-    && position.y + _reservedPositionOffset > reservedPosition.y && position.y - _reservedPositionOffset < reservedPosition.y
-    );
 
     private Tile GetRandomTile(Tile[] tiles) => tiles[UnityEngine.Random.Range(0, tiles.Length)];
 

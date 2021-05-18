@@ -1627,6 +1627,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4540986206135301788, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
   m_PrefabInstance: {fileID: 696793578}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1655095876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655095877}
+  m_Layer: 0
+  m_Name: Hazards Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655095877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655095876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.6022854, y: 0.1688673, z: -2.9980536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1688448498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2307848967997050321, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
@@ -1699,8 +1729,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1801125080}
   - component: {fileID: 1801125079}
-  - component: {fileID: 1801125081}
   - component: {fileID: 1801125082}
+  - component: {fileID: 1801125083}
+  - component: {fileID: 1801125081}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1754,7 +1785,7 @@ MonoBehaviour:
   _timeBetweenSpawningTiles: 0.001
   _tileMapOffset: {x: -5, y: 4, z: 0}
   _environmentHazardOffset: {x: 0.5, y: 0.55}
-  _reservedPositionOffset: 1.5
+  _reservedPositionOffset: {x: 1.5, y: 1}
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
   _levelEnvironmentHazardsData: {fileID: 11400000, guid: 4b37348af75600245a2da17912a2036f, type: 2}
   _shouldGenerateEnvironmentHazards: 0
@@ -1777,6 +1808,27 @@ MonoBehaviour:
   _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
   _timeBeforeSpawningTiles: 0.001
   _tileMapOffset: {x: -5, y: 4}
+--- !u!114 &1801125083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801125078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161028da262dfdd4f92e6586f4dd481c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileMapRows: 18
+  _tileMapColumns: 18
+  _timeBeforeSpawningEnvironmentHazards: 2
+  _timeBetweenSpawningEnvironmentHazards: 0.001
+  _tileMapOffset: {x: -5, y: 4, z: 0}
+  _environmentHazardsContainer: {fileID: 1655095876}
+  _reservedPositionOffset: {x: 1.5, y: 1.5}
+  _environmentHazardOffset: {x: 0.5, y: 0.55}
+  _spikesEnvironmentHazard: {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
 --- !u!4 &1849279529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}

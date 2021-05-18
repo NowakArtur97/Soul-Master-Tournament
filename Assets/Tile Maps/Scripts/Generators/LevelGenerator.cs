@@ -27,10 +27,7 @@ public class LevelGenerator : MonoBehaviour
         _battleGround = transform.Find(BATTLE_GROUND_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
     }
 
-    private void Start()
-    {
-        StartCoroutine(GenerateLevel());
-    }
+    private void Start() => StartCoroutine(GenerateLevel());
 
     private IEnumerator GenerateLevel()
     {
@@ -47,30 +44,30 @@ public class LevelGenerator : MonoBehaviour
                 yield return new WaitForSeconds(_timeBeforeSpawningTiles);
                 position.Set((int)(column + _tileMapOffset.x), (int)(-row + _tileMapOffset.y), 0);
 
-                if (IsFirstRow(row) && IsFirstColumn(column))
+                if (GeneratorUtil.IsFirstRow(row) && GeneratorUtil.IsFirstColumn(column))
                 {
                     _outerWalls.SetTile(position, _tilesData.upperLeftCorner);
                 }
-                else if (IsFirstRow(row) && IsLastColumn(column))
+                else if (GeneratorUtil.IsFirstRow(row) && GeneratorUtil.IsLastColumn(column, _tileMapColumns))
                 {
                     _outerWalls.SetTile(position, _tilesData.upperRightCorner);
                 }
-                else if (IsLastRow(row) && IsFirstColumn(column))
+                else if (GeneratorUtil.IsLastRow(row, _tileMapRows) && GeneratorUtil.IsFirstColumn(column))
                 {
                     _outerWalls.SetTile(position, _tilesData.lowerLeftCorner);
                 }
-                else if (IsLastRow(row) && IsLastColumn(column))
+                else if (GeneratorUtil.IsLastRow(row, _tileMapRows) && GeneratorUtil.IsLastColumn(column, _tileMapColumns))
                 {
                     _outerWalls.SetTile(position, _tilesData.lowerRightCorner);
                 }
-                else if (IsBetweenCorners(column))
+                else if (GeneratorUtil.IsBetweenCorners(column, _tileMapColumns))
                 {
-                    if (IsFirstRow(row))
+                    if (GeneratorUtil.IsFirstRow(row))
                     {
                         _outerWalls.SetTile(position, _tilesData.upperWalls[wallsIndex]);
                         wallsIndex++;
                     }
-                    else if (IsLastRow(row))
+                    else if (GeneratorUtil.IsLastRow(row, _tileMapRows))
                     {
                         _outerWalls.SetTile(position, _tilesData.lowerWalls[wallsIndex]);
                         wallsIndex++;
@@ -82,12 +79,12 @@ public class LevelGenerator : MonoBehaviour
                 }
                 else
                 {
-                    if (IsFirstColumn(column))
+                    if (GeneratorUtil.IsFirstColumn(column))
                     {
                         _outerWalls.SetTile(position, _tilesData.leftWalls[leftSideWallsIndex]);
                         leftSideWallsIndex++;
                     }
-                    if (IsLastColumn(column))
+                    if (GeneratorUtil.IsLastColumn(column, _tileMapColumns))
                     {
                         _outerWalls.SetTile(position, _tilesData.rightWalls[rightSideWallsIndex]);
                         rightSideWallsIndex++;
@@ -109,16 +106,6 @@ public class LevelGenerator : MonoBehaviour
             }
         }
     }
-
-    private bool IsBetweenCorners(int column) => column > 0 && column < _tileMapColumns - 1;
-
-    private bool IsFirstColumn(int column) => column == 0;
-
-    private bool IsLastColumn(int column) => column == _tileMapColumns - 1;
-
-    private bool IsFirstRow(int row) => row == 0;
-
-    private bool IsLastRow(int row) => row == _tileMapRows - 1;
 
     private Tile GetRandomTile(Tile[] tiles) => tiles[Random.Range(0, tiles.Length)];
 }

@@ -14,14 +14,14 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<TileMapGenerator>().LevelGeneratedEvent += OnLevelGenerated;
+        FindObjectOfType<EnvironmentHazardGenerator>().LevelGeneratedEvent += OnLevelGenerated;
 
         _players = new List<Player>();
     }
 
     private void OnLevelGenerated()
     {
-        FindObjectOfType<TileMapGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
+        FindObjectOfType<EnvironmentHazardGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
 
         for (int i = 0; i < _numberOfPlayers; i++)
         {
