@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Linq;
+using System.Collections.Generic;
 
 public class EnvironmentHazardGenerator : MonoBehaviour
 {
@@ -33,19 +34,16 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private D_EnvironmentHazard[] _environmentHazardsData;
 
     private Tilemap _obstacles;
-    private Vector2[] _reservedPositions;
+    private List<Vector2> _reservedPositions = new List<Vector2>();
     public Action LevelGeneratedEvent;
 
     private IEnvironmentHazardGeneratorStrategy _generatorStrategy;
 
-    private void Awake()
-    {
-        _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
-    }
+    private void Awake() => _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
 
     private void Start()
     {
-        _reservedPositions = FindObjectOfType<PlayerManager>().PlayersPositions;
+        _reservedPositions.AddRange(FindObjectOfType<PlayerManager>().PlayersPositions);
 
         StartCoroutine(GenerateEnvironmentHazards());
     }
@@ -69,6 +67,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                     int chanceForHazard = UnityEngine.Random.Range(0, 100);
                     obstaclePosition.Set(position.x, position.y);
                     obstaclePosition += _environmentHazardOffset;
+                    _reservedPositions.Add(obstaclePosition);
 
                     GameObject hazard = null;
                     D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
