@@ -29,6 +29,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.55f);
     [SerializeField]
     private D_EnvironmentHazard _spikesEnvironmentHazard;
+    [SerializeField]
+    private D_EnvironmentHazard _bearTrapEnvironmentHazard;
 
     private Tilemap _obstacles;
     private Vector2[] _reservedPositions;
@@ -41,6 +43,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     {
         _environmentHazardsData = new List<D_EnvironmentHazard>();
         _environmentHazardsData.Add(_spikesEnvironmentHazard);
+        _environmentHazardsData.Add(_bearTrapEnvironmentHazard);
 
         _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
     }
@@ -93,7 +96,6 @@ public class EnvironmentHazardGenerator : MonoBehaviour
             }
         }
 
-
         LevelGeneratedEvent?.Invoke();
     }
 
@@ -101,11 +103,11 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     {
         EnvironmentHazard hazard = hazardPrefab.GetComponent<EnvironmentHazard>();
 
-        if (hazard is Spikes)
-        {
-            return Quaternion.identity;
-        }
-        else
+        //if (hazard is Spikes)
+        //{
+        //    return Quaternion.identity;
+        //}
+        //else
         {
             return Quaternion.identity;
         }
