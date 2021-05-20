@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1839e1b50b960564c9975f9de231d79c, type: 3}
-  m_Name: BearTrap_EnvironmentHazardsData
+  m_Name: Moving Wall_EnvironmentHazardsData
   m_EditorClassIdentifier: 
-  environmentHazard: {fileID: 7858054498318414640, guid: 3a8c87be0bb260944bd28f16deac991b, type: 3}
-  chanceForEnvironmentHazard: 15
+  environmentHazard: {fileID: 2855474258383591317, guid: d30affa8c457e9444be42bdefc483241, type: 3}
+  chanceForEnvironmentHazard: 20
   isOnWall: 0

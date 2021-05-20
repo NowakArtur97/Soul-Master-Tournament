@@ -1829,9 +1829,11 @@ MonoBehaviour:
   _environmentHazardsContainer: {fileID: 1655095876}
   _reservedPositionOffset: 1.5
   _environmentHazardOffset: {x: 0.5, y: 0.55}
-  _spikesEnvironmentHazard: {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
-  _bearTrapEnvironmentHazard: {fileID: 11400000, guid: e455dfe3e1380804b886e3d0004e2e87, type: 2}
-  _crumblingFloorEnvironmentHazard: {fileID: 11400000, guid: 354d91ef9f26ea6469f883cef2459d4b, type: 2}
+  _environmentHazardsData:
+  - {fileID: 11400000, guid: 2adb20dbb58127a4ca6d525e029fc530, type: 2}
+  - {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
+  - {fileID: 11400000, guid: e455dfe3e1380804b886e3d0004e2e87, type: 2}
+  - {fileID: 11400000, guid: 354d91ef9f26ea6469f883cef2459d4b, type: 2}
 --- !u!4 &1849279529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
