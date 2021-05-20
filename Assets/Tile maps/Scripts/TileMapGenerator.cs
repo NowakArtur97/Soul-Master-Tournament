@@ -24,7 +24,7 @@ public class TileMapGenerator : MonoBehaviour
     [SerializeField]
     private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.4f);
     [SerializeField]
-    private Vector2 _reservedPositionOffset = new Vector2(1.5f, 1f);
+    private float _reservedPositionOffset = 1.5f;
 
     [SerializeField]
     private D_Tiles _tilesData;

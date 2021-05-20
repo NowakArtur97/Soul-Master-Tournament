@@ -22,7 +22,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     [SerializeField]
     private GameObject _environmentHazardsContainer;
     [SerializeField]
-    private Vector2 _reservedPositionOffset = new Vector2(1.5f, 1f);
+    private float _reservedPositionOffset = 1.5f;
 
     [Header("Environment Hazards")]
     [SerializeField]

@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     private int _numberOfPlayers = 1;
     [SerializeField]
     public Vector2[] PlayersPositions;
+    [SerializeField]
+    private Vector2 _playersPositionOffset = new Vector2(0.6f, 1.2f);
 
     private List<Player> _players;
 
@@ -31,7 +33,7 @@ public class PlayerManager : MonoBehaviour
 
     private void SpawnPlayer(int id)
     {
-        GameObject playerGO = Instantiate(_playerPrefab, PlayersPositions[id], Quaternion.identity);
+        GameObject playerGO = Instantiate(_playerPrefab, PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
         Player player = playerGO.GetComponent<Player>();
 
         player.CreateStatsManager(id);
