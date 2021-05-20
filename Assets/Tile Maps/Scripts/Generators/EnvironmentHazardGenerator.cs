@@ -28,6 +28,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     [SerializeField]
     private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.55f);
     [SerializeField]
+    private LayerMask[] _hazardsMasks;
+    [SerializeField]
     private D_EnvironmentHazard[] _environmentHazardsData;
 
     private Tilemap _obstacles;
@@ -62,14 +64,13 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                 yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
                 position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
 
-                if (GeneratorUtil.IsFreePosition(position, _reservedPositions, _reservedPositionOffset))
+                if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
                 {
                     int chanceForHazard = UnityEngine.Random.Range(0, 100);
                     obstaclePosition.Set(position.x, position.y);
                     obstaclePosition += _environmentHazardOffset;
 
                     GameObject hazard = null;
-                    Quaternion rotation;
                     D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
                         && chanceForHazard <= data.chanceForEnvironmentHazard);
 
@@ -78,12 +79,15 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                         if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
                             || !GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall)
                         {
-                            GameObject hazardPrefab = randomHazardData.environmentHazard;
+                            GameObject environmentHazard = randomHazardData.environmentHazard;
+                            _generatorStrategy = ChoseGenerationStrategy(environmentHazard);
 
-                            rotation = GetRotation(hazardPrefab);
-                            hazard = Instantiate(hazardPrefab, obstaclePosition, rotation);
+                            hazard = _generatorStrategy.generate(environmentHazard, obstaclePosition);
 
-                            hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                            if (hazard)
+                            {
+                                hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                            }
                         }
                     }
                 }
@@ -93,17 +97,18 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         LevelGeneratedEvent?.Invoke();
     }
 
-    private Quaternion GetRotation(GameObject hazardPrefab)
+    private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard)
     {
-        EnvironmentHazard hazard = hazardPrefab.GetComponent<EnvironmentHazard>();
-
-        //if (hazard is Spikes)
-        //{
-        //    return Quaternion.identity;
-        //}
-        //else
+        if (environmentHazard.GetComponentInChildren<Portal>() != null)
         {
-            return Quaternion.identity;
+            if (_generatorStrategy is PortalGeneratorStrategy)
+            {
+                return _generatorStrategy;
+            }
+            return new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardOffset, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
+                _reservedPositions, _reservedPositionOffset);
         }
+
+        return new DefaultGeneratorStrategy();
     }
 }

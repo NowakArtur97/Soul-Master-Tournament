@@ -13,10 +13,13 @@ public static class GeneratorUtil
 
     public static bool IsLastRow(int row, int maxRows) => row == maxRows - 1;
 
-    public static bool IsFreePosition(Vector3Int position, Vector2[] reservedPositions, float reservedPositionOffset) =>
+    public static bool IsPositionFree(Vector3Int position, Vector2[] reservedPositions, float reservedPositionOffset) =>
         !reservedPositions.Any(reservedPosition =>
              IsCloseHorizontally(position, reservedPosition, reservedPositionOffset)
              || IsCloseVertically(position, reservedPositionOffset, reservedPosition));
+
+    public static bool IsAlreadyTaken(Vector2 position, LayerMask[] masks) =>
+        masks.Any(mask => Physics2D.OverlapCircle(position, 0.8f, mask) != null);
 
     private static bool IsCloseVertically(Vector3Int position, float reservedPositionOffset, Vector2 reservedPosition) =>
         (reservedPosition.y + reservedPositionOffset >= position.y && reservedPosition.y - reservedPositionOffset <= position.y)

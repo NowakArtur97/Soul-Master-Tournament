@@ -1,4 +1,6 @@
+using UnityEngine;
+
 public interface IEnvironmentHazardGeneratorStrategy
 {
-    void generate();
+    GameObject generate(GameObject environmentHazard, Vector2 obstaclePosition);
 }

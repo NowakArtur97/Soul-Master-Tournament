@@ -1732,7 +1732,6 @@ GameObject:
   - component: {fileID: 1801125079}
   - component: {fileID: 1801125082}
   - component: {fileID: 1801125083}
-  - component: {fileID: 1801125081}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1769,29 +1768,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801125081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801125078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd338b7cc1b29ff40b5f933f5b89d74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tileMapRows: 18
-  _tileMapColumns: 18
-  _timeBetweenSpawningTiles: 0.001
-  _tileMapOffset: {x: -5, y: 4, z: 0}
-  _environmentHazardOffset: {x: 0.5, y: 0.55}
-  _reservedPositionOffset: 1.5
-  _tilesData: {fileID: 11400000, guid: 7cef536676805cd4fa22d5effb87e44d, type: 2}
-  _levelEnvironmentHazardsData: {fileID: 11400000, guid: 4b37348af75600245a2da17912a2036f, type: 2}
-  _shouldGenerateEnvironmentHazards: 0
-  _environmentHazardsContainer: {fileID: 1072147211}
-  _maxNumberOfRails: 0
 --- !u!114 &1801125082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,11 +1805,17 @@ MonoBehaviour:
   _environmentHazardsContainer: {fileID: 1655095876}
   _reservedPositionOffset: 1.5
   _environmentHazardOffset: {x: 0.5, y: 0.55}
+  _hazardsMasks:
+  - serializedVersion: 2
+    m_Bits: 16384
+  - serializedVersion: 2
+    m_Bits: 65536
   _environmentHazardsData:
   - {fileID: 11400000, guid: 2adb20dbb58127a4ca6d525e029fc530, type: 2}
   - {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
   - {fileID: 11400000, guid: e455dfe3e1380804b886e3d0004e2e87, type: 2}
   - {fileID: 11400000, guid: 354d91ef9f26ea6469f883cef2459d4b, type: 2}
+  - {fileID: 11400000, guid: 19fc766d85f84344898ec95c30a79a6f, type: 2}
 --- !u!4 &1849279529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
