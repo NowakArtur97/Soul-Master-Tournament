@@ -31,6 +31,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private D_EnvironmentHazard _spikesEnvironmentHazard;
     [SerializeField]
     private D_EnvironmentHazard _bearTrapEnvironmentHazard;
+    [SerializeField]
+    private D_EnvironmentHazard _crumblingFloorEnvironmentHazard;
 
     private Tilemap _obstacles;
     private Vector2[] _reservedPositions;
@@ -42,6 +44,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private void Awake()
     {
         _environmentHazardsData = new List<D_EnvironmentHazard>();
+        _environmentHazardsData.Add(_crumblingFloorEnvironmentHazard);
         _environmentHazardsData.Add(_spikesEnvironmentHazard);
         _environmentHazardsData.Add(_bearTrapEnvironmentHazard);
 
@@ -77,7 +80,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
                     GameObject hazard = null;
                     Quaternion rotation;
-                    D_EnvironmentHazard randomHazardData = _environmentHazardsData.Find(data => chanceForHazard <= data.chanceForEnvironmentHazard);
+                    D_EnvironmentHazard randomHazardData = _environmentHazardsData.Find(data => data != null && chanceForHazard <= data.chanceForEnvironmentHazard);
 
                     if (randomHazardData)
                     {
