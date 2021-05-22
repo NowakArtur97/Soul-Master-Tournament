@@ -27,8 +27,6 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
     [Header("Environment Hazards")]
     [SerializeField]
-    private Vector2 _environmentHazardOffset = new Vector2(0.5f, 0.55f);
-    [SerializeField]
     private LayerMask[] _hazardsMasks;
     [SerializeField]
     private D_EnvironmentHazard[] _environmentHazardsData;
@@ -60,14 +58,18 @@ public class EnvironmentHazardGenerator : MonoBehaviour
             for (int row = 0; row < _tileMapRows; row++)
             {
                 yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
+
+                if (GeneratorUtil.IsInCorner(column, _tileMapColumns, row, _tileMapRows))
+                {
+                    continue;
+                }
+
                 position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
 
                 if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
                 {
                     int chanceForHazard = UnityEngine.Random.Range(0, 100);
                     obstaclePosition.Set(position.x, position.y);
-                    obstaclePosition += _environmentHazardOffset;
-                    _reservedPositions.Add(obstaclePosition);
 
                     GameObject hazard = null;
                     D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
@@ -76,15 +78,17 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                     if (randomHazardData)
                     {
                         if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
-                            || !GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall)
+                                             || !GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall)
                         {
                             GameObject environmentHazard = randomHazardData.environmentHazard;
                             _generatorStrategy = ChoseGenerationStrategy(environmentHazard);
 
-                            hazard = _generatorStrategy.generate(environmentHazard, obstaclePosition);
+                            hazard = _generatorStrategy.Generate(randomHazardData, obstaclePosition);
 
                             if (hazard)
                             {
+                                hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
+                                _reservedPositions.Add(hazard.transform.position);
                                 hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
                             }
                         }
@@ -104,8 +108,16 @@ public class EnvironmentHazardGenerator : MonoBehaviour
             {
                 return _generatorStrategy;
             }
-            return new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardOffset, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
+            return new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
                 _reservedPositions, _reservedPositionOffset);
+        }
+        else if (environmentHazard.GetComponentInChildren<ProjectileLauncher>() != null || environmentHazard.GetComponentInChildren<Flamethrower>() != null)
+        {
+            if (_generatorStrategy is HazardOnWallGeneratorStrategy)
+            {
+                return _generatorStrategy;
+            }
+            return new HazardOnWallGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardsContainer, _tileMapOffset);
         }
 
         return new DefaultGeneratorStrategy();

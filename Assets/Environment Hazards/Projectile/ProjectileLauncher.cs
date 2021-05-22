@@ -11,7 +11,7 @@ public class ProjectileLauncher : EnvironmentHazardActiveAfterTime
 
     protected override void UseEnvironmentHazard()
     {
-        _projectile = Instantiate(projectile, projectileStartingPosition.position, transform.rotation);
+        _projectile = Instantiate(projectile, projectileStartingPosition.position, AliveGameObject.transform.rotation);
         CurrentStatus = Status.FINISHED;
     }
 }

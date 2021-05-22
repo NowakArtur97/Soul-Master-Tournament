@@ -2,6 +2,6 @@ using UnityEngine;
 
 public class DefaultGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
 {
-    public GameObject generate(GameObject environmentHazard, Vector2 obstaclePosition) =>
-        MonoBehaviour.Instantiate(environmentHazard, obstaclePosition, Quaternion.identity);
+    public GameObject Generate(D_EnvironmentHazard environmentHazardData, Vector2 obstaclePosition) =>
+        MonoBehaviour.Instantiate(environmentHazardData.environmentHazard, obstaclePosition, Quaternion.identity);
 }

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1839e1b50b960564c9975f9de231d79c, type: 3}
-  m_Name: Portal_EnvironmentHazardsData
+  m_Name: PosionArrowLauncher_EnvironmentHazardsData
   m_EditorClassIdentifier: 
-  environmentHazard: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
-  chanceForEnvironmentHazard: 10
-  isOnWall: 0
+  environmentHazard: {fileID: 5573475008200671844, guid: 0f14d55680f6aec48a796fc12be7c1e2, type: 3}
+  chanceForEnvironmentHazard: 85
+  isOnWall: 1
+  environmentHazardOffset: {x: 0.5, y: 0.55}

@@ -27,7 +27,25 @@ public static class GeneratorUtil
         (reservedPosition.x + reservedPositionOffset >= position.x && reservedPosition.x - reservedPositionOffset <= position.x)
                      && reservedPosition.y == position.y;
 
-    public static bool IsOnWall(int column, int maxColumns, int row, int maxRows) =>
-        IsFirstColumn(column) || IsLastColumn(column, maxColumns)
-        || IsFirstRow(row) || IsLastRow(row, maxRows);
+    public static bool IsOnWall(int column, int maxColumns, int row, int maxRows)
+    {
+        bool isFirstColumn = IsFirstColumn(column);
+        bool isLastColumn = IsLastColumn(column, maxColumns);
+        bool isFirstRow = IsFirstRow(row);
+        bool isLastRow = IsLastRow(row, maxRows);
+        bool isOnWall = isFirstColumn || isLastColumn || isFirstRow || isLastRow;
+        return isOnWall;
+    }
+
+    public static bool IsInCorner(int column, int maxColumns, int row, int maxRows)
+    {
+        bool isFirstColumn = IsFirstColumn(column);
+        bool isLastColumn = IsLastColumn(column, maxColumns);
+        bool isFirstRow = IsFirstRow(row);
+        bool isLastRow = IsLastRow(row, maxRows);
+        return (isFirstColumn && isFirstRow) ||
+            (isFirstColumn && isLastRow) ||
+            (isLastColumn && isFirstRow) ||
+            (isLastColumn && isLastRow);
+    }
 }

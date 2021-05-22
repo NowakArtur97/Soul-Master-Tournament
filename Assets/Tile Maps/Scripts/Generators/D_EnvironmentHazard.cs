@@ -8,4 +8,6 @@ public class D_EnvironmentHazard : ScriptableObject
     public float chanceForEnvironmentHazard;
 
     public bool isOnWall = false;
+
+    public Vector2 environmentHazardOffset = new Vector2(0.5f, 0.55f);
 }
