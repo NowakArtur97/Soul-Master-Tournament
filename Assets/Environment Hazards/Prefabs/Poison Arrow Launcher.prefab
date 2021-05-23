@@ -75,9 +75,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c373cb51339a546a72699ac6ddfcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 1
   EnvironmentHazardData: {fileID: 11400000, guid: a308dc402bb4df044b99d2a56dd52d80, type: 2}
   projectile: {fileID: 8330458998935323945, guid: d317f655b253a874fa6eb5887e80ce63, type: 3}
   projectileStartingPosition: {fileID: 3651531926339968629}
+  _offsetsFromWall:
+  - {x: 0, y: -0.177}
+  - {x: 0, y: -0.75}
+  - {x: 0, y: -0.75}
+  - {x: 0, y: -0.75}
 --- !u!1 &5573475009542859283
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,8 +6,17 @@ public class ProjectileLauncher : EnvironmentHazardActiveAfterTime
     private GameObject projectile;
     [SerializeField]
     private Transform projectileStartingPosition;
+    [SerializeField]
+    private Vector2[] _offsetsFromWall;
 
     private GameObject _projectile;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        SetOffsetFromWall(_offsetsFromWall);
+    }
 
     protected override void UseEnvironmentHazard()
     {
