@@ -7,6 +7,10 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string ACTIVE_ANIMATION_BOOL_NAME = "active";
+    private const string ON_WALL_ANIMATION_BOOL_MODIFIER = "-onWall";
+
+    [SerializeField]
+    protected bool CanBeOnWall = false;
 
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     protected GameObject AliveGameObject { get; private set; }
@@ -32,7 +36,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         if (_myAnimator)
         {
-            _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+            SetIsAnimationActive(false);
         }
 
         CurrentStatus = Status.FINISHED;
@@ -57,8 +61,14 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     protected void SetIsAnimationActive(bool isActive)
     {
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isActive);
-        _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, isActive);
+        string onWallModifier = "";
+        if (CanBeOnWall && IsRotated())
+        {
+            onWallModifier += ON_WALL_ANIMATION_BOOL_MODIFIER;
+        }
+
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME + onWallModifier, !isActive);
+        _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME + onWallModifier, isActive);
     }
 
     public virtual void StartUsingEnvironmentHazardTrigger() => CurrentStatus = Status.ACTIVE;
@@ -83,5 +93,30 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         toInteract = null;
         return false;
+    }
+
+    private bool IsRotated() => transform.rotation != Quaternion.Euler(0, 0, 0);
+
+    protected void SetOffsetFromWall(Vector2[] offsetsFromWall)
+    {
+        if (CanBeOnWall)
+        {
+            if (transform.rotation.eulerAngles.z == 0)
+            {
+                AliveGameObject.transform.localPosition += (Vector3)offsetsFromWall[0];
+            }
+            else if (transform.rotation.eulerAngles.z == 180)
+            {
+                AliveGameObject.transform.localPosition += (Vector3)offsetsFromWall[1];
+            }
+            else if (transform.rotation.eulerAngles.z == 90)
+            {
+                AliveGameObject.transform.localPosition += (Vector3)offsetsFromWall[2];
+            }
+            else
+            {
+                AliveGameObject.transform.localPosition += (Vector3)offsetsFromWall[3];
+            }
+        }
     }
 }

@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Flamethrower : EnvironmentHazardActiveAfterTime
 {
+    [SerializeField]
+    private Vector2[] _offsetsFromWall;
+
     private BoxCollider2D _myBoxCollider2D;
 
     protected override void Awake()
@@ -9,6 +12,8 @@ public class Flamethrower : EnvironmentHazardActiveAfterTime
         base.Awake();
 
         _myBoxCollider2D = AliveGameObject.GetComponent<BoxCollider2D>();
+
+        SetOffsetFromWall(_offsetsFromWall);
     }
 
     protected override void UseEnvironmentHazard()

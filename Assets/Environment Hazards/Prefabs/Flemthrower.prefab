@@ -45,7 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f07a6462914c546aeada90e6a61b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 1
   EnvironmentHazardData: {fileID: 11400000, guid: 92213423a4941f947a68b98dcbd6a528, type: 2}
+  _offsetsFromWall:
+  - {x: 0, y: -0.541}
+  - {x: 0, y: -1.14}
+  - {x: 0, y: -1.245}
+  - {x: 0, y: -1.14}
 --- !u!50 &8667012477508301317
 Rigidbody2D:
   serializedVersion: 4
