@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IEnvironmentHazardGeneratorStrategy
 {
-    GameObject Generate(D_EnvironmentHazard randomHazardData, Vector2 obstaclePosition);
+    GameObject Generate(D_EnvironmentHazard environmentHazardData, Vector2 obstaclePosition);
 }

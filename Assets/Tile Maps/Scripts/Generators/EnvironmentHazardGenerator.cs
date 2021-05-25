@@ -8,6 +8,10 @@ using System.Collections.Generic;
 public class EnvironmentHazardGenerator : MonoBehaviour
 {
     private const string OBSTACLES_GAME_OBJECT_NAME = "Obstacles";
+    private const string PORTAL_GAME_OBJECT_NAME = "Portal";
+    private const string BALLISTA_GAME_OBJECT_NAME = "Ballista";
+    private const string FLAMETHROWER_GAME_OBJECT_NAME = "Flemethrower";
+    private const string POISON_ARROW_LAUNCHER_GAME_OBJECT_NAME = "Poison Arrow Launcher";
 
     [Header("Level Data")]
     [SerializeField]
@@ -28,6 +32,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     [Header("Environment Hazards")]
     [SerializeField]
     private LayerMask[] _hazardsMasks;
+    [SerializeField]
+    private LayerMask _wallLayerMask;
     [SerializeField]
     private D_EnvironmentHazard[] _environmentHazardsData;
 
@@ -102,7 +108,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
     private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard)
     {
-        if (environmentHazard.GetComponentInChildren<Portal>() != null)
+        if (Is(environmentHazard, PORTAL_GAME_OBJECT_NAME))
         {
             if (_generatorStrategy is PortalGeneratorStrategy)
             {
@@ -111,7 +117,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
             return new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
                 _reservedPositions, _reservedPositionOffset);
         }
-        else if (environmentHazard.GetComponentInChildren<ProjectileLauncher>() != null || environmentHazard.GetComponentInChildren<Flamethrower>() != null)
+        else if (Is(environmentHazard, POISON_ARROW_LAUNCHER_GAME_OBJECT_NAME) || Is(environmentHazard, FLAMETHROWER_GAME_OBJECT_NAME))
         {
             if (_generatorStrategy is HazardOnWallGeneratorStrategy)
             {
@@ -119,7 +125,17 @@ public class EnvironmentHazardGenerator : MonoBehaviour
             }
             return new HazardOnWallGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardsContainer, _tileMapOffset);
         }
+        else if (Is(environmentHazard, BALLISTA_GAME_OBJECT_NAME))
+        {
+            if (_generatorStrategy is ProjectileLauncher)
+            {
+                return _generatorStrategy;
+            }
+            return new OppositeToWallGeneratorStrategy(_wallLayerMask);
+        }
 
         return new DefaultGeneratorStrategy();
     }
+
+    private static bool Is(GameObject environmentHazard, string name) => environmentHazard.name.StartsWith(name);
 }

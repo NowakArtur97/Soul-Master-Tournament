@@ -1809,6 +1809,9 @@ MonoBehaviour:
     m_Bits: 16384
   - serializedVersion: 2
     m_Bits: 65536
+  _wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
   _environmentHazardsData:
   - {fileID: 11400000, guid: 2adb20dbb58127a4ca6d525e029fc530, type: 2}
   - {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
@@ -1817,6 +1820,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19fc766d85f84344898ec95c30a79a6f, type: 2}
   - {fileID: 11400000, guid: 8dff1ff3846e2694a811a18d5fb58bf4, type: 2}
   - {fileID: 11400000, guid: 800b22ff587c1114a9d382c74e49e012, type: 2}
+  - {fileID: 11400000, guid: dbbb25687886b144e9c26aa388f9b5fa, type: 2}
 --- !u!4 &1849279529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106387595679223043, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
