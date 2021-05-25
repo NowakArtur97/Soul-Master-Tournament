@@ -26,8 +26,7 @@ public abstract class Projectile : MonoBehaviour
 
         _myRigidBody2d = _aliveGameObject.GetComponent<Rigidbody2D>();
 
-        _myRigidBody2d.velocity = transform.right * _projectileStatsData.speed;
-
+        _myRigidBody2d.velocity = -transform.up * _projectileStatsData.speed;
         _damageRadius = _projectileStatsData.damageRadius;
         _whatIsGround = _projectileStatsData.whatIsGround;
         _whatIsDamagable = _projectileStatsData.whatIsDamagable;
