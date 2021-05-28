@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c373cb51339a546a72699ac6ddfcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 0
   EnvironmentHazardData: {fileID: 11400000, guid: dcc3cefa61b74f24aa7ce4c2f44e3a3d, type: 2}
   projectile: {fileID: 7050799240284997836, guid: 2e7b04a62e28db74092917b1ced996dc, type: 3}
   projectileStartingPosition: {fileID: 6913884582997332447}
+  _offsetsFromWall: []
 --- !u!1 &2307848969339233721
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1808362087
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7121855335360165612, guid: e08bd1f173584894b997e938b22c2e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

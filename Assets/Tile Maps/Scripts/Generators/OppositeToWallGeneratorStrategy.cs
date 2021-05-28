@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class OppositeToWallGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
 {
+    private const int DISTANCE_TO_CHECK = 30;
+
     private Vector2[] _directionsToCheck;
     private LayerMask _wallLayerMask;
 
@@ -11,32 +13,32 @@ public class OppositeToWallGeneratorStrategy : IEnvironmentHazardGeneratorStrate
         _wallLayerMask = wallLayerMask;
     }
 
-    public GameObject Generate(D_EnvironmentHazard environmentHazardData, Vector2 obstaclePosition) =>
-        MonoBehaviour.Instantiate(environmentHazardData.environmentHazard, obstaclePosition, GetDirectionFurthestFromWall(obstaclePosition));
+    public GameObject Generate(D_EnvironmentHazard environmentHazardData, Vector2 obstaclePosition)
+    {
+        GameObject hazard = MonoBehaviour.Instantiate(environmentHazardData.environmentHazard, obstaclePosition, Quaternion.identity);
 
-    private Quaternion GetDirectionFurthestFromWall(Vector2 obstaclePosition)
+        TurnTowardsFarthestWall(hazard);
+
+        return hazard;
+    }
+
+    private void TurnTowardsFarthestWall(GameObject hazard)
     {
         Vector2 directionFurthestFromWall = _directionsToCheck[0];
-        float distanceFurthestFromWall = 0;
+        float distanceFurthestFromWall = Physics2D.Raycast(hazard.transform.position, directionFurthestFromWall, DISTANCE_TO_CHECK, _wallLayerMask).distance;
 
         for (int index = 1; index < _directionsToCheck.Length; index++)
         {
             Vector2 direction = _directionsToCheck[index];
-            RaycastHit2D wallHit = Physics2D.Raycast(obstaclePosition, direction, 50, _wallLayerMask);
+            float wallHitDistance = Physics2D.Raycast(hazard.transform.position, direction, DISTANCE_TO_CHECK, _wallLayerMask).distance;
 
-            if (wallHit)
+            if (wallHitDistance >= distanceFurthestFromWall)
             {
-                float wallHitDistance = wallHit.distance;
-
-                if (wallHitDistance >= distanceFurthestFromWall)
-                {
-                    distanceFurthestFromWall = wallHitDistance;
-                    directionFurthestFromWall = direction;
-                }
+                distanceFurthestFromWall = wallHitDistance;
+                directionFurthestFromWall = direction;
             }
         }
-        Debug.Log(directionFurthestFromWall);
-        Debug.Log(distanceFurthestFromWall);
-        return Quaternion.Euler(directionFurthestFromWall.x, directionFurthestFromWall.y, 0f);
+
+        hazard.transform.right = directionFurthestFromWall;
     }
 }

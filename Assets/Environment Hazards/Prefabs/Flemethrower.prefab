@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1847098129023283537}
   - component: {fileID: 8667012477508301317}
   m_Layer: 16
-  m_Name: Flemthrower
+  m_Name: Flemethrower
   m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

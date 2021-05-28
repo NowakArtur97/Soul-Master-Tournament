@@ -26,4 +26,7 @@ MonoBehaviour:
   notAfectedLayerMasks:
   - serializedVersion: 2
     m_Bits: 64
+  - serializedVersion: 2
+    m_Bits: 262144
   afectedLayerMasks: []
+  canPlayerSummonAfterDestroy: 1

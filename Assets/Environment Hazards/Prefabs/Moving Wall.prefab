@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2855474258383591306}
   - component: {fileID: 7416840834314092167}
-  m_Layer: 6
+  m_Layer: 18
   m_Name: Moving Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61d8d9cc971d154b85f4f602cd30fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 0
   EnvironmentHazardData: {fileID: 11400000, guid: 4458254b29b06174b9a6682f07ec09a2, type: 2}
   _blockingTime: 3
 --- !u!1 &2855474259725778914
@@ -59,7 +60,7 @@ GameObject:
   - component: {fileID: 2855474259725778918}
   - component: {fileID: 2855474259725778913}
   - component: {fileID: 2855474259725778912}
-  m_Layer: 6
+  m_Layer: 18
   m_Name: Alive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
