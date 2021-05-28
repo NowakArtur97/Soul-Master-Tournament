@@ -40,5 +40,6 @@ public class OppositeToWallGeneratorStrategy : IEnvironmentHazardGeneratorStrate
         }
 
         hazard.transform.right = directionFurthestFromWall;
+        hazard.transform.Rotate(0, 0, 90); // rotate to match sprite
     }
 }
