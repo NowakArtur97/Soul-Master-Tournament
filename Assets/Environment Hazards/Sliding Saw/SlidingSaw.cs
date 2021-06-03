@@ -56,7 +56,7 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
     {
         isMoving = true;
 
-        SetVelocity(_sawSpeed, _movingDirection);
+        SetVelocity(_sawSpeed, transform.right * _movingDirection);
 
         yield return new WaitForSeconds(_moveTime);
 
@@ -70,7 +70,7 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
     private void ChangeDirection()
     {
         _movingDirection *= -1;
-        SetVelocity(_sawSpeed, _movingDirection);
+        SetVelocity(_sawSpeed, transform.right * _movingDirection);
     }
 
     private bool CheckIfTouchingRails() => Physics2D.Raycast(_railsCheck.position, Vector2.right * _movingDirection, _railsCheckDistance, _whatIsRails);

@@ -77,7 +77,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     protected void SetVelocityZero() => _myRigidbody2D.velocity = Vector2.zero;
 
-    protected void SetVelocity(float speed, int direction) => _myRigidbody2D.velocity = new Vector2(direction * speed, 0);
+    protected void SetVelocity(float speed, Vector2 direction) => _myRigidbody2D.velocity = direction * speed;
 
     protected bool CheckIfPlayerInMinAgro(out GameObject toInteract, LayerMask[] whatIsInteractable)
     {
