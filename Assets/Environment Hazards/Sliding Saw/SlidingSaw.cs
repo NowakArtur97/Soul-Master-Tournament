@@ -73,7 +73,7 @@ public class SlidingSaw : EnvironmentHazardActiveAfterTime
         SetVelocity(_sawSpeed, transform.right * _movingDirection);
     }
 
-    private bool CheckIfTouchingRails() => Physics2D.Raycast(_railsCheck.position, Vector2.right * _movingDirection, _railsCheckDistance, _whatIsRails);
+    private bool CheckIfTouchingRails() => Physics2D.Raycast(_railsCheck.position, transform.right * _movingDirection, _railsCheckDistance, _whatIsRails);
 
     private void OnDrawGizmos()
     {
