@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "_EnvironmentHazardsData", menuName = "Data/Environment Hazard")]
+[CreateAssetMenu(fileName = "_EnvironmentHazardsData", menuName = "Data/Environment Hazard For Generation")]
 public class D_EnvironmentHazard : ScriptableObject
 {
     public GameObject environmentHazard;

@@ -12,6 +12,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private const string BALLISTA_GAME_OBJECT_NAME = "Ballista";
     private const string FLAMETHROWER_GAME_OBJECT_NAME = "Flemethrower";
     private const string POISON_ARROW_LAUNCHER_GAME_OBJECT_NAME = "Poison Arrow Launcher";
+    private const string SLIDING_SAW_GAME_OBJECT_NAME = "Sliding Saw";
 
     [Header("Level Data")]
     [SerializeField]
@@ -36,6 +37,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private LayerMask _wallLayerMask;
     [SerializeField]
     private D_EnvironmentHazard[] _environmentHazardsData;
+    [SerializeField]
+    private GameObject[] _rails;
 
     private Tilemap _obstacles;
     private List<Vector2> _reservedPositions = new List<Vector2>();
@@ -84,7 +87,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                     if (randomHazardData)
                     {
                         if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
-                                             || !GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall)
+                                             || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
                         {
                             GameObject environmentHazard = randomHazardData.environmentHazard;
                             _generatorStrategy = ChoseGenerationStrategy(environmentHazard);
@@ -93,8 +96,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
                             if (hazard)
                             {
-                                hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
                                 _reservedPositions.Add(hazard.transform.position);
+                                hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
                                 hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
                             }
                         }
@@ -127,11 +130,19 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         }
         else if (Is(environmentHazard, BALLISTA_GAME_OBJECT_NAME))
         {
-            if (_generatorStrategy is ProjectileLauncher)
+            if (_generatorStrategy is OppositeToWallGeneratorStrategy)
             {
                 return _generatorStrategy;
             }
             return new OppositeToWallGeneratorStrategy(_wallLayerMask);
+        }
+        else if (Is(environmentHazard, SLIDING_SAW_GAME_OBJECT_NAME))
+        {
+            if (_generatorStrategy is RailsGeneratorStrategy)
+            {
+                return _generatorStrategy;
+            }
+            return new RailsGeneratorStrategy(_tileMapRows, _tileMapColumns, _rails, _environmentHazardsContainer, _reservedPositions, _reservedPositionOffset);
         }
 
         return new DefaultGeneratorStrategy();
