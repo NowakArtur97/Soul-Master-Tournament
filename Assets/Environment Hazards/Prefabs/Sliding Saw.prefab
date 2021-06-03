@@ -80,7 +80,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 131072
   _sawSpeed: 4
-  _railsCheckDistance: 0.7
+  _railsCheckDistance: 0.1
   _railsCheck: {fileID: 4113153622942591717}
   _minMoveTime: 4
   _maxMoveTime: 7

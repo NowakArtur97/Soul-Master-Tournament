@@ -33,32 +33,17 @@ public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
         Vector2 middleSideRailPosition = new Vector2(obstaclePosition.x, obstaclePosition.y);
         Vector2 rightSideRailPosition = new Vector2(obstaclePosition.x, obstaclePosition.y) + direction;
 
-        if (IsFree(leftSideRailPosition) && !GeneratorUtil.IsOnWall((int)leftSideRailPosition.y, _tileMapColumns, (int)leftSideRailPosition.x, _tileMapRows)
-         && IsFree(middleSideRailPosition)
-           && IsFree(rightSideRailPosition) && !GeneratorUtil.IsOnWall((int)rightSideRailPosition.y, _tileMapColumns, (int)rightSideRailPosition.x, _tileMapRows))
+        if (IsFree(leftSideRailPosition) && !GeneratorUtil.IsOnWall((int)leftSideRailPosition.y, _tileMapColumns,
+            (int)leftSideRailPosition.x, _tileMapRows)
+            && IsFree(middleSideRailPosition)
+              && IsFree(rightSideRailPosition) && !GeneratorUtil.IsOnWall((int)rightSideRailPosition.y, _tileMapColumns,
+             (int)rightSideRailPosition.x, _tileMapRows))
         {
             GameObject slidingSawGameObject = MonoBehaviour.Instantiate(environmentHazardData.environmentHazard, obstaclePosition, Quaternion.identity);
 
-            GameObject leftSideRail = MonoBehaviour.Instantiate(_rails[0], leftSideRailPosition + environmentHazardData.environmentHazardOffset,
-                Quaternion.identity);
-
-            leftSideRail.transform.parent = _environmentHazardsContainer.transform;
-            _reservedPositions.Add(leftSideRail.transform.position);
-            leftSideRail.transform.right = direction;
-
-            GameObject middleSideRail = MonoBehaviour.Instantiate(_rails[1], middleSideRailPosition + environmentHazardData.environmentHazardOffset,
-                Quaternion.identity);
-
-            middleSideRail.transform.parent = _environmentHazardsContainer.transform;
-            _reservedPositions.Add(middleSideRail.transform.position);
-            middleSideRail.transform.right = direction;
-
-            GameObject rightSideRail = MonoBehaviour.Instantiate(_rails[2], rightSideRailPosition + environmentHazardData.environmentHazardOffset,
-                Quaternion.identity);
-
-            rightSideRail.transform.parent = _environmentHazardsContainer.transform;
-            _reservedPositions.Add(rightSideRail.transform.position);
-            rightSideRail.transform.right = direction;
+            SpawnRail(_rails[0], leftSideRailPosition, environmentHazardData, direction);
+            GameObject middleSideRail = SpawnRail(_rails[1], middleSideRailPosition, environmentHazardData, direction);
+            SpawnRail(_rails[2], rightSideRailPosition, environmentHazardData, direction);
 
             slidingSawGameObject.transform.position = middleSideRail.transform.position - (Vector3)environmentHazardData.environmentHazardOffset;
             slidingSawGameObject.transform.right = direction;
@@ -67,6 +52,17 @@ public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
         }
 
         return null;
+    }
+
+    private GameObject SpawnRail(GameObject rail, Vector2 position, D_EnvironmentHazard environmentHazardData, Vector2 direction)
+    {
+        GameObject railGameObject = MonoBehaviour.Instantiate(rail, position + environmentHazardData.environmentHazardOffset, Quaternion.identity);
+
+        railGameObject.transform.parent = _environmentHazardsContainer.transform;
+        _reservedPositions.Add(railGameObject.transform.position);
+        railGameObject.transform.right = direction;
+
+        return railGameObject;
     }
 
     private bool IsFree(Vector2 railPosition) =>
