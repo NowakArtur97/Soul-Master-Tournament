@@ -43,8 +43,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private Tilemap _obstacles;
     private List<Vector2> _reservedPositions = new List<Vector2>();
     public Action LevelGeneratedEvent;
-
-    private IEnvironmentHazardGeneratorStrategy _generatorStrategy;
+    private List<IEnvironmentHazardGeneratorStrategy> _generators;
 
     private void Awake() => _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
 
@@ -53,6 +52,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         _reservedPositions.AddRange(FindObjectOfType<PlayerManager>().PlayersPositions);
 
         StartCoroutine(GenerateEnvironmentHazards());
+
+        _generators = new List<IEnvironmentHazardGeneratorStrategy>();
     }
 
     private IEnumerator GenerateEnvironmentHazards()
@@ -90,9 +91,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                                              || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
                         {
                             GameObject environmentHazard = randomHazardData.environmentHazard;
-                            _generatorStrategy = ChoseGenerationStrategy(environmentHazard);
 
-                            hazard = _generatorStrategy.Generate(randomHazardData, obstaclePosition);
+                            hazard = ChoseGenerationStrategy(environmentHazard).Generate(randomHazardData, obstaclePosition);
 
                             if (hazard)
                             {
@@ -111,41 +111,56 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
     private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard)
     {
+        IEnvironmentHazardGeneratorStrategy generatorStrategy = null;
+
         if (Is(environmentHazard, PORTAL_GAME_OBJECT_NAME))
         {
-            if (_generatorStrategy is PortalGeneratorStrategy)
+            generatorStrategy = _generators.OfType<PortalGeneratorStrategy>().FirstOrDefault();
+            if (generatorStrategy == null)
             {
-                return _generatorStrategy;
+                generatorStrategy = new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
+                    _reservedPositions, _reservedPositionOffset);
+                _generators.Add(generatorStrategy);
             }
-            return new PortalGeneratorStrategy(_tileMapRows, _tileMapColumns, _tileMapOffset, _hazardsMasks, _environmentHazardsContainer,
-                _reservedPositions, _reservedPositionOffset);
         }
         else if (Is(environmentHazard, POISON_ARROW_LAUNCHER_GAME_OBJECT_NAME) || Is(environmentHazard, FLAMETHROWER_GAME_OBJECT_NAME))
         {
-            if (_generatorStrategy is HazardOnWallGeneratorStrategy)
+            generatorStrategy = _generators.OfType<HazardOnWallGeneratorStrategy>().FirstOrDefault();
+            if (generatorStrategy == null)
             {
-                return _generatorStrategy;
+                generatorStrategy = new HazardOnWallGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardsContainer, _tileMapOffset);
+                _generators.Add(generatorStrategy);
             }
-            return new HazardOnWallGeneratorStrategy(_tileMapRows, _tileMapColumns, _environmentHazardsContainer, _tileMapOffset);
         }
         else if (Is(environmentHazard, BALLISTA_GAME_OBJECT_NAME))
         {
-            if (_generatorStrategy is OppositeToWallGeneratorStrategy)
+            generatorStrategy = _generators.OfType<OppositeToWallGeneratorStrategy>().FirstOrDefault();
+            if (generatorStrategy == null)
             {
-                return _generatorStrategy;
+                generatorStrategy = new OppositeToWallGeneratorStrategy(_wallLayerMask);
+                _generators.Add(generatorStrategy);
             }
-            return new OppositeToWallGeneratorStrategy(_wallLayerMask);
         }
         else if (Is(environmentHazard, SLIDING_SAW_GAME_OBJECT_NAME))
         {
-            if (_generatorStrategy is RailsGeneratorStrategy)
+            generatorStrategy = _generators.OfType<RailsGeneratorStrategy>().FirstOrDefault();
+            if (generatorStrategy == null)
             {
-                return _generatorStrategy;
+                generatorStrategy = new RailsGeneratorStrategy(_tileMapRows, _tileMapColumns, _rails, _environmentHazardsContainer, _reservedPositions, _reservedPositionOffset);
+                _generators.Add(generatorStrategy);
             }
-            return new RailsGeneratorStrategy(_tileMapRows, _tileMapColumns, _rails, _environmentHazardsContainer, _reservedPositions, _reservedPositionOffset);
+        }
+        else
+        {
+            generatorStrategy = _generators.OfType<DefaultGeneratorStrategy>().FirstOrDefault();
+            if (generatorStrategy == null)
+            {
+                generatorStrategy = new DefaultGeneratorStrategy();
+                _generators.Add(generatorStrategy);
+            }
         }
 
-        return new DefaultGeneratorStrategy();
+        return generatorStrategy;
     }
 
     private static bool Is(GameObject environmentHazard, string name) => environmentHazard.name.StartsWith(name);
