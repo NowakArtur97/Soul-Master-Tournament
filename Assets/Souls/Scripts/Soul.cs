@@ -104,7 +104,6 @@ public abstract class Soul : MonoBehaviour
 
             if (CheckIfTouching(AbilityRange, AbilityDirection, SoulStats.afectedLayerMasks))
             {
-                Debug.Log("DED");
                 AbilityRange = AbilityMaxRange;
             }
 

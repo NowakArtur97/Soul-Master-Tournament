@@ -149,7 +149,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &5583946400932434074
@@ -190,7 +190,6 @@ GameObject:
   - component: {fileID: 5583946401544878207}
   - component: {fileID: 5583946401544878205}
   - component: {fileID: 5583946401544878206}
-  - component: {fileID: 3685301259336599568}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -228,6 +227,7 @@ MonoBehaviour:
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
   _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
   _abilityTag: Soul Ability
+  _timeBetweenDamages: 1
 --- !u!114 &5583946401544878205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,24 +302,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05717667651f9a2408fc9b68e28b9713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &3685301259336599568
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583946401544878203}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 0

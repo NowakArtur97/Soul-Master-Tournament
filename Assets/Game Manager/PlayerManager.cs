@@ -44,7 +44,7 @@ public class PlayerManager : MonoBehaviour
         _players.Add(player);
     }
 
-    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
+    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id];
 
     private void OnPermamentDeath(int id)
     {

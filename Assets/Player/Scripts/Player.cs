@@ -13,6 +13,10 @@ public class Player : MonoBehaviour, IDamagable
     [SerializeField]
     private string _abilityTag;
 
+    [SerializeField]
+    private float _timeBetweenDamages = 0.5f;
+    private float _lastDamageTime;
+
     private Vector2 _movementInput;
     private bool _bombPlacedInput;
 
@@ -46,6 +50,8 @@ public class Player : MonoBehaviour, IDamagable
 
         _playerAnimationToComponent = _aliveGameObject.GetComponent<PlayerAnimationToComponent>();
         _playerAnimationToComponent.Player = this;
+
+        _lastDamageTime = 0;
     }
 
     private void Update()
@@ -104,17 +110,22 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage()
     {
-        if (_playerStatusesManager.HasShield)
+        if (CanBeDamaged())
         {
-            GetComponentInChildren<WaterShield>()?.DealDamage();
-            return;
-        }
+            _lastDamageTime = Time.time;
 
-        PlayerStatsManager.TakeDamage();
+            if (_playerStatusesManager.HasShield)
+            {
+                GetComponentInChildren<WaterShield>()?.DealDamage();
+                return;
+            }
 
-        if (PlayerStatsManager.IsPermamentDead)
-        {
-            Destroy(gameObject);
+            PlayerStatsManager.TakeDamage();
+
+            if (PlayerStatsManager.IsPermamentDead)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -170,4 +181,6 @@ public class Player : MonoBehaviour, IDamagable
     public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
 
     private bool IsNotMoving => _currentVelocity != Vector2.zero;
+
+    private bool CanBeDamaged() => _lastDamageTime + _timeBetweenDamages <= Time.time;
 }
