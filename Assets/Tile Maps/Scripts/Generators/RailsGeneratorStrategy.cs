@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
 {
+    private int _row;
+    private int _column;
     private int _tileMapRows;
     private int _tileMapColumns;
     private Vector3 _tileMapOffset;
@@ -14,7 +16,7 @@ public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
     private Vector2[] _directions;
 
     public RailsGeneratorStrategy(int tileMapRows, int tileMapColumns, GameObject[] rails, GameObject environmentHazardsContainer, List<Vector2> reservedPositions,
-        float reservedPositionOffset)
+        float reservedPositionOffset, int row, int column)
     {
         _tileMapRows = tileMapRows;
         _tileMapColumns = tileMapColumns;
@@ -23,6 +25,8 @@ public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
         _reservedPositions = reservedPositions;
         _reservedPositionOffset = reservedPositionOffset;
         _directions = new Vector2[] { Vector2.up, Vector2.left, Vector2.right, Vector2.down };
+        _row = row;
+        _column = column;
     }
 
     public GameObject Generate(D_EnvironmentHazard environmentHazardData, Vector2 obstaclePosition)
@@ -33,11 +37,11 @@ public class RailsGeneratorStrategy : IEnvironmentHazardGeneratorStrategy
         Vector2 middleSideRailPosition = new Vector2(obstaclePosition.x, obstaclePosition.y);
         Vector2 rightSideRailPosition = new Vector2(obstaclePosition.x, obstaclePosition.y) + direction;
 
-        if (IsFree(leftSideRailPosition) && !GeneratorUtil.IsOnWall((int)leftSideRailPosition.y, _tileMapColumns,
-            (int)leftSideRailPosition.x, _tileMapRows)
+        if (IsFree(leftSideRailPosition) && !GeneratorUtil.IsOnWall(_row - 1, _tileMapColumns, _column, _tileMapRows)
+            && !GeneratorUtil.IsOnWall(_column - 1, _tileMapColumns, _row, _tileMapRows)
             && IsFree(middleSideRailPosition)
-              && IsFree(rightSideRailPosition) && !GeneratorUtil.IsOnWall((int)rightSideRailPosition.y, _tileMapColumns,
-             (int)rightSideRailPosition.x, _tileMapRows))
+              && IsFree(rightSideRailPosition) && !GeneratorUtil.IsOnWall(_row + 1, _tileMapColumns, _column, _tileMapRows)
+            && !GeneratorUtil.IsOnWall(_column + 1, _tileMapColumns, _row, _tileMapRows))
         {
             GameObject slidingSawGameObject = MonoBehaviour.Instantiate(environmentHazardData.environmentHazard, obstaclePosition, Quaternion.identity);
 

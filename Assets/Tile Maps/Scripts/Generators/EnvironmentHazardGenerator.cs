@@ -92,7 +92,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                         {
                             GameObject environmentHazard = randomHazardData.environmentHazard;
 
-                            hazard = ChoseGenerationStrategy(environmentHazard).Generate(randomHazardData, obstaclePosition);
+                            hazard = ChoseGenerationStrategy(environmentHazard, row, column).Generate(randomHazardData, obstaclePosition);
 
                             if (hazard)
                             {
@@ -109,7 +109,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         LevelGeneratedEvent?.Invoke();
     }
 
-    private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard)
+    private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard, int row, int column)
     {
         IEnvironmentHazardGeneratorStrategy generatorStrategy = null;
 
@@ -144,9 +144,11 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         else if (Is(environmentHazard, SLIDING_SAW_GAME_OBJECT_NAME))
         {
             generatorStrategy = _generators.OfType<RailsGeneratorStrategy>().FirstOrDefault();
-            if (generatorStrategy == null)
+            bool wasNull = generatorStrategy == null;
+            generatorStrategy = new RailsGeneratorStrategy(_tileMapRows, _tileMapColumns, _rails, _environmentHazardsContainer, _reservedPositions,
+               _reservedPositionOffset, row, column);
+            if (wasNull)
             {
-                generatorStrategy = new RailsGeneratorStrategy(_tileMapRows, _tileMapColumns, _rails, _environmentHazardsContainer, _reservedPositions, _reservedPositionOffset);
                 _generators.Add(generatorStrategy);
             }
         }
