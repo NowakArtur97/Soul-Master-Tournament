@@ -20,7 +20,7 @@ public abstract class SoulWithRandomDirectionAbility : Soul
 
         _soulPosition = GetSoulPosition();
 
-        while (_takenPositions.Contains(_soulPosition) && CheckIfTouchingWall(0, _soulPosition, SoulStats.notAfectedLayerMasks))
+        while (_takenPositions.Contains(_soulPosition) && CheckIfTouching(0, _soulPosition, SoulStats.notAfectedLayerMasks))
         {
             _soulPosition = GetSoulPosition();
         }

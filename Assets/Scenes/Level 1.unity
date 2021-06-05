@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 5583946401544878203, guid: 479a1d4f34e7cd34f97a5dbbdf61d5f2, type: 3}
-  _numberOfPlayers: 4
+  _numberOfPlayers: 1
   PlayersPositions:
   - {x: -1, y: 1}
   - {x: 8, y: 1}

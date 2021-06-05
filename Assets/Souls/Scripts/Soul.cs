@@ -71,7 +71,7 @@ public abstract class Soul : MonoBehaviour
             if (Player == null)
             {
                 DisableAllBoolParametersInAnimator();
-                HasUsedAbility = true;
+                UnsummonSoul();
             }
         }
     }
@@ -95,15 +95,16 @@ public abstract class Soul : MonoBehaviour
 
         for (AbilityRange = 1; AbilityRange <= AbilityMaxRange; AbilityRange++)
         {
-            if (CheckIfTouchingWall(AbilityRange, AbilityDirection, SoulStats.notAfectedLayerMasks))
+            if (CheckIfTouching(AbilityRange, AbilityDirection, SoulStats.notAfectedLayerMasks))
             {
                 return;
             }
 
             ability = Instantiate(SoulAbility, GetSoulPosition(), GetSoulRotation());
 
-            if (CheckIfTouchingObstacle(AbilityRange, AbilityDirection, SoulStats.afectedLayerMasks))
+            if (CheckIfTouching(AbilityRange, AbilityDirection, SoulStats.afectedLayerMasks))
             {
+                Debug.Log("DED");
                 AbilityRange = AbilityMaxRange;
             }
 
@@ -140,13 +141,7 @@ public abstract class Soul : MonoBehaviour
     // Empty for abilities without animators
     protected virtual string GetAnimationBoolName() => "";
 
-    protected bool CheckIfTouchingWall(float distance, Vector2 direction, LayerMask[] notAfectedLayerMasks) =>
-        CheckIfTouching(distance, direction, notAfectedLayerMasks);
-
-    protected bool CheckIfTouchingObstacle(float distance, Vector2 direction, LayerMask[] afectedLayerMasks) =>
-        CheckIfTouching(distance, direction, afectedLayerMasks);
-
-    private bool CheckIfTouching(float distance, Vector2 direction, LayerMask[] layerMasks)
+    protected bool CheckIfTouching(float distance, Vector2 direction, LayerMask[] layerMasks)
     {
         foreach (LayerMask layerMask in layerMasks)
         {

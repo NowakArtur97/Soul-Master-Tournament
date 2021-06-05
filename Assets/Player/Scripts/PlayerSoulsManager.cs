@@ -2,10 +2,7 @@ public class PlayerSoulsManager
 {
     private int _numberOfSoulsToPlace;
 
-    public PlayerSoulsManager(D_PlayerStats playerStatsData)
-    {
-        _numberOfSoulsToPlace = playerStatsData.startingNumberOfSouls;
-    }
+    public PlayerSoulsManager(D_PlayerStats playerStatsData) => _numberOfSoulsToPlace = playerStatsData.startingNumberOfSouls;
 
     public void ReduceNumberOfSoulsToPlace() => _numberOfSoulsToPlace--;
 
