@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ballista_EnvironmentHazardsData
   m_EditorClassIdentifier: 
   environmentHazard: {fileID: 2307848967997050318, guid: 2e7462a8f006e8543813c442b659d3c7, type: 3}
-  chanceForEnvironmentHazard: 45
+  chanceForEnvironmentHazard: 15
   isOnWall: 0
   environmentHazardOffset: {x: 0.5, y: 0.55}

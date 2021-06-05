@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Portal_EnvironmentHazardsData
   m_EditorClassIdentifier: 
   environmentHazard: {fileID: 4106387595679223068, guid: 38699ddfbef45154698f968e47ec840b, type: 3}
-  chanceForEnvironmentHazard: 10
+  chanceForEnvironmentHazard: 8
   isOnWall: 0
+  environmentHazardOffset: {x: 0.5, y: 0.55}

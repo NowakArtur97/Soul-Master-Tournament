@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Flamethrower_EnvironmentHazardsData
   m_EditorClassIdentifier: 
   environmentHazard: {fileID: 2281265040346998054, guid: 3a0fc03344082234b959baf53b11dabc, type: 3}
-  chanceForEnvironmentHazard: 65
+  chanceForEnvironmentHazard: 35
   isOnWall: 1
   environmentHazardOffset: {x: 0.5, y: 0.55}

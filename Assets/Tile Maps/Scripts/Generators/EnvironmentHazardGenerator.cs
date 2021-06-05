@@ -42,14 +42,15 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private List<Vector2> _reservedPositions = new List<Vector2>();
     public Action LevelGeneratedEvent;
     private List<IEnvironmentHazardGeneratorStrategy> _generators;
+    private System.Random _random = new System.Random();
 
     private void Start()
     {
         _reservedPositions.AddRange(FindObjectOfType<PlayerManager>().PlayersPositions);
 
-        StartCoroutine(GenerateEnvironmentHazards());
-
         _generators = new List<IEnvironmentHazardGeneratorStrategy>();
+
+        StartCoroutine(GenerateEnvironmentHazards());
     }
 
     private IEnumerator GenerateEnvironmentHazards()
@@ -78,6 +79,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                     obstaclePosition.Set(position.x, position.y);
 
                     GameObject hazard = null;
+                    _environmentHazardsData = _environmentHazardsData.OrderBy(a => _random.Next()).ToArray(); // shuffle array
                     D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
                         && chanceForHazard <= data.chanceForEnvironmentHazard);
 

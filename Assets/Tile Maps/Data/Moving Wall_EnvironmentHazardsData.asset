@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Moving Wall_EnvironmentHazardsData
   m_EditorClassIdentifier: 
   environmentHazard: {fileID: 2855474258383591317, guid: d30affa8c457e9444be42bdefc483241, type: 3}
-  chanceForEnvironmentHazard: 20
+  chanceForEnvironmentHazard: 10
   isOnWall: 0
+  environmentHazardOffset: {x: 0.5, y: 0.55}

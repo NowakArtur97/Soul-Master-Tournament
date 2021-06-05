@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: CrumblingFloor_EnvironmentHazardData
   m_EditorClassIdentifier: 
   environmentHazard: {fileID: 4872386547651543342, guid: e29788f8ed21beb4a8df05f042340fb8, type: 3}
-  chanceForEnvironmentHazard: 20
+  chanceForEnvironmentHazard: 10
   isOnWall: 0
+  environmentHazardOffset: {x: 0.5, y: 0.55}
