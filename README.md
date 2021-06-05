@@ -25,20 +25,19 @@ Stack:
 
 - C#
 - Unity - 2020.2.3f1
-- Tilemap
-- Piskel (pixel art)
+- Piskel
 
 ## Features
 
 - Random level generation
-- Five souls with different abilities
+- Five souls with different abilities (fire, ice, poisonous, water and evil eye)
+- Ten environment hazards (ballista, bear trap, crumbling floor, destructible wall, flamethrower, moving wall, poison arrow launcher, portal, sliding saw and spikes)
 
 ## To Do
 
 - Game Loop
 - AI Enemies
-- Traps
-- Different Game Mods
+- Local Coop
 
 ## Status
 
@@ -50,9 +49,9 @@ Project is: in progess
 
 Use Souls to defeat your enemies!
 
-![Souls with different abilitites](./Screenshots/souls.jpg)
+![Souls with different abilitites](./Screenshots/traps.jpg)
 
-Use five souls with different abilities for this!
+Avoid deadly traps!
 
 ![Randomly generated levels](./Screenshots/random.jpg)
 
