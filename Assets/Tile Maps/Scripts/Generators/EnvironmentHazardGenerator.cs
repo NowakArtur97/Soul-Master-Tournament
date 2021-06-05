@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -40,12 +39,9 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     [SerializeField]
     private GameObject[] _rails;
 
-    private Tilemap _obstacles;
     private List<Vector2> _reservedPositions = new List<Vector2>();
     public Action LevelGeneratedEvent;
     private List<IEnvironmentHazardGeneratorStrategy> _generators;
-
-    private void Awake() => _obstacles = transform.Find(OBSTACLES_GAME_OBJECT_NAME).gameObject.GetComponent<Tilemap>();
 
     private void Start()
     {
