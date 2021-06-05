@@ -13,12 +13,10 @@ public class SoulAbility : MonoBehaviour
 
     protected GameObject AliveGameObject { get; private set; }
     private AbilityAnimationToComponent _abilityAnimationToComponent;
-    protected Animator MyAnimator { get; private set; }
 
     protected virtual void Awake()
     {
         AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        MyAnimator = AliveGameObject.GetComponent<Animator>();
         _abilityAnimationToComponent = AliveGameObject.GetComponent<AbilityAnimationToComponent>();
 
         _abilityAnimationToComponent.SoulAbility = this;
@@ -36,7 +34,6 @@ public class SoulAbility : MonoBehaviour
         }
     }
 
-    // TODO: Ice Wall: If only Ice Wall call OnTriggerEnter2D then change ChildToParentTrggier
     public virtual void OnTriggerEnter2D(Collider2D collision) { }
 
     public virtual void ActiveTrigger() => IsActive = true;

@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class WaterShield : SoulAbility
 {
-    //TODO: Ice and Water Soul Ability: Refactor 
     [SerializeField]
     private float _activeShieldTime = 10.0f;
     [SerializeField]

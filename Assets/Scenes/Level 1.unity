@@ -911,6 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161028da262dfdd4f92e6586f4dd481c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shouldGenerateHazards: 0
   _tileMapRows: 18
   _tileMapColumns: 18
   _timeBeforeSpawningEnvironmentHazards: 2

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5583946400932434073}
   - component: {fileID: 5408761546602428375}
+  - component: {fileID: 6270220161907520326}
   - component: {fileID: 5583946400932434076}
   - component: {fileID: 848839912634413772}
   - component: {fileID: 5583946400932434075}
@@ -48,6 +49,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 5583946401544878207}
+--- !u!114 &6270220161907520326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583946400932434072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df40060de4d3eb45b2295ec16fa53bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &5583946400932434076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -212,7 +225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
+  _basicSoul: {fileID: 7533329418422929363, guid: 48c3b31aefce328408fb7b54ce753ce3, type: 3}
+  _abilityTag: Soul Ability
 --- !u!114 &5583946401544878205
 MonoBehaviour:
   m_ObjectHideFlags: 0

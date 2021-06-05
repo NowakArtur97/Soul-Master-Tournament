@@ -9,8 +9,14 @@ public class PoisonousWhirl : SoulAbility
     [SerializeField]
     private float _activeTime = 10f;
 
-    // TODO: PoisonousWhirl: If Animator used only in here form SoulAbilities then move it here
-    private void Start() => MyAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, true);
+    protected Animator MyAnimator { get; private set; }
+
+    private void Start()
+    {
+        MyAnimator = AliveGameObject.GetComponent<Animator>();
+
+        MyAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, true);
+    }
 
     protected override void Update()
     {

@@ -9,10 +9,7 @@ public class IceWall : SoulAbility
 
     private int _wallHealth;
 
-    private void Start()
-    {
-        _wallHealth = _wallDexterity;
-    }
+    private void Start() => _wallHealth = _wallDexterity;
 
     public override void OnTriggerEnter2D(Collider2D collision)
     {

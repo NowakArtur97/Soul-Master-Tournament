@@ -15,6 +15,8 @@ public class EnvironmentHazardGenerator : MonoBehaviour
 
     [Header("Level Data")]
     [SerializeField]
+    private bool _shouldGenerateHazards = true;
+    [SerializeField]
     private int _tileMapRows = 18;
     [SerializeField]
     private int _tileMapColumns = 18;
@@ -60,50 +62,52 @@ public class EnvironmentHazardGenerator : MonoBehaviour
         Vector3Int position = Vector3Int.zero;
         Vector2 obstaclePosition = Vector2.zero;
 
-        for (int column = 0; column < _tileMapColumns; column++)
+        if (_shouldGenerateHazards)
         {
-            for (int row = 0; row < _tileMapRows; row++)
+            for (int column = 0; column < _tileMapColumns; column++)
             {
-                yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
-
-                if (GeneratorUtil.IsInCorner(column, _tileMapColumns, row, _tileMapRows))
+                for (int row = 0; row < _tileMapRows; row++)
                 {
-                    continue;
-                }
+                    yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
 
-                position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
-
-                if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
-                {
-                    int chanceForHazard = UnityEngine.Random.Range(0, 100);
-                    obstaclePosition.Set(position.x, position.y);
-
-                    GameObject hazard = null;
-                    _environmentHazardsData = _environmentHazardsData.OrderBy(a => _random.Next()).ToArray(); // shuffle array
-                    D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
-                        && chanceForHazard <= data.chanceForEnvironmentHazard);
-
-                    if (randomHazardData)
+                    if (GeneratorUtil.IsInCorner(column, _tileMapColumns, row, _tileMapRows))
                     {
-                        if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
-                                             || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
+                        continue;
+                    }
+
+                    position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
+
+                    if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
+                    {
+                        int chanceForHazard = UnityEngine.Random.Range(0, 100);
+                        obstaclePosition.Set(position.x, position.y);
+
+                        GameObject hazard = null;
+                        _environmentHazardsData = _environmentHazardsData.OrderBy(a => _random.Next()).ToArray(); // shuffle array
+                        D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
+                            && chanceForHazard <= data.chanceForEnvironmentHazard);
+
+                        if (randomHazardData)
                         {
-                            GameObject environmentHazard = randomHazardData.environmentHazard;
-
-                            hazard = ChoseGenerationStrategy(environmentHazard, row, column).Generate(randomHazardData, obstaclePosition);
-
-                            if (hazard)
+                            if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
+                                                 || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
                             {
-                                _reservedPositions.Add(hazard.transform.position);
-                                hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
-                                hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                                GameObject environmentHazard = randomHazardData.environmentHazard;
+
+                                hazard = ChoseGenerationStrategy(environmentHazard, row, column).Generate(randomHazardData, obstaclePosition);
+
+                                if (hazard)
+                                {
+                                    _reservedPositions.Add(hazard.transform.position);
+                                    hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
+                                    hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-
         LevelGeneratedEvent?.Invoke();
     }
 

@@ -10,6 +10,8 @@ public class Player : MonoBehaviour, IDamagable
     private D_PlayerStats _playerStats;
     [SerializeField]
     private GameObject _basicSoul;
+    [SerializeField]
+    private string _abilityTag;
 
     private Vector2 _movementInput;
     private bool _bombPlacedInput;
@@ -59,6 +61,11 @@ public class Player : MonoBehaviour, IDamagable
         {
             _playerStatusesManager.CheckStatuses();
         }
+
+        if (_playerStatusesManager.HasReversedControls)
+        {
+            _movementInput *= -1;
+        }
     }
 
     private void HandleSummoning()
@@ -76,11 +83,6 @@ public class Player : MonoBehaviour, IDamagable
 
     private void FixedUpdate()
     {
-        if (_playerStatusesManager.HasReversedControls)
-        {
-            _movementInput *= -1;
-        }
-
         if (_playerStatusesManager.CanMove)
         {
             SetVelocity(_playerStats.movementSpeed * _movementInput);
@@ -113,6 +115,14 @@ public class Player : MonoBehaviour, IDamagable
         if (PlayerStatsManager.IsPermamentDead)
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag(_abilityTag))
+        {
+            Damage();
         }
     }
 

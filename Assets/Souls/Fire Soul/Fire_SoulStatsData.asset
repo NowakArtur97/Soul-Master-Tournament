@@ -33,4 +33,6 @@ MonoBehaviour:
     m_Bits: 256
   - serializedVersion: 2
     m_Bits: 4096
+  - serializedVersion: 2
+    m_Bits: 1024
   canPlayerSummonAfterDestroy: 1

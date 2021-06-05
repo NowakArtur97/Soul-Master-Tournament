@@ -30,4 +30,6 @@ MonoBehaviour:
   afectedLayerMasks:
   - serializedVersion: 2
     m_Bits: 4096
+  - serializedVersion: 2
+    m_Bits: 256
   canPlayerSummonAfterDestroy: 1
