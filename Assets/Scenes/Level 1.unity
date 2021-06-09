@@ -152,8 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390104c6e23f56b40b4e0a184967aaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 5583946401544878203, guid: 479a1d4f34e7cd34f97a5dbbdf61d5f2, type: 3}
-  _numberOfPlayers: 1
+  _playerPrefabs:
+  - {fileID: 5583946401544878203, guid: 479a1d4f34e7cd34f97a5dbbdf61d5f2, type: 3}
+  - {fileID: 1703370525658190180, guid: 44dc9dc6fb39f0344848c53e424aa3c3, type: 3}
+  - {fileID: 1703370525658190180, guid: 5ac13d6cef33eb34dad9533ad6253cfd, type: 3}
+  - {fileID: 1703370525658190180, guid: 12cb7afc38a457d4d991328135e8c9ad, type: 3}
+  _numberOfPlayers: 4
   PlayersPositions:
   - {x: -1, y: 1}
   - {x: 8, y: 1}

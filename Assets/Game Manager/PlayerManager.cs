@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _playerPrefab;
+    private GameObject[] _playerPrefabs;
     [SerializeField]
     private int _numberOfPlayers = 1;
     [SerializeField]
@@ -33,7 +33,7 @@ public class PlayerManager : MonoBehaviour
 
     private void SpawnPlayer(int id)
     {
-        GameObject playerGO = Instantiate(_playerPrefab, PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
+        GameObject playerGO = Instantiate(_playerPrefabs[id], PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
         playerGO.transform.parent = gameObject.transform;
         Player player = playerGO.GetComponent<Player>();
 

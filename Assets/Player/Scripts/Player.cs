@@ -56,9 +56,9 @@ public class Player : MonoBehaviour, IDamagable
 
     private void Update()
     {
-        _movementInput.Set(_inputHandler.NormalizedInputX, _inputHandler.NormalizedInputY);
+        _movementInput.Set(_inputHandler.InputX, _inputHandler.InputY);
         _bombPlacedInput = _inputHandler.BombPlaceInput;
-
+        Debug.Log(_movementInput);
         CheckIfShouldFlip();
 
         HandleSummoning();

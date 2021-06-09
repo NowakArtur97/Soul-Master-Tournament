@@ -188,10 +188,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5583946401544878204}
   - component: {fileID: 5583946401544878207}
-  - component: {fileID: 5583946401544878205}
   - component: {fileID: 5583946401544878206}
   m_Layer: 10
-  m_Name: Player
+  m_Name: PlayerArrows
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,68 +227,6 @@ MonoBehaviour:
   _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
   _abilityTag: Soul Ability
   _timeBetweenDamages: 1
---- !u!114 &5583946401544878205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583946401544878203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7f3bb340f8297244da1e4cf449aa3a5f, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5583946401544878206}
-        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnMoveInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: bb9f7ec2-276f-4a0d-8318-14d2cee4c493
-    m_ActionName: Gameplay/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5583946401544878206}
-        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnBombPlaceInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: ce6f46c6-5ea4-4d3f-9356-be980732b05e
-    m_ActionName: Gameplay/Place Bomb[/Keyboard/space]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Gameplay
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &5583946401544878206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,3 +239,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05717667651f9a2408fc9b68e28b9713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerInputs: {fileID: 11400000, guid: 4ddf5fdf26b8316409c29af114b52bce, type: 2}
