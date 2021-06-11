@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 865588677e6a39f4894560d67ab1e1dc
+guid: fd7447bcec1c87c4fb5f72655122c40c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3408058680898930835
-    second: Soul Master Shield Destroyed_0
+      213: 1004463258054337258
+    second: Soul Master Shield Destroyed Pink_0
   - first:
-      213: 6410894353016046510
-    second: Soul Master Shield Destroyed_1
+      213: -3556791363598579635
+    second: Soul Master Shield Destroyed Pink_1
   - first:
-      213: -3224126300030141079
-    second: Soul Master Shield Destroyed_2
+      213: 821762921536486658
+    second: Soul Master Shield Destroyed Pink_2
   - first:
-      213: 1727882970253185949
-    second: Soul Master Shield Destroyed_3
+      213: 4785737043495648364
+    second: Soul Master Shield Destroyed Pink_3
   - first:
-      213: 5598599424291638673
-    second: Soul Master Shield Destroyed_4
+      213: -7783760963418086743
+    second: Soul Master Shield Destroyed Pink_4
   - first:
-      213: 76805431636659110
-    second: Soul Master Shield Destroyed_5
+      213: -2895625657669224810
+    second: Soul Master Shield Destroyed Pink_5
   - first:
-      213: -4388854638785470478
-    second: Soul Master Shield Destroyed_6
+      213: 5509097238824510428
+    second: Soul Master Shield Destroyed Pink_6
   - first:
-      213: -1776181434511459166
-    second: Soul Master Shield Destroyed_7
+      213: 3253262737053618220
+    second: Soul Master Shield Destroyed Pink_7
   - first:
-      213: -3367555852605366695
-    second: Soul Master Shield Destroyed_8
+      213: -1039383257127851040
+    second: Soul Master Shield Destroyed Pink_8
   - first:
-      213: 1464739658228995319
-    second: Soul Master Shield Destroyed_9
+      213: 2843308284632319561
+    second: Soul Master Shield Destroyed Pink_9
   - first:
-      213: 5043257941183660118
-    second: Soul Master Shield Destroyed_10
+      213: 3239984203898014699
+    second: Soul Master Shield Destroyed Pink_10
   - first:
-      213: -8890078296394596785
-    second: Soul Master Shield Destroyed_11
+      213: 7730632609125884107
+    second: Soul Master Shield Destroyed Pink_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_0
+      name: Soul Master Shield Destroyed Pink_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398caa8405bdb4f20800000000000000
-      internalID: 3408058680898930835
+      spriteID: ae2a246e20290fd00800000000000000
+      internalID: 1004463258054337258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_1
+      name: Soul Master Shield Destroyed Pink_1
       rect:
         serializedVersion: 2
         x: 32
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea3441c927218f850800000000000000
-      internalID: 6410894353016046510
+      spriteID: d488788791db3aec0800000000000000
+      internalID: -3556791363598579635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_2
+      name: Soul Master Shield Destroyed Pink_2
       rect:
         serializedVersion: 2
         x: 64
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d75b7563a9143d0800000000000000
-      internalID: -3224126300030141079
+      spriteID: 20df4c3f50d776b00800000000000000
+      internalID: 821762921536486658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_3
+      name: Soul Master Shield Destroyed Pink_3
       rect:
         serializedVersion: 2
         x: 96
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d93536f186caaf710800000000000000
-      internalID: 1727882970253185949
+      spriteID: c6c7cf13c7a5a6240800000000000000
+      internalID: 4785737043495648364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_4
+      name: Soul Master Shield Destroyed Pink_4
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19d0c94838832bd40800000000000000
-      internalID: 5598599424291638673
+      spriteID: 9a2a9e6d4a68af390800000000000000
+      internalID: -7783760963418086743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_5
+      name: Soul Master Shield Destroyed Pink_5
       rect:
         serializedVersion: 2
         x: 32
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ab0685122ed01100800000000000000
-      internalID: 76805431636659110
+      spriteID: 6967e185ecba0d7d0800000000000000
+      internalID: -2895625657669224810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_6
+      name: Soul Master Shield Destroyed Pink_6
       rect:
         serializedVersion: 2
         x: 64
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ffdd5c85f7a713c0800000000000000
-      internalID: -4388854638785470478
+      spriteID: cd3683110ce347c40800000000000000
+      internalID: 5509097238824510428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_7
+      name: Soul Master Shield Destroyed Pink_7
       rect:
         serializedVersion: 2
         x: 96
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2acfc4b556cb957e0800000000000000
-      internalID: -1776181434511459166
+      spriteID: c20981b0939e52d20800000000000000
+      internalID: 3253262737053618220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_8
+      name: Soul Master Shield Destroyed Pink_8
       rect:
         serializedVersion: 2
         x: 0
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e5b2c4bc90441d0800000000000000
-      internalID: -3367555852605366695
+      spriteID: 0ebe76d3f6e5391f0800000000000000
+      internalID: -1039383257127851040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_9
+      name: Soul Master Shield Destroyed Pink_9
       rect:
         serializedVersion: 2
         x: 32
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f49a2965fcc35410800000000000000
-      internalID: 1464739658228995319
+      spriteID: 9464f6402d5757720800000000000000
+      internalID: 2843308284632319561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_10
+      name: Soul Master Shield Destroyed Pink_10
       rect:
         serializedVersion: 2
         x: 64
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6508bee80604df540800000000000000
-      internalID: 5043257941183660118
+      spriteID: bebc73f977cb6fc20800000000000000
+      internalID: 3239984203898014699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master Shield Destroyed_11
+      name: Soul Master Shield Destroyed Pink_11
       rect:
         serializedVersion: 2
         x: 96
@@ -384,8 +384,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e7dfd14e810a480800000000000000
-      internalID: -8890078296394596785
+      spriteID: bc0effb3669b84b60800000000000000
+      internalID: 7730632609125884107
       vertices: []
       indices: 
       edges: []

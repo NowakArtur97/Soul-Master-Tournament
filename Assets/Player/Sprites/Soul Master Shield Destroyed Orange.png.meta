@@ -1,61 +1,43 @@
 fileFormatVersion: 2
-guid: fba73371cb1c3b1458eebeca49887bb6
+guid: 2ef4e15683b4d78448e4632acc8f2b86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6158218797037605586
-    second: Soul Master With Shield_0
+      213: 3582968279296824884
+    second: Soul Master Shield Destroyed Orange_0
   - first:
-      213: -9169639721668735893
-    second: Soul Master With Shield_1
+      213: -8694613324322449275
+    second: Soul Master Shield Destroyed Orange_1
   - first:
-      213: 6575431933475810518
-    second: Soul Master With Shield_2
+      213: -5696128756575094352
+    second: Soul Master Shield Destroyed Orange_2
   - first:
-      213: -6906341532831017939
-    second: Soul Master With Shield_3
+      213: -5163213793760839021
+    second: Soul Master Shield Destroyed Orange_3
   - first:
-      213: -373777088788327999
-    second: Soul Master With Shield_4
+      213: -7980748253808991240
+    second: Soul Master Shield Destroyed Orange_4
   - first:
-      213: 6089676769429122877
-    second: Soul Master With Shield_5
+      213: -1033123680593829713
+    second: Soul Master Shield Destroyed Orange_5
   - first:
-      213: -6782769231732792227
-    second: Soul Master With Shield_6
+      213: 5007519410733958229
+    second: Soul Master Shield Destroyed Orange_6
   - first:
-      213: 3807567375709389055
-    second: Soul Master With Shield_7
+      213: -6990764365361261122
+    second: Soul Master Shield Destroyed Orange_7
   - first:
-      213: 6310069670386589621
-    second: Soul Master With Shield_8
+      213: 149340894378358371
+    second: Soul Master Shield Destroyed Orange_8
   - first:
-      213: 4357327075625923154
-    second: Soul Master With Shield_9
+      213: -2522340238501107217
+    second: Soul Master Shield Destroyed Orange_9
   - first:
-      213: -8524467479118354441
-    second: Soul Master With Shield_10
+      213: -1303299095450474059
+    second: Soul Master Shield Destroyed Orange_10
   - first:
-      213: -2701505630734737542
-    second: Soul Master With Shield_11
-  - first:
-      213: 3209255500426110357
-    second: Soul Master With Shield_12
-  - first:
-      213: -711171387578539619
-    second: Soul Master With Shield_13
-  - first:
-      213: -7839366551445496402
-    second: Soul Master With Shield_14
-  - first:
-      213: -8530618492353420234
-    second: Soul Master With Shield_15
-  - first:
-      213: -2592429010484945903
-    second: Soul Master With Shield_16
-  - first:
-      213: -6816486741078041737
-    second: Soul Master With Shield_17
+      213: 2859873201825729153
+    second: Soul Master Shield Destroyed Orange_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soul Master With Shield_0
+      name: Soul Master Shield Destroyed Orange_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 32
-        height: 48
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,41 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2da079b1ac998aa0800000000000000
-      internalID: -6158218797037605586
+      spriteID: 436daf8aaa249b130800000000000000
+      internalID: 3582968279296824884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 144
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6c8f978145eeb080800000000000000
-      internalID: -9169639721668735893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_2
+      name: Soul Master Shield Destroyed Orange_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
-        width: 32
-        height: 48
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,41 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dce59f5180a04b50800000000000000
-      internalID: 6575431933475810518
+      spriteID: 588d1606f37865780800000000000000
+      internalID: -8694613324322449275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d24941e97feb720a0800000000000000
-      internalID: -6906341532831017939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_4
+      name: Soul Master Shield Destroyed Orange_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 144
-        width: 32
-        height: 48
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +195,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c19795d7b310daf0800000000000000
-      internalID: -373777088788327999
+      spriteID: 0b93475431943f0b0800000000000000
+      internalID: -5696128756575094352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_5
+      name: Soul Master Shield Destroyed Orange_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39afc7319649858b0800000000000000
+      internalID: -5163213793760839021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Shield Destroyed Orange_4
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,41 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3f65ced1c0e28450800000000000000
-      internalID: 6089676769429122877
+      spriteID: 8f365e93fbfae3190800000000000000
+      internalID: -7980748253808991240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d542e150253ced1a0800000000000000
-      internalID: -6782769231732792227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_7
+      name: Soul Master Shield Destroyed Orange_5
       rect:
         serializedVersion: 2
         x: 64
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,41 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff04687da5237d430800000000000000
-      internalID: 3807567375709389055
+      spriteID: fa029297c7b99a1f0800000000000000
+      internalID: -1033123680593829713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bfdb5bdeeed19750800000000000000
-      internalID: 6310069670386589621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_9
+      name: Soul Master Shield Destroyed Orange_6
       rect:
         serializedVersion: 2
         x: 128
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,20 +279,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252ffd0a3e5587c30800000000000000
-      internalID: 4357327075625923154
+      spriteID: 554cba28f584e7540800000000000000
+      internalID: 5007519410733958229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_10
+      name: Soul Master Shield Destroyed Orange_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5de2e29d0dbfe90800000000000000
+      internalID: -6990764365361261122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Shield Destroyed Orange_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 32
-        height: 48
+        y: 0
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,41 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f7e7c70ef103b980800000000000000
-      internalID: -8524467479118354441
+      spriteID: 3667cdf80c0921200800000000000000
+      internalID: 149340894378358371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7f965921f2528ad0800000000000000
-      internalID: -2701505630734737542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_12
+      name: Soul Master Shield Destroyed Orange_9
       rect:
         serializedVersion: 2
         x: 64
-        y: 48
-        width: 32
-        height: 48
+        y: 0
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,41 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 595ed50dfd0998c20800000000000000
-      internalID: 3209255500426110357
+      spriteID: fe9a771cae8defcd0800000000000000
+      internalID: -2522340238501107217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_13
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d91a5f414696126f0800000000000000
-      internalID: -711171387578539619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_14
+      name: Soul Master Shield Destroyed Orange_10
       rect:
         serializedVersion: 2
         x: 128
-        y: 48
-        width: 32
-        height: 48
+        y: 0
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,20 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead130df7a9f43390800000000000000
-      internalID: -7839366551445496402
+      spriteID: 5b9269bb060c9ede0800000000000000
+      internalID: -1303299095450474059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soul Master With Shield_15
+      name: Soul Master Shield Destroyed Orange_11
       rect:
         serializedVersion: 2
-        x: 0
+        x: 192
         y: 0
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,50 +384,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63465e8ada72d9980800000000000000
-      internalID: -8530618492353420234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11c90acdc87d50cd0800000000000000
-      internalID: -2592429010484945903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soul Master With Shield_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77b12ed9c69f661a0800000000000000
-      internalID: -6816486741078041737
+      spriteID: 18a4b79568f40b720800000000000000
+      internalID: 2859873201825729153
       vertices: []
       indices: 
       edges: []

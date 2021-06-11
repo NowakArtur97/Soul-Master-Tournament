@@ -1,52 +1,61 @@
 fileFormatVersion: 2
-guid: 032179e11e9d018488596012d3e92e5f
+guid: f45809b271e515244bb230173ec76a8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 233878723073716320
-    second: Water Soul Shield Active_0
+      213: -254040840825357599
+    second: Soul Master With Shield Pink_0
   - first:
-      213: 8159117750340875321
-    second: Water Soul Shield Active_1
+      213: 7713454755299165830
+    second: Soul Master With Shield Pink_1
   - first:
-      213: 7975640969875166996
-    second: Water Soul Shield Active_2
+      213: 6339746803738442963
+    second: Soul Master With Shield Pink_2
   - first:
-      213: 3494874250310562044
-    second: Water Soul Shield Active_3
+      213: -8774468023377345345
+    second: Soul Master With Shield Pink_3
   - first:
-      213: -2762817493743837179
-    second: Water Soul Shield Active_4
+      213: 2299102134330011980
+    second: Soul Master With Shield Pink_4
   - first:
-      213: -5410059602404540895
-    second: Water Soul Shield Active_5
+      213: 1463653692500609734
+    second: Soul Master With Shield Pink_5
   - first:
-      213: 551649302273235946
-    second: Water Soul Shield Active_6
+      213: 3126594526186969310
+    second: Soul Master With Shield Pink_6
   - first:
-      213: -7573393008055682043
-    second: Water Soul Shield Active_7
+      213: 8953811890232043707
+    second: Soul Master With Shield Pink_7
   - first:
-      213: -8204826744681148441
-    second: Water Soul Shield Active_8
+      213: -2409916108745644290
+    second: Soul Master With Shield Pink_8
   - first:
-      213: 4599316403888117185
-    second: Water Soul Shield Active_9
+      213: 5018873211094218565
+    second: Soul Master With Shield Pink_9
   - first:
-      213: 530736078895619622
-    second: Water Soul Shield Active_10
+      213: -4862659767619558416
+    second: Soul Master With Shield Pink_10
   - first:
-      213: -8179044117984699959
-    second: Water Soul Shield Active_11
+      213: -2110406497393621060
+    second: Soul Master With Shield Pink_11
   - first:
-      213: -8201996054087256017
-    second: Water Soul Shield Active_12
+      213: 4585740266798859740
+    second: Soul Master With Shield Pink_12
   - first:
-      213: -1648717098939914177
-    second: Water Soul Shield Active_13
+      213: -4281618612158491364
+    second: Soul Master With Shield Pink_13
   - first:
-      213: 4718412510078178585
-    second: Water Soul Shield Active_14
+      213: 7656871176612466230
+    second: Soul Master With Shield Pink_14
+  - first:
+      213: -1008373987399621806
+    second: Soul Master With Shield Pink_15
+  - first:
+      213: -8828389134147586301
+    second: Soul Master With Shield Pink_16
+  - first:
+      213: 7839901587243106532
+    second: Soul Master With Shield Pink_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +157,223 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water Soul Shield Active_0
+      name: Soul Master With Shield Pink_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eab9248337797cf0800000000000000
+      internalID: -254040840825357599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68687a87b32bb0b60800000000000000
+      internalID: 7713454755299165830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc7fbae02e4bf750800000000000000
+      internalID: 6339746803738442963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4c19562d3da3680800000000000000
+      internalID: -8774468023377345345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c413513c53d08ef10800000000000000
+      internalID: 2299102134330011980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca00bf4741ff4410800000000000000
+      internalID: 1463653692500609734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed81e0af725e36b20800000000000000
+      internalID: 3126594526186969310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb823fe8974524c70800000000000000
+      internalID: 8953811890232043707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef669bf31124e8ed0800000000000000
+      internalID: -2409916108745644290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bef7289e96a540800000000000000
+      internalID: 5018873211094218565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master With Shield Pink_10
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,41 +381,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 060b451a577ee3300800000000000000
-      internalID: 233878723073716320
+      spriteID: 0f3e37f64bc548cb0800000000000000
+      internalID: -4862659767619558416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 934f6a57d520b3170800000000000000
-      internalID: 8159117750340875321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_2
+      name: Soul Master With Shield Pink_11
       rect:
         serializedVersion: 2
         x: 64
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,41 +402,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4171671943b2fae60800000000000000
-      internalID: 7975640969875166996
+      spriteID: cb74d27d87456b2e0800000000000000
+      internalID: -2110406497393621060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf0bb603d99408030800000000000000
-      internalID: 3494874250310562044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_4
+      name: Soul Master With Shield Pink_12
       rect:
         serializedVersion: 2
         x: 128
         y: 96
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +423,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500e922a02088a9d0800000000000000
-      internalID: -2762817493743837179
+      spriteID: cd540c2f972d3af30800000000000000
+      internalID: 4585740266798859740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_5
+      name: Soul Master With Shield Pink_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 32
-        height: 48
+        x: 192
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +444,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e7cf0947b9be4b0800000000000000
-      internalID: -5410059602404540895
+      spriteID: c159796ae82a494c0800000000000000
+      internalID: -4281618612158491364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_6
+      name: Soul Master With Shield Pink_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
+        x: 256
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,83 +465,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeb969e1e1ad7a700800000000000000
-      internalID: 551649302273235946
+      spriteID: 63ec9ec64cba24a60800000000000000
+      internalID: 7656871176612466230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50cf96a4f27e5e690800000000000000
-      internalID: -7573393008055682043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7efc7a7fb89922e80800000000000000
-      internalID: -8204826744681148441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c5d06fa6ed04df30800000000000000
-      internalID: 4599316403888117185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_10
+      name: Soul Master With Shield Pink_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,41 +486,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62e9e0cd6ad8d5700800000000000000
-      internalID: 530736078895619622
+      spriteID: 2532d4873398102f0800000000000000
+      internalID: -1008373987399621806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c9164985b23e7e80800000000000000
-      internalID: -8179044117984699959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_12
+      name: Soul Master With Shield Pink_16
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,41 +507,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2839fa7b08ac2e80800000000000000
-      internalID: -8201996054087256017
+      spriteID: 307f6387bd24b7580800000000000000
+      internalID: -8828389134147586301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water Soul Shield Active_13
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f38e296a8849e19e0800000000000000
-      internalID: -1648717098939914177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water Soul Shield Active_14
+      name: Soul Master With Shield Pink_17
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 32
-        height: 48
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,8 +528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91518febd2b2b7140800000000000000
-      internalID: 4718412510078178585
+      spriteID: 4e085adb4fceccc60800000000000000
+      internalID: 7839901587243106532
       vertices: []
       indices: 
       edges: []

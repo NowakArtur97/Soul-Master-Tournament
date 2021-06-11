@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 1703370525658190176}
   - component: {fileID: 1703370525658190177}
   m_Layer: 10
-  m_Name: Player5213
+  m_Name: PlayerUJHK
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
+  _basicSoul: {fileID: 6361494505063361967, guid: c3102d31496026547bd0a2842b94002a, type: 3}
   _abilityTag: Soul Ability
   _timeBetweenDamages: 1
 --- !u!114 &1703370525658190177
@@ -239,4 +239,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05717667651f9a2408fc9b68e28b9713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerInputs: {fileID: 11400000, guid: 98fe5704aa4a17840a707bed95bbd21d, type: 2}
+  _playerInputs: {fileID: 11400000, guid: 6ecae83a2cf7ee7479db6db3d7bbcae9, type: 2}
