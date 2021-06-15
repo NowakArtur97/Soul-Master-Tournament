@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class EvilEyeSoul : SoulWithLinearAbility
 {
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
@@ -17,6 +19,8 @@ public class EvilEyeSoul : SoulWithLinearAbility
         {
             ShouldStartUsingAbility = false;
             StartUsingAbility();
+            // TODO: EvilEyeSoul: Call in parent
+            AudioManager.Instance.Play("Evil Eye Soul Ability");
         }
         else if (IsUsingAbility)
         {
