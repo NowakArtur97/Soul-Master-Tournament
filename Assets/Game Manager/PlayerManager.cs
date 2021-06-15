@@ -11,19 +11,23 @@ public class PlayerManager : MonoBehaviour
     public Vector2[] PlayersPositions;
     [SerializeField]
     private Vector2 _playersPositionOffset = new Vector2(0.6f, 1.2f);
+    [SerializeField]
+    private string[] _playerColors = { "blue", "green", "orange", "pink" };
 
     private List<Player> _players;
+    private EnvironmentHazardGenerator _environmentHazardGenerator;
 
     private void Start()
     {
-        FindObjectOfType<EnvironmentHazardGenerator>().LevelGeneratedEvent += OnLevelGenerated;
+        _environmentHazardGenerator = FindObjectOfType<EnvironmentHazardGenerator>();
+        _environmentHazardGenerator.LevelGeneratedEvent += OnLevelGenerated;
 
         _players = new List<Player>();
     }
 
     private void OnLevelGenerated()
     {
-        FindObjectOfType<EnvironmentHazardGenerator>().LevelGeneratedEvent -= OnLevelGenerated;
+        _environmentHazardGenerator.LevelGeneratedEvent -= OnLevelGenerated;
 
         for (int i = 0; i < _numberOfPlayers; i++)
         {
@@ -40,6 +44,7 @@ public class PlayerManager : MonoBehaviour
         player.CreateStatsManager(id);
         player.PlayerStatsManager.DeathEvent += OnPlayerDeath;
         player.PlayerStatsManager.PermamentDeathEvent += OnPermamentDeath;
+        player.SetColorForAnimation(_playerColors[id]);
 
         _players.Add(player);
     }

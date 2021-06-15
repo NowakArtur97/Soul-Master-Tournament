@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -183,4 +184,6 @@ public class Player : MonoBehaviour, IDamagable
     private bool IsNotMoving => _currentVelocity != Vector2.zero;
 
     private bool CanBeDamaged() => _lastDamageTime + _timeBetweenDamages <= Time.time;
+
+    public void SetColorForAnimation(string color) => _myAnimator.SetBool(color, true);
 }
