@@ -16,7 +16,34 @@ public class AudioManager : MonoBehaviour
         else { Destroy(gameObject); }
     }
 
-    public void Play(string title) => _sounds.FirstOrDefault(sound => sound.title.Equals(title))?.source.Play();
+    public void Play(string title)
+    {
+        Sound sound = _sounds.FirstOrDefault(s => s.title.Equals(title));
+
+        if (sound == null)
+        {
+            Debug.LogWarning("Sound with title: " + title + " not found!");
+        }
+        else
+        {
+            sound.source.Play();
+        }
+    }
+
+    public void Pause(string title)
+    {
+        Sound sound = _sounds.FirstOrDefault(s => s.title.Equals(title));
+
+        if (sound == null)
+        {
+            Debug.LogWarning("Sound with title: " + title + " not found!");
+        }
+        else
+        {
+            sound.source.Pause();
+            sound.source.loop = false;
+        }
+    }
 
     private void SetUpAudio(Sound sound)
     {

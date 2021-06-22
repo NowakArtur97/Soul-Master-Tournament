@@ -8,6 +8,7 @@ public class WaterSoul : SoulWithPlayerBuff
 
         if (HasUsedAbility)
         {
+            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
             UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
@@ -27,12 +28,5 @@ public class WaterSoul : SoulWithPlayerBuff
         {
             FinishSummoningSoul(IDLE_ANIMATION_BOOL_NAME);
         }
-    }
-
-    protected override void UseAbility()
-    {
-        base.UseAbility();
-
-
     }
 }

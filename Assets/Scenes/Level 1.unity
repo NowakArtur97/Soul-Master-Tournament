@@ -214,7 +214,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sounds:
   - title: 
-    clip: {fileID: 8300000, guid: 5195d621d48512749bcf7e0ff51bc47b, type: 3}
+    clip: {fileID: 8300000, guid: 9a111981c7735e049b18a7f19e41c47b, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: 1b48e458ae193e04192db41e7de6339d, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: 2b9ee341a3df0e74794e84cca5f97d65, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 1
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: aa71d1b16afa738478fa8021411bc541, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 1
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: abfd8eac5ce5f01449a66a18a04f287e, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: cf7016d7399fb2543aca273a65535318, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: 1a372694cef724b43bf255be2e5e74f8, type: 3}
     volume: 1
     pitch: 1
     shouldLoop: 0

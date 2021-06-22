@@ -8,6 +8,10 @@ public abstract class Soul : MonoBehaviour
     protected const string UNSUMMON_ANIMATION_BOOL_NAME = "unsummon";
     protected const string ABILITY_ANIMATION_BOOL_NAME = "ability";
 
+    protected const string ABILITY_CLIP_TITLE = "_Ability";
+    protected const string SUMMON_CLIP_TITLE = "SoulSummon";
+    protected const string UNSUMMON_CLIP_TITLE = "SoulUnsummon";
+
     [SerializeField]
     protected D_SoulStats SoulStats;
     [SerializeField]
@@ -20,6 +24,7 @@ public abstract class Soul : MonoBehaviour
 
     protected bool HasAppeared { get; private set; }
     protected bool IsSummoned { get; private set; }
+    private string _soulName;
     private bool _isUnsummoned;
     protected bool IsUsingAbility;
     protected bool HasUsedAbility;
@@ -54,6 +59,8 @@ public abstract class Soul : MonoBehaviour
         transform.position += (Vector3)SoulStats.startPositionOffset;
 
         MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, true);
+
+        _soulName = GetType().Name;
     }
 
     protected virtual void Update()
@@ -160,6 +167,18 @@ public abstract class Soul : MonoBehaviour
     public virtual void StartUsingAbilityTrigger() => ShouldStartUsingAbility = true;
 
     public virtual void FinishUsingAbilityTrigger() => HasUsedAbility = true;
+
+    public virtual void PlaySummonSoundTrigger() => AudioManager.Instance.Play(SUMMON_CLIP_TITLE);
+
+    public virtual void PauseSummonSoundTrigger() => AudioManager.Instance.Pause(SUMMON_CLIP_TITLE);
+
+    public virtual void PlayUnsummonSoundTrigger() => AudioManager.Instance.Play(UNSUMMON_CLIP_TITLE);
+
+    public virtual void PauseUnsummonSoundTrigger() => AudioManager.Instance.Pause(UNSUMMON_CLIP_TITLE);
+
+    public virtual void PlayAbilitySoundTrigger() => AudioManager.Instance.Play(_soulName + ABILITY_CLIP_TITLE);
+
+    public virtual void PauseAbilitySoundTrigger() => AudioManager.Instance.Pause(_soulName + ABILITY_CLIP_TITLE);
 
     private void DisableAllBoolParametersInAnimator()
     {
