@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanBeOnWall: 0
+  _environmentHazardName: Ballista
   EnvironmentHazardData: {fileID: 11400000, guid: dcc3cefa61b74f24aa7ce4c2f44e3a3d, type: 2}
   projectile: {fileID: 7050799240284997836, guid: 2e7b04a62e28db74092917b1ced996dc, type: 3}
   projectileStartingPosition: {fileID: 6913884582997332447}
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c097f221fc2c5a0429ef19751129394e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnvironmentHazard: {fileID: 0}
+  EnvironmentHazard: {fileID: 3754984066187074986}
 --- !u!212 &2307848969339233725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -184,7 +185,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -217,7 +218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6697370751818311783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.052, y: 0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2307848967997050321}

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanBeOnWall: 1
+  _environmentHazardName: Ballist
   EnvironmentHazardData: {fileID: 11400000, guid: 92213423a4941f947a68b98dcbd6a528, type: 2}
   _offsetsFromWall:
   - {x: 0, y: -0.541}

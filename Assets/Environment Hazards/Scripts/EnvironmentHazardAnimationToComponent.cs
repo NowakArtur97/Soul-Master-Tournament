@@ -7,4 +7,8 @@ public class EnvironmentHazardAnimationToComponent : MonoBehaviour
     private void StartUsingEnvironmentHazardTrigger() => EnvironmentHazard.StartUsingEnvironmentHazardTrigger();
 
     private void StopUsingEnvironmentHazardTrigger() => EnvironmentHazard.StopUsingEnvironmentHazardTrigger();
+
+    private void PlayActiveSoundTrigger() => EnvironmentHazard.PlayActiveSoundTrigger();
+
+    private void PauseActiveSoundTrigger() => EnvironmentHazard.PauseActiveSoundTrigger();
 }

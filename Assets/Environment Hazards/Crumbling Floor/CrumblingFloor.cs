@@ -10,6 +10,8 @@ public class CrumblingFloor : EnvironmentHazardActiveOnContact
 
     private Coroutine _crumblingCorouting;
 
+    private readonly string CRUMBLE_SOUND_CLIP = "CrumblingFloor_Active";
+
     protected override void Awake()
     {
         base.Awake();
@@ -35,6 +37,7 @@ public class CrumblingFloor : EnvironmentHazardActiveOnContact
         }
         else
         {
+            AudioManager.Instance.Play(CRUMBLE_SOUND_CLIP);
             Crumble();
         }
 
