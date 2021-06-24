@@ -9,6 +9,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
     private const string ACTIVE_ANIMATION_BOOL_NAME = "active";
     private const string ON_WALL_ANIMATION_BOOL_MODIFIER = "-onWall";
     private const string ACTIVE_CLIP_TITLE = "_Active";
+    private const string ACTIVED_CLIP_TITLE = "_Actived";
 
     [SerializeField]
     protected bool CanBeOnWall = false;
@@ -44,7 +45,7 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
         CurrentStatus = Status.FINISHED;
 
-        _environmentHazardName = _environmentHazardName == null ? GetType().Name : _environmentHazardName;
+        _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name : _environmentHazardName;
     }
 
     protected abstract void UseEnvironmentHazard();
@@ -79,6 +80,12 @@ public abstract class EnvironmentHazard : MonoBehaviour
     public void StartUsingEnvironmentHazardTrigger() => CurrentStatus = Status.ACTIVE;
 
     public void StopUsingEnvironmentHazardTrigger() => CurrentStatus = Status.FINISHED;
+
+    public void PlayActiveSoundTrigger() => AudioManager.Instance.Play(_environmentHazardName + ACTIVE_CLIP_TITLE);
+
+    public void PauseActiveSoundTrigger() => AudioManager.Instance.Pause(_environmentHazardName + ACTIVE_CLIP_TITLE);
+
+    public void PlayActivedSoundTrigger() => AudioManager.Instance.Play(_environmentHazardName + ACTIVED_CLIP_TITLE);
 
     protected void SetVelocityZero() => _myRigidbody2D.velocity = Vector2.zero;
 
@@ -124,8 +131,4 @@ public abstract class EnvironmentHazard : MonoBehaviour
             }
         }
     }
-
-    public void PlayActiveSoundTrigger() => AudioManager.Instance.Play(_environmentHazardName + ACTIVE_CLIP_TITLE);
-
-    public void PauseActiveSoundTrigger() => AudioManager.Instance.Pause(_environmentHazardName + ACTIVE_CLIP_TITLE);
 }

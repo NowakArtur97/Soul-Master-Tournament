@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CrumblingFloor : EnvironmentHazardActiveOnContact
 {
+    private readonly string CRUMBLE_SOUND_CLIP = "CrumblingFloor_Active";
+
     [SerializeField]
     private Sprite[] _floorSprites;
 
@@ -9,8 +11,6 @@ public class CrumblingFloor : EnvironmentHazardActiveOnContact
     private int _currentSpriteIndex;
 
     private Coroutine _crumblingCorouting;
-
-    private readonly string CRUMBLE_SOUND_CLIP = "CrumblingFloor_Active";
 
     protected override void Awake()
     {

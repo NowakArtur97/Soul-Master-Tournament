@@ -11,4 +11,6 @@ public class EnvironmentHazardAnimationToComponent : MonoBehaviour
     private void PlayActiveSoundTrigger() => EnvironmentHazard.PlayActiveSoundTrigger();
 
     private void PauseActiveSoundTrigger() => EnvironmentHazard.PauseActiveSoundTrigger();
+
+    private void PlayActivedSoundTrigger() => EnvironmentHazard.PlayActivedSoundTrigger();
 }

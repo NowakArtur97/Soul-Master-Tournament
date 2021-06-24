@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class MovingWall : EnvironmentHazardActiveAfterTime
 {
+    private readonly string ACTIVATED_SOUND_CLIP = "MovingWall_Actived";
+
     [SerializeField]
     private float _blockingTime = 3f;
 
@@ -19,6 +21,13 @@ public class MovingWall : EnvironmentHazardActiveAfterTime
         _myBoxCollider2D = AliveGameObject.GetComponent<BoxCollider2D>();
 
         _myBoxCollider2D.enabled = false;
+    }
+
+    protected override void TriggerEnvironmentHazard()
+    {
+        AudioManager.Instance.Play(ACTIVATED_SOUND_CLIP);
+
+        base.TriggerEnvironmentHazard();
     }
 
     protected override void UseEnvironmentHazard()
