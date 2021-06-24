@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4106387594337052010}
+  - component: {fileID: 7637797888036600410}
   - component: {fileID: 4106387594337052015}
   - component: {fileID: 4106387594337052008}
   - component: {fileID: 5151679160383485628}
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 4106387595679223043}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7637797888036600410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4106387594337052011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097f221fc2c5a0429ef19751129394e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnvironmentHazard: {fileID: 7941447054350840999}
 --- !u!212 &4106387594337052015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,6 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6256e8eec194a4479da337d98117ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 0
+  _environmentHazardName: 
   EnvironmentHazardData: {fileID: 11400000, guid: 71b5681f87d6f8745a7a6f75881c5880, type: 2}
   _connectedPortal: {fileID: 0}
   _teleportationOffset: {x: 0, y: 0.65}

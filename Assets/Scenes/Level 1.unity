@@ -297,6 +297,24 @@ MonoBehaviour:
     pitch: 1
     shouldLoop: 0
     source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: ecaa67cf54794c044b418f81793d9787, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: 5bb40c0499701f449be0a24971c9be8f, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: e96cfe53135934a4e98afe068c033f73, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 0
+    source: {fileID: 0}
 --- !u!4 &500865800
 Transform:
   m_ObjectHideFlags: 0
