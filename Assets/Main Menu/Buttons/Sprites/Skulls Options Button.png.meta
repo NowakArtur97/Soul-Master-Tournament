@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: ad377c645a85ffe4da946566524cb3bc
+guid: af2649cf7e74e9e4cac20c7c15c065e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2301569951303716081
-    second: Skulls Play Button_0
+      213: -3937113208706657554
+    second: Skulls Options Button_0
   - first:
-      213: 8460464140091238380
-    second: Skulls Play Button_1
+      213: -8097990108287868216
+    second: Skulls Options Button_1
   - first:
-      213: -7556457274845252600
-    second: Skulls Play Button_2
+      213: 1741223761740886946
+    second: Skulls Options Button_2
   - first:
-      213: 1656507079817650452
-    second: Skulls Play Button_3
+      213: 7898597880538654582
+    second: Skulls Options Button_3
+  - first:
+      213: -2685454256701280627
+    second: Skulls Options Button_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skulls Play Button_0
+      name: Skulls Options Button_0
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0334d2d25e2f00e0800000000000000
-      internalID: -2301569951303716081
+      spriteID: ee29a8a75609c59c0800000000000000
+      internalID: -3937113208706657554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skulls Play Button_1
+      name: Skulls Options Button_1
       rect:
         serializedVersion: 2
         x: 86
@@ -150,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7a1195f4b996570800000000000000
-      internalID: 8460464140091238380
+      spriteID: 8c2efd8c6e82e9f80800000000000000
+      internalID: -8097990108287868216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skulls Play Button_2
+      name: Skulls Options Button_2
       rect:
         serializedVersion: 2
         x: 172
@@ -171,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 804be64f422122790800000000000000
-      internalID: -7556457274845252600
+      spriteID: 2a3f80139c11a2810800000000000000
+      internalID: 1741223761740886946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skulls Play Button_3
+      name: Skulls Options Button_3
       rect:
         serializedVersion: 2
         x: 258
@@ -192,8 +195,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 411637c99681df610800000000000000
-      internalID: 1656507079817650452
+      spriteID: 677e82d7ce47d9d60800000000000000
+      internalID: 7898597880538654582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skulls Options Button_4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 86
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e62c8e4995bbad0800000000000000
+      internalID: -2685454256701280627
       vertices: []
       indices: 
       edges: []
