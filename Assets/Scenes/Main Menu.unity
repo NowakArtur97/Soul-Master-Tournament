@@ -1746,7 +1746,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1069363481}
+        m_TargetAssemblyTypeName: ResolutionsDropdown, Assembly-CSharp
+        m_MethodName: SetFullscreen
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &700333496
 GameObject:
@@ -2870,6 +2882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1069363477}
+  - component: {fileID: 1069363481}
   - component: {fileID: 1069363480}
   - component: {fileID: 1069363479}
   - component: {fileID: 1069363478}
@@ -2960,7 +2973,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1069363481}
+        m_TargetAssemblyTypeName: ResolutionsDropdown, Assembly-CSharp
+        m_MethodName: SetResolution
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1069363479
 MonoBehaviour:
@@ -3000,6 +3025,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069363476}
   m_CullTransparentMesh: 1
+--- !u!114 &1069363481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069363476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a81b9a6c40393246b577054837a47a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resolutionDropdown: {fileID: 0}
 --- !u!1 &1069933013
 GameObject:
   m_ObjectHideFlags: 0
