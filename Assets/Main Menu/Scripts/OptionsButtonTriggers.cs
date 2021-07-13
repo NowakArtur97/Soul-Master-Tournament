@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OptionsButton : MonoBehaviour
+public class OptionsButtonTriggers : MonoBehaviour
 {
     [SerializeField]
     private GameObject _mainMenu;
