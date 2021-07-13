@@ -1925,6 +1925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83736dccda7dd043a05bb22062add88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _volumeSlider: {fileID: 2146832570}
   _audioMixer: {fileID: 24100000, guid: acea26a2fdbea364a9ab746f58f00f22, type: 2}
 --- !u!1 &738832436
 GameObject:
@@ -3037,7 +3038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a81b9a6c40393246b577054837a47a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resolutionDropdown: {fileID: 0}
+  _resolutionDropdown: {fileID: 1069363478}
 --- !u!1 &1069933013
 GameObject:
   m_ObjectHideFlags: 0

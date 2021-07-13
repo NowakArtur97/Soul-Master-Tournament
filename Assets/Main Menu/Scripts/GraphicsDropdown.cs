@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GraphicsSettings : MonoBehaviour
+public class GraphicsDropdown : MonoBehaviour
 {
     public void SetQuality(int qualityIndex) => QualitySettings.SetQualityLevel(qualityIndex);
 }
