@@ -1426,6 +1426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 713198345}
+  - component: {fileID: 713198346}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -1454,6 +1455,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &713198346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713198344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c83736dccda7dd043a05bb22062add88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: acea26a2fdbea364a9ab746f58f00f22, type: 2}
 --- !u!1 &738832436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,10 +3777,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1837106624}
   m_HandleRect: {fileID: 1831475185}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 100
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 1
-  m_Value: 100
+  m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
