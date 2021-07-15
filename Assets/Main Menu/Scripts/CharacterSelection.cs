@@ -13,8 +13,22 @@ public class CharacterSelection : MonoBehaviour
 
     public List<int> CharacterIndexes { get; private set; }
 
+    public static CharacterSelection Instance { get; private set; }
 
-    private void Awake() => CharacterIndexes = new List<int>();
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        CharacterIndexes = new List<int>();
+    }
 
     private void Start() => DeselectAll();
 

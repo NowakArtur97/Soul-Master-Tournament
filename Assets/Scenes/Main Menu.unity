@@ -4479,7 +4479,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098880207}
+      - m_Target: {fileID: 2032482819}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
@@ -6079,7 +6079,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1098880206}
-  - component: {fileID: 1098880207}
   m_Layer: 5
   m_Name: Player Menu
   m_TagString: Untagged
@@ -6113,25 +6112,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1098880207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098880205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0bb3ad898f414498af58cb6a641737, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _characterOptions:
-  - {fileID: 728762522}
-  - {fileID: 2014246089}
-  - {fileID: 1839030855}
-  - {fileID: 1535422856}
-  _selectedColor: {r: 0, g: 0.18867922, b: 0.041521624, a: 1}
-  _deselectedColor: {r: 0.83137256, g: 0, b: 0, a: 1}
 --- !u!1 &1101323597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,11 +7689,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1535422857}
+  m_TargetGraphic: {fileID: 728762521}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098880207}
+      - m_Target: {fileID: 2032482819}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
@@ -8356,7 +8336,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1730402866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2036421952}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: PlayLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1730402866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8849,11 +8841,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1839030856}
+  m_TargetGraphic: {fileID: 728762521}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098880207}
+      - m_Target: {fileID: 2032482819}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
@@ -9629,11 +9621,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2014246090}
+  m_TargetGraphic: {fileID: 728762521}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098880207}
+      - m_Target: {fileID: 2032482819}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
@@ -9777,6 +9769,99 @@ MonoBehaviour:
   _spritePerFrame: 200
   _loop: 1
   _destroyOnEnd: 0
+--- !u!1 &2032482818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032482820}
+  - component: {fileID: 2032482819}
+  m_Layer: 0
+  m_Name: Character Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032482819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032482818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0bb3ad898f414498af58cb6a641737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterOptions:
+  - {fileID: 728762522}
+  - {fileID: 2014246089}
+  - {fileID: 1839030855}
+  - {fileID: 1535422856}
+  _selectedColor: {r: 0, g: 0.18867922, b: 0.041521624, a: 1}
+  _deselectedColor: {r: 0.83137256, g: 0, b: 0, a: 1}
+--- !u!4 &2032482820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032482818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.526565, y: -4.3637204, z: -1.8288736}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036421951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036421953}
+  - component: {fileID: 2036421952}
+  m_Layer: 0
+  m_Name: Level Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036421952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036421951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6985f44736f5e74fa7d82eab687abda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2036421953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036421951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 354.39496, y: 255.86223, z: -162.1062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037878889
 GameObject:
   m_ObjectHideFlags: 0
