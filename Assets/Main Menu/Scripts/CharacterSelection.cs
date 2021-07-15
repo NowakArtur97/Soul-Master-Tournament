@@ -6,27 +6,28 @@ public class CharacterSelection : MonoBehaviour
 {
     [SerializeField]
     private Button[] _characterOptions;
-
-    private List<int> _characterIndexes;
     [SerializeField]
     private Color _selectedColor = new Color(0f, 126f, 0f, 1f);
     [SerializeField]
     private Color _deselectedColor = new Color(106f, 0f, 0f, 1f);
 
-    private void Awake() => _characterIndexes = new List<int>();
+    public List<int> CharacterIndexes { get; private set; }
+
+
+    private void Awake() => CharacterIndexes = new List<int>();
 
     private void Start() => DeselectAll();
 
     public void SelectCharacter(int index)
     {
-        if (_characterIndexes.Contains(index))
+        if (CharacterIndexes.Contains(index))
         {
-            _characterIndexes.Remove(index);
+            CharacterIndexes.Remove(index);
             _characterOptions[index].image.color = _deselectedColor;
         }
         else
         {
-            _characterIndexes.Add(index);
+            CharacterIndexes.Add(index);
             _characterOptions[index].image.color = _selectedColor;
         }
     }
@@ -38,6 +39,4 @@ public class CharacterSelection : MonoBehaviour
             _characterOptions[index].image.color = _deselectedColor;
         }
     }
-
-    public List<int> GetChosenCharactersIndexes() => _characterIndexes;
 }

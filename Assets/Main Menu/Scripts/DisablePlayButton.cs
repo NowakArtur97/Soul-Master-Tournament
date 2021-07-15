@@ -13,12 +13,12 @@ public class DisablePlayButton : MonoBehaviour
     private void Start()
     {
         _characterSelection = FindObjectOfType<CharacterSelection>();
-        _chosenCharactersIndexes = _characterSelection.GetChosenCharactersIndexes();
+        _chosenCharactersIndexes = _characterSelection.CharacterIndexes;
     }
 
     private void Update()
     {
-        if (_chosenCharactersIndexes.Count == 0)
+        if (_chosenCharactersIndexes.Count < 2)
         {
             _playButton.interactable = false;
             _playButton.image.color = new Color(1f, 1f, 1f, .5f);
