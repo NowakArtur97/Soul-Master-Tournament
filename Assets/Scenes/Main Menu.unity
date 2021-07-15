@@ -727,7 +727,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 2, y: -126}
-  m_SizeDelta: {x: 318.3, y: 134.1917}
+  m_SizeDelta: {x: 281.213, y: 134.1917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148600242
 MonoBehaviour:
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chose Level '
+  m_text: use arrows to change the level
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
   m_sharedMaterial: {fileID: -7573796298862282790, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 36.02
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -6130,8 +6130,8 @@ MonoBehaviour:
   - {fileID: 2014246089}
   - {fileID: 1839030855}
   - {fileID: 1535422856}
-  _selectedColor: {r: 0.011764706, g: 0.4627451, b: 0.011764706, a: 1}
-  _deselectedColor: {r: 106, g: 0, b: 0, a: 1}
+  _selectedColor: {r: 0, g: 0.18867922, b: 0.041521624, a: 1}
+  _deselectedColor: {r: 0.83137256, g: 0, b: 0, a: 1}
 --- !u!1 &1101323597
 GameObject:
   m_ObjectHideFlags: 0
@@ -8263,6 +8263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730402863}
+  - component: {fileID: 1730402868}
   - component: {fileID: 1730402867}
   - component: {fileID: 1730402866}
   - component: {fileID: 1730402865}
@@ -8394,6 +8395,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730402862}
   m_CullTransparentMesh: 1
+--- !u!114 &1730402868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730402862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb8290c37add0241ac916015e8bf759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playButton: {fileID: 1730402865}
 --- !u!1 &1773859362
 GameObject:
   m_ObjectHideFlags: 0

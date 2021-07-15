@@ -29,7 +29,6 @@ public class CharacterSelection : MonoBehaviour
             _characterIndexes.Add(index);
             _characterOptions[index].image.color = _selectedColor;
         }
-        Debug.Log(string.Join(";", _characterIndexes.ToArray()));
     }
 
     private void DeselectAll()
