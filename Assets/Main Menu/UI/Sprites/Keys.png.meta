@@ -104,6 +104,12 @@ TextureImporter:
   - first:
       213: 7336520287026557589
     second: Keys_33
+  - first:
+      213: 9057750046252573960
+    second: Keys_34
+  - first:
+      213: 7310278845977922943
+    second: Keys_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -914,6 +920,48 @@ TextureImporter:
       bones: []
       spriteID: 5923aab945e80d560800000000000000
       internalID: 7336520287026557589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keys_34
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805a9235da793bd70800000000000000
+      internalID: 9057750046252573960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keys_35
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d019ff0e3537560800000000000000
+      internalID: 7310278845977922943
       vertices: []
       indices: 
       edges: []
