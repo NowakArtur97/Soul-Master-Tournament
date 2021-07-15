@@ -35,5 +35,5 @@ public class LevelSelection : MonoBehaviour
         SelectLevel(_currentLevel);
     }
 
-    public string GetSelectedLevel() => _levelsData[_currentLevel].name;
+    public string GetSelectedLevelName() => _levelsData[_currentLevel].name;
 }
