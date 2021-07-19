@@ -22,7 +22,6 @@ public class PlayerStatsManager
     public void TakeDamage()
     {
         _currentHealth--;
-
         if (_currentHealth <= 0)
         {
             PermamentDeathEvent?.Invoke(_playerId);

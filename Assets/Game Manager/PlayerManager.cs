@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
     private string[] _playerColors = { "blue", "green", "orange", "pink" };
 
     private List<int> _playersIndexes;
-    private List<Player> _players;
+    private Player[] _players;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
     private CharacterSelection _characterSelection;
 
@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
         _characterSelection = CharacterSelection.Instance;
         _playersIndexes = _characterSelection.CharacterIndexes;
 
-        _players = new List<Player>();
+        _players = new Player[4];
     }
 
     private void OnLevelGenerated()
@@ -36,27 +36,25 @@ public class PlayerManager : MonoBehaviour
 
         for (int i = 0; i < _playersIndexes.Count(); i++)
         {
-            SpawnPlayer(i, _playersIndexes[i]);
+            SpawnPlayer(_playersIndexes[i]);
         }
     }
 
-    private void SpawnPlayer(int index, int id)
+    private void SpawnPlayer(int id)
     {
-        Debug.Log(id);
-
         GameObject playerGO = Instantiate(_playerPrefabs[id], PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
         playerGO.transform.parent = gameObject.transform;
         Player player = playerGO.GetComponent<Player>();
 
-        player.CreateStatsManager(index);
+        player.CreateStatsManager(id);
         player.PlayerStatsManager.DeathEvent += OnPlayerDeath;
         player.PlayerStatsManager.PermamentDeathEvent += OnPermamentDeath;
         player.SetColorForAnimation(_playerColors[id]);
 
-        _players.Add(player);
+        _players[id] = player;
     }
 
-    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id];
+    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
 
     private void OnPermamentDeath(int id)
     {
