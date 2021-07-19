@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private string[] _playerColors = { "blue", "green", "orange", "pink" };
 
+    private readonly string ALIVE_GAME_OBJECT = "Alive";
     private List<int> _playersIndexes;
     private Player[] _players;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
@@ -54,7 +55,7 @@ public class PlayerManager : MonoBehaviour
         _players[id] = player;
     }
 
-    private void OnPlayerDeath(int id) => _players[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
+    private void OnPlayerDeath(int id) => _players[id].transform.Find(ALIVE_GAME_OBJECT).transform.position = PlayersPositions[id] + _playersPositionOffset;
 
     private void OnPermamentDeath(int id)
     {
