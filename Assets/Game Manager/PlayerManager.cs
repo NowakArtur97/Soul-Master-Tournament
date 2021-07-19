@@ -14,7 +14,6 @@ public class PlayerManager : MonoBehaviour
     private string[] _playerColors = { "blue", "green", "orange", "pink" };
 
     private List<int> _playersIndexes;
-    private GameObject[] _playersToSpawn;
     private List<Player> _players;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
     private CharacterSelection _characterSelection;
@@ -35,26 +34,21 @@ public class PlayerManager : MonoBehaviour
     {
         _environmentHazardGenerator.LevelGeneratedEvent -= OnLevelGenerated;
 
-        _playersToSpawn = _playersIndexes.Select(index => _playerPrefabs[index]).ToArray();
-
-        foreach (var item in _playersToSpawn)
-        {
-            Debug.Log(item);
-        }
-
         for (int i = 0; i < _playersIndexes.Count(); i++)
         {
-            SpawnPlayer(_playersIndexes[i]);
+            SpawnPlayer(i, _playersIndexes[i]);
         }
     }
 
-    private void SpawnPlayer(int id)
+    private void SpawnPlayer(int index, int id)
     {
-        GameObject playerGO = Instantiate(_playersToSpawn[id], PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
+        Debug.Log(id);
+
+        GameObject playerGO = Instantiate(_playerPrefabs[id], PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
         playerGO.transform.parent = gameObject.transform;
         Player player = playerGO.GetComponent<Player>();
 
-        player.CreateStatsManager(id);
+        player.CreateStatsManager(index);
         player.PlayerStatsManager.DeathEvent += OnPlayerDeath;
         player.PlayerStatsManager.PermamentDeathEvent += OnPermamentDeath;
         player.SetColorForAnimation(_playerColors[id]);
