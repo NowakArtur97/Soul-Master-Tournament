@@ -37,9 +37,14 @@ public class PlayerManager : MonoBehaviour
 
         _playersToSpawn = _playersIndexes.Select(index => _playerPrefabs[index]).ToArray();
 
-        for (int i = 0; i < _playersToSpawn.Count(); i++)
+        foreach (var item in _playersToSpawn)
         {
-            SpawnPlayer(i);
+            Debug.Log(item);
+        }
+
+        for (int i = 0; i < _playersIndexes.Count(); i++)
+        {
+            SpawnPlayer(_playersIndexes[i]);
         }
     }
 

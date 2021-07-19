@@ -101,7 +101,7 @@ SpriteRenderer:
   m_SortingLayerID: -830284185
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4233633538006590056, guid: bcac5332062fe3b449651e720b371022, type: 3}
+  m_Sprite: {fileID: 1230255704154920633, guid: bcac5332062fe3b449651e720b371022, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 1703370525658190176}
   - component: {fileID: 1703370525658190177}
   m_Layer: 10
-  m_Name: PlayerWASD 1
+  m_Name: PlayerUJHK
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
