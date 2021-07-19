@@ -8,9 +8,6 @@ public class PlayerInputHandler : MonoBehaviour
     public float InputX { get; private set; }
     public float InputY { get; private set; }
     public bool BombPlaceInput { get; private set; }
-    private float _bombPlacedInputStartTime;
-
-    public PlayerInputHandler(D_PlayerInputs playerInputs) => _playerInputs = playerInputs;
 
     private void Update()
     {
@@ -29,7 +26,6 @@ public class PlayerInputHandler : MonoBehaviour
         if (Input.GetKeyDown(_playerInputs.placeBomb))
         {
             BombPlaceInput = true;
-            _bombPlacedInputStartTime = Time.time;
         }
     }
 
