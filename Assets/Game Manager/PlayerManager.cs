@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     private readonly string ALIVE_GAME_OBJECT = "Alive";
     private List<int> _playersIndexes;
     private Player[] _players;
+    private GameObject[] _playersAliveGO;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
     private CharacterSelection _characterSelection;
 
@@ -29,6 +30,7 @@ public class PlayerManager : MonoBehaviour
         _playersIndexes = _characterSelection.CharacterIndexes;
 
         _players = new Player[4];
+        _playersAliveGO = new GameObject[4];
     }
 
     private void OnLevelGenerated()
@@ -53,9 +55,10 @@ public class PlayerManager : MonoBehaviour
         player.SetColorForAnimation(_playerColors[id]);
 
         _players[id] = player;
+        _playersAliveGO[id] = player.transform.Find(ALIVE_GAME_OBJECT).gameObject;
     }
 
-    private void OnPlayerDeath(int id) => _players[id].transform.Find(ALIVE_GAME_OBJECT).transform.position = PlayersPositions[id] + _playersPositionOffset;
+    private void OnPlayerDeath(int id) => _playersAliveGO[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
 
     private void OnPermamentDeath(int id)
     {
