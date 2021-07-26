@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
     private string[] _playerColors = { "blue", "green", "orange", "pink" };
 
     private readonly string ALIVE_GAME_OBJECT = "Alive";
-    private List<int> _playersIndexes;
+    private List<int> _playersIndexes = new List<int>();
     private Player[] _players;
     private GameObject[] _playersAliveGO;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
