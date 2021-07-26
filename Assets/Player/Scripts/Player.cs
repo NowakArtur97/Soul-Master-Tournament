@@ -5,13 +5,15 @@ public class Player : MonoBehaviour, IDamagable
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string PROTECTED_ANIMATION_BOOL_NAME = "protect";
+    private const string ABILITY_TAG = "Soul Ability";
+    private const string PICK_UP_TAG = "Pick Up";
+    [SerializeField]
+    private const int DEFAULT_NUMBER_OF_SOULS = 1;
 
     [SerializeField]
     private D_PlayerStats _playerStats;
     [SerializeField]
     private GameObject _basicSoul;
-    [SerializeField]
-    private string _abilityTag;
 
     [SerializeField]
     private float _timeBetweenDamages = 0.5f;
@@ -45,6 +47,8 @@ public class Player : MonoBehaviour, IDamagable
 
         _playerStatusesManager = new PlayerStatusesManager();
         _playerSoulsManager = new PlayerSoulsManager(_playerStats);
+        _playerSoulsManager.ChangeBaseSoul(_basicSoul);
+        _playerSoulsManager.ChangeSoul(_basicSoul, DEFAULT_NUMBER_OF_SOULS);
 
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
 
@@ -103,7 +107,7 @@ public class Player : MonoBehaviour, IDamagable
     private void SummonSoul()
     {
         _bombPosition = SetBombPosition();
-        GameObject soul = Instantiate(_basicSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
+        GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
         _playerSoulsManager.ReduceNumberOfSoulsToPlace();
     }
@@ -129,11 +133,22 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
+    private void PickUpSoul(Collider2D collision)
+    {
+        D_SoulPickUp pickUpData = collision.GetComponent<SoulPickUp>().SoulData;
+        _playerSoulsManager.ChangeSoul(pickUpData.soul, pickUpData.numberOfUses);
+        Destroy(collision.gameObject);
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(_abilityTag))
+        if (collision.gameObject.CompareTag(ABILITY_TAG))
         {
             Damage();
+        }
+        else if (collision.gameObject.CompareTag(PICK_UP_TAG))
+        {
+            PickUpSoul(collision);
         }
     }
 

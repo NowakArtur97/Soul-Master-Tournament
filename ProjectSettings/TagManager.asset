@@ -8,6 +8,7 @@ TagManager:
   - Obstacles
   - Damagable
   - Soul Ability
+  - Pick Up
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Interactable Environment Hazard
   - Rails
   - Moving Wall
-  - 
+  - Pick Up
   - 
   - 
   - 
