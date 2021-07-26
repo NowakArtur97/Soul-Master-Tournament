@@ -18,7 +18,6 @@ public class PlayerManager : MonoBehaviour
     private Player[] _players;
     private GameObject[] _playersAliveGO;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
-    private CharacterSelection _characterSelection;
 
     private void Start()
     {
@@ -26,8 +25,7 @@ public class PlayerManager : MonoBehaviour
 
         _environmentHazardGenerator.LevelGeneratedEvent += OnLevelGenerated;
 
-        _characterSelection = CharacterSelection.Instance;
-        _playersIndexes = _characterSelection.CharacterIndexes;
+        _playersIndexes = CharacterSelection.Instance.CharacterIndexes;
 
         _players = new Player[4];
         _playersAliveGO = new GameObject[4];

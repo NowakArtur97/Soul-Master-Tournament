@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5839802767947215358, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038039785323278308, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038039785899493080, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038039785949662004, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9038039786821127817, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
       propertyPath: m_Name
       value: Player Canvas
@@ -216,6 +232,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9038039786821127821, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038039787014964812, guid: 6baf34eb56b2a0e418dcdbbd023cd897, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
