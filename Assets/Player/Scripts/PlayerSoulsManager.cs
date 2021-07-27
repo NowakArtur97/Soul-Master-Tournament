@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerSoulsManager
 {
-    private string BASE_SOUL_NAME = "Fire Soul";
+    private const string BASE_SOUL_NAME = "Fire Soul";
 
     private int _numberOfSoulsToPlace;
     private int _currentNumberOfSoulsToPlace;
@@ -20,7 +20,20 @@ public class PlayerSoulsManager
         }
     }
 
-    public void IncreaseNumberOfSoulsToPlace() => _currentNumberOfSoulsToPlace++;
+    public void IncreaseNumberOfSoulsToPlace()
+    {
+        if (!IsBaseSoul(CurrentSoul))
+        {
+            return;
+        }
+
+        _currentNumberOfSoulsToPlace++;
+
+        if (_currentNumberOfSoulsToPlace > _numberOfSoulsToPlace)
+        {
+            _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
+        }
+    }
 
     public bool CanPlaceSoul() => _currentNumberOfSoulsToPlace > 0;
 

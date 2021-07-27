@@ -48,5 +48,6 @@ MonoBehaviour:
   _pickUps:
   - {fileID: 2409332157901313942, guid: 47d8fdc43a18d3e4e9d0f85cc100bb6c, type: 3}
   - {fileID: 3471548585015810641, guid: 70dc19d0f6c164041a4d85ded97ff003, type: 3}
-  _minTimeBetweenSpawns: 0.001
-  _maxTimeBetweenSpawns: 0.002
+  _minTimeBetweenSpawns: 10
+  _maxTimeBetweenSpawns: 30
+  _minChanceToSpawn: 80

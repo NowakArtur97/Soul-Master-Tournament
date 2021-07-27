@@ -10,9 +10,11 @@ public class SoulSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] _pickUps;
     [SerializeField]
-    private float _minTimeBetweenSpawns = 1;
+    private float _minTimeBetweenSpawns = 10;
     [SerializeField]
-    private float _maxTimeBetweenSpawns = 10;
+    private float _maxTimeBetweenSpawns = 30;
+    [SerializeField]
+    private float _minChanceToSpawn = 60;
 
     private Coroutine _spawnCoroutine;
     private bool _isSpawning;
@@ -34,11 +36,11 @@ public class SoulSpawner : MonoBehaviour
     {
         if (!_isSpawning && _isLevelGenerated)
         {
-            //if (_spawnCoroutine != null)
-            //{
-            //    StopCoroutine(_spawnCoroutine);
-            //}
-            //_spawnCoroutine = StartCoroutine(SpawnCoroutine());
+            if (_spawnCoroutine != null)
+            {
+                StopCoroutine(_spawnCoroutine);
+            }
+            _spawnCoroutine = StartCoroutine(SpawnCoroutine());
         }
     }
 
@@ -53,7 +55,13 @@ public class SoulSpawner : MonoBehaviour
         _isSpawning = false;
     }
 
-    public void SpawnPickUp(Vector2 position) => Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+    public void SpawnPickUp(Vector2 position)
+    {
+        if (CanSpawn())
+        {
+            Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+        }
+    }
 
     private void OnLevelGenerated()
     {
@@ -67,4 +75,6 @@ public class SoulSpawner : MonoBehaviour
     private Vector2 ChoseRandomLocation() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x), (int)Random.Range(_minPosition.y, _maxPosition.y));
 
     private float ChoseRandomTimmeBetwenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
+
+    private bool CanSpawn() => Random.Range(0, 100) > _minChanceToSpawn;
 }

@@ -15,7 +15,7 @@ public class DestructibleWall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(ABILITY_TAG))
         {
-            _soulSpawner.GetComponent<SoulSpawner>().SpawnPickUp(transform.position);
+            _soulSpawner.GetComponent<SoulSpawner>().SpawnPickUp(new Vector2((int)transform.position.x, (int)transform.position.y));
             Destroy(gameObject);
         }
     }
