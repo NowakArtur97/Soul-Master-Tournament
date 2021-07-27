@@ -34,11 +34,11 @@ public class SoulSpawner : MonoBehaviour
     {
         if (!_isSpawning && _isLevelGenerated)
         {
-            if (_spawnCoroutine != null)
-            {
-                StopCoroutine(_spawnCoroutine);
-            }
-            _spawnCoroutine = StartCoroutine(SpawnCoroutine());
+            //if (_spawnCoroutine != null)
+            //{
+            //    StopCoroutine(_spawnCoroutine);
+            //}
+            //_spawnCoroutine = StartCoroutine(SpawnCoroutine());
         }
     }
 
@@ -53,11 +53,7 @@ public class SoulSpawner : MonoBehaviour
         _isSpawning = false;
     }
 
-    public void SpawnPickUp(Vector2 position)
-    {
-        GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
-        pickUp.transform.parent = gameObject.transform;
-    }
+    public void SpawnPickUp(Vector2 position) => Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
 
     private void OnLevelGenerated()
     {

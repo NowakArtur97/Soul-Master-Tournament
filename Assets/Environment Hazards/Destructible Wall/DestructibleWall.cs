@@ -6,6 +6,8 @@ public class DestructibleWall : MonoBehaviour
 
     [SerializeField]
     private Sprite[] _sprites;
+    [SerializeField]
+    private GameObject _soulSpawner;
 
     private void Awake() => GetComponent<SpriteRenderer>().sprite = _sprites[Random.Range(0, _sprites.Length - 1)];
 
@@ -13,6 +15,7 @@ public class DestructibleWall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(ABILITY_TAG))
         {
+            _soulSpawner.GetComponent<SoulSpawner>().SpawnPickUp(transform.position);
             Destroy(gameObject);
         }
     }

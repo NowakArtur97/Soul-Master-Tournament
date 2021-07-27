@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835fd3459897df34db455386b6c21ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _abilityTag: Soul Ability
   _sprites:
   - {fileID: -9137202733848781849, guid: d45282a093949eb41a17867f2a7157e9, type: 3}
   - {fileID: 1216427606803757315, guid: d45282a093949eb41a17867f2a7157e9, type: 3}
@@ -55,6 +54,7 @@ MonoBehaviour:
   - {fileID: -5168892407593297801, guid: d45282a093949eb41a17867f2a7157e9, type: 3}
   - {fileID: 7681413975841682921, guid: d45282a093949eb41a17867f2a7157e9, type: 3}
   - {fileID: 2629193572532178365, guid: d45282a093949eb41a17867f2a7157e9, type: 3}
+  _soulSpawner: {fileID: 541095112781785706, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
 --- !u!212 &636509825987719535
 SpriteRenderer:
   m_ObjectHideFlags: 0
