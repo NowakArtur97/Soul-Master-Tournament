@@ -48,10 +48,15 @@ public class SoulSpawner : MonoBehaviour
 
         yield return new WaitForSeconds(ChoseRandomTimmeBetwenSpawns());
 
-        GameObject pickUp = Instantiate(ChoseRandomPickUp(), ChoseRandomLocation(), Quaternion.identity);
-        pickUp.transform.parent = gameObject.transform;
+        SpawnPickUp(ChoseRandomLocation());
 
         _isSpawning = false;
+    }
+
+    public void SpawnPickUp(Vector2 position)
+    {
+        GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+        pickUp.transform.parent = gameObject.transform;
     }
 
     private void OnLevelGenerated()

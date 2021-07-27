@@ -352,13 +352,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb861a90e8c25f145b311f26576b9a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minPosition: {x: -4, y: 3}
-  _maxPosition: {x: 11, y: -11}
+  _minPosition: {x: -5, y: 4}
+  _maxPosition: {x: 12, y: -13}
   _pickUps:
   - {fileID: 2409332157901313942, guid: 47d8fdc43a18d3e4e9d0f85cc100bb6c, type: 3}
   - {fileID: 3471548585015810641, guid: 70dc19d0f6c164041a4d85ded97ff003, type: 3}
   _minTimeBetweenSpawns: 0.001
-  _maxTimeBetweenSpawns: 1
+  _maxTimeBetweenSpawns: 0.002
 --- !u!4 &760821140
 Transform:
   m_ObjectHideFlags: 0

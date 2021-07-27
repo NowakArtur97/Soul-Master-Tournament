@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class DestructibleWall : MonoBehaviour
 {
-    [SerializeField]
-    private string _abilityTag;
+    private const string ABILITY_TAG = "Soul Ability";
 
     [SerializeField]
     private Sprite[] _sprites;
@@ -12,7 +11,7 @@ public class DestructibleWall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(_abilityTag))
+        if (collision.gameObject.CompareTag(ABILITY_TAG))
         {
             Destroy(gameObject);
         }
