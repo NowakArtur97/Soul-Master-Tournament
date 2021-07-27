@@ -46,9 +46,8 @@ public class Player : MonoBehaviour, IDamagable
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
 
         _playerStatusesManager = new PlayerStatusesManager();
-        _playerSoulsManager = new PlayerSoulsManager(_playerStats);
-        _playerSoulsManager.ChangeBaseSoul(_basicSoul);
-        _playerSoulsManager.ChangeSoul(_basicSoul, DEFAULT_NUMBER_OF_SOULS);
+        _playerSoulsManager = new PlayerSoulsManager();
+        _playerSoulsManager.ChangeBaseSoul(_basicSoul, _playerStats.startingNumberOfSouls);
 
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
 

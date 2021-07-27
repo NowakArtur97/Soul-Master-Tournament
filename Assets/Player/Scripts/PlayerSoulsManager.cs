@@ -9,13 +9,11 @@ public class PlayerSoulsManager
     private GameObject _baseSoul;
     public GameObject CurrentSoul { get; private set; }
 
-    public PlayerSoulsManager(D_PlayerStats playerStatsData) => _numberOfSoulsToPlace = playerStatsData.startingNumberOfSouls;
-
     public void ReduceNumberOfSoulsToPlace()
     {
         _currentNumberOfSoulsToPlace--;
 
-        if (!CanPlaceSoul())
+        if (!CanPlaceSoul() && !IsBaseSoul(CurrentSoul))
         {
             CurrentSoul = _baseSoul;
             _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
@@ -26,11 +24,29 @@ public class PlayerSoulsManager
 
     public bool CanPlaceSoul() => _currentNumberOfSoulsToPlace > 0;
 
-    public void ChangeBaseSoul(GameObject soul) => _baseSoul = soul;
+    public void ChangeBaseSoul(GameObject soul, int startingNumberOfSouls)
+    {
+        _baseSoul = soul;
+        CurrentSoul = soul;
+
+        _numberOfSoulsToPlace = startingNumberOfSouls;
+        _currentNumberOfSoulsToPlace = startingNumberOfSouls;
+    }
 
     public void ChangeSoul(GameObject soul, int numberOfUses)
     {
-        CurrentSoul = soul;
-        _currentNumberOfSoulsToPlace = numberOfUses;
+        if (IsBaseSoul(soul))
+        {
+            CurrentSoul = _baseSoul;
+            _numberOfSoulsToPlace++;
+            _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
+        }
+        else
+        {
+            CurrentSoul = soul;
+            _currentNumberOfSoulsToPlace = numberOfUses;
+        }
     }
+
+    private bool IsBaseSoul(GameObject soul) => soul.name.Contains(BASE_SOUL_NAME);
 }
