@@ -100,7 +100,7 @@ public class EnvironmentHazardGenerator : MonoBehaviour
                                 {
                                     _reservedPositions.Add(hazard.transform.position);
                                     hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
-                                    hazard.transform.parent = _environmentHazardsContainer.gameObject.transform;
+                                    hazard.transform.parent = _environmentHazardsContainer.transform;
                                 }
                             }
                         }

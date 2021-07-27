@@ -4,6 +4,8 @@ using UnityEngine;
 public class SoulSpawner : MonoBehaviour
 {
     [SerializeField]
+    private GameObject _pickUpsContainer;
+    [SerializeField]
     private Vector2 _minPosition;
     [SerializeField]
     private Vector2 _maxPosition;
@@ -59,7 +61,8 @@ public class SoulSpawner : MonoBehaviour
     {
         if (CanSpawn())
         {
-            Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+            GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+            pickUp.transform.parent = _pickUpsContainer.transform;
         }
     }
 

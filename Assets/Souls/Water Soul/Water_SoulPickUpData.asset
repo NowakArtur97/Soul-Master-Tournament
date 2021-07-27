@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Water_SoulPickUpData
   m_EditorClassIdentifier: 
   soul: {fileID: 6361494505063361967, guid: c3102d31496026547bd0a2842b94002a, type: 3}
-  positionOffset: {x: 0.5, y: 0.55}
+  positionOffset: {x: 0.5, y: 0.25}
   numberOfUses: 1
