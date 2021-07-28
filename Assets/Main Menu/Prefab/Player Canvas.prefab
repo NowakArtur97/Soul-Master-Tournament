@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503, y: 143}
+  m_AnchoredPosition: {x: -497.1, y: 143}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &689535466
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x3
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
   m_sharedMaterial: {fileID: -7573796298862282790, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
@@ -168,8 +168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -646, y: 129}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: -646, y: 177.1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &757733426
 CanvasRenderer:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -527,7 +527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503, y: 143}
+  m_AnchoredPosition: {x: -497.1, y: 143}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1796113591
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x3
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
   m_sharedMaterial: {fileID: -7573796298862282790, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
@@ -795,8 +795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -646, y: 129}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: -646, y: 177.1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2021721630
 CanvasRenderer:
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -870,7 +870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503, y: 143}
+  m_AnchoredPosition: {x: -497.1, y: 143}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2339202892827103349
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x3
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
   m_sharedMaterial: {fileID: -7573796298862282790, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
@@ -1004,8 +1004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -646, y: 129}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: -646, y: 177.1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6233998741439647956
 CanvasRenderer:
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1347,8 +1347,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -646, y: 129}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: -646, y: 177.1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4022478213780808832
 CanvasRenderer:
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503, y: 143}
+  m_AnchoredPosition: {x: -497.1, y: 143}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &581325253698612006
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x3
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
   m_sharedMaterial: {fileID: -7573796298862282790, guid: 8cf2bc00c9358ff4faa78f78614a6a87, type: 2}
@@ -1843,11 +1843,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeedb3a7643694cbe20e629c9cadf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireSoulImage: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
-  _waterSoulImage: {fileID: 940831705330278188, guid: 340ba39b3dda75442b6b9f94457532a6, type: 3}
-  _poisonousSoulImage: {fileID: -7043274250660743466, guid: a3d222685f67e9d4aa88c187fd2a881e, type: 3}
-  _evilEyeSoulImage: {fileID: 1320769782849932886, guid: bb071bad693499c409a96ab450807971, type: 3}
-  _iceSoulImage: {fileID: 7233202926959050910, guid: 6c8c68724720084488fa038cfc5bd443, type: 3}
+  _fireSoulImage: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
+  _waterSoulImage: {fileID: 21300000, guid: 5be250e2daf93f847ad3e56fbb7811fb, type: 3}
+  _poisonousSoulImage: {fileID: 21300000, guid: 51856b3ebdac61149895624dde2e4775, type: 3}
+  _evilEyeSoulImage: {fileID: 21300000, guid: 7ff6ea8ade7275a469397f6692f0d86e, type: 3}
+  _iceSoulImage: {fileID: 21300000, guid: cbbcaef36b32711489eb7562f5c43141, type: 3}
 --- !u!1 &9038039785386021939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,11 +1977,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeedb3a7643694cbe20e629c9cadf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireSoulImage: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
-  _waterSoulImage: {fileID: 940831705330278188, guid: 340ba39b3dda75442b6b9f94457532a6, type: 3}
-  _poisonousSoulImage: {fileID: -7043274250660743466, guid: a3d222685f67e9d4aa88c187fd2a881e, type: 3}
-  _evilEyeSoulImage: {fileID: 1320769782849932886, guid: bb071bad693499c409a96ab450807971, type: 3}
-  _iceSoulImage: {fileID: 7233202926959050910, guid: 6c8c68724720084488fa038cfc5bd443, type: 3}
+  _fireSoulImage: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
+  _waterSoulImage: {fileID: 21300000, guid: 5be250e2daf93f847ad3e56fbb7811fb, type: 3}
+  _poisonousSoulImage: {fileID: 21300000, guid: 51856b3ebdac61149895624dde2e4775, type: 3}
+  _evilEyeSoulImage: {fileID: 21300000, guid: 7ff6ea8ade7275a469397f6692f0d86e, type: 3}
+  _iceSoulImage: {fileID: 21300000, guid: cbbcaef36b32711489eb7562f5c43141, type: 3}
 --- !u!1 &9038039785949662004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,11 +2036,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeedb3a7643694cbe20e629c9cadf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireSoulImage: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
-  _waterSoulImage: {fileID: 940831705330278188, guid: 340ba39b3dda75442b6b9f94457532a6, type: 3}
-  _poisonousSoulImage: {fileID: -7043274250660743466, guid: a3d222685f67e9d4aa88c187fd2a881e, type: 3}
-  _evilEyeSoulImage: {fileID: 1320769782849932886, guid: bb071bad693499c409a96ab450807971, type: 3}
-  _iceSoulImage: {fileID: 7233202926959050910, guid: 6c8c68724720084488fa038cfc5bd443, type: 3}
+  _fireSoulImage: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
+  _waterSoulImage: {fileID: 21300000, guid: 5be250e2daf93f847ad3e56fbb7811fb, type: 3}
+  _poisonousSoulImage: {fileID: 21300000, guid: 51856b3ebdac61149895624dde2e4775, type: 3}
+  _evilEyeSoulImage: {fileID: 21300000, guid: 7ff6ea8ade7275a469397f6692f0d86e, type: 3}
+  _iceSoulImage: {fileID: 21300000, guid: cbbcaef36b32711489eb7562f5c43141, type: 3}
 --- !u!1 &9038039785964307946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,11 +2497,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeedb3a7643694cbe20e629c9cadf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireSoulImage: {fileID: -7000402269958232152, guid: 1b57a7910b982f343acb43024222d845, type: 3}
-  _waterSoulImage: {fileID: 940831705330278188, guid: 340ba39b3dda75442b6b9f94457532a6, type: 3}
-  _poisonousSoulImage: {fileID: -7043274250660743466, guid: a3d222685f67e9d4aa88c187fd2a881e, type: 3}
-  _evilEyeSoulImage: {fileID: 1320769782849932886, guid: bb071bad693499c409a96ab450807971, type: 3}
-  _iceSoulImage: {fileID: 7233202926959050910, guid: 6c8c68724720084488fa038cfc5bd443, type: 3}
+  _fireSoulImage: {fileID: 21300000, guid: 4312c52ffb8d59c458616fd8b5c50b90, type: 3}
+  _waterSoulImage: {fileID: 21300000, guid: 5be250e2daf93f847ad3e56fbb7811fb, type: 3}
+  _poisonousSoulImage: {fileID: 21300000, guid: 51856b3ebdac61149895624dde2e4775, type: 3}
+  _evilEyeSoulImage: {fileID: 21300000, guid: 7ff6ea8ade7275a469397f6692f0d86e, type: 3}
+  _iceSoulImage: {fileID: 21300000, guid: cbbcaef36b32711489eb7562f5c43141, type: 3}
 --- !u!1001 &9038039784991789404
 PrefabInstance:
   m_ObjectHideFlags: 0
