@@ -17,10 +17,15 @@ public class SoulSpawner : MonoBehaviour
     private float _maxTimeBetweenSpawns = 30;
     [SerializeField]
     private float _minChanceToSpawn = 60;
+    [SerializeField]
+    private float _areaToCheck = 0.8f;
+    [SerializeField]
+    private LayerMask _pickUpLayer;
 
     private Coroutine _spawnCoroutine;
     private bool _isSpawning;
     private bool _isLevelGenerated;
+    private Vector2 _areaVectorToCheck;
 
     private EnvironmentHazardGenerator _environmentHazardGenerator;
 
@@ -32,6 +37,8 @@ public class SoulSpawner : MonoBehaviour
 
         _isSpawning = false;
         _isLevelGenerated = false;
+
+        _areaVectorToCheck = new Vector2(_areaToCheck, _areaToCheck);
     }
 
     private void Update()
@@ -59,7 +66,7 @@ public class SoulSpawner : MonoBehaviour
 
     public void SpawnPickUp(Vector2 position)
     {
-        if (CanSpawn())
+        if (CanSpawn() && IsLocationFree(position))
         {
             GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
             pickUp.transform.parent = _pickUpsContainer.transform;
@@ -80,4 +87,6 @@ public class SoulSpawner : MonoBehaviour
     private float ChoseRandomTimmeBetwenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
 
     private bool CanSpawn() => Random.Range(0, 100) > _minChanceToSpawn;
+
+    private bool IsLocationFree(Vector2 position) => !Physics2D.BoxCast(position, _areaVectorToCheck, 0, Vector2.up, _areaToCheck, _pickUpLayer);
 }

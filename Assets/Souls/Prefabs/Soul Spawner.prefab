@@ -52,6 +52,10 @@ MonoBehaviour:
   - {fileID: 7901612175412977030, guid: 91396ee057c228747889c34cc97ce857, type: 3}
   - {fileID: 2409332157901313942, guid: fedb0e5c5cdd61d4b9fdb4cd1fbdfcab, type: 3}
   - {fileID: 2409332157901313942, guid: 35e0b94ffcc1af648823c6e1587815c1, type: 3}
-  _minTimeBetweenSpawns: 10
-  _maxTimeBetweenSpawns: 20
+  _minTimeBetweenSpawns: 20
+  _maxTimeBetweenSpawns: 25
   _minChanceToSpawn: 1
+  _areaToCheck: 0.8
+  _pickUpLayer:
+    serializedVersion: 2
+    m_Bits: 524288
