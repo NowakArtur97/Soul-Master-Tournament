@@ -113,6 +113,7 @@ public class Player : MonoBehaviour, IDamagable
         GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
         _playerSoulsManager.ReduceNumberOfSoulsToPlace();
+        UpdatePlayerUI();
     }
 
     public void Damage()
@@ -133,6 +134,8 @@ public class Player : MonoBehaviour, IDamagable
             {
                 Destroy(gameObject);
             }
+
+            UpdatePlayerUI();
         }
     }
 
@@ -148,14 +151,14 @@ public class Player : MonoBehaviour, IDamagable
         _playerStatusUIGO = ui;
         _playerStatusUI = _playerStatusUIGO.GetComponent<PlayerStatusUI>();
 
-        SetPlayerUI();
+        UpdatePlayerUI();
     }
 
-    private void SetPlayerUI()
+    private void UpdatePlayerUI()
     {
         _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
-        //_playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
-        //_playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
+        _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
+        _playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -167,6 +170,7 @@ public class Player : MonoBehaviour, IDamagable
         else if (collision.gameObject.CompareTag(PICK_UP_TAG))
         {
             PickUpSoul(collision);
+            UpdatePlayerUI();
         }
     }
 
@@ -205,7 +209,11 @@ public class Player : MonoBehaviour, IDamagable
 
     public void CreateStatsManager(int id) => PlayerStatsManager = new PlayerStatsManager(_playerStats, id);
 
-    public void LetPlacingSouls() => _playerSoulsManager.IncreaseNumberOfSoulsToPlace();
+    public void LetPlacingSouls()
+    {
+        _playerSoulsManager.IncreaseNumberOfSoulsToPlace();
+        UpdatePlayerUI();
+    }
 
     public void AddStatus(PlayerStatus status) => _playerStatusesManager.AddStatus(status);
 
