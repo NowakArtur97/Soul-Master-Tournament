@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -36,6 +37,9 @@ public class Player : MonoBehaviour, IDamagable
     private PlayerStatusesManager _playerStatusesManager;
     private PlayerSoulsManager _playerSoulsManager;
     private PlayerAnimationToComponent _playerAnimationToComponent;
+
+    private GameObject _playerStatusUIGO;
+    private PlayerStatusUI _playerStatusUI;
 
     private void Awake()
     {
@@ -77,19 +81,6 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    private void HandleSummoning()
-    {
-        if (_bombPlacedInput)
-        {
-            if (_playerSoulsManager.CanPlaceSoul())
-            {
-                SummonSoul();
-            }
-
-            _inputHandler.UseBombPlaceInput();
-        }
-    }
-
     private void FixedUpdate()
     {
         if (_playerStatusesManager.CanMove)
@@ -100,6 +91,19 @@ public class Player : MonoBehaviour, IDamagable
         else if (IsNotMoving)
         {
             SetVelocity(Vector2.zero);
+        }
+    }
+
+    private void HandleSummoning()
+    {
+        if (_bombPlacedInput)
+        {
+            if (_playerSoulsManager.CanPlaceSoul())
+            {
+                SummonSoul();
+            }
+
+            _inputHandler.UseBombPlaceInput();
         }
     }
 
@@ -137,6 +141,21 @@ public class Player : MonoBehaviour, IDamagable
         D_SoulPickUp pickUpData = collision.GetComponent<SoulPickUp>().SoulData;
         _playerSoulsManager.ChangeSoul(pickUpData.soul, pickUpData.numberOfUses);
         Destroy(collision.gameObject);
+    }
+
+    public void SetUI(GameObject ui)
+    {
+        _playerStatusUIGO = ui;
+        _playerStatusUI = _playerStatusUIGO.GetComponent<PlayerStatusUI>();
+
+        SetPlayerUI();
+    }
+
+    private void SetPlayerUI()
+    {
+        _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
+        //_playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
+        //_playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

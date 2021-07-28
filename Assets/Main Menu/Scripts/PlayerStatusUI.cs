@@ -1,22 +1,55 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatusUI : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] _uiElements;
-    [SerializeField]
-    private Vector2[] _uiPositions;
+    private const string SOUL_IMAGE_GO_NAME = "Current Soul Image";
+    private const string NUMBER_OF_LIVES_GO_NAME = "Number of lives";
+    private const string NUMBER_OF_SOULS_GO_NAME = "Number of souls";
 
-    private void Start() => SetUIElementsPositions(CharacterSelection.Instance.CharacterIndexes);
+    [SerializeField]
+    private Sprite _fireSoulImage;
+    [SerializeField]
+    private Sprite _waterSoulImage;
+    [SerializeField]
+    private Sprite _poisonousSoulImage;
+    [SerializeField]
+    private Sprite _evilEyeSoulImage;
+    [SerializeField]
+    private Sprite _iceSoulImage;
 
-    private void SetUIElementsPositions(List<int> characterIndexes)
+    private Image _soulImage;
+    private TextMeshProUGUI _numberOfHearts;
+    private TextMeshProUGUI _numberOfSouls;
+
+    private Player _player;
+    private Dictionary<string, Sprite> _soulsSprites;
+
+    private void Awake()
     {
-        int positionIndex = 0;
-        foreach (int index in characterIndexes)
+        _numberOfHearts = transform.Find(NUMBER_OF_LIVES_GO_NAME).GetComponent<TextMeshProUGUI>();
+        _numberOfSouls = transform.Find(NUMBER_OF_SOULS_GO_NAME).GetComponent<TextMeshProUGUI>();
+        _soulImage = transform.Find(SOUL_IMAGE_GO_NAME).GetComponent<Image>();
+
+        _soulsSprites = new Dictionary<string, Sprite>()
         {
-            _uiElements[index].SetActive(true);
-            _uiElements[index].GetComponent<RectTransform>().anchoredPosition = _uiPositions[positionIndex++];
-        }
+            { "Fire Soul", _fireSoulImage },
+            { "Water Soul", _waterSoulImage },
+            { "Poisonous Soul", _poisonousSoulImage },
+            { "Evil Eye Soul", _evilEyeSoulImage },
+            { "Ice Soul", _iceSoulImage }
+        };
     }
+
+    public void SetCurrentSoulImage(string soulName)
+    {
+        _soulImage.sprite = _soulsSprites[soulName];
+        _soulImage.SetNativeSize();
+    }
+
+    public void SetNumberOfLives(int numberOfLives) => _numberOfHearts.text = "x" + numberOfLives;
+
+    public void SetNumberOfSouls(int numberOfSouls) => _numberOfSouls.text = "x" + numberOfSouls;
 }

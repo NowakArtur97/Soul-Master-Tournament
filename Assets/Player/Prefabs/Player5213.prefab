@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
+  _basicSoul: {fileID: 4877182738207230057, guid: 99a495d8a82ad21468dfb0efc05ac638, type: 3}
   _timeBetweenDamages: 1
 --- !u!114 &1703370525658190177
 MonoBehaviour:

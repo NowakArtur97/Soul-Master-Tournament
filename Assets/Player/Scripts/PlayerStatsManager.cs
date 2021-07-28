@@ -3,8 +3,8 @@ using System;
 public class PlayerStatsManager
 {
     private int _playerId;
-    private float _maxHealth;
-    private float _currentHealth;
+    private int _maxHealth;
+    public int CurrentHealth { get; private set; }
 
     public bool IsPermamentDead { get; private set; }
 
@@ -16,13 +16,13 @@ public class PlayerStatsManager
         _playerId = playerId;
 
         _maxHealth = playerStatsData.maxHealth;
-        _currentHealth = _maxHealth;
+        CurrentHealth = _maxHealth;
     }
 
     public void TakeDamage()
     {
-        _currentHealth--;
-        if (_currentHealth <= 0)
+        CurrentHealth--;
+        if (CurrentHealth <= 0)
         {
             PermamentDeathEvent?.Invoke(_playerId);
             IsPermamentDead = true;

@@ -5,18 +5,18 @@ public class PlayerSoulsManager
     private const string BASE_SOUL_NAME = "Fire Soul";
 
     private int _numberOfSoulsToPlace;
-    private int _currentNumberOfSoulsToPlace;
+    public int CurrentNumberOfSoulsToPlace { get; private set; }
     private GameObject _baseSoul;
     public GameObject CurrentSoul { get; private set; }
 
     public void ReduceNumberOfSoulsToPlace()
     {
-        _currentNumberOfSoulsToPlace--;
+        CurrentNumberOfSoulsToPlace--;
 
         if (!CanPlaceSoul() && !IsBaseSoul(CurrentSoul))
         {
             CurrentSoul = _baseSoul;
-            _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
+            CurrentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
         }
     }
 
@@ -27,15 +27,15 @@ public class PlayerSoulsManager
             return;
         }
 
-        _currentNumberOfSoulsToPlace++;
+        CurrentNumberOfSoulsToPlace++;
 
-        if (_currentNumberOfSoulsToPlace > _numberOfSoulsToPlace)
+        if (CurrentNumberOfSoulsToPlace > _numberOfSoulsToPlace)
         {
-            _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
+            CurrentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
         }
     }
 
-    public bool CanPlaceSoul() => _currentNumberOfSoulsToPlace > 0;
+    public bool CanPlaceSoul() => CurrentNumberOfSoulsToPlace > 0;
 
     public void ChangeBaseSoul(GameObject soul, int startingNumberOfSouls)
     {
@@ -43,7 +43,7 @@ public class PlayerSoulsManager
         CurrentSoul = soul;
 
         _numberOfSoulsToPlace = startingNumberOfSouls;
-        _currentNumberOfSoulsToPlace = startingNumberOfSouls;
+        CurrentNumberOfSoulsToPlace = startingNumberOfSouls;
     }
 
     public void ChangeSoul(GameObject soul, int numberOfUses)
@@ -52,12 +52,12 @@ public class PlayerSoulsManager
         {
             CurrentSoul = _baseSoul;
             _numberOfSoulsToPlace++;
-            _currentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
+            CurrentNumberOfSoulsToPlace = _numberOfSoulsToPlace;
         }
         else
         {
             CurrentSoul = soul;
-            _currentNumberOfSoulsToPlace = numberOfUses;
+            CurrentNumberOfSoulsToPlace = numberOfUses;
         }
     }
 
