@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7093579864212807405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7093579864212807406}
+  - component: {fileID: 7093579864212807407}
+  m_Layer: 0
+  m_Name: Soul On Winning Scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7093579864212807406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7093579864212807405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7093579864212807407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7093579864212807405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c841cb8fd49be8489a52acc8334a8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _souls:
+  - {fileID: 8520722437484925719, guid: ea78faa35bab72f4289db09ab58fcc81, type: 3}
+  - {fileID: 8520722437484925719, guid: f061335897888e149bc62f61c7cf3511, type: 3}
+  - {fileID: 8520722437484925719, guid: 5bad67cfd0407e3449878735f77fec19, type: 3}
+  - {fileID: 8520722437484925719, guid: 29f94acf745e6ae4892567588fdbbc4e, type: 3}
+  - {fileID: 8520722437484925719, guid: ad989307f945065418edbaeff2a2dd15, type: 3}
+  _minTimeToSummon: 0.5
+  _maxTimeToSummon: 1.5
