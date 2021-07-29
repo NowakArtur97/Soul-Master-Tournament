@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class SoulOnWinningScene : MonoBehaviour
 {
-    protected const string SUMMON_ANIMATION_BOOL_NAME = "summon";
-
     [SerializeField]
     private GameObject[] _souls;
     [SerializeField]
@@ -16,8 +14,14 @@ public class SoulOnWinningScene : MonoBehaviour
 
     private IEnumerator SummonCoroutine()
     {
-        yield return new WaitForSeconds(Random.Range(_minTimeToSummon, _maxTimeToSummon));
+        yield return new WaitForSeconds(GetRandomTimeToSummonSoul());
 
-        GetComponent<Animator>().SetBool(SUMMON_ANIMATION_BOOL_NAME, true);
+        Instantiate(GetRandomSoul(), transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
     }
+
+    private float GetRandomTimeToSummonSoul() => Random.Range(_minTimeToSummon, _maxTimeToSummon);
+
+    private GameObject GetRandomSoul() => _souls[Random.Range(0, _souls.Length)];
 }
