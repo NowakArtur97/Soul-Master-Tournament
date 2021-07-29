@@ -556,22 +556,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8912732052783996302, guid: 66e7c1d15b2b45f41a684f7ffd3e0b80, type: 3}
-      propertyPath: _playerPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1703370525658190180, guid: 44dc9dc6fb39f0344848c53e424aa3c3, type: 3}
-    - target: {fileID: 8912732052783996302, guid: 66e7c1d15b2b45f41a684f7ffd3e0b80, type: 3}
-      propertyPath: _playerPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 1703370525658190180, guid: a445b6565f279334982b8ee32d11e402, type: 3}
-    - target: {fileID: 8912732052783996302, guid: 66e7c1d15b2b45f41a684f7ffd3e0b80, type: 3}
-      propertyPath: _playerPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 1703370525658190180, guid: e374ced04c206ef42b535bb40d3b72f3, type: 3}
-    - target: {fileID: 8912732052783996302, guid: 66e7c1d15b2b45f41a684f7ffd3e0b80, type: 3}
-      propertyPath: _playerPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 1703370525658190180, guid: d225814ee3860d746a6ffa356df75cdb, type: 3}
     - target: {fileID: 8912732052783996303, guid: 66e7c1d15b2b45f41a684f7ffd3e0b80, type: 3}
       propertyPath: m_Name
       value: Player Manager

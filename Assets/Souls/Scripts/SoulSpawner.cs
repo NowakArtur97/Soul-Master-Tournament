@@ -55,7 +55,7 @@ public class SoulSpawner : MonoBehaviour
     {
         _isSpawning = true;
 
-        yield return new WaitForSeconds(ChoseRandomTimmeBetwenSpawns());
+        yield return new WaitForSeconds(ChoseRandomTimeBetweenSpawns());
 
         SpawnPickUp(ChoseRandomLocation());
 
@@ -81,7 +81,7 @@ public class SoulSpawner : MonoBehaviour
 
     private Vector2 ChoseRandomLocation() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x), (int)Random.Range(_minPosition.y, _maxPosition.y));
 
-    private float ChoseRandomTimmeBetwenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
+    private float ChoseRandomTimeBetweenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
 
     private bool CanSpawn() => Random.Range(0, 100) > _minChanceToSpawn;
 
