@@ -43,7 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb861a90e8c25f145b311f26576b9a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUpsContainer: {fileID: 0}
   _minPosition: {x: -5, y: 4}
   _maxPosition: {x: 12, y: -13}
   _pickUps:
@@ -54,7 +53,7 @@ MonoBehaviour:
   - {fileID: 2409332157901313942, guid: 35e0b94ffcc1af648823c6e1587815c1, type: 3}
   _minTimeBetweenSpawns: 20
   _maxTimeBetweenSpawns: 25
-  _minChanceToSpawn: 1
+  _minChanceToSpawn: 80
   _areaToCheck: 0.8
   _pickUpLayer:
     serializedVersion: 2

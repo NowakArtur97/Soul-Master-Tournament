@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     private List<int> _playersIndexes = new List<int>();
     public Player[] Players { get; private set; }
     private GameObject[] _playersAliveGO;
+    private Player[] _alivePlayers;
     private EnvironmentHazardGenerator _environmentHazardGenerator;
 
     private void Start()
@@ -41,6 +42,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         FindObjectOfType<PlayerStatusUIManager>().SetUIElements(Players);
+        _alivePlayers = Players.Where(player => player != null).ToArray();
     }
 
     private void SpawnPlayer(int id)
@@ -64,5 +66,15 @@ public class PlayerManager : MonoBehaviour
     {
         Players[id].PlayerStatsManager.DeathEvent -= OnPlayerDeath;
         Players[id].PlayerStatsManager.PermamentDeathEvent -= OnPlayerDeath;
+
+        _alivePlayers = _alivePlayers.Where(player => !player.PlayerStatsManager.IsPermamentDead).ToArray();
+
+        if (_alivePlayers.Length == 1)
+        {
+            FindObjectOfType<WinnerManager>().SetWinnerSprite(_alivePlayers[0]);
+            FindObjectOfType<LevelManager>().LoadWinningScene();
+        }
+
+        Destroy(Players[id].gameObject);
     }
 }

@@ -113,7 +113,8 @@ public class Player : MonoBehaviour, IDamagable
         GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
         _playerSoulsManager.ReduceNumberOfSoulsToPlace();
-        UpdatePlayerUI();
+        _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
+        _playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
     }
 
     public void Damage()
@@ -130,12 +131,7 @@ public class Player : MonoBehaviour, IDamagable
 
             PlayerStatsManager.TakeDamage();
 
-            if (PlayerStatsManager.IsPermamentDead)
-            {
-                Destroy(gameObject);
-            }
-
-            UpdatePlayerUI();
+            _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
         }
     }
 
@@ -151,10 +147,10 @@ public class Player : MonoBehaviour, IDamagable
         _playerStatusUIGO = ui;
         _playerStatusUI = _playerStatusUIGO.GetComponent<PlayerStatusUI>();
 
-        UpdatePlayerUI();
+        SetupPlayerUI();
     }
 
-    private void UpdatePlayerUI()
+    private void SetupPlayerUI()
     {
         _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
         _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
@@ -170,7 +166,8 @@ public class Player : MonoBehaviour, IDamagable
         else if (collision.gameObject.CompareTag(PICK_UP_TAG))
         {
             PickUpSoul(collision);
-            UpdatePlayerUI();
+            _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
+            _playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
         }
     }
 
@@ -212,7 +209,8 @@ public class Player : MonoBehaviour, IDamagable
     public void LetPlacingSouls()
     {
         _playerSoulsManager.IncreaseNumberOfSoulsToPlace();
-        UpdatePlayerUI();
+        _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
+        _playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
     }
 
     public void AddStatus(PlayerStatus status) => _playerStatusesManager.AddStatus(status);

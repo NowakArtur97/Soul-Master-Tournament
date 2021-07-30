@@ -24,8 +24,8 @@ public class PlayerStatsManager
         CurrentHealth--;
         if (CurrentHealth <= 0)
         {
-            PermamentDeathEvent?.Invoke(_playerId);
             IsPermamentDead = true;
+            PermamentDeathEvent?.Invoke(_playerId);
         }
         else
         {

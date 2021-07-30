@@ -1122,10 +1122,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soul Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
-      propertyPath: _pickUpsContainer
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 541095112781785708, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
       propertyPath: m_RootOrder
       value: 7
