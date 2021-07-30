@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7527ce7c2efc94cac986e5f47a390d, type: 3}
   m_Name: Player_StatsData
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 3
+  health: 1
+  maxHealth: 1
   movementSpeed: 10
   startingNumberOfSouls: 1

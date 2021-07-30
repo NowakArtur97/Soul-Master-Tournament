@@ -698,7 +698,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1091,6 +1091,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283634027}
   m_CullTransparentMesh: 1
+--- !u!1 &308446891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308446893}
+  - component: {fileID: 308446892}
+  m_Layer: 0
+  m_Name: Character Selection Proxy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &308446892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308446891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3588a8b0ae490eb418538f91e3b9518f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &308446893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308446891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 584.68274, y: 221.06593, z: -149.96826}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &321826808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,7 +3242,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &637910148 stripped
 RectTransform:
@@ -3441,7 +3484,7 @@ GameObject:
   - component: {fileID: 728762521}
   - component: {fileID: 728762524}
   m_Layer: 5
-  m_Name: Player 1 Options
+  m_Name: Player Options 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3544,8 +3587,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032482819}
-        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+      - m_Target: {fileID: 308446892}
+        m_TargetAssemblyTypeName: CharacterSelectionProxy, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
         m_Arguments:
@@ -6568,7 +6611,7 @@ GameObject:
   - component: {fileID: 1535422857}
   - component: {fileID: 1535422859}
   m_Layer: 5
-  m_Name: Player 4 Options
+  m_Name: Player Options 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6641,8 +6684,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032482819}
-        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+      - m_Target: {fileID: 308446892}
+        m_TargetAssemblyTypeName: CharacterSelectionProxy, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
         m_Arguments:
@@ -7514,7 +7557,7 @@ GameObject:
   - component: {fileID: 1839030856}
   - component: {fileID: 1839030858}
   m_Layer: 5
-  m_Name: Player 3 Options
+  m_Name: Player Options 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7587,8 +7630,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032482819}
-        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+      - m_Target: {fileID: 308446892}
+        m_TargetAssemblyTypeName: CharacterSelectionProxy, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
         m_Arguments:
@@ -8179,7 +8222,7 @@ GameObject:
   - component: {fileID: 2014246090}
   - component: {fileID: 2014246092}
   m_Layer: 5
-  m_Name: Player 2 Options
+  m_Name: Player Options 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8252,8 +8295,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032482819}
-        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+      - m_Target: {fileID: 308446892}
+        m_TargetAssemblyTypeName: CharacterSelectionProxy, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 3
         m_Arguments:
@@ -8365,11 +8408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0bb3ad898f414498af58cb6a641737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterOptions:
-  - {fileID: 728762522}
-  - {fileID: 2014246089}
-  - {fileID: 1839030855}
-  - {fileID: 1535422856}
   _selectedColor: {r: 0, g: 0.2830189, b: 0, a: 1}
   _deselectedColor: {r: 0.5754717, g: 0, b: 0, a: 1}
 --- !u!4 &2032482820
@@ -8380,11 +8418,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032482818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.526565, y: -4.3637204, z: -1.8288736}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2036421951
 GameObject:
@@ -10162,7 +10200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5287404538738824542, guid: a2dd318612e93f44e80b2f5161211bd0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5287404538738824542, guid: a2dd318612e93f44e80b2f5161211bd0, type: 3}
       propertyPath: m_LocalPosition.x

@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
     {
         // TODO: LevelManager: Load chosen level
         //SceneManager.LoadScene(FindObjectOfType<LevelSelection>().GetSelectedLevelName);
+        Debug.Log(FindObjectOfType<LevelSelection>());
         SceneManager.LoadScene("Level 1");
     }
 

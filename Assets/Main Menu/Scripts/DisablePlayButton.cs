@@ -12,7 +12,7 @@ public class DisablePlayButton : MonoBehaviour
 
     private void Start()
     {
-        _characterSelection = FindObjectOfType<CharacterSelection>();
+        _characterSelection = CharacterSelection.Instance;
         _chosenCharactersIndexes = _characterSelection.CharacterIndexes;
     }
 

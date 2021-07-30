@@ -10,10 +10,16 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        _sounds.ToList().ForEach(SetUpAudio);
-
-        if (Instance == null) { Instance = this; }
-        else { Destroy(gameObject); }
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            _sounds.ToList().ForEach(SetUpAudio);
+        }
     }
 
     public void Play(string title)
