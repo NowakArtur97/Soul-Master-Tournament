@@ -14,13 +14,13 @@ public class PlayerStatusUIManager : MonoBehaviour
 
         foreach (int index in characterIndexes)
         {
-            GameObject uiElement = _uiElements[uiIndex];
+            GameObject uiElement = _uiElements[index];
             uiElement.SetActive(true);
             uiElement.GetComponent<RectTransform>().anchoredPosition = _uiPositions[uiIndex];
 
             if (uiElement.activeInHierarchy)
             {
-                players[index]?.SetUI(_uiElements[uiIndex]);
+                players[index]?.SetUI(_uiElements[index]);
             }
 
             uiIndex++;
