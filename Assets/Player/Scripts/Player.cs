@@ -130,7 +130,6 @@ public class Player : MonoBehaviour, IDamagable
             }
 
             PlayerStatsManager.TakeDamage();
-
             _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
         }
     }
