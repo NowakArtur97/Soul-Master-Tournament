@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class LevelSelection : MonoBehaviour
     private Button _previousLevelButton;
     [SerializeField]
     private Button _nextLevelButton;
+    [SerializeField]
+    private TextMeshProUGUI _levelNameText;
     [SerializeField]
     private D_Level[] _levelsData;
 
@@ -27,6 +30,8 @@ public class LevelSelection : MonoBehaviour
         _nextLevelButton.interactable = (level < _levelsData.Length - 1);
 
         _levelImage.sprite = _levelsData[_currentLevel].image;
+
+        _levelNameText.text = _levelsData[_currentLevel].name;
     }
 
     public void ChangeLevel(int change)
