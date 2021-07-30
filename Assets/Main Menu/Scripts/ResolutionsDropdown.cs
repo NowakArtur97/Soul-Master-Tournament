@@ -19,7 +19,7 @@ public class ResolutionsDropdown : MonoBehaviour
 
         _resolutionDropdown.ClearOptions();
 
-        List<string> resolutionOptions = _availableResolutions.Select(resolution => $"{resolution.width} x {resolution.height}").ToList();
+        List<string> resolutionOptions = _availableResolutions.Select(resolution => $"{resolution.width} x {resolution.height}").Distinct().ToList();
 
         int currentResolutionIndex = Array.FindIndex(_availableResolutions, resolution => HasSameResolution(resolution));
 

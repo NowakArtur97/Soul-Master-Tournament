@@ -653,7 +653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -308}
+  m_AnchoredPosition: {x: 0, y: -650}
   m_SizeDelta: {x: 241.4143, y: 112.28558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669118470
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startMovingAfter: 4
-  _verticalSpeed: 150
+  _verticalSpeed: 300
   _verticalPosition: {x: 0, y: 92}
 --- !u!95 &669118471
 Animator:
@@ -846,10 +846,10 @@ RectTransform:
   m_Father: {fileID: 2075992740}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -534}
-  m_SizeDelta: {x: 696.2911, y: 84.895}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -651}
+  m_SizeDelta: {x: 696.2911, y: 84.89499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690721961
 MonoBehaviour:
@@ -961,7 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startMovingAfter: 4
-  _verticalSpeed: 150
+  _verticalSpeed: 300
   _verticalPosition: {x: 0, y: -134}
 --- !u!1001 &717348995
 PrefabInstance:
