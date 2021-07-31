@@ -49,10 +49,10 @@ MonoBehaviour:
   - {fileID: 1703370525658190180, guid: e374ced04c206ef42b535bb40d3b72f3, type: 3}
   - {fileID: 1703370525658190180, guid: d225814ee3860d746a6ffa356df75cdb, type: 3}
   PlayersPositions:
-  - {x: -1, y: 1}
-  - {x: 8, y: 1}
-  - {x: -1, y: -8}
-  - {x: 8, y: -8}
+  - {x: -1, y: 0}
+  - {x: 8, y: 0}
+  - {x: -1, y: -9}
+  - {x: 8, y: -9}
   _playersPositionOffset: {x: 0.6, y: 1.2}
   _playerColors:
   - blue

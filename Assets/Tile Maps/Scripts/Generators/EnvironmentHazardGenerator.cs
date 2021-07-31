@@ -46,69 +46,79 @@ public class EnvironmentHazardGenerator : MonoBehaviour
     private List<IEnvironmentHazardGeneratorStrategy> _generators;
     private System.Random _random = new System.Random();
 
-    private void Start()
+    private void Start() => StartCoroutine(GenerateLevel());
+
+    private IEnumerator GenerateLevel()
     {
-        _reservedPositions.AddRange(FindObjectOfType<PlayerManager>().PlayersPositions);
+        yield return new WaitForSeconds(_timeBeforeSpawningEnvironmentHazards);
 
-        _generators = new List<IEnvironmentHazardGeneratorStrategy>();
+        yield return _shouldGenerateHazards ? GenerateEnvironmentHazards() : LoadEnvironmentHazards();
 
-        StartCoroutine(GenerateEnvironmentHazards());
+        LevelGeneratedEvent?.Invoke();
+    }
+
+    private IEnumerator LoadEnvironmentHazards()
+    {
+        foreach (Transform environmentHazard in _environmentHazardsContainer.transform)
+        {
+            yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
+
+            environmentHazard.gameObject.SetActive(true);
+        }
     }
 
     private IEnumerator GenerateEnvironmentHazards()
     {
-        yield return new WaitForSeconds(_timeBeforeSpawningEnvironmentHazards);
-
         Vector3Int position = Vector3Int.zero;
         Vector2 obstaclePosition = Vector2.zero;
 
-        if (_shouldGenerateHazards)
+        _reservedPositions.AddRange(FindObjectOfType<PlayerManager>().PlayersPositions);
+
+        _generators = new List<IEnvironmentHazardGeneratorStrategy>();
+
+        for (int column = 0; column < _tileMapColumns; column++)
         {
-            for (int column = 0; column < _tileMapColumns; column++)
+            for (int row = 0; row < _tileMapRows; row++)
             {
-                for (int row = 0; row < _tileMapRows; row++)
+                yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
+
+                if (GeneratorUtil.IsInCorner(column, _tileMapColumns, row, _tileMapRows))
                 {
-                    yield return new WaitForSeconds(_timeBetweenSpawningEnvironmentHazards);
+                    continue;
+                }
 
-                    if (GeneratorUtil.IsInCorner(column, _tileMapColumns, row, _tileMapRows))
+                position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
+
+                if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
+                {
+                    int chanceForHazard = UnityEngine.Random.Range(0, 100);
+                    obstaclePosition.Set(position.x, position.y);
+
+                    GameObject hazard = null;
+                    _environmentHazardsData = _environmentHazardsData.OrderBy(a => _random.Next()).ToArray(); // shuffle array
+                    D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
+                        && chanceForHazard <= data.chanceForEnvironmentHazard);
+
+                    if (randomHazardData)
                     {
-                        continue;
-                    }
-
-                    position.Set(column + _tileMapOffset.x, -row + _tileMapOffset.y, 0);
-
-                    if (GeneratorUtil.IsPositionFree(position, _reservedPositions, _reservedPositionOffset))
-                    {
-                        int chanceForHazard = UnityEngine.Random.Range(0, 100);
-                        obstaclePosition.Set(position.x, position.y);
-
-                        GameObject hazard = null;
-                        _environmentHazardsData = _environmentHazardsData.OrderBy(a => _random.Next()).ToArray(); // shuffle array
-                        D_EnvironmentHazard randomHazardData = _environmentHazardsData.FirstOrDefault(data => data != null
-                            && chanceForHazard <= data.chanceForEnvironmentHazard);
-
-                        if (randomHazardData)
+                        if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
+                                             || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
                         {
-                            if ((GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && randomHazardData.isOnWall)
-                                                 || (!GeneratorUtil.IsOnWall(column, _tileMapColumns, row, _tileMapRows) && !randomHazardData.isOnWall))
+                            GameObject environmentHazard = randomHazardData.environmentHazard;
+
+                            hazard = ChoseGenerationStrategy(environmentHazard, row, column).Generate(randomHazardData, obstaclePosition);
+
+                            if (hazard)
                             {
-                                GameObject environmentHazard = randomHazardData.environmentHazard;
-
-                                hazard = ChoseGenerationStrategy(environmentHazard, row, column).Generate(randomHazardData, obstaclePosition);
-
-                                if (hazard)
-                                {
-                                    _reservedPositions.Add(hazard.transform.position);
-                                    hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
-                                    hazard.transform.parent = _environmentHazardsContainer.transform;
-                                }
+                                _reservedPositions.Add(hazard.transform.position);
+                                hazard.transform.position += (Vector3)randomHazardData.environmentHazardOffset;
+                                hazard.transform.parent = _environmentHazardsContainer.transform;
                             }
                         }
                     }
                 }
             }
         }
-        LevelGeneratedEvent?.Invoke();
     }
 
     private IEnvironmentHazardGeneratorStrategy ChoseGenerationStrategy(GameObject environmentHazard, int row, int column)
