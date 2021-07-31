@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class WinnerManager : MonoBehaviour
 {
-    public static WinnerManager Instance { get; private set; }
+    private static WinnerManager _instance;
     public Sprite WinnerSprite { get; private set; }
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            Instance = this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
         }
     }
