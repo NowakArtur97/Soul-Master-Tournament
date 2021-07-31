@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: Horizontal1
   verticalAxis: Vertical1
-  placeBomb: right shift
+  placeBomb: 13

@@ -5,5 +5,5 @@ public class D_PlayerInputs : ScriptableObject
 {
     public string horizontalAxis;
     public string verticalAxis;
-    public string placeBomb;
+    public KeyCode placeBomb;
 }
