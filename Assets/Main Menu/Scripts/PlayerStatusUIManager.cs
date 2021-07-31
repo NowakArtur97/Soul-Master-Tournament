@@ -5,6 +5,8 @@ public class PlayerStatusUIManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] _uiElements;
+    [SerializeField]
+    private Vector2[] _anchoredPosition;
 
     private Vector2[] _uiPositions;
 
@@ -28,7 +30,7 @@ public class PlayerStatusUIManager : MonoBehaviour
 
     private void SetUIElements(List<int> characterIndexes, Player[] players)
     {
-        int uiIndex = 0;
+        int positionIndex = 0;
 
         characterIndexes.Sort();
 
@@ -36,15 +38,22 @@ public class PlayerStatusUIManager : MonoBehaviour
         {
             GameObject uiElement = _uiElements[index];
             uiElement.SetActive(true);
-            uiElement.GetComponent<RectTransform>().anchoredPosition = _uiPositions[uiIndex];
 
-            if (uiElement.activeInHierarchy)
-            {
-                players[index]?.SetUI(_uiElements[index]);
-            }
+            SetElementPosition(positionIndex, uiElement);
 
-            uiIndex++;
+            players[index].SetUI(uiElement);
+
+            positionIndex++;
         }
+    }
+
+    private void SetElementPosition(int positionIndex, GameObject uiElement)
+    {
+        RectTransform rectTransform = uiElement.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = _uiPositions[positionIndex];
+        Vector2 anchorPosition = _anchoredPosition[positionIndex];
+        rectTransform.anchorMin = anchorPosition;
+        rectTransform.anchorMax = anchorPosition;
     }
 
     public void SetUIElements(Player[] players) => SetUIElements(CharacterSelection.Instance.CharacterIndexes, players);
