@@ -11,7 +11,11 @@ public class ResolutionsDropdown : MonoBehaviour
 
     private Resolution[] _availableResolutions;
 
-    private void Start() => SetupResolutionDropdownOptions();
+    private void Start()
+    {
+        SetupResolutionDropdownOptions();
+        ChoseDefaultOptions();
+    }
 
     private void SetupResolutionDropdownOptions()
     {
@@ -19,16 +23,23 @@ public class ResolutionsDropdown : MonoBehaviour
 
         _resolutionDropdown.ClearOptions();
 
-        List<string> resolutionOptions = _availableResolutions.Select(resolution => $"{resolution.width} x {resolution.height}").Distinct().ToList();
-
-        int currentResolutionIndex = Array.FindIndex(_availableResolutions, resolution => HasSameResolution(resolution));
-
-        _resolutionDropdown.AddOptions(resolutionOptions);
-        _resolutionDropdown.value = currentResolutionIndex;
-        _resolutionDropdown.RefreshShownValue();
+        _resolutionDropdown.AddOptions(
+            _availableResolutions.Select(resolution => $"{resolution.width} x {resolution.height}")
+            .Distinct()
+            .ToList());
     }
 
-    private static bool HasSameResolution(Resolution resolution) => resolution.width == Screen.currentResolution.width
+    private void ChoseDefaultOptions()
+    {
+        int currentResolutionIndex = Array.FindIndex(_availableResolutions, resolution => HasSameResolution(resolution));
+        _resolutionDropdown.value = currentResolutionIndex;
+        _resolutionDropdown.RefreshShownValue();
+
+        SetResolution(currentResolutionIndex);
+        SetFullscreen(true);
+    }
+
+    private bool HasSameResolution(Resolution resolution) => resolution.width == Screen.currentResolution.width
                 && resolution.height == Screen.currentResolution.height;
 
     public void SetResolution(int resolutionIndex)
