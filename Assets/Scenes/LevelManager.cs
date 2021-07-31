@@ -22,11 +22,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void PlayLevel()
-    {
-        Debug.Log(FindObjectOfType<LevelSelection>(true).GetSelectedLevelName());
-        SceneManager.LoadScene("Level 1");
-    }
+    public void PlayLevel() => SceneManager.LoadScene(FindObjectOfType<LevelSelection>(true).GetSelectedLevelName());
 
     public void LoadWinningScene() => SceneManager.LoadScene(WINNING_SCENE_NAME);
 

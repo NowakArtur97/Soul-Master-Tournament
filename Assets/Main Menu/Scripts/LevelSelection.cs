@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class LevelSelection : MonoBehaviour
 {
+    private const string RANDOM_LEVEL_NAME = "Random";
+
     [SerializeField]
     private Image _levelImage;
     [SerializeField]
@@ -12,6 +14,8 @@ public class LevelSelection : MonoBehaviour
     private Button _nextLevelButton;
     [SerializeField]
     private TextMeshProUGUI _levelNameText;
+    [SerializeField]
+    private TextMeshProUGUI _randomLevelQuestionMarkText;
     [SerializeField]
     private D_Level[] _levelsData;
 
@@ -29,9 +33,13 @@ public class LevelSelection : MonoBehaviour
         _previousLevelButton.interactable = (level != 0);
         _nextLevelButton.interactable = (level < _levelsData.Length - 1);
 
-        _levelImage.sprite = _levelsData[_currentLevel].image;
+        D_Level chosenLevel = _levelsData[_currentLevel];
+        _levelImage.sprite = chosenLevel.image;
 
-        _levelNameText.text = _levelsData[_currentLevel].name;
+        _levelNameText.text = chosenLevel.name;
+
+        bool isRandomLevel = RANDOM_LEVEL_NAME.Equals(chosenLevel.name);
+        _randomLevelQuestionMarkText.gameObject.SetActive(isRandomLevel);
     }
 
     public void ChangeLevel(int change)
