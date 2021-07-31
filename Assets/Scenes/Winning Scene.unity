@@ -653,7 +653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -650}
+  m_AnchoredPosition: {x: 0, y: 93}
   m_SizeDelta: {x: 241.4143, y: 112.28558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669118470
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startMovingAfter: 4
   _verticalSpeed: 300
-  _verticalPosition: {x: 0, y: 92}
+  _verticalStartingOffset: 500
 --- !u!95 &669118471
 Animator:
   serializedVersion: 3
@@ -848,7 +848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -651}
+  m_AnchoredPosition: {x: 0, y: 91}
   m_SizeDelta: {x: 696.2911, y: 84.89499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690721961
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startMovingAfter: 4
   _verticalSpeed: 300
-  _verticalPosition: {x: 0, y: -134}
+  _verticalStartingOffset: 500
 --- !u!1001 &717348995
 PrefabInstance:
   m_ObjectHideFlags: 0

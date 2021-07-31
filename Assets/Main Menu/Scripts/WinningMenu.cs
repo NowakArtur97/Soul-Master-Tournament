@@ -8,15 +8,20 @@ public class WinningMenu : MonoBehaviour
     [SerializeField]
     private float _verticalSpeed = 20;
     [SerializeField]
-    private Vector2 _verticalPosition;
+    private float _verticalStartingOffset = 500;
 
     private RectTransform _myRectTransform;
+    private Vector2 _verticalPosition;
     private bool _isMoving;
 
     private void Awake()
     {
         _isMoving = false;
+
         _myRectTransform = GetComponent<RectTransform>();
+        _verticalPosition = _myRectTransform.anchoredPosition;
+        _myRectTransform.anchoredPosition = new Vector2(_verticalPosition.x, _verticalPosition.y - _verticalStartingOffset);
+
         StartCoroutine(MovingCoroutine());
     }
 
