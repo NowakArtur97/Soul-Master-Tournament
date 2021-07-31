@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca61c6426c3470f44b75e4d78e518c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioMixerGroup: {fileID: 24300002, guid: acea26a2fdbea364a9ab746f58f00f22, type: 2}
   _sounds:
   - title: 
     clip: {fileID: 8300000, guid: 9a111981c7735e049b18a7f19e41c47b, type: 3}

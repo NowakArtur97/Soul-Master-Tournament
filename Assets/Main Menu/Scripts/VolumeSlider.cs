@@ -5,16 +5,17 @@ using UnityEngine.UI;
 public class VolumeSlider : MonoBehaviour
 {
     [SerializeField]
+    private int _startingVolume = 8;
+    [SerializeField]
     private Slider _volumeSlider;
-
     [SerializeField]
     private AudioMixer _audioMixer;
 
-    private void Start() => SetMaxVolume();
+    private void Start() => SetStartingVolume();
 
-    private void SetMaxVolume()
+    private void SetStartingVolume()
     {
-        _volumeSlider.value = _volumeSlider.maxValue;
+        _volumeSlider.value = _startingVolume;
         SetVolume(_volumeSlider.value);
     }
 

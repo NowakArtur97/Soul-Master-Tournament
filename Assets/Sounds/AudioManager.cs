@@ -1,8 +1,11 @@
 using UnityEngine;
 using System.Linq;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField]
+    private AudioMixerGroup _audioMixerGroup;
     [SerializeField]
     private Sound[] _sounds;
 
@@ -56,6 +59,7 @@ public class AudioManager : MonoBehaviour
         sound.source = gameObject.AddComponent<AudioSource>();
 
         sound.title = sound.clip.name;
+        sound.source.outputAudioMixerGroup = _audioMixerGroup;
         sound.source.clip = sound.clip;
         sound.source.volume = sound.volume;
         sound.source.pitch = sound.pitch;
