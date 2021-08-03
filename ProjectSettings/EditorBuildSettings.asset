@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scene.unity
     guid: 040ca67219415284ba7195e2c6f7607e
   - enabled: 1
-    path: Assets/Scenes/Levels/Empty.unity
+    path: Assets/Scenes/Levels/Blank.unity
     guid: 2d4897c0bbc0ebc4290ffa40a5f64b40
-  - enabled: 1
-    path: Assets/Scenes/Levels/Random.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Levels/Simple.unity
     guid: 00e93f0067106ee47bbce58663e2d717
+  - enabled: 1
+    path: Assets/Scenes/Levels/Quo Vadis.unity
+    guid: f89e81510fee45c4d81d49d3603aff8d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Random.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Winning Scene.unity
     guid: 299c2ee4fb4d22242824c862569adf24
