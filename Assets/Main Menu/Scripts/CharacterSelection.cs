@@ -31,11 +31,6 @@ public class CharacterSelection : MonoBehaviour
         }
 
         ResetSelection();
-
-        SelectCharacter(0);
-        SelectCharacter(1);
-        SelectCharacter(2);
-        SelectCharacter(3);
     }
 
     private void ResetSelection()

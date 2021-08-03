@@ -14,8 +14,6 @@ public class SoulSpawner : MonoBehaviour
     [SerializeField]
     private float _maxTimeBetweenSpawns = 30;
     [SerializeField]
-    private float _minChanceToSpawn = 60;
-    [SerializeField]
     private float _areaToCheck = 0.8f;
     [SerializeField]
     private LayerMask _pickUpLayer;
@@ -64,9 +62,13 @@ public class SoulSpawner : MonoBehaviour
 
     public void SpawnPickUp(Vector2 position)
     {
-        if (CanSpawn() && IsLocationFree(position))
+        if (IsLocationFree(position))
         {
             GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+        }
+        else
+        {
+            SpawnPickUp(ChoseRandomLocation());
         }
     }
 
@@ -82,8 +84,6 @@ public class SoulSpawner : MonoBehaviour
     private Vector2 ChoseRandomLocation() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x), (int)Random.Range(_minPosition.y, _maxPosition.y));
 
     private float ChoseRandomTimeBetweenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
-
-    private bool CanSpawn() => Random.Range(0, 100) > _minChanceToSpawn;
 
     private bool IsLocationFree(Vector2 position) => !Physics2D.BoxCast(position, _areaVectorToCheck, 0, Vector2.up, _areaToCheck, _pickUpLayer);
 }
