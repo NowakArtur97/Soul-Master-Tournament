@@ -167,15 +167,9 @@ public abstract class Soul : MonoBehaviour
 
     public void PlaySummonSoundTrigger() => AudioManager.Instance.Play(SUMMON_CLIP_TITLE);
 
-    public void PauseSummonSoundTrigger() => AudioManager.Instance.Pause(SUMMON_CLIP_TITLE);
-
     public void PlayUnsummonSoundTrigger() => AudioManager.Instance.Play(UNSUMMON_CLIP_TITLE);
 
-    public void PauseUnsummonSoundTrigger() => AudioManager.Instance.Pause(UNSUMMON_CLIP_TITLE);
-
     public void PlayAbilitySoundTrigger() => AudioManager.Instance.Play(_soulName + ABILITY_CLIP_TITLE);
-
-    public void PauseAbilitySoundTrigger() => AudioManager.Instance.Pause(_soulName + ABILITY_CLIP_TITLE);
 
     private void DisableAllBoolParametersInAnimator()
     {

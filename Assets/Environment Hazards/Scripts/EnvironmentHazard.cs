@@ -83,8 +83,6 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     public void PlayActiveSoundTrigger() => AudioManager.Instance.Play(_environmentHazardName + ACTIVE_CLIP_TITLE);
 
-    public void PauseActiveSoundTrigger() => AudioManager.Instance.Pause(_environmentHazardName + ACTIVE_CLIP_TITLE);
-
     public void PlayActivedSoundTrigger() => AudioManager.Instance.Play(_environmentHazardName + ACTIVED_CLIP_TITLE);
 
     protected void SetVelocityZero() => _myRigidbody2D.velocity = Vector2.zero;

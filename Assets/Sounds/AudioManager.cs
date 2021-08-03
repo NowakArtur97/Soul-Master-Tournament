@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            _sounds.ToList().ForEach(SetUpAudio);
+            _sounds.ToList().ForEach(SetUpAudioTitle);
         }
     }
 
@@ -35,34 +35,25 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
+            GameObject soundGameObject = SetUpAudio(sound);
             sound.source.Play();
+            Destroy(soundGameObject, sound.clip.length);
         }
     }
 
-    public void Pause(string title)
+    private void SetUpAudioTitle(Sound sound) => sound.title = sound.clip.name;
+
+    private GameObject SetUpAudio(Sound sound)
     {
-        Sound sound = _sounds.FirstOrDefault(s => s.title.Equals(title));
+        GameObject soundGameObject = new GameObject(sound.title);
+        sound.source = soundGameObject.AddComponent<AudioSource>();
 
-        if (sound == null)
-        {
-            Debug.LogWarning("Sound with title: " + title + " not found!");
-        }
-        else
-        {
-            sound.source.Pause();
-            sound.source.loop = false;
-        }
-    }
-
-    private void SetUpAudio(Sound sound)
-    {
-        sound.source = gameObject.AddComponent<AudioSource>();
-
-        sound.title = sound.clip.name;
         sound.source.outputAudioMixerGroup = _audioMixerGroup;
         sound.source.clip = sound.clip;
         sound.source.volume = sound.volume;
         sound.source.pitch = sound.pitch;
         sound.source.loop = sound.shouldLoop;
+
+        return soundGameObject;
     }
 }
