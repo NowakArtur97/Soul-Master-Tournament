@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Simple.unity
     guid: 00e93f0067106ee47bbce58663e2d717
   - enabled: 1
+    path: Assets/Scenes/Levels/Dodgeball.unity
+    guid: 0d524af5ccfeb1b46a9905fbd1049c8c
+  - enabled: 1
     path: Assets/Scenes/Levels/Quo Vadis.unity
     guid: f89e81510fee45c4d81d49d3603aff8d
   - enabled: 1
