@@ -15,4 +15,4 @@ MonoBehaviour:
   environmentHazard: {fileID: 4872386547651543342, guid: e29788f8ed21beb4a8df05f042340fb8, type: 3}
   chanceForEnvironmentHazard: 10
   isOnWall: 0
-  environmentHazardOffset: {x: 0.5, y: 0.55}
+  environmentHazardOffset: {x: 0.5, y: 0.5}

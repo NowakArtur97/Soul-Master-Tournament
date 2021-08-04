@@ -1097,16 +1097,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _environmentHazardsData:
-  - {fileID: 11400000, guid: 2adb20dbb58127a4ca6d525e029fc530, type: 2}
-  - {fileID: 11400000, guid: 4681feb01edea8d4585177aeb56f73df, type: 2}
-  - {fileID: 11400000, guid: e455dfe3e1380804b886e3d0004e2e87, type: 2}
-  - {fileID: 11400000, guid: 354d91ef9f26ea6469f883cef2459d4b, type: 2}
   - {fileID: 11400000, guid: 19fc766d85f84344898ec95c30a79a6f, type: 2}
-  - {fileID: 11400000, guid: 8dff1ff3846e2694a811a18d5fb58bf4, type: 2}
-  - {fileID: 11400000, guid: 800b22ff587c1114a9d382c74e49e012, type: 2}
-  - {fileID: 11400000, guid: dbbb25687886b144e9c26aa388f9b5fa, type: 2}
-  - {fileID: 11400000, guid: a2c8f2423eeb41645a80cc6b393b2dff, type: 2}
-  - {fileID: 11400000, guid: a65fdfe44ed65764e93717a1b22edf59, type: 2}
+  - {fileID: 11400000, guid: fd4090a14964bb84d9a0c78b256abce9, type: 2}
   _rails:
   - {fileID: 4129954218491514196, guid: 441176d8f43106545a05b3cbb62d9ad6, type: 3}
   - {fileID: 4540986206135301763, guid: bd0d17007c71fa747bfa94330b8fd117, type: 3}
