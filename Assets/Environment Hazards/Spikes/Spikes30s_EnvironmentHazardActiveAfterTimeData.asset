@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9349d4cb74153a54ba72634615570f2e, type: 3}
-  m_Name: DungeonSpikes_EnvironmentHazardActiveAfterTimeData
+  m_Name: Spikes30s_EnvironmentHazardActiveAfterTimeData
   m_EditorClassIdentifier: 
   whatIsInteractable:
   - serializedVersion: 2
     m_Bits: 1024
-  minIdleTime: 1
-  maxIdleTime: 3
+  minIdleTime: 5
+  maxIdleTime: 5
