@@ -3,7 +3,6 @@ using System;
 public class PlayerStatsManager
 {
     private int _playerId;
-    private int _maxHealth;
     public int CurrentHealth { get; private set; }
 
     public bool IsPermamentDead { get; private set; }
@@ -15,8 +14,7 @@ public class PlayerStatsManager
     {
         _playerId = playerId;
 
-        _maxHealth = playerStatsData.maxHealth;
-        CurrentHealth = _maxHealth;
+        CurrentHealth = playerStatsData.health;
     }
 
     public void TakeDamage()
