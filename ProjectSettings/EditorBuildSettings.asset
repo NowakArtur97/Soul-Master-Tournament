@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Quo Vadis.unity
     guid: f89e81510fee45c4d81d49d3603aff8d
   - enabled: 1
+    path: Assets/Scenes/Levels/Under Fire.unity
+    guid: f167080f9be5b4c409e5a8ac7fa42c5c
+  - enabled: 1
     path: Assets/Scenes/Levels/Waves.unity
     guid: 9e98ca6a54bde0b44a77eb2a6a7db21e
   - enabled: 1
