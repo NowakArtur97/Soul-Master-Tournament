@@ -15,6 +15,8 @@ public abstract class EnvironmentHazard : MonoBehaviour
     protected bool CanBeOnWall = false;
     [SerializeField]
     private string _environmentHazardName;
+    [SerializeField]
+    private float _timeToWaitAfterInstantiating = 0;
 
     private EnvironmentHazardAnimationToComponent _environmentHazardAnimationToComponent;
     protected GameObject AliveGameObject { get; private set; }
@@ -43,9 +45,11 @@ public abstract class EnvironmentHazard : MonoBehaviour
             SetIsAnimationActive(false);
         }
 
-        CurrentStatus = Status.FINISHED;
-
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name : _environmentHazardName;
+
+        CurrentStatus = Status.EMPTY;
+
+        StartCoroutine(WaitAfterInstantiating());
     }
 
     protected abstract void UseEnvironmentHazard();
@@ -53,6 +57,13 @@ public abstract class EnvironmentHazard : MonoBehaviour
     protected virtual void TriggerEnvironmentHazard() => SetIsAnimationActive(true);
 
     protected virtual void FinishUsingEnvironmentHazard() => SetIsAnimationActive(false);
+
+    private IEnumerator WaitAfterInstantiating()
+    {
+        yield return new WaitForSeconds(_timeToWaitAfterInstantiating);
+
+        CurrentStatus = Status.FINISHED;
+    }
 
     protected virtual IEnumerator WaitBeforeAction(float timeToWait, Status statusAfterWaiting)
     {
