@@ -216,6 +216,8 @@ public class Player : MonoBehaviour, IDamagable
 
     public void RemoveStatus(PlayerStatus status) => _playerStatusesManager.RemoveStatus(status);
 
+    public void RemoveAllStatuses() => _playerStatusesManager.RemoveAllStatuses();
+
     public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
 
     private bool IsNotMoving => _currentVelocity != Vector2.zero;

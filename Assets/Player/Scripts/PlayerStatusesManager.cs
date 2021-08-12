@@ -28,6 +28,14 @@ public class PlayerStatusesManager
         _statuses.Remove(status);
     }
 
+    public void RemoveAllStatuses()
+    {
+        _statuses.Clear();
+        UnlockMovement();
+        CancelReversingControls();
+        DectivateShield();
+    }
+
     public void CheckStatuses()
     {
         List<PlayerStatus> toRemove = new List<PlayerStatus>();

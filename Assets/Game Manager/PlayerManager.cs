@@ -60,7 +60,11 @@ public class PlayerManager : MonoBehaviour
         _playersAliveGO[id] = player.transform.Find(ALIVE_GAME_OBJECT).gameObject;
     }
 
-    private void OnPlayerDeath(int id) => _playersAliveGO[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
+    private void OnPlayerDeath(int id)
+    {
+        Players[id].RemoveAllStatuses();
+        _playersAliveGO[id].transform.position = PlayersPositions[id] + _playersPositionOffset;
+    }
 
     private void OnPermamentDeath(int id)
     {
