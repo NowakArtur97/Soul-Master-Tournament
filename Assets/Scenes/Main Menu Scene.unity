@@ -5191,6 +5191,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d9894b2861cec814abe67f7e70205498, type: 2}
   - {fileID: 11400000, guid: ec8d78c2e93838b49a587aefbf61670d, type: 2}
   - {fileID: 11400000, guid: 5ef3b85ec4e683540bd714713adaadf5, type: 2}
+  - {fileID: 11400000, guid: 83f469dbea9749e4394bcbb9a8352456, type: 2}
   - {fileID: 11400000, guid: c694cbc54aeca1847b6af8840eaf0f68, type: 2}
 --- !u!1 &1098880205
 GameObject:
@@ -8009,7 +8010,7 @@ GameObject:
   - component: {fileID: 1932048364}
   - component: {fileID: 1932048363}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Main Menu Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
