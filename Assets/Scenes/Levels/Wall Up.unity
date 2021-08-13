@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -196,6 +200,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 136
@@ -262,6 +270,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 208
@@ -328,6 +340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -507,6 +523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 210
@@ -573,6 +593,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -639,6 +663,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -705,6 +733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -771,6 +803,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -837,6 +873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 205
@@ -903,6 +943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 203
@@ -969,6 +1013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 213
@@ -1035,6 +1083,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -1101,6 +1153,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -1167,6 +1223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 184
@@ -1233,6 +1293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 133
@@ -1299,6 +1363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -1365,6 +1433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 197
@@ -1431,6 +1503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 188
@@ -1497,6 +1573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 204
@@ -1563,6 +1643,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 180
@@ -1629,6 +1713,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 225
@@ -1695,6 +1783,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -1761,6 +1853,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -1827,6 +1923,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -1893,6 +1993,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -1959,6 +2063,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 166
@@ -2025,6 +2133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -2091,6 +2203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -2157,6 +2273,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -2223,6 +2343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -2289,6 +2413,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -2355,6 +2483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 159
@@ -2421,6 +2553,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -2487,6 +2623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -2553,6 +2693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2619,6 +2763,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 227
@@ -2685,6 +2833,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -2751,6 +2903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -3849,6 +4005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 207
@@ -3915,6 +4075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -3981,6 +4145,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 125
@@ -4047,6 +4215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 209
@@ -4113,6 +4285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -4179,6 +4355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -4245,6 +4425,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4311,6 +4495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -4460,6 +4648,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -4526,6 +4718,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 114
@@ -4592,6 +4788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -4688,6 +4888,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -4754,6 +4958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -4820,6 +5028,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 164
@@ -4886,6 +5098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -7714,6 +7930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 104
@@ -7780,6 +8000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 98
@@ -7846,6 +8070,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 187
@@ -7912,6 +8140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 162
@@ -7978,6 +8210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 117
@@ -8044,6 +8280,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -8110,6 +8350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 233
@@ -8176,6 +8420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 220
@@ -8242,6 +8490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -8308,6 +8560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8374,6 +8630,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -8440,6 +8700,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 160
@@ -8506,6 +8770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 116
@@ -8572,6 +8840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -8638,6 +8910,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -8704,6 +8980,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 150
@@ -8770,6 +9050,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 107
@@ -8836,6 +9120,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 168
@@ -8902,6 +9190,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -8968,6 +9260,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 112
@@ -9034,6 +9330,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -9100,6 +9400,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 185
@@ -9166,6 +9470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -9232,6 +9540,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -9298,6 +9610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -9364,6 +9680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -9430,6 +9750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -9496,6 +9820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -9562,6 +9890,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 183
@@ -9628,6 +9960,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 201
@@ -9694,6 +10030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 232
@@ -9760,6 +10100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -9826,6 +10170,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -9892,6 +10240,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 129
@@ -9958,6 +10310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 155
@@ -10024,6 +10380,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -10090,6 +10450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 148
@@ -10156,6 +10520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 202
@@ -10222,6 +10590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 224
@@ -10288,6 +10660,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 140
@@ -10667,6 +11043,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -10733,6 +11113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 131
@@ -10799,6 +11183,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 234
@@ -10865,6 +11253,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10931,6 +11323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 176
@@ -10997,6 +11393,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 165
@@ -11063,6 +11463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -11129,6 +11533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 178
@@ -11195,6 +11603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -11261,6 +11673,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 179
@@ -11327,6 +11743,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 199
@@ -11393,6 +11813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 151
@@ -11459,6 +11883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -11525,6 +11953,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -11591,6 +12023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 139
@@ -11714,6 +12150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -11780,6 +12220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 149
@@ -11846,6 +12290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 173
@@ -11912,6 +12360,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -11978,6 +12430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 218
@@ -12044,6 +12500,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 217
@@ -12110,6 +12570,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 156
@@ -12176,6 +12640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -12242,6 +12710,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -12308,6 +12780,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 132
@@ -12374,6 +12850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -12440,6 +12920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -12506,6 +12990,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 211
@@ -12572,6 +13060,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 135
@@ -12638,6 +13130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 191
@@ -12704,6 +13200,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -12770,6 +13270,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 103
@@ -12836,6 +13340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 158
@@ -12902,6 +13410,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 157
@@ -13314,6 +13826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 215
@@ -13380,6 +13896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 229
@@ -13446,6 +13966,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 219
@@ -13512,6 +14036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -13578,6 +14106,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 223
@@ -13644,6 +14176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -13710,6 +14246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 193
@@ -13776,6 +14316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 171
@@ -13842,6 +14386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -13908,6 +14456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -13974,6 +14526,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 200
@@ -14040,6 +14596,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -14106,6 +14666,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -14172,6 +14736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 231
@@ -14238,6 +14806,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -14304,6 +14876,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -14370,6 +14946,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -14436,6 +15016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 153
@@ -14532,6 +15116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -14598,6 +15186,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -14664,6 +15256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 230
@@ -14730,6 +15326,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -14796,6 +15396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -14862,6 +15466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 123
@@ -14928,6 +15536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -14994,6 +15606,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 228
@@ -15060,6 +15676,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -15126,6 +15746,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 113
@@ -15192,6 +15816,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 169
@@ -15258,6 +15886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 195
@@ -15354,6 +15986,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 192
@@ -15420,6 +16056,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -15486,6 +16126,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -15552,6 +16196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 105
@@ -15618,6 +16266,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 194
@@ -15684,6 +16336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -15750,6 +16406,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 177
@@ -15816,6 +16476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 198
@@ -15882,6 +16546,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 134
@@ -15948,6 +16616,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -16014,6 +16686,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -16080,6 +16756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -16146,6 +16826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -16212,6 +16896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 181
@@ -16278,6 +16966,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -16344,6 +17036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 170
@@ -16410,6 +17106,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -16476,6 +17176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -16542,6 +17246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 216
@@ -16608,6 +17316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -16674,6 +17386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 226
@@ -16740,6 +17456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -16806,6 +17526,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 127
@@ -16872,6 +17596,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 138
@@ -17204,6 +17932,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -17270,6 +18002,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -17336,6 +18072,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 182
@@ -17402,6 +18142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -17468,6 +18212,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -17534,6 +18282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 221
@@ -17600,6 +18352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -17666,6 +18422,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 235
@@ -17732,6 +18492,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 189
@@ -17798,6 +18562,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 206
@@ -17864,6 +18632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -17930,6 +18702,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 152
@@ -18062,6 +18838,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 161
@@ -18235,6 +19015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -18301,6 +19085,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -18367,6 +19155,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 147
@@ -18433,6 +19225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -18499,6 +19295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -18565,6 +19365,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -18631,6 +19435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 122
@@ -18697,6 +19505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 212
@@ -18763,6 +19575,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -18829,6 +19645,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 118
@@ -18895,6 +19715,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18961,6 +19785,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 174
@@ -19027,6 +19855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -19123,6 +19955,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -19189,6 +20025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -19255,6 +20095,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 214
@@ -19321,6 +20165,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 120
@@ -19387,6 +20235,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -19453,6 +20305,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 196
@@ -19519,6 +20375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 106
@@ -19585,6 +20445,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -19651,6 +20515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -19717,6 +20585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -19783,6 +20655,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 222
@@ -19849,6 +20725,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 146
@@ -19915,6 +20795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 115
@@ -19981,6 +20865,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -20047,6 +20935,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -20113,6 +21005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -20179,6 +21075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -20245,6 +21145,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -20311,6 +21215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -20377,6 +21285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -20443,6 +21355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 128
@@ -20509,6 +21425,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 172
@@ -20575,6 +21495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 144
@@ -20641,6 +21565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -20707,6 +21635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 190
@@ -20773,6 +21705,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -20839,6 +21775,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -20905,6 +21845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655095877}
     m_Modifications:
+    - target: {fileID: 636509825987719532, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
+      propertyPath: _chancesForSpawningSoulAfterDestroying
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
       propertyPath: m_RootOrder
       value: 75
