@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4872386547651543342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.621454, y: -2.6238542, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4872386548993730904}
@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4b21587fcd1e14aa758f4c9cff96b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeOnWall: 0
+  _environmentHazardName: 
+  _timeToWaitAfterInstantiating: 0
   EnvironmentHazardData: {fileID: 11400000, guid: b60cedd15bf8ef1448b0eeb35ab1bc70, type: 2}
   _floorSprites:
   - {fileID: -6195831871325182475, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
@@ -61,7 +64,6 @@ MonoBehaviour:
   - {fileID: 5272187427086059800, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
   - {fileID: -5868709666124207304, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
   - {fileID: 3085994589677117412, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
-  _timeBeforeCrumblingOnStay: 0.5
 --- !u!50 &3826165290600688628
 Rigidbody2D:
   serializedVersion: 4

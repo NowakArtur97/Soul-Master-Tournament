@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Fight Ring.unity
     guid: af2e985c920d9544c8d38879bab4cc6e
   - enabled: 1
+    path: Assets/Scenes/Levels/Narrow Path.unity
+    guid: 107e787507178d542a8cc3a830b6b16f
+  - enabled: 1
     path: Assets/Scenes/Levels/Jigsaw.unity
     guid: 84d54a91b15e2794c99062decdf6894a
   - enabled: 1

@@ -51,4 +51,17 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
         CurrentStatus = Status.FINISHED;
         ToInteract = null;
     }
+
+    protected void Damage()
+    {
+        if (ToInteract)
+        {
+            IDamagable toDamage = ToInteract.GetComponentInParent<IDamagable>();
+
+            if (toDamage != null)
+            {
+                toDamage.Damage();
+            }
+        }
+    }
 }

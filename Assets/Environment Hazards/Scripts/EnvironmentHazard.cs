@@ -40,10 +40,8 @@ public abstract class EnvironmentHazard : MonoBehaviour
             _environmentHazardAnimationToComponent.EnvironmentHazard = this;
         }
 
-        if (_myAnimator)
-        {
-            SetIsAnimationActive(false);
-        }
+
+        SetIsAnimationActive(false);
 
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name : _environmentHazardName;
 
@@ -78,6 +76,11 @@ public abstract class EnvironmentHazard : MonoBehaviour
 
     protected void SetIsAnimationActive(bool isActive)
     {
+        if (_myAnimator == null)
+        {
+            return;
+        }
+
         string onWallModifier = "";
         if (CanBeOnWall && IsRotated())
         {

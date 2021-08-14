@@ -44,19 +44,6 @@ public class CrumblingFloor : EnvironmentHazardActiveOnContact
         StopUsingEnvironmentHazardTrigger();
     }
 
-    private void Damage()
-    {
-        if (ToInteract)
-        {
-            IDamagable toDamage = ToInteract.GetComponentInParent<IDamagable>();
-
-            if (toDamage != null)
-            {
-                toDamage.Damage();
-            }
-        }
-    }
-
     private void Crumble() => _mySpriteRenderer.sprite = _floorSprites[_currentSpriteIndex];
 
     protected override void TriggerEnvironmentHazard() => IdleCoroutine = StartCoroutine(WaitBeforeAction(TimeBeforeActivation, Status.ACTIVE));
