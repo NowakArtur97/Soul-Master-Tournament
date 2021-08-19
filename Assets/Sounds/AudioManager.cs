@@ -5,6 +5,8 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField]
+    private string _mainSound = "Main";
+    [SerializeField]
     private AudioMixerGroup _audioMixerGroup;
     [SerializeField]
     private Sound[] _sounds;
@@ -22,6 +24,7 @@ public class AudioManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             _sounds.ToList().ForEach(SetUpAudioTitle);
+            Play(_mainSound);
         }
     }
 
@@ -37,7 +40,10 @@ public class AudioManager : MonoBehaviour
         {
             GameObject soundGameObject = SetUpAudio(sound);
             sound.source.Play();
-            Destroy(soundGameObject, sound.clip.length);
+            if (!sound.shouldLoop)
+            {
+                Destroy(soundGameObject, sound.clip.length);
+            }
         }
     }
 

@@ -40,7 +40,6 @@ public abstract class EnvironmentHazard : MonoBehaviour
             _environmentHazardAnimationToComponent.EnvironmentHazard = this;
         }
 
-
         SetIsAnimationActive(false);
 
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name : _environmentHazardName;
