@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
+    private const string WINNING_SCENE_NAME = "Winning Scene";
+
     [SerializeField]
     private string _mainSound = "Main";
     [SerializeField]
@@ -46,6 +50,31 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        if (IsOnWinnigScene())
+        {
+            DestroyAudioSources();
+        }
+    }
+
+    private void DestroyAudioSources()
+    {
+        List<AudioSource> audioSources = GetComponents<AudioSource>().ToList();
+
+        foreach (AudioSource audioSource in audioSources)
+        {
+            bool isNotMainSound = !audioSource.clip.name.Contains(_mainSound);
+
+            if (isNotMainSound)
+            {
+                Destroy(audioSource);
+            }
+        }
+    }
+
+    private bool IsOnWinnigScene() => SceneManager.GetActiveScene().name.Equals(WINNING_SCENE_NAME);
 
     private void SetUpAudioTitle(Sound sound) => sound.title = sound.clip.name;
 
