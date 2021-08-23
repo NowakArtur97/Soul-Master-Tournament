@@ -740,18 +740,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
-      propertyPath: _numberOfApplauses
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
-      propertyPath: _maxTimeBeforeApplauseSounds
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
-      propertyPath: _minTimeBeforeApplauseSounds
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 7369170435172684457, guid: adb72995d36535d47be656337d4263fc, type: 3}
       propertyPath: m_Name
       value: Audio Manager

@@ -3,9 +3,11 @@ using System.Linq;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
+    private const string MAIN_MENU_SCENE_NAME = "Main Menu Scene";
     private const string WINNING_SCENE_NAME = "Winning Scene";
 
     [SerializeField]
@@ -51,15 +53,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (IsOnWinnigScene())
-        {
-            DestroyAudioSources();
-        }
-    }
-
-    private void DestroyAudioSources()
+    public void DestroyAudioSources()
     {
         List<AudioSource> audioSources = GetComponents<AudioSource>().ToList();
 
@@ -74,7 +68,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private bool IsOnWinnigScene() => SceneManager.GetActiveScene().name.Equals(WINNING_SCENE_NAME);
+    private bool IsOnScene(string sceneName) => SceneManager.GetActiveScene().name.Equals(sceneName);
 
     private void SetUpAudioTitle(Sound sound) => sound.title = sound.clip.name;
 

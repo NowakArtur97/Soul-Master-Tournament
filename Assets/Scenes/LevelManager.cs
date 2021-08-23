@@ -24,9 +24,17 @@ public class LevelManager : MonoBehaviour
 
     public void PlayLevel() => SceneManager.LoadScene(FindObjectOfType<LevelSelection>(true).GetSelectedLevelName());
 
-    public void LoadWinningScene() => SceneManager.LoadScene(WINNING_SCENE_NAME);
+    public void LoadWinningScene()
+    {
+        AudioManager.Instance.DestroyAudioSources();
+        SceneManager.LoadScene(WINNING_SCENE_NAME);
+    }
 
-    public void LoadMainMenuScene() => SceneManager.LoadScene(MAIN_MENU_SCENE_NAME);
+    public void LoadMainMenuScene()
+    {
+        AudioManager.Instance.DestroyAudioSources();
+        SceneManager.LoadScene(MAIN_MENU_SCENE_NAME);
+    }
 
     public void QuitGame()
     {

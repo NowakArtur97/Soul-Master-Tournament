@@ -162,7 +162,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - title: 
     clip: {fileID: 8300000, guid: a640e685f7dfea34abad6145856c77a9, type: 3}
-    volume: 0.2
+    volume: 0.15
     pitch: 1
     shouldLoop: 1
     source: {fileID: 0}
@@ -171,4 +171,10 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     shouldLoop: 0
+    source: {fileID: 0}
+  - title: 
+    clip: {fileID: 8300000, guid: 9e5aa55fbd6d6e54dabbd8321763702e, type: 3}
+    volume: 1
+    pitch: 1
+    shouldLoop: 1
     source: {fileID: 0}

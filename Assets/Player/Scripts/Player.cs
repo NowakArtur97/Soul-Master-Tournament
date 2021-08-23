@@ -153,6 +153,8 @@ public class Player : MonoBehaviour, IDamagable
             PlayerStatsManager.IsSpawning = true;
             PlayDeathAnimation(true);
             _playerStatusesManager.LockMovement();
+
+            SetVelocity(Vector2.zero);
         }
     }
 

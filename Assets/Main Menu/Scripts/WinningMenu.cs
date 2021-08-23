@@ -51,5 +51,5 @@ public class WinningMenu : MonoBehaviour
         _myRectTransform.anchoredPosition = position;
     }
 
-    private bool HasArrivedAtDestination(Vector2 position) => Vector3.Distance(position, _verticalPosition) < 1f;
+    private bool HasArrivedAtDestination(Vector2 position) => Vector3.Distance(position, _verticalPosition) < 3f;
 }
