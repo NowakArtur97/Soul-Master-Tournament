@@ -6,6 +6,7 @@ public class Player : MonoBehaviour, IDamagable
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string PROTECTED_ANIMATION_BOOL_NAME = "protect";
+    private const string DEATH_ANIMATION_BOOL_NAME = "dead";
     private const string ABILITY_TAG = "Soul Ability";
     private const string PICK_UP_TAG = "Pick Up";
     [SerializeField]
@@ -129,9 +130,21 @@ public class Player : MonoBehaviour, IDamagable
                 return;
             }
 
-            PlayerStatsManager.TakeDamage();
-            _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
+            PlayDeathAnimation(true);
         }
+    }
+
+    private void PlayDeathAnimation(bool isDead)
+    {
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isDead);
+        _myAnimator.SetBool(DEATH_ANIMATION_BOOL_NAME, isDead);
+    }
+
+    private void TakeDamage()
+    {
+        PlayerStatsManager.TakeDamage();
+        _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
+        PlayDeathAnimation(false);
     }
 
     private void PickUpSoul(Collider2D collision)
@@ -219,6 +232,8 @@ public class Player : MonoBehaviour, IDamagable
     public void RemoveAllStatuses() => _playerStatusesManager.RemoveAllStatuses();
 
     public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
+
+    public void DeathTrigger() => TakeDamage();
 
     private bool IsNotMoving => _currentVelocity != Vector2.zero;
 
