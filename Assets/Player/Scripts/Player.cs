@@ -6,6 +6,7 @@ public class Player : MonoBehaviour, IDamagable
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
     private const string PROTECTED_ANIMATION_BOOL_NAME = "protect";
+    private const string SUMMON_ANIMATION_BOOL_NAME = "summon";
     private const string DEATH_ANIMATION_BOOL_NAME = "dead";
     private const string ABILITY_TAG = "Soul Ability";
     private const string PICK_UP_TAG = "Pick Up";
@@ -118,6 +119,18 @@ public class Player : MonoBehaviour, IDamagable
         _playerStatusUI.SetNumberOfSouls(_playerSoulsManager.CurrentNumberOfSoulsToPlace);
     }
 
+    private void Summoned()
+    {
+        PlaySummonAnimation(false);
+        _playerStatusesManager.UnlockMovement();
+    }
+
+    private void PlaySummonAnimation(bool isSummoned)
+    {
+        _myAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, isSummoned);
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isSummoned);
+    }
+
     public void Damage()
     {
         if (CanBeDamaged())
@@ -131,20 +144,26 @@ public class Player : MonoBehaviour, IDamagable
             }
 
             PlayDeathAnimation(true);
+            _playerStatusesManager.LockMovement();
         }
     }
 
     private void PlayDeathAnimation(bool isDead)
     {
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isDead);
         _myAnimator.SetBool(DEATH_ANIMATION_BOOL_NAME, isDead);
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isDead);
     }
 
     private void TakeDamage()
     {
         PlayerStatsManager.TakeDamage();
         _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
-        PlayDeathAnimation(false);
+
+        if (!PlayerStatsManager.IsPermamentDead)
+        {
+            PlayDeathAnimation(false);
+            PlaySummonAnimation(true);
+        }
     }
 
     private void PickUpSoul(Collider2D collision)
@@ -232,6 +251,8 @@ public class Player : MonoBehaviour, IDamagable
     public void RemoveAllStatuses() => _playerStatusesManager.RemoveAllStatuses();
 
     public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
+
+    public void SummonTrigger() => Summoned();
 
     public void DeathTrigger() => TakeDamage();
 

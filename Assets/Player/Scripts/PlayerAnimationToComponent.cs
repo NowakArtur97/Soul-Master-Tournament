@@ -6,5 +6,7 @@ public class PlayerAnimationToComponent : MonoBehaviour
 
     private void DestroyShieldTrigger() => Player.DestroyShieldTrigger();
 
+    private void SummonedTrigger() => Player.SummonTrigger();
+
     private void DeathTrigger() => Player.DeathTrigger();
 }
