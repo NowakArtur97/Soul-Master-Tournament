@@ -5,6 +5,7 @@ public class PlayerStatsManager
     private int _playerId;
     public int CurrentHealth { get; private set; }
 
+    public bool IsSpawning;
     public bool IsPermamentDead { get; private set; }
 
     public Action<int> PermamentDeathEvent;
@@ -15,6 +16,7 @@ public class PlayerStatsManager
         _playerId = playerId;
 
         CurrentHealth = playerStatsData.health;
+        IsSpawning = true;
     }
 
     public void TakeDamage()

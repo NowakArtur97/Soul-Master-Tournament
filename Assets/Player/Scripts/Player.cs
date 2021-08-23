@@ -124,6 +124,7 @@ public class Player : MonoBehaviour, IDamagable
     {
         PlaySummonAnimation(false);
         _playerStatusesManager.UnlockMovement();
+        PlayerStatsManager.IsSpawning = false;
     }
 
     private void PlaySummonAnimation(bool isSummoned)
@@ -134,7 +135,7 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage()
     {
-        if (CanBeDamaged())
+        if (CanBeDamaged() && !PlayerStatsManager.IsSpawning)
         {
             _lastDamageTime = Time.time;
 
@@ -144,6 +145,7 @@ public class Player : MonoBehaviour, IDamagable
                 return;
             }
 
+            PlayerStatsManager.IsSpawning = true;
             PlayDeathAnimation(true);
             _playerStatusesManager.LockMovement();
         }
