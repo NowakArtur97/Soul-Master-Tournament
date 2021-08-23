@@ -38,21 +38,20 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            GameObject soundGameObject = SetUpAudio(sound);
+            AudioSource audioSource = SetUpAudio(sound);
             sound.source.Play();
             if (!sound.shouldLoop)
             {
-                Destroy(soundGameObject, sound.clip.length);
+                Destroy(audioSource, sound.clip.length);
             }
         }
     }
 
     private void SetUpAudioTitle(Sound sound) => sound.title = sound.clip.name;
 
-    private GameObject SetUpAudio(Sound sound)
+    private AudioSource SetUpAudio(Sound sound)
     {
-        GameObject soundGameObject = new GameObject(sound.title);
-        sound.source = soundGameObject.AddComponent<AudioSource>();
+        sound.source = gameObject.AddComponent<AudioSource>();
 
         sound.source.outputAudioMixerGroup = _audioMixerGroup;
         sound.source.clip = sound.clip;
@@ -60,6 +59,6 @@ public class AudioManager : MonoBehaviour
         sound.source.pitch = sound.pitch;
         sound.source.loop = sound.shouldLoop;
 
-        return soundGameObject;
+        return sound.source;
     }
 }
