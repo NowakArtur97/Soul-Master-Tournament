@@ -740,6 +740,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: _numberOfApplauses
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: _maxTimeBeforeApplauseSounds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684456, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: _minTimeBeforeApplauseSounds
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7369170435172684457, guid: adb72995d36535d47be656337d4263fc, type: 3}
       propertyPath: m_Name
       value: Audio Manager
@@ -5176,8 +5188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelImage: {fileID: 77314355}
-  _previousLevelButton: {fileID: 560645419}
-  _nextLevelButton: {fileID: 1943114138}
   _levelNameText: {fileID: 1312983022}
   _randomLevelQuestionMarkText: {fileID: 1366380920}
   _levelsData:

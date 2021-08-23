@@ -9,10 +9,6 @@ public class LevelSelection : MonoBehaviour
     [SerializeField]
     private Image _levelImage;
     [SerializeField]
-    private Button _previousLevelButton;
-    [SerializeField]
-    private Button _nextLevelButton;
-    [SerializeField]
     private TextMeshProUGUI _levelNameText;
     [SerializeField]
     private TextMeshProUGUI _randomLevelQuestionMarkText;
@@ -30,9 +26,6 @@ public class LevelSelection : MonoBehaviour
 
     private void SelectLevel(int level)
     {
-        _previousLevelButton.interactable = (level != 0);
-        _nextLevelButton.interactable = (level < _levelsData.Length - 1);
-
         D_Level chosenLevel = _levelsData[_currentLevel];
         _levelImage.sprite = chosenLevel.image;
 
@@ -45,6 +38,16 @@ public class LevelSelection : MonoBehaviour
     public void ChangeLevel(int change)
     {
         _currentLevel += change;
+
+        if (_currentLevel >= _levelsData.Length)
+        {
+            _currentLevel = 0;
+        }
+        else if (_currentLevel < 0)
+        {
+            _currentLevel = _levelsData.Length - 1;
+        }
+
         SelectLevel(_currentLevel);
     }
 
