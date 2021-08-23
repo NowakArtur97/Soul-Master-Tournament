@@ -36,7 +36,7 @@ public class Player : MonoBehaviour, IDamagable
     private Animator _myAnimator;
 
     public PlayerStatsManager PlayerStatsManager { get; private set; }
-    private PlayerStatusesManager _playerStatusesManager;
+    public PlayerStatusesManager _playerStatusesManager { get; private set; }
     private PlayerSoulsManager _playerSoulsManager;
     private PlayerAnimationToComponent _playerAnimationToComponent;
 
@@ -55,7 +55,8 @@ public class Player : MonoBehaviour, IDamagable
         _playerSoulsManager = new PlayerSoulsManager();
         _playerSoulsManager.ChangeBaseSoul(_basicSoul, _playerStats.startingNumberOfSouls);
 
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, true);
+        _playerStatusesManager.LockMovement();
+        _myAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, true);
 
         _playerAnimationToComponent = _aliveGameObject.GetComponent<PlayerAnimationToComponent>();
         _playerAnimationToComponent.Player = this;
@@ -157,6 +158,7 @@ public class Player : MonoBehaviour, IDamagable
     private void TakeDamage()
     {
         PlayerStatsManager.TakeDamage();
+        AddStatus(new ImmobilizedStatus(_timeBetweenDamages));
         _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
 
         if (!PlayerStatsManager.IsPermamentDead)
