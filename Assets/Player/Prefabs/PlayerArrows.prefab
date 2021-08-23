@@ -226,6 +226,7 @@ MonoBehaviour:
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
   _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
   _timeBetweenDamages: 2
+  _playerDeathSound: Player_Death
 --- !u!114 &1703370525658190177
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour, IDamagable
     private const string DEATH_ANIMATION_BOOL_NAME = "dead";
     private const string ABILITY_TAG = "Soul Ability";
     private const string PICK_UP_TAG = "Pick Up";
+
     [SerializeField]
     private const int DEFAULT_NUMBER_OF_SOULS = 1;
 
@@ -21,6 +22,9 @@ public class Player : MonoBehaviour, IDamagable
     [SerializeField]
     private float _timeBetweenDamages = 0.5f;
     private float _lastDamageTime;
+
+    [SerializeField]
+    private string _playerDeathSound = "Player_Death";
 
     private Vector2 _movementInput;
     private bool _bombPlacedInput;
@@ -145,6 +149,7 @@ public class Player : MonoBehaviour, IDamagable
                 return;
             }
 
+            AudioManager.Instance.Play(_playerDeathSound);
             PlayerStatsManager.IsSpawning = true;
             PlayDeathAnimation(true);
             _playerStatusesManager.LockMovement();
