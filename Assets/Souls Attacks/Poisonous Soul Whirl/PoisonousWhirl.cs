@@ -8,6 +8,8 @@ public class PoisonousWhirl : SoulAbility
 
     [SerializeField]
     private float _activeTime = 10f;
+    [SerializeField]
+    private string _abilitySound = "PoisonousSoul_Ability";
 
     protected Animator MyAnimator { get; private set; }
 
@@ -25,6 +27,7 @@ public class PoisonousWhirl : SoulAbility
         if (Time.time >= StartTime + _activeTime)
         {
             IsActive = false;
+            AudioManager.Instance.Stop(_abilitySound);
             MyAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, false);
             MyAnimator.SetBool(ABILITY_FINISH_ANIMATION_BOOL_NAME, true);
         }
