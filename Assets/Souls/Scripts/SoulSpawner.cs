@@ -65,6 +65,7 @@ public class SoulSpawner : MonoBehaviour
         if (IsLocationFree(position))
         {
             GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+            pickUp.transform.parent = gameObject.transform;
         }
         else
         {

@@ -7313,6 +7313,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 636509825987719533, guid: d770fc9792fa92e4791e9b5628fdd8b9, type: 3}
   m_PrefabInstance: {fileID: 1198973093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1211641788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2499088
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9488064
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.271723
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684455, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369170435172684457, guid: adb72995d36535d47be656337d4263fc, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adb72995d36535d47be656337d4263fc, type: 3}
 --- !u!1001 &1228634525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10204,6 +10261,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soul Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _pickUps.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _maxTimeBetweenSpawns
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _minTimeBetweenSpawns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _pickUps.Array.data[0]
+      value: 
+      objectReference: {fileID: 2409332157901313942, guid: fedb0e5c5cdd61d4b9fdb4cd1fbdfcab, type: 3}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _pickUps.Array.data[1]
+      value: 
+      objectReference: {fileID: 7901612175412977030, guid: 91396ee057c228747889c34cc97ce857, type: 3}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _pickUps.Array.data[2]
+      value: 
+      objectReference: {fileID: 2409332157901313942, guid: fedb0e5c5cdd61d4b9fdb4cd1fbdfcab, type: 3}
+    - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
+      propertyPath: _pickUps.Array.data[3]
+      value: 
+      objectReference: {fileID: 2409332157901313942, guid: 35e0b94ffcc1af648823c6e1587815c1, type: 3}
     - target: {fileID: 541095112781785708, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
       propertyPath: m_RootOrder
       value: 7

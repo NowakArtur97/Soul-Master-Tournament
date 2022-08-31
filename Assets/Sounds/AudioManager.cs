@@ -3,7 +3,6 @@ using System.Linq;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
@@ -50,6 +49,20 @@ public class AudioManager : MonoBehaviour
             {
                 Destroy(audioSource, sound.clip.length);
             }
+        }
+    }
+
+    public void Stop(string title)
+    {
+        Sound sound = _sounds.FirstOrDefault(s => s.title.Equals(title));
+
+        if (sound == null)
+        {
+            Debug.LogWarning("Sound with title: " + title + " not found!");
+        }
+        else
+        {
+            sound.source.Stop();
         }
     }
 

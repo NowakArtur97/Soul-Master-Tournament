@@ -14,9 +14,14 @@ public class CharacterSelection : MonoBehaviour
     private Color _deselectedColor = new Color(106f, 0f, 0f, 1f);
 
     private Button[] _characterOptions;
-    public List<int> CharacterIndexes { get; private set; }
+    public List<int> CharacterIndexes { get; private set; } = new List<int>() { 0, 1, 2, 3 };
 
-    public static CharacterSelection Instance { get; private set; }
+    public static CharacterSelection Instance { get; private set; } = new CharacterSelectionDefault();
+
+    class CharacterSelectionDefault : CharacterSelection
+    {
+        public new List<int> CharacterIndexes { get; private set; } = new List<int>() { 0, 1, 2, 3 };
+    }
 
     private void Awake()
     {

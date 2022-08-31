@@ -9,6 +9,7 @@ public class WaterSoul : SoulWithPlayerBuff
         if (HasUsedAbility)
         {
             MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
+            StopAbilitySound();
             UnsummonSoul();
         }
         else if (ShouldStartUsingAbility)
