@@ -25,8 +25,6 @@ MonoBehaviour:
   abilityPositionOffset: {x: 0.5, y: -0.75}
   notAfectedLayerMasks:
   - serializedVersion: 2
-    m_Bits: 64
-  - serializedVersion: 2
     m_Bits: 262144
   afectedLayerMasks:
   - serializedVersion: 2
@@ -35,4 +33,5 @@ MonoBehaviour:
     m_Bits: 4096
   - serializedVersion: 2
     m_Bits: 1024
-  canPlayerSummonAfterDestroy: 1
+  - serializedVersion: 2
+    m_Bits: 64

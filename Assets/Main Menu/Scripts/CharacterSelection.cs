@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -16,11 +15,11 @@ public class CharacterSelection : MonoBehaviour
     private Button[] _characterOptions;
     public List<int> CharacterIndexes { get; private set; } = new List<int>() { 0, 1, 2, 3 };
 
+    // TODO: Remove
     public static CharacterSelection Instance { get; private set; } = new CharacterSelectionDefault();
 
-    class CharacterSelectionDefault : CharacterSelection
+    private class CharacterSelectionDefault : CharacterSelection
     {
-        public new List<int> CharacterIndexes { get; private set; } = new List<int>() { 0, 1, 2, 3 };
     }
 
     private void Awake()
