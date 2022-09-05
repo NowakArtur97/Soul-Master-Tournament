@@ -10284,7 +10284,7 @@ PrefabInstance:
     - target: {fileID: 541095112781785707, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
       propertyPath: _pickUps.Array.data[0]
       value: 
-      objectReference: {fileID: 2409332157901313942, guid: 47d8fdc43a18d3e4e9d0f85cc100bb6c, type: 3}
+      objectReference: {fileID: 3471548585015810641, guid: 70dc19d0f6c164041a4d85ded97ff003, type: 3}
     - target: {fileID: 541095112781785708, guid: 2f4157545fc8d5b43aecf9c454589551, type: 3}
       propertyPath: m_RootOrder
       value: 7
