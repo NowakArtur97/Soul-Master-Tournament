@@ -3,6 +3,11 @@ using UnityEngine;
 
 public abstract class SoulWithRandomDirectionAbility : Soul
 {
+    [SerializeField]
+    private Vector2 _minPosition = new Vector2(-5, 4);
+    [SerializeField]
+    private Vector2 _maxPosition = new Vector2(12, -13);
+
     private IList<Vector2> _takenPositions;
     private Vector2 _soulPosition;
 
@@ -13,11 +18,8 @@ public abstract class SoulWithRandomDirectionAbility : Soul
         base.StartUsingAbility();
     }
 
-    // TODO: SoulWithRandomDirectionAbility: Check if really is random
     protected override void UseAbility()
     {
-        int range = GetRandomRange(AbilityMaxRange);
-
         _soulPosition = GetSoulPosition();
 
         while (_takenPositions.Contains(_soulPosition) && CheckIfTouching(0, _soulPosition, SoulStats.notAfectedLayerMasks))
@@ -32,8 +34,8 @@ public abstract class SoulWithRandomDirectionAbility : Soul
         ability.GetComponentInChildren<Animator>().SetBool(GetAnimationBoolName(), true);
     }
 
-    protected override Vector2 GetSoulPosition() => new Vector2(Mathf.FloorToInt(AliveGameObject.transform.position.x) + (AbilityDirection.x * AbilityMaxRange),
-        Mathf.FloorToInt(_soulPosition.y) + (AbilityDirection.y * AbilityMaxRange));
+    protected override Vector2 GetSoulPosition() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x),
+        (int)Random.Range(_minPosition.y, _maxPosition.y));
 
     protected override Quaternion GetSoulRotation() => Quaternion.Euler(0, 0, -90 * AbilityDirectionIndex);
 

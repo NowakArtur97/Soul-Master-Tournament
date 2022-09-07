@@ -4,9 +4,9 @@ using UnityEngine;
 public class SoulSpawner : MonoBehaviour
 {
     [SerializeField]
-    private Vector2 _minPosition;
+    private Vector2 _minPosition = new Vector2(-5, 4);
     [SerializeField]
-    private Vector2 _maxPosition;
+    private Vector2 _maxPosition = new Vector2(12, -13);
     [SerializeField]
     private GameObject[] _pickUps;
     [SerializeField]
@@ -82,9 +82,11 @@ public class SoulSpawner : MonoBehaviour
 
     private GameObject ChoseRandomPickUp() => _pickUps[Random.Range(0, _pickUps.Length)];
 
-    private Vector2 ChoseRandomLocation() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x), (int)Random.Range(_minPosition.y, _maxPosition.y));
+    private Vector2 ChoseRandomLocation() => new Vector2((int)Random.Range(_minPosition.x, _maxPosition.x),
+        (int)Random.Range(_minPosition.y, _maxPosition.y));
 
     private float ChoseRandomTimeBetweenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
 
-    private bool IsLocationFree(Vector2 position) => !Physics2D.BoxCast(position, _areaVectorToCheck, 0, Vector2.up, _areaToCheck, _pickUpLayer);
+    private bool IsLocationFree(Vector2 position) => !Physics2D.BoxCast(position, _areaVectorToCheck, 0, Vector2.up,
+        _areaToCheck, _pickUpLayer);
 }

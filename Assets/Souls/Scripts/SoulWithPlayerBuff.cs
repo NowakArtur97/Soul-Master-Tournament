@@ -4,10 +4,7 @@ public abstract class SoulWithPlayerBuff : Soul
 {
     private GameObject _playerAliveGameObject;
 
-    private void Start()
-    {
-        _playerAliveGameObject = Player.transform.Find("Alive").gameObject;
-    }
+    private void Start() => _playerAliveGameObject = Player.transform.Find("Alive").gameObject;
 
     protected override void Update()
     {
