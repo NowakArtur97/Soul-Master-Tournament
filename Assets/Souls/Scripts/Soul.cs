@@ -102,14 +102,21 @@ public abstract class Soul : MonoBehaviour
 
         for (AbilityRange = 1; AbilityRange <= AbilityMaxRange; AbilityRange++)
         {
-            if (CheckIfTouching(AbilityRange, AbilityDirection, SoulStats.notAfectedLayerMasks))
+            Vector2 checkDirection = AbilityDirection;
+            bool isAbilityInOneDirection = AbilityDirections.Length == 1;
+            if (isAbilityInOneDirection)
+            {
+                checkDirection = AbilityDirection * transform.right;
+            }
+
+            if (CheckIfTouching(AbilityRange, checkDirection, SoulStats.notAfectedLayerMasks))
             {
                 return;
             }
 
             ability = Instantiate(SoulAbility, GetSoulPosition(), GetSoulRotation());
 
-            if (CheckIfTouching(AbilityRange, AbilityDirection, SoulStats.afectedLayerMasks))
+            if (CheckIfTouching(AbilityRange, checkDirection, SoulStats.afectedLayerMasks))
             {
                 AbilityRange = AbilityMaxRange;
             }

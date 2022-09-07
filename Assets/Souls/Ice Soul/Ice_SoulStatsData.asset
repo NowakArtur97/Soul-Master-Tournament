@@ -20,5 +20,9 @@ MonoBehaviour:
   - {x: 1, y: 0}
   startPositionOffset: {x: 0.5, y: -0.75}
   abilityPositionOffset: {x: 0.5, y: -0.75}
-  notAfectedLayerMasks: []
+  notAfectedLayerMasks:
+  - serializedVersion: 2
+    m_Bits: 256
+  - serializedVersion: 2
+    m_Bits: 64
   afectedLayerMasks: []
