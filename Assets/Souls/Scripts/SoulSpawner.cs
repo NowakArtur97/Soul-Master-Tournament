@@ -10,13 +10,17 @@ public class SoulSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] _pickUps;
     [SerializeField]
-    private float _minTimeBetweenSpawns = 10;
+    private float _minTimeBetweenSpawns = 15;
     [SerializeField]
-    private float _maxTimeBetweenSpawns = 30;
+    private float _maxTimeBetweenSpawns = 20;
     [SerializeField]
-    private float _areaToCheck = 0.8f;
+    private Vector2 _raycastOffset = new Vector2(0.1f, 0.5f);
     [SerializeField]
-    private LayerMask _pickUpLayer;
+    private float _distanceToCheck = 0.8f;
+    [SerializeField]
+    private LayerMask _layersToIgnore;
+    [SerializeField]
+    private int _maxSpawnAttempts = 3;
 
     private Coroutine _spawnCoroutine;
     private bool _isSpawning;
@@ -33,8 +37,6 @@ public class SoulSpawner : MonoBehaviour
 
         _isSpawning = false;
         _isLevelGenerated = false;
-
-        _areaVectorToCheck = new Vector2(_areaToCheck, _areaToCheck);
     }
 
     private void Update()
@@ -54,23 +56,35 @@ public class SoulSpawner : MonoBehaviour
         _isSpawning = true;
 
         yield return new WaitForSeconds(ChoseRandomTimeBetweenSpawns());
+        Vector2 position = FindPosition();
 
-        SpawnPickUp(ChoseRandomLocation());
+        if (position != null)
+        {
+            SpawnPickUp(position);
+        }
 
         _isSpawning = false;
     }
 
+    private Vector2 FindPosition()
+    {
+        Vector2 position = ChoseRandomLocation();
+
+        int attempt = 0;
+
+        while (IsLocationOccupied(position) && attempt < _maxSpawnAttempts)
+        {
+            position = ChoseRandomLocation();
+            attempt++;
+        }
+
+        return position;
+    }
+
     public void SpawnPickUp(Vector2 position)
     {
-        if (IsLocationFree(position))
-        {
-            GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
-            pickUp.transform.parent = gameObject.transform;
-        }
-        else
-        {
-            SpawnPickUp(ChoseRandomLocation());
-        }
+        GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
+        pickUp.transform.parent = gameObject.transform;
     }
 
     private void OnLevelGenerated()
@@ -87,6 +101,6 @@ public class SoulSpawner : MonoBehaviour
 
     private float ChoseRandomTimeBetweenSpawns() => Random.Range(_minTimeBetweenSpawns, _maxTimeBetweenSpawns);
 
-    private bool IsLocationFree(Vector2 position) => !Physics2D.BoxCast(position, _areaVectorToCheck, 0, Vector2.up,
-        _areaToCheck, _pickUpLayer);
+    private bool IsLocationOccupied(Vector2 position) => Physics2D.Raycast(position + _raycastOffset, Vector2.right, _distanceToCheck,
+        _layersToIgnore);
 }
