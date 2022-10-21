@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player_StatsData
   m_EditorClassIdentifier: 
   health: 3
-  movementSpeed: 10
+  movementSpeed: 7
   startingNumberOfSouls: 1
