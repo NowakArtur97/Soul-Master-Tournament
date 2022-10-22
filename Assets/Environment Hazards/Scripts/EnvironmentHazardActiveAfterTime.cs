@@ -45,6 +45,7 @@ public abstract class EnvironmentHazardActiveAfterTime : EnvironmentHazard
         {
             StopCoroutine(IdleCoroutine);
         }
+
         IdleCoroutine = StartCoroutine(WaitBeforeAction(_idleTime, Status.TRIGGERED));
     }
 }

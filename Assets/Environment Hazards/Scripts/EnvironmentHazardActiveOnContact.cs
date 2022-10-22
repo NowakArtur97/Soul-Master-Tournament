@@ -37,6 +37,11 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
     {
         base.TriggerEnvironmentHazard();
 
+        if (IdleCoroutine != null)
+        {
+            StopCoroutine(IdleCoroutine);
+        }
+
         IdleCoroutine = StartCoroutine(WaitBeforeAction(TimeBeforeActivation, _statusAfterWaiting));
     }
 
@@ -52,16 +57,5 @@ public abstract class EnvironmentHazardActiveOnContact : EnvironmentHazard
         ToInteract = null;
     }
 
-    protected void Damage()
-    {
-        if (ToInteract)
-        {
-            IDamagable toDamage = ToInteract.GetComponentInParent<IDamagable>();
-
-            if (toDamage != null)
-            {
-                toDamage.Damage();
-            }
-        }
-    }
+    protected void Damage() => ToInteract?.GetComponentInParent<IDamagable>()?.Damage();
 }
