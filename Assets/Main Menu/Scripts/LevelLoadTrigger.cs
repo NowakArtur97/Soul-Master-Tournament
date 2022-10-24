@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class LevelLoadTrigger : MonoBehaviour
 {
-    public void LoadMainMenuTrigger() => FindObjectOfType<LevelManager>().LoadMainMenuScene();
+    private LevelManager _levelManager;
 
-    public void LoadLevelTrigger() => FindObjectOfType<LevelManager>().PlayLevel();
+    private void Awake() => _levelManager = FindObjectOfType<LevelManager>();
 
-    public void QuitTrigger() => FindObjectOfType<LevelManager>().QuitGame();
+    public void LoadMainMenuTrigger() => _levelManager.LoadMainMenuScene();
+
+    public void LoadLevelTrigger() => _levelManager.PlayLevel();
+
+    public void ReplayLevelTrigger() => _levelManager.ReplayLevel();
+
+    public void QuitTrigger() => _levelManager.QuitGame();
 }

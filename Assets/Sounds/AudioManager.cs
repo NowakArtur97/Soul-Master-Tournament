@@ -66,20 +66,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void DestroyAudioSources()
-    {
-        List<AudioSource> audioSources = GetComponents<AudioSource>().ToList();
-
-        foreach (AudioSource audioSource in audioSources)
-        {
-            bool isNotMainSound = !audioSource.clip.name.Contains(_mainSound);
-
-            if (isNotMainSound)
-            {
-                Destroy(audioSource);
-            }
-        }
-    }
+    public void DestroyAudioSources() => GetComponents<AudioSource>().ToList()
+            .Where(audioSource => !audioSource.clip.name.Contains(_mainSound))
+            .ToList()
+            .ForEach(audioSource => Destroy(audioSource));
 
     private bool IsOnScene(string sceneName) => SceneManager.GetActiveScene().name.Equals(sceneName);
 

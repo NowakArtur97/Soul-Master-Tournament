@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { get; private set; }
     public Player Winner { get; private set; }
 
+    private string _selectedLevelName;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -22,7 +24,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void PlayLevel() => SceneManager.LoadScene(FindObjectOfType<LevelSelection>(true).GetSelectedLevelName());
+    public void PlayLevel()
+    {
+        _selectedLevelName = FindObjectOfType<LevelSelection>(true).GetSelectedLevelName();
+        SceneManager.LoadScene(_selectedLevelName);
+    }
 
     public void LoadWinningScene()
     {
@@ -34,6 +40,12 @@ public class LevelManager : MonoBehaviour
     {
         AudioManager.Instance.DestroyAudioSources();
         SceneManager.LoadScene(MAIN_MENU_SCENE_NAME);
+    }
+
+    public void ReplayLevel()
+    {
+        AudioManager.Instance.DestroyAudioSources();
+        SceneManager.LoadScene(_selectedLevelName);
     }
 
     public void QuitGame()
