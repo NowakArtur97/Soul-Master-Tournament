@@ -1,4 +1,6 @@
-public class State
+using UnityEngine;
+
+public abstract class State
 {
     protected readonly EnvironmentHazardEntity EnvironmentHazardEntity;
 
@@ -16,16 +18,25 @@ public class State
 
     public virtual void Enter()
     {
+        IsExitingState = false;
+        IsAnimationFinished = false;
+        StateStartTime = Time.time;
 
+        EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine.CurrentState = this;
+
+        EnvironmentHazardEntity.CoreContainer.Animation.SetBoolVariable(_animationBoolName, true);
     }
 
-    public virtual void LogicUpdate()
-    {
-
-    }
+    public abstract void LogicUpdate();
 
     public virtual void Exit()
     {
+        EnvironmentHazardEntity.CoreContainer.Animation.SetBoolVariable(_animationBoolName, false);
 
+        IsExitingState = true;
     }
+
+    public virtual void AnimationTrigger() { }
+
+    public void AnimationFinishedTrigger() => IsAnimationFinished = true;
 }
