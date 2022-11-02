@@ -9,7 +9,7 @@ public static class GenericUtil<T>
             return value;
         }
 
-        Debug.LogError(typeof(T) + " not implemented on " + name);
+        Debug.LogWarning(typeof(T) + " not implemented on " + name);
 
         return default;
     }

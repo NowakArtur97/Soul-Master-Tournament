@@ -22,16 +22,19 @@ public abstract class State
         IsAnimationFinished = false;
         StateStartTime = Time.time;
 
-        EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine.CurrentState = this;
+        if (EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine != null)
+        {
+            EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine.CurrentState = this;
+        }
 
-        EnvironmentHazardEntity.CoreContainer.Animation.SetBoolVariable(_animationBoolName, true);
+        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, true);
     }
 
     public abstract void LogicUpdate();
 
     public virtual void Exit()
     {
-        EnvironmentHazardEntity.CoreContainer.Animation.SetBoolVariable(_animationBoolName, false);
+        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, false);
 
         IsExitingState = true;
     }

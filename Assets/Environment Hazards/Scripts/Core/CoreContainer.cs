@@ -18,9 +18,18 @@ public class CoreContainer : MonoBehaviour
         private set => _animationToStateMachine = value;
     }
 
+    private SpriteRenderer _spriteRenderer;
+
+    public SpriteRenderer SpriteRenderer
+    {
+        get => GenericUtil<SpriteRenderer>.GetOrDefault(_spriteRenderer, transform.parent.name);
+        private set => _spriteRenderer = value;
+    }
+
     private void Awake()
     {
         Animation = GetComponentInChildren<Animation>();
         AnimationToStateMachine = GetComponentInChildren<AnimationToStateMachine>();
+        SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 }

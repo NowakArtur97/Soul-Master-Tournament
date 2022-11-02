@@ -2,21 +2,26 @@ using UnityEngine;
 
 public class EnvironmentHazardEntity : MonoBehaviour
 {
-    public CoreContainer CoreContainer { get; internal set; }
-    public FiniteStateMachine StateMachine { get; internal set; }
+    public CoreContainer CoreContainer { get; private set; }
+    public FiniteStateMachine StateMachine { get; private set; }
 
-    public IdleState IdleState { get; private set; }
-    //public ActiveState ActiveState { get; private set; }
+    public IdleState IdleState { get; protected set; }
+    public ActiveState ActiveState { get; protected set; }
 
-    private void Awake()
+    public GameObject ToInteract { get; private set; }
+
+    protected virtual void Awake()
     {
         CoreContainer = GetComponentInChildren<CoreContainer>();
         //WaitState = new IdleState(this, "wait");
         IdleState = new IdleState(this, "idle");
-        //ActiveState = new ActiveState(this, "active");
     }
 
     private void Start() => StateMachine = new FiniteStateMachine(IdleState);
 
     private void Update() => StateMachine.CurrentState.LogicUpdate();
+
+    private void OnTriggerEnter2D(Collider2D collision) => ToInteract = collision.gameObject;
+
+    private void OnTriggerExit2D(Collider2D collision) => ToInteract = null;
 }
