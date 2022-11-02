@@ -2,14 +2,23 @@ using UnityEngine;
 
 public class IdleState : State
 {
-    public IdleState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName)
-        : base(environmentHazardEntity, animationBoolName) { }
+    private D_EnvironmentHazardIdleState _idleStateData;
+
+    public IdleState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName, D_EnvironmentHazardIdleState idleStateData)
+        : base(environmentHazardEntity, animationBoolName)
+    {
+        _idleStateData = idleStateData;
+    }
 
     public override void LogicUpdate()
     {
-        if (StateStartTime + .5f <= Time.time && EnvironmentHazardEntity.ToInteract)
+        if (EnvironmentHazardEntity.ToInteract && Time.time >= StateStartTime + _idleStateData.idleTime)
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.ActiveState);
+        }
+        if (EnvironmentHazardEntity.ToInteract == null)
+        {
+            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
         }
     }
 }
