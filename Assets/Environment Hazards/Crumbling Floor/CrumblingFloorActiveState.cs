@@ -34,7 +34,5 @@ public class CrumblingFloorActiveState : ActiveState
         EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
     }
 
-    protected void Damage() => EnvironmentHazardEntity.ToInteract.GetComponentInParent<IDamagable>().Damage();
-
     private bool WasCrubled() => _currentSpriteIndex > _crumblingFloorEntity.FloorSprites.Length;
 }

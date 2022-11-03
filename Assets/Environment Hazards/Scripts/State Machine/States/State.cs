@@ -42,4 +42,8 @@ public abstract class State
     public virtual void AnimationTrigger() { }
 
     public void AnimationFinishedTrigger() => IsAnimationFinished = true;
+
+    public void PlayActiveSoundTrigger() => EnvironmentHazardEntity.CoreContainer.Sounds.PlayActiveSound();
+
+    public void PlayActivedSoundTrigger() => EnvironmentHazardEntity.CoreContainer.Sounds.PlayActivedSound();
 }

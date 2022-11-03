@@ -26,10 +26,19 @@ public class CoreContainer : MonoBehaviour
         private set => _spriteRenderer = value;
     }
 
+    private Sounds _sounds;
+
+    public Sounds Sounds
+    {
+        get => GenericUtil<Sounds>.GetOrDefault(_sounds, transform.parent.name);
+        private set => _sounds = value;
+    }
+
     private void Awake()
     {
         Animation = GetComponentInChildren<Animation>();
         AnimationToStateMachine = GetComponentInChildren<AnimationToStateMachine>();
         SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        Sounds = GetComponentInChildren<Sounds>();
     }
 }
