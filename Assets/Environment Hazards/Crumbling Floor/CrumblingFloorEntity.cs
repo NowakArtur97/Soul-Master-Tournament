@@ -8,6 +8,7 @@ public class CrumblingFloorEntity : EnvironmentHazardEntity
     {
         base.Awake();
 
+        IdleState = new IdleOnContactState(this, "idle", IdleStateData);
         ActiveState = new CrumblingFloorActiveState(this, "active");
     }
 }

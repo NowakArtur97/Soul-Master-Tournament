@@ -30,7 +30,7 @@ public abstract class State
         EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, true);
     }
 
-    public abstract void LogicUpdate();
+    public virtual void LogicUpdate() { }
 
     public virtual void Exit()
     {
