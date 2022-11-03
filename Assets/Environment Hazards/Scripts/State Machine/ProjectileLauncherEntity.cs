@@ -15,10 +15,11 @@ public class ProjectileLauncherEntity : EnvironmentHazardEntity
 
     protected override void Awake()
     {
-        base.Awake();
-
         ProjectileStartingPosition = GameObject.Find(PROJECTILE_STARTING_POSITION).gameObject.transform;
 
+        IdleState = new IdleForTimeState(this, "idle", IdleStateData);
         ActiveState = new LaunchProjectileState(this, "active", _launchProjectileStateData);
+
+        base.Awake();
     }
 }

@@ -12,14 +12,6 @@ public class LaunchProjectileState : ActiveState
         _stateData = stateData;
     }
 
-    public override void Enter()
-    {
-        base.Enter();
-
-        Object.Instantiate(_stateData.projectile, _projectileLauncherEntity.ProjectileStartingPosition.position,
-            EnvironmentHazardEntity.AliveGameObject.transform.rotation);
-    }
-
     public override void LogicUpdate()
     {
         base.LogicUpdate();
@@ -28,5 +20,13 @@ public class LaunchProjectileState : ActiveState
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
         }
+    }
+
+    public override void AnimationTrigger()
+    {
+        base.AnimationTrigger();
+
+        GameObject.Instantiate(_stateData.projectile, _projectileLauncherEntity.ProjectileStartingPosition.position,
+            EnvironmentHazardEntity.CoreContainer.gameObject.transform.rotation);
     }
 }

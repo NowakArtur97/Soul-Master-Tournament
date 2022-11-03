@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4872386548993730904}
   - component: {fileID: 4056308548734647217}
   m_Layer: 16
-  m_Name: Alive
+  m_Name: Core Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

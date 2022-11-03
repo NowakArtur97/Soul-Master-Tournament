@@ -2,14 +2,11 @@ using UnityEngine;
 
 public class EnvironmentHazardEntity : MonoBehaviour
 {
-    private const string ALIVE_GAME_OBJECT_NAME = "Alive";
-
     [SerializeField] private D_EnvironmentHazardWaitState _waitStateData;
     public D_EnvironmentHazardWaitState WaitStateData { get { return _waitStateData; } private set { _waitStateData = value; } }
     [SerializeField] private D_EnvironmentHazardIdleState _idleStateData;
     public D_EnvironmentHazardIdleState IdleStateData { get { return _idleStateData; } private set { _idleStateData = value; } }
 
-    public GameObject AliveGameObject { get; private set; }
     public CoreContainer CoreContainer { get; private set; }
     public FiniteStateMachine StateMachine { get; private set; }
 
@@ -21,8 +18,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
     protected virtual void Awake()
     {
-        AliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
-        CoreContainer = AliveGameObject.GetComponent<CoreContainer>();
+        CoreContainer = GetComponentInChildren<CoreContainer>();
         WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
     }
 

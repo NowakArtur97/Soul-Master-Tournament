@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ef294458b9bdb43978117edeb02d38, type: 3}
   m_Name: Ballista_LaunchProjectileStateData
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  projectileStartingPosition: {fileID: 0}
-  _offsetsFromWall: []
+  projectile: {fileID: 7050799240284997836, guid: 2e7b04a62e28db74092917b1ced996dc, type: 3}
