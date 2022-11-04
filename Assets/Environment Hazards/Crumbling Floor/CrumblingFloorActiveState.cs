@@ -28,10 +28,12 @@ public class CrumblingFloorActiveState : ActiveState
     {
         if (WasCrubled())
         {
-            Damage();
+            EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PermamentDamangeOnContactState);
         }
-
-        EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+        else
+        {
+            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+        }
     }
 
     private bool WasCrubled() => _currentSpriteIndex > _crumblingFloorEntity.FloorSprites.Length;
