@@ -11,15 +11,28 @@ public class ProjectileLauncherEntity : EnvironmentHazardEntity
         private set { _launchProjectileStateData = value; }
     }
 
-    public Transform ProjectileStartingPosition { get; private set; }
-
     protected override void Awake()
     {
-        ProjectileStartingPosition = GameObject.Find(PROJECTILE_STARTING_POSITION).gameObject.transform;
+        Transform projectileStartingPosition = FindProjectileStartingPosition();
 
         IdleState = new IdleForTimeState(this, "idle", IdleStateData);
-        ActiveState = new LaunchProjectileState(this, "active", _launchProjectileStateData);
+        ActiveState = new LaunchProjectileState(this, "active", _launchProjectileStateData, projectileStartingPosition);
 
         base.Awake();
+    }
+
+    private Transform FindProjectileStartingPosition()
+    {
+        Transform[] childTransforms = transform.GetComponentsInChildren<Transform>();
+
+        foreach (Transform childTransform in childTransforms)
+        {
+            if (childTransform.gameObject.name == PROJECTILE_STARTING_POSITION)
+            {
+                return childTransform.gameObject.transform;
+            }
+        }
+
+        return null;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnvironmentHazardEntity : MonoBehaviour
 {
     [SerializeField] private string _environmentHazardName;
+    [SerializeField] private Vector2[] _offsetsFromWall;
 
     [SerializeField] private D_EnvironmentHazardWaitState _waitStateData;
     public D_EnvironmentHazardWaitState WaitStateData { get { return _waitStateData; } private set { _waitStateData = value; } }
@@ -24,7 +25,10 @@ public class EnvironmentHazardEntity : MonoBehaviour
         ToInteract = new List<GameObject>();
         CoreContainer = GetComponentInChildren<CoreContainer>();
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name.Replace("Entity", "") : _environmentHazardName;
+
         WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
+
+        SetOffsetFromWall();
     }
 
     private void Start()
@@ -52,5 +56,35 @@ public class EnvironmentHazardEntity : MonoBehaviour
             ToInteract.Remove(collisionGameObject);
             Debug.Log(collisionGameObject.name);
         }
+    }
+
+    private void SetOffsetFromWall()
+    {
+        if (_offsetsFromWall.Length == 0)
+        {
+            return;
+        }
+
+        float eulerAnglesZ = transform.rotation.eulerAngles.z;
+        int offsetsFromWallIndex;
+
+        if (eulerAnglesZ == 0)
+        {
+            offsetsFromWallIndex = 0;
+        }
+        else if (eulerAnglesZ == 180)
+        {
+            offsetsFromWallIndex = 1;
+        }
+        else if (eulerAnglesZ == 90)
+        {
+            offsetsFromWallIndex = 2;
+        }
+        else
+        {
+            offsetsFromWallIndex = 3;
+        }
+
+        CoreContainer.gameObject.transform.localPosition += (Vector3)_offsetsFromWall[offsetsFromWallIndex];
     }
 }

@@ -4,12 +4,15 @@ public class LaunchProjectileState : ActiveState
 {
     private ProjectileLauncherEntity _projectileLauncherEntity;
     private D_EnvironmentHazardLaunchProjectileState _stateData;
+    private Transform _projectileStartingPosition;
 
     public LaunchProjectileState(ProjectileLauncherEntity environmentHazardEntity, string animationBoolName,
-        D_EnvironmentHazardLaunchProjectileState stateData) : base(environmentHazardEntity, animationBoolName)
+        D_EnvironmentHazardLaunchProjectileState stateData, Transform projectileStartingPosition)
+        : base(environmentHazardEntity, animationBoolName)
     {
         _projectileLauncherEntity = environmentHazardEntity;
         _stateData = stateData;
+        _projectileStartingPosition = projectileStartingPosition;
     }
 
     public override void LogicUpdate()
@@ -26,7 +29,7 @@ public class LaunchProjectileState : ActiveState
     {
         base.AnimationTrigger();
 
-        GameObject.Instantiate(_stateData.projectile, _projectileLauncherEntity.ProjectileStartingPosition.position,
+        GameObject.Instantiate(_stateData.projectile, _projectileStartingPosition.position,
             EnvironmentHazardEntity.CoreContainer.gameObject.transform.rotation);
     }
 }
