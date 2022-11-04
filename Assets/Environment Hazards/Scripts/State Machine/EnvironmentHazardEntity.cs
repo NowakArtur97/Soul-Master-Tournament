@@ -54,7 +54,6 @@ public class EnvironmentHazardEntity : MonoBehaviour
         if (ToInteract.Contains(collisionGameObject))
         {
             ToInteract.Remove(collisionGameObject);
-            Debug.Log(collisionGameObject.name);
         }
     }
 
