@@ -97,7 +97,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1808362087
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1164817032789766726, guid: 18cce6669e9f4d94abb0dd1e6931cefe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,7 +119,7 @@ Animator:
   m_GameObject: {fileID: 230006712894572468}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e27c94b06eb41804d9b7b16cd7dd0b62, type: 2}
+  m_Controller: {fileID: 9100000, guid: f3d42d930d327514fade2937325466a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -168,7 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5573475008200671867}
   - component: {fileID: 4381520057329685515}
-  - component: {fileID: 2467588623042208006}
   m_Layer: 14
   m_Name: Poison Arrow Launcher SM
   m_TagString: Untagged
@@ -204,36 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87187b1d835038479750407bc2cd101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _environmentHazardName: 
-  _waitStateData: {fileID: 0}
-  _idleStateData: {fileID: 0}
-  _launchProjectileStateData: {fileID: 0}
---- !u!61 &2467588623042208006
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5573475008200671844}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  _environmentHazardName: PoisonArrowLauncher
+  _waitStateData: {fileID: 11400000, guid: 1f2c94609a172284bacb4b747e65abb9, type: 2}
+  _idleStateData: {fileID: 11400000, guid: 4f9fcfb0f03b79048b963177ff806598, type: 2}
+  _launchProjectileStateData: {fileID: 11400000, guid: ee5db819d30d60c4fb29696afd70b1f2, type: 2}
 --- !u!1 &8657857581102436513
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8350226083570129914}
   - component: {fileID: 9084636093438989983}
+  - component: {fileID: 1754743598696027143}
   m_Layer: 14
   m_Name: Core Container
   m_TagString: Untagged
@@ -259,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8657857581102436513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7250667501967065807}
@@ -279,6 +253,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3d35a742db3f2459d7dd06f15cd625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1754743598696027143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657857581102436513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &9065349911388672672
 GameObject:
   m_ObjectHideFlags: 0
