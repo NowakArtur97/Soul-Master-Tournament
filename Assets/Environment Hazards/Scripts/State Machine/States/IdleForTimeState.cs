@@ -7,7 +7,7 @@ public class IdleForTimeState : IdleState
 
     public override void LogicUpdate()
     {
-        if (Time.time >= StateStartTime + IdleStateData.idleTime)
+        if (Time.time >= StateStartTime + IdleTime)
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.ActiveState);
         }

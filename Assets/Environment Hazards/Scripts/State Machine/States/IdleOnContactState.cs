@@ -7,7 +7,7 @@ public class IdleOnContactState : IdleState
 
     public override void LogicUpdate()
     {
-        if (EnvironmentHazardEntity.ToInteract.Count > 0 && Time.time >= StateStartTime + IdleStateData.idleTime)
+        if (EnvironmentHazardEntity.ToInteract.Count > 0 && Time.time >= StateStartTime + IdleTime)
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.ActiveState);
         }
