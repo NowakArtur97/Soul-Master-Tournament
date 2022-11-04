@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnvironmentHazardEntity : MonoBehaviour
@@ -16,10 +17,11 @@ public class EnvironmentHazardEntity : MonoBehaviour
     public IdleState IdleState { get; protected set; }
     public ActiveState ActiveState { get; protected set; }
 
-    public GameObject ToInteract { get; private set; }
+    public List<GameObject> ToInteract { get; private set; }
 
     protected virtual void Awake()
     {
+        ToInteract = new List<GameObject>();
         CoreContainer = GetComponentInChildren<CoreContainer>();
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name.Replace("Entity", "") : _environmentHazardName;
         WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
@@ -33,7 +35,22 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
     private void Update() => StateMachine.CurrentState.LogicUpdate();
 
-    private void OnTriggerEnter2D(Collider2D collision) => ToInteract = collision.gameObject;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject collisionGameObject = collision.gameObject;
+        if (!ToInteract.Contains(collisionGameObject))
+        {
+            ToInteract.Add(collisionGameObject);
+        }
+    }
 
-    private void OnTriggerExit2D(Collider2D collision) => ToInteract = null;
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameObject collisionGameObject = collision.gameObject;
+        if (ToInteract.Contains(collisionGameObject))
+        {
+            ToInteract.Remove(collisionGameObject);
+            Debug.Log(collisionGameObject.name);
+        }
+    }
 }

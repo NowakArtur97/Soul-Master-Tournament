@@ -36,5 +36,5 @@ public class CrumblingFloorActiveState : ActiveState
         }
     }
 
-    private bool WasCrubled() => _currentSpriteIndex > _crumblingFloorEntity.FloorSprites.Length;
+    private bool WasCrubled() => _currentSpriteIndex >= _crumblingFloorEntity.FloorSprites.Length;
 }

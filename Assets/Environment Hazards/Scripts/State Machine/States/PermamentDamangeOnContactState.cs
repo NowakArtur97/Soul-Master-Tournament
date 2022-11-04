@@ -1,8 +1,17 @@
 public class PermamentDamangeOnContactState : ActiveState
 {
-    public PermamentDamangeOnContactState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName)
-        : base(environmentHazardEntity, animationBoolName)
-    { }
+    private D_EnvironmentHazardDealDamageOnContactState _dealDamageOnContactStateData;
+
+    public PermamentDamangeOnContactState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName,
+        D_EnvironmentHazardDealDamageOnContactState dealDamageOnContactStateData)
+        : base(environmentHazardEntity, animationBoolName) => _dealDamageOnContactStateData = dealDamageOnContactStateData;
+
+    public override void Enter()
+    {
+        base.Enter();
+
+        DamageAll(GetAllInMinAgro(_dealDamageOnContactStateData.whatIsDamagable));
+    }
 
     public override void LogicUpdate()
     {

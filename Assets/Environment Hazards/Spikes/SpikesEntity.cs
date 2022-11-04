@@ -12,7 +12,7 @@ public class SpikesEntity : EnvironmentHazardEntity
     protected override void Awake()
     {
         IdleState = new IdleForTimeState(this, "idle", IdleStateData);
-        ActiveState = new DealDamageOnContactState(this, "active", _dealDamageOnContactStateData);
+        ActiveState = new DealDamageOnAnimationTriggerState(this, "active", _dealDamageOnContactStateData);
 
         base.Awake();
     }

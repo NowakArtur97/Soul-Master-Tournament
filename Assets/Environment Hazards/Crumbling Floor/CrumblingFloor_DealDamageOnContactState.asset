@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c46a5e86c288944bafb07f6d3a098f1, type: 3}
-  m_Name: CrumblingFloor_IdleStateData
+  m_Script: {fileID: 11500000, guid: 4c6d0b12b65febd4788dd7b3faad4d00, type: 3}
+  m_Name: CrumblingFloor_DealDamageOnContactState
   m_EditorClassIdentifier: 
-  idleTime: 1
+  whatIsDamagable:
+  - serializedVersion: 2
+    m_Bits: 1024

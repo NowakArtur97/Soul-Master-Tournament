@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed2c2d502b242f45b256cecf86acdff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _environmentHazardName: 
   _waitStateData: {fileID: 11400000, guid: 91f995086bee5594083e2cc834c6ef4c, type: 2}
   _idleStateData: {fileID: 11400000, guid: e70a20406d2b6b14d938541c75239b44, type: 2}
+  _dealDamageOnContactStateData: {fileID: 11400000, guid: 8e03acdd26dc0864ba2da3add366aa28, type: 2}
   FloorSprites:
   - {fileID: -6195831871325182475, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
   - {fileID: -5767713150283047413, guid: 8c8d4f2b938927746a574ee048acca41, type: 3}
