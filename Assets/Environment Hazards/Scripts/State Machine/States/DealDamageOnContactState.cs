@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DealDamageOnContactState : ActiveState
@@ -35,12 +36,13 @@ public class DealDamageOnContactState : ActiveState
 
         foreach (LayerMask damagableLayerMask in _dealDamageOnContactStateData.whatIsDamagable)
         {
-            Collider2D collision = Physics2D.OverlapBox(EnvironmentHazardEntity.CoreContainer.gameObject.transform.position,
+            Collider2D[] collisions = Physics2D.OverlapBoxAll(EnvironmentHazardEntity.CoreContainer.gameObject.transform.position,
                 Vector2.one, 0f, damagableLayerMask);
 
-            if (collision)
+            if (collisions.Length > 0)
             {
-                toInteract.Add(collision.gameObject);
+                collisions.ToList()
+                    .ForEach(collision => toInteract.Add(collision.gameObject));
             }
         }
 
