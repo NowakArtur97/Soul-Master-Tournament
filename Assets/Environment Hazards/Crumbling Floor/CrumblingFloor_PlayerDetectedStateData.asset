@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482d6b256a0932f4fb28654d6bb349f9, type: 3}
   m_Name: CrumblingFloor_PlayerDetectedStateData
   m_EditorClassIdentifier: 
-  timeToWaitAfterDetectingPlayer: 0.5
+  timeToWaitAfterDetectingPlayer: 0.25

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c46a5e86c288944bafb07f6d3a098f1, type: 3}
   m_Name: CrumblingFloor_IdleStateData
   m_EditorClassIdentifier: 
-  idleTime: 1
+  minIdleTime: 0.5
+  maxIdleTime: 0.5
