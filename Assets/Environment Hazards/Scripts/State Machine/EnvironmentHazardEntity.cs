@@ -10,6 +10,8 @@ public class EnvironmentHazardEntity : MonoBehaviour
     public D_EnvironmentHazardWaitState WaitStateData { get { return _waitStateData; } private set { _waitStateData = value; } }
     [SerializeField] private D_EnvironmentHazardIdleState _idleStateData;
     public D_EnvironmentHazardIdleState IdleStateData { get { return _idleStateData; } private set { _idleStateData = value; } }
+    [SerializeField] private D_EnvironmentHazardPlayerDetectedState _playerDetectedStateData;
+    public D_EnvironmentHazardPlayerDetectedState PlayerDetectedStateData { get { return _playerDetectedStateData; } private set { _playerDetectedStateData = value; } }
 
     public CoreContainer CoreContainer { get; private set; }
     public FiniteStateMachine StateMachine { get; private set; }
@@ -17,7 +19,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
     public WaitState WaitState { get; protected set; }
     public IdleState IdleState { get; protected set; }
     public ActiveState ActiveState { get; protected set; }
-
+    public PlayerDetectedState PlayerDetectedState { get; protected set; }
     public List<GameObject> ToInteract { get; private set; }
 
     protected virtual void Awake()

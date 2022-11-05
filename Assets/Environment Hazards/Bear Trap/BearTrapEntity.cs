@@ -11,8 +11,9 @@ public class BearTrapEntity : EnvironmentHazardEntity
 
     protected override void Awake()
     {
-        IdleState = new IdleOnContactState(this, "idle", IdleStateData);
+        IdleState = new IdleOnContactWithDetectingPlayerState(this, "idle", IdleStateData);
         ActiveState = new TrapPlayerOnAnimationTriggerState(this, "active", _trapPlayerStateData);
+        PlayerDetectedState = new PlayerDetectedState(this, "idle", PlayerDetectedStateData);
 
         base.Awake();
     }

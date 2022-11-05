@@ -5,9 +5,7 @@ public class TrapPlayerOnAnimationTriggerState : ActiveState
     private D_EnvironmentHazardTrapPlayerState _trapPlayerStateData;
 
     public TrapPlayerOnAnimationTriggerState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName, D_EnvironmentHazardTrapPlayerState trapPlayerStateData) : base(environmentHazardEntity, animationBoolName)
-    {
-        _trapPlayerStateData = trapPlayerStateData;
-    }
+        => _trapPlayerStateData = trapPlayerStateData;
 
     public override void Enter()
     {
@@ -31,7 +29,14 @@ public class TrapPlayerOnAnimationTriggerState : ActiveState
 
         if (IsAnimationFinished)
         {
-            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            if (EnvironmentHazardEntity.ToInteract.Count > 0)
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.PlayerDetectedState);
+            }
+            else
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            }
         }
     }
 }
