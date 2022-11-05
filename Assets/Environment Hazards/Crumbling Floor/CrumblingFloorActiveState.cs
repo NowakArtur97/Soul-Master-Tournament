@@ -19,7 +19,10 @@ public class CrumblingFloorActiveState : ActiveState
 
         _currentSpriteIndex++;
 
-        EnvironmentHazardEntity.CoreContainer.SpriteRenderer.sprite = _crumblingFloorEntity.FloorSprites[_currentSpriteIndex];
+        if (!WasCrubled())
+        {
+            EnvironmentHazardEntity.CoreContainer.SpriteRenderer.sprite = _crumblingFloorEntity.FloorSprites[_currentSpriteIndex];
+        }
 
         AudioManager.Instance.Play(CRUMBLE_SOUND_CLIP);
     }
@@ -29,6 +32,10 @@ public class CrumblingFloorActiveState : ActiveState
         if (WasCrubled())
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PermamentDamangeOnContactState);
+        }
+        else if (EnvironmentHazardEntity.ToInteract.Count > 0)
+        {
+            EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PlayerDetectedState);
         }
         else
         {
