@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,10 +8,14 @@ public abstract class ActiveState : State
         : base(environmentHazardEntity, animationBoolName) { }
 
     protected void Damage() => EnvironmentHazardEntity.ToInteract
+        .Where(damagable => damagable != null)
+        .ToList()
         .ForEach(damagable => damagable.GetComponentInParent<IDamagable>()?.Damage());
 
-    protected void DamageAll(List<GameObject> toInteract) =>
-        toInteract.ForEach(damagable => damagable.GetComponentInParent<IDamagable>()?.Damage());
+    protected void DamageAll(List<GameObject> toInteract) => toInteract
+        .Where(damagable => damagable != null)
+        .ToList()
+        .ForEach(damagable => damagable.GetComponentInParent<IDamagable>()?.Damage());
 
     protected List<GameObject> GetAllInMinAgro(LayerMask[] whatIsDamagable)
     {

@@ -32,6 +32,8 @@ public abstract class State
 
     public virtual void LogicUpdate() { }
 
+    public virtual void PhysicsUpdate() { }
+
     public virtual void Exit()
     {
         EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, false);

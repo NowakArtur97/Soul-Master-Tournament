@@ -28,7 +28,10 @@ public class EnvironmentHazardEntity : MonoBehaviour
         CoreContainer = GetComponentInChildren<CoreContainer>();
         _environmentHazardName = _environmentHazardName.Equals("") ? GetType().Name.Replace("Entity", "") : _environmentHazardName;
 
-        WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
+        if (WaitState == null)
+        {
+            WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
+        }
 
         SetOffsetFromWall();
     }
@@ -40,6 +43,8 @@ public class EnvironmentHazardEntity : MonoBehaviour
     }
 
     private void Update() => StateMachine.CurrentState.LogicUpdate();
+
+    private void FixedUpdate() => StateMachine.CurrentState.PhysicsUpdate();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
