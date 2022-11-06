@@ -47,7 +47,8 @@ public class PlayerManager : MonoBehaviour
 
     private void SpawnPlayer(int id)
     {
-        GameObject playerGO = Instantiate(_playerPrefabs[id], PlayersPositions[id] + _playersPositionOffset, Quaternion.identity);
+        GameObject playerGO = Instantiate(_playerPrefabs[id], PlayersPositions[id] + _playersPositionOffset - (Vector2)transform.position,
+            Quaternion.identity);
         playerGO.transform.parent = gameObject.transform;
         Player player = playerGO.GetComponent<Player>();
 
