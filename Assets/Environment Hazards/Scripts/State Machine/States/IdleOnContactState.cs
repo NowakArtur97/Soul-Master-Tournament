@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class IdleOnContactState : IdleState
 {
     public IdleOnContactState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName,
@@ -7,13 +5,18 @@ public class IdleOnContactState : IdleState
 
     public override void LogicUpdate()
     {
-        if (EnvironmentHazardEntity.ToInteract.Count > 0 && Time.time >= StateStartTime + IdleTime)
+        base.LogicUpdate();
+
+        if (!IsExitingState)
         {
-            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.ActiveState);
-        }
-        if (EnvironmentHazardEntity.ToInteract == null)
-        {
-            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            if (EnvironmentHazardEntity.ToInteract.Count > 0)
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.PlayerDetectedState);
+            }
+            if (EnvironmentHazardEntity.ToInteract == null)
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            }
         }
     }
 }

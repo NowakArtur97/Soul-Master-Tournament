@@ -19,7 +19,7 @@ public class LaunchProjectileState : ActiveState
     {
         base.LogicUpdate();
 
-        if (IsAnimationFinished)
+        if (!IsExitingState && IsAnimationFinished)
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
         }

@@ -7,7 +7,6 @@ public abstract class IdleState : State
     public IdleState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName, D_EnvironmentHazardIdleState idleStateData)
         : base(environmentHazardEntity, animationBoolName) => IdleStateData = idleStateData;
 
-
     protected float IdleTime { get; private set; }
 
     public override void Enter()

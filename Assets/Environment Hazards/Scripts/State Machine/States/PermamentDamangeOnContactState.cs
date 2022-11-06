@@ -17,6 +17,6 @@ public class PermamentDamangeOnContactState : ActiveState
     {
         base.LogicUpdate();
 
-        Damage();
+        DamageAll(GetAllInMinAgro(_dealDamageOnContactStateData.whatIsDamagable));
     }
 }

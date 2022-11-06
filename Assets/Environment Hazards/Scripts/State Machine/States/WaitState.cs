@@ -14,7 +14,9 @@ public class WaitState : State
 
     public override void LogicUpdate()
     {
-        if (Time.time >= StateStartTime + _stateData.waitTime)
+        base.LogicUpdate();
+
+        if (!IsExitingState && Time.time >= StateStartTime + _stateData.waitTime)
         {
             EnvironmentHazardEntity.StateMachine.ChangeState(_nextState);
         }

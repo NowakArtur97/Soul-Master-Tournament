@@ -29,17 +29,20 @@ public class CrumblingFloorActiveState : ActiveState
 
     public override void LogicUpdate()
     {
-        if (WasCrubled())
+        if (!IsExitingState)
         {
-            EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PermamentDamangeOnContactState);
-        }
-        else if (EnvironmentHazardEntity.ToInteract.Count > 0)
-        {
-            EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PlayerDetectedState);
-        }
-        else
-        {
-            EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            if (WasCrubled())
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PermamentDamangeOnContactState);
+            }
+            else if (EnvironmentHazardEntity.ToInteract.Count > 0)
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(_crumblingFloorEntity.PlayerDetectedState);
+            }
+            else
+            {
+                EnvironmentHazardEntity.StateMachine.ChangeState(EnvironmentHazardEntity.IdleState);
+            }
         }
     }
 
