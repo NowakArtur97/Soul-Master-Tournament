@@ -67,10 +67,14 @@ public class PlayerManager : MonoBehaviour
 
     private void OnPermamentDeath(int id)
     {
-        Players[id].PlayerStatsManager.DeathEvent -= OnPlayerDeath;
-        Players[id].PlayerStatsManager.PermamentDeathEvent -= OnPlayerDeath;
+        if (_alivePlayers.Length > 1)
+        {
+            _alivePlayers = _alivePlayers.Where(player => !player.PlayerStatsManager.IsPermamentDead).ToArray();
+        }
 
-        _alivePlayers = _alivePlayers.Where(player => !player.PlayerStatsManager.IsPermamentDead).ToArray();
+        Player deadPlayer = Players[id];
+        deadPlayer.PlayerStatsManager.DeathEvent -= OnPlayerDeath;
+        deadPlayer.PlayerStatsManager.PermamentDeathEvent -= OnPlayerDeath;
 
         if (_alivePlayers.Length == 1)
         {
@@ -80,6 +84,6 @@ public class PlayerManager : MonoBehaviour
             FindObjectOfType<LevelManager>().LoadWinningScene();
         }
 
-        Destroy(Players[id].gameObject);
+        Destroy(deadPlayer.gameObject);
     }
 }
