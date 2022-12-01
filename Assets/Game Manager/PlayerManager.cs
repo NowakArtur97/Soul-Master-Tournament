@@ -1,17 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] _playerPrefabs;
-    [SerializeField]
-    public Vector2[] PlayersPositions;
-    [SerializeField]
-    private Vector2 _playersPositionOffset = new Vector2(0.6f, 1.2f);
-    [SerializeField]
-    private string[] _playerColors = { "blue", "green", "orange", "pink" };
+    [SerializeField] private GameObject[] _playerPrefabs;
+    [SerializeField] public Vector2[] PlayersPositions;
+    [SerializeField] private Vector2 _playersPositionOffset = new Vector2(0.6f, 1.2f);
+    [SerializeField] private string[] _playerColors = { "blue", "green", "orange", "pink" };
+    [SerializeField] private Sprite[] _playerSprites;
 
     private readonly string ALIVE_GAME_OBJECT = "Alive";
     private List<int> _playersIndexes = new List<int>();
@@ -76,7 +74,9 @@ public class PlayerManager : MonoBehaviour
 
         if (_alivePlayers.Length == 1)
         {
-            FindObjectOfType<WinnerManager>().SetWinnerSprite(_alivePlayers[0]);
+            int winnerPlayerIndex = Array.FindIndex(Players, player => player == _alivePlayers[0]);
+            Sprite winnerSprite = _playerSprites[winnerPlayerIndex];
+            FindObjectOfType<WinnerManager>().SetWinnerSprite(winnerSprite);
             FindObjectOfType<LevelManager>().LoadWinningScene();
         }
 

@@ -26350,8 +26350,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243077438}
-  - component: {fileID: 1243077437}
   - component: {fileID: 1243077439}
+  - component: {fileID: 1243077437}
   m_Layer: 0
   m_Name: Winning Player
   m_TagString: Untagged

@@ -18,5 +18,5 @@ public class WinnerManager : MonoBehaviour
         }
     }
 
-    public void SetWinnerSprite(Player player) => WinnerSprite = player.GetComponentInChildren<SpriteRenderer>().sprite;
+    public void SetWinnerSprite(Sprite playerSprite) => WinnerSprite = playerSprite;
 }

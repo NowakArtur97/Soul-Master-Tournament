@@ -59,3 +59,8 @@ MonoBehaviour:
   - green
   - orange
   - pink
+  _playerSprites:
+  - {fileID: 4233633538006590056, guid: bcac5332062fe3b449651e720b371022, type: 3}
+  - {fileID: -1289683294168062076, guid: bcac5332062fe3b449651e720b371022, type: 3}
+  - {fileID: 1230255704154920633, guid: bcac5332062fe3b449651e720b371022, type: 3}
+  - {fileID: -8826181859595627577, guid: bcac5332062fe3b449651e720b371022, type: 3}
