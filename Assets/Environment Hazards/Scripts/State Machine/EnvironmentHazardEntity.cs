@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnvironmentHazardEntity : MonoBehaviour
 {
+    private readonly float[] ON_WALL_EULER_ANGLES = { 90, 180, 270 };
+
     [SerializeField] private string _environmentHazardName;
     [SerializeField] private Vector2[] _offsetsFromWall;
 
@@ -21,6 +24,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
     public ActiveState ActiveState { get; protected set; }
     public PlayerDetectedState PlayerDetectedState { get; protected set; }
     public List<GameObject> ToInteract { get; private set; }
+    public bool IsOnWall { get; private set; }
 
     protected virtual void Awake()
     {
@@ -33,6 +37,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
             WaitState = new WaitState(this, "wait", _waitStateData, IdleState);
         }
 
+        CheckIfIsOnWall();
         SetOffsetFromWall();
     }
 
@@ -93,4 +98,6 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
         CoreContainer.gameObject.transform.localPosition += (Vector3)_offsetsFromWall[offsetsFromWallIndex];
     }
+
+    private void CheckIfIsOnWall() => IsOnWall = ON_WALL_EULER_ANGLES.Contains(transform.rotation.eulerAngles.z);
 }

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public abstract class State
 {
+    private readonly string ON_WALL_ANIMATION_NAME_MODIFIER = "-onWall";
+
     protected readonly EnvironmentHazardEntity EnvironmentHazardEntity;
 
     protected bool IsExitingState { get; private set; }
@@ -27,7 +29,7 @@ public abstract class State
             EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine.CurrentState = this;
         }
 
-        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, true);
+        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(GetAnimationBoolName(), true);
     }
 
     public virtual void LogicUpdate() { }
@@ -36,7 +38,7 @@ public abstract class State
 
     public virtual void Exit()
     {
-        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(_animationBoolName, false);
+        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(GetAnimationBoolName(), false);
 
         IsExitingState = true;
     }
@@ -48,4 +50,8 @@ public abstract class State
     public void PlayActiveSoundTrigger() => EnvironmentHazardEntity.CoreContainer.Sounds.PlayActiveSound();
 
     public void PlayActivedSoundTrigger() => EnvironmentHazardEntity.CoreContainer.Sounds.PlayActivedSound();
+
+    private string GetAnimationBoolName() => EnvironmentHazardEntity.IsOnWall
+            ? _animationBoolName + ON_WALL_ANIMATION_NAME_MODIFIER
+            : _animationBoolName;
 }

@@ -1290,11 +1290,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.746
       objectReference: {fileID: 0}
     - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4205,6 +4205,68 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &747790748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 478484686562754215, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_Name
+      value: Flamethrower SM (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+--- !u!4 &747790749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+  m_PrefabInstance: {fileID: 747790748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &978903599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,6 +4983,68 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1001 &1296214328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 5573475008200671844, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_Name
+      value: Poison Arrow Launcher SM
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+--- !u!4 &1296214329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+  m_PrefabInstance: {fileID: 1296214328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1348084130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5132,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb72995d36535d47be656337d4263fc, type: 3}
+--- !u!1001 &1434589881
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 5573475008200671844, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_Name
+      value: Poison Arrow Launcher SM (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+--- !u!4 &1434589882 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+  m_PrefabInstance: {fileID: 1434589881}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445112831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,6 +5224,68 @@ Transform:
   m_Father: {fileID: 980665781}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1563797791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 478484686562754215, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_Name
+      value: Flamethrower SM (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.7200003
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+--- !u!4 &1563797792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 478484686562754232, guid: aa1969431a93ae64392a7d4e2a78caac, type: 3}
+  m_PrefabInstance: {fileID: 1563797791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1655095876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,9 +5314,77 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 149699875}
+  - {fileID: 1296214329}
+  - {fileID: 2062604573}
+  - {fileID: 1671645372}
+  - {fileID: 1434589882}
+  - {fileID: 747790749}
+  - {fileID: 1563797792}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1671645371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 5573475008200671844, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_Name
+      value: Poison Arrow Launcher SM (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+--- !u!4 &1671645372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+  m_PrefabInstance: {fileID: 1671645371}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1793262202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,6 +5596,68 @@ Transform:
   m_Father: {fileID: 980665781}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2062604572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655095877}
+    m_Modifications:
+    - target: {fileID: 5573475008200671844, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_Name
+      value: Poison Arrow Launcher SM (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+--- !u!4 &2062604573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5573475008200671867, guid: ca7e37d24e1525248956c63c8b091801, type: 3}
+  m_PrefabInstance: {fileID: 2062604572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &541095112434245624
 PrefabInstance:
   m_ObjectHideFlags: 0
