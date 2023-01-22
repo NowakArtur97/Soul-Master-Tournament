@@ -15,6 +15,8 @@ public class EnvironmentHazardEntity : MonoBehaviour
     public D_EnvironmentHazardIdleState IdleStateData { get { return _idleStateData; } private set { _idleStateData = value; } }
     [SerializeField] private D_EnvironmentHazardPlayerDetectedState _playerDetectedStateData;
     public D_EnvironmentHazardPlayerDetectedState PlayerDetectedStateData { get { return _playerDetectedStateData; } private set { _playerDetectedStateData = value; } }
+    [SerializeField] private bool _canBeOnWall = false;
+    public bool CanBeOnWall { get { return _canBeOnWall; } private set { _canBeOnWall = value; } }
 
     public CoreContainer CoreContainer { get; private set; }
     public FiniteStateMachine StateMachine { get; private set; }
@@ -53,6 +55,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         GameObject collisionGameObject = collision.gameObject;
         if (!ToInteract.Contains(collisionGameObject))
         {

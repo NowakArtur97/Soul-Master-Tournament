@@ -4680,7 +4680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 123228840}
   m_Layer: 0
-  m_Name: Hazards Container (1)
+  m_Name: Hazards Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28509,7 +28509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655095877}
   m_Layer: 0
-  m_Name: Hazards Container
+  m_Name: Hazards Container TO DELETE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

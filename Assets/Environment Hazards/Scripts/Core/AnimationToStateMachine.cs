@@ -8,7 +8,7 @@ public class AnimationToStateMachine : MonoBehaviour
 
     public void AnimationTrigger() => CurrentState.AnimationTrigger();
 
-    private void PlayActiveSoundTrigger() => CurrentState.PlayActiveSoundTrigger();
+    public void PlayActiveSoundTrigger() => CurrentState.PlayActiveSoundTrigger();
 
-    private void PlayActivedSoundTrigger() => CurrentState.PlayActivedSoundTrigger();
+    public void PlayActivedSoundTrigger() => CurrentState.PlayActivedSoundTrigger();
 }

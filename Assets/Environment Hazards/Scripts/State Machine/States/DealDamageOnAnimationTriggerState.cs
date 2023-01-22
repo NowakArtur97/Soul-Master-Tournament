@@ -1,6 +1,10 @@
+using System.Collections.Generic;
+using UnityEngine;
+
 public class DealDamageOnAnimationTriggerState : ActiveState
 {
     private D_EnvironmentHazardDealDamageOnContactState _dealDamageOnContactStateData;
+    private List<GameObject> _allInAgro;
 
     public DealDamageOnAnimationTriggerState(EnvironmentHazardEntity environmentHazardEntity, string animationBoolName,
         D_EnvironmentHazardDealDamageOnContactState dealDamageOnContactStateData)
@@ -16,10 +20,17 @@ public class DealDamageOnAnimationTriggerState : ActiveState
         }
     }
 
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+
+        _allInAgro = GetAllInMinAgro(_dealDamageOnContactStateData.whatIsDamagable);
+    }
+
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
 
-        DamageAll(GetAllInMinAgro(_dealDamageOnContactStateData.whatIsDamagable));
+        DamageAll(_allInAgro);
     }
 }

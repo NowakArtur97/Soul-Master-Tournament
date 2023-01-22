@@ -211,6 +211,8 @@ MonoBehaviour:
   - {x: 0, y: -0.75}
   _waitStateData: {fileID: 11400000, guid: 1f2c94609a172284bacb4b747e65abb9, type: 2}
   _idleStateData: {fileID: 11400000, guid: 4f9fcfb0f03b79048b963177ff806598, type: 2}
+  _playerDetectedStateData: {fileID: 0}
+  _canBeOnWall: 1
   _launchProjectileStateData: {fileID: 11400000, guid: ee5db819d30d60c4fb29696afd70b1f2, type: 2}
 --- !u!1 &8657857581102436513
 GameObject:

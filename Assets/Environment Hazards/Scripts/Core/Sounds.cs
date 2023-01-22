@@ -11,5 +11,7 @@ public class Sounds : MonoBehaviour
 
     public void PlayActiveSound() => AudioManager.Instance.Play(_environmentHazardName + ACTIVE_CLIP_TITLE);
 
+    public void PauseActiveSound() => AudioManager.Instance.Stop(_environmentHazardName + ACTIVE_CLIP_TITLE);
+
     public void PlayActivedSound() => AudioManager.Instance.Play(_environmentHazardName + ACTIVED_CLIP_TITLE);
 }

@@ -51,7 +51,7 @@ public abstract class State
 
     public void PlayActivedSoundTrigger() => EnvironmentHazardEntity.CoreContainer.Sounds.PlayActivedSound();
 
-    private string GetAnimationBoolName() => EnvironmentHazardEntity.IsOnWall
+    private string GetAnimationBoolName() => EnvironmentHazardEntity.IsOnWall && EnvironmentHazardEntity.CanBeOnWall
             ? _animationBoolName + ON_WALL_ANIMATION_NAME_MODIFIER
             : _animationBoolName;
 }

@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
