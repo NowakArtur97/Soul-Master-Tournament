@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3039767077455894686}
   - component: {fileID: 7502324881292168098}
   - component: {fileID: 4238410770090763445}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: Sliding Saw SM
   m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &478484686562754232
 Transform:
   m_ObjectHideFlags: 0
@@ -108,8 +108,8 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!1 &478484687904921296
 GameObject:
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478484687904921297}
   - component: {fileID: 7459423785723917217}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: Core Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3934377025256249805}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: Floor Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 7563485273471247342}
   - component: {fileID: 3327286316225679613}
   - component: {fileID: 4226437022319736139}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4985577300665744123}
   - component: {fileID: 6537275754916619796}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: Sounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}

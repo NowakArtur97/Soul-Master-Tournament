@@ -55,7 +55,6 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         GameObject collisionGameObject = collision.gameObject;
         if (!ToInteract.Contains(collisionGameObject))
         {
