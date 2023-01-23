@@ -61,7 +61,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            sound.source.Stop();
+            sound.source?.Stop();
         }
     }
 
