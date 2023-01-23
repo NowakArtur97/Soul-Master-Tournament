@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SlidingSaw_IdleStateData
   m_EditorClassIdentifier: 
   minIdleTime: 3
-  maxIdleTime: 3
+  maxIdleTime: 10

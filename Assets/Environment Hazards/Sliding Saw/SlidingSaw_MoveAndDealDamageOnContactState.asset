@@ -18,7 +18,7 @@ MonoBehaviour:
   whatIsFloor:
     serializedVersion: 2
     m_Bits: 131072
-  movementSpeed: 5
+  movementSpeed: 4
   floorCheckDistance: 0.39
-  minMoveTime: 60
-  maxMoveTime: 60
+  minMoveTime: 5
+  maxMoveTime: 10
