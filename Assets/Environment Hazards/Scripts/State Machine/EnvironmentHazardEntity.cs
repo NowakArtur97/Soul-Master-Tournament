@@ -43,7 +43,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
         SetOffsetFromWall();
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         CoreContainer.Sounds?.SetName(_environmentHazardName);
         StateMachine = new FiniteStateMachine(WaitState);

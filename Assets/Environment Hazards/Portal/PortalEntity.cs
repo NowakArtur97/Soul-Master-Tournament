@@ -23,4 +23,6 @@ public class PortalEntity : EnvironmentHazardEntity
 
         base.Awake();
     }
+
+    public void SetConnectedPortal(PortalEntity connectedPortal) => _connectedPortal = connectedPortal;
 }
