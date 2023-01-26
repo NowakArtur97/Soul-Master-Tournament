@@ -11,20 +11,15 @@ public class Player : MonoBehaviour, IDamagable
     private const string ABILITY_TAG = "Soul Ability";
     private const string PICK_UP_TAG = "Pick Up";
 
-    [SerializeField]
-    private const int DEFAULT_NUMBER_OF_SOULS = 1;
+    [SerializeField] private const int DEFAULT_NUMBER_OF_SOULS = 1;
 
-    [SerializeField]
-    private D_PlayerStats _playerStats;
-    [SerializeField]
-    private GameObject _basicSoul;
+    [SerializeField] private D_PlayerStats _playerStats;
+    [SerializeField] private GameObject _basicSoul;
 
-    [SerializeField]
-    private float _timeBetweenDamages = 0.5f;
+    [SerializeField] private float _timeBetweenDamages = 0.5f;
     private float _lastDamageTime;
 
-    [SerializeField]
-    private string _playerDeathSound = "Player_Death";
+    [SerializeField] private string _playerDeathSound = "Player_Death";
 
     private Vector2 _movementInput;
     private bool _bombPlacedInput;
@@ -73,8 +68,6 @@ public class Player : MonoBehaviour, IDamagable
         _movementInput.Set(_inputHandler.InputX, _inputHandler.InputY);
         _bombPlacedInput = _inputHandler.BombPlaceInput;
 
-        CheckIfShouldFlip();
-
         HandleSummoning();
 
         if (_playerStatusesManager.HasAnyStatusActive())
@@ -85,6 +78,19 @@ public class Player : MonoBehaviour, IDamagable
         if (_playerStatusesManager.HasReversedControls)
         {
             _movementInput *= -1;
+        }
+
+        if (_inputHandler.InputX != 0)
+        {
+            _myAnimator.SetBool("idle", false);
+            _myAnimator.SetBool("move", true);
+            _myAnimator.SetFloat("directioX", _inputHandler.InputX);
+        }
+        else
+        {
+            _myAnimator.SetBool("move", false);
+            _myAnimator.SetBool("idle", true);
+            CheckIfShouldFlip();
         }
     }
 
@@ -117,7 +123,8 @@ public class Player : MonoBehaviour, IDamagable
     private void SummonSoul()
     {
         _bombPosition = SetBombPosition();
-        GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition, Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
+        GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition,
+            Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
         _playerSoulsManager.ReduceNumberOfSoulsToPlace();
         _playerStatusUI.SetCurrentSoulImage(_playerSoulsManager.CurrentSoul.name);
@@ -263,7 +270,7 @@ public class Player : MonoBehaviour, IDamagable
 
     public void DestroyShieldTrigger() => _playerStatusesManager.DectivateShield();
 
-    public void SummonTrigger() => Summoned();
+    public void SummonedTrigger() => Summoned();
 
     public void DeathTrigger() => TakeDamage();
 
