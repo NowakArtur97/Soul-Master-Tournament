@@ -4,10 +4,8 @@ public abstract class Projectile : MonoBehaviour
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
 
-    [SerializeField]
-    private D_ProjectileStats _projectileStatsData;
-    [SerializeField]
-    private Transform _attackPosition;
+    [SerializeField] private D_ProjectileStats _projectileStatsData;
+    [SerializeField] private Transform _attackPosition;
 
     private GameObject _aliveGameObject;
 

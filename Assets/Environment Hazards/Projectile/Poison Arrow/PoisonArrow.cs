@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class PoisonArrow : Projectile
 {
-    [SerializeField]
-    private float _timeBeingPoisoned = 3.0f;
+    [SerializeField] private float _timeBeingPoisoned = 3.0f;
 
     protected override void ApplyProjectileEffect()
     {

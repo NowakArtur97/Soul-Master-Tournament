@@ -86,15 +86,7 @@ public class Player : MonoBehaviour, IDamagable
             _movementInput *= -1;
         }
 
-        if (_movementInput.x != 0 || _movementInput.y != 0)
-        {
-            PlayMoveAnimation(true, _inputHandler.InputX);
-            CheckIfShouldFlipFacingDirection();
-        }
-        else
-        {
-            PlayMoveAnimation(false, _lastXValue);
-        }
+        SetupMovementAnimations();
     }
 
     private void FixedUpdate()
@@ -106,6 +98,36 @@ public class Player : MonoBehaviour, IDamagable
         else if (IsNotMoving) // When Player is Immobilized
         {
             SetVelocity(Vector2.zero);
+        }
+    }
+
+    private void SetupMovementAnimations()
+    {
+        bool isMovingInAnyDirection = _movementInput.x != 0 || _movementInput.y != 0;
+
+        if (_playerStatusesManager.HasReversedControls)
+        {
+            if (isMovingInAnyDirection)
+            {
+                PlayMoveAnimation(false, _lastXValue);
+            }
+            else
+            {
+                PlayMoveAnimation(true, _inputHandler.InputX);
+                CheckIfShouldFlipFacingDirection();
+            }
+        }
+        else
+        {
+            if (isMovingInAnyDirection)
+            {
+                PlayMoveAnimation(true, _inputHandler.InputX);
+                CheckIfShouldFlipFacingDirection();
+            }
+            else
+            {
+                PlayMoveAnimation(false, _lastXValue);
+            }
         }
     }
 
