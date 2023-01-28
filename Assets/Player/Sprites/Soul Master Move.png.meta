@@ -122,6 +122,30 @@ TextureImporter:
   - first:
       213: -2161762651902771809
     second: Soul Master Move_39
+  - first:
+      213: 7814443456056423391
+    second: Soul Master Move_40
+  - first:
+      213: -6831937352633094851
+    second: Soul Master Move_41
+  - first:
+      213: 4335005719077651447
+    second: Soul Master Move_42
+  - first:
+      213: 2163118391392644900
+    second: Soul Master Move_43
+  - first:
+      213: -6912455793560003011
+    second: Soul Master Move_44
+  - first:
+      213: 1020789279108134651
+    second: Soul Master Move_45
+  - first:
+      213: -5804709424925470975
+    second: Soul Master Move_46
+  - first:
+      213: -728768845755959351
+    second: Soul Master Move_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1058,6 +1082,174 @@ TextureImporter:
       bones: []
       spriteID: f9df0a45250eff1e0800000000000000
       internalID: -2161762651902771809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd37e9babea727c60800000000000000
+      internalID: 7814443456056423391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_41
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3de498cc251031a0800000000000000
+      internalID: -6831937352633094851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_42
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f309e0dbb8092c30800000000000000
+      internalID: 4335005719077651447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_43
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fa21e57b0f40e10800000000000000
+      internalID: 2163118391392644900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_44
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ed34b54160210a0800000000000000
+      internalID: -6912455793560003011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf674c3e0729a2e00800000000000000
+      internalID: 1020789279108134651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_46
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f84fe5887817fa0800000000000000
+      internalID: -5804709424925470975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Move_47
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c738519894e2e5f0800000000000000
+      internalID: -728768845755959351
       vertices: []
       indices: 
       edges: []
