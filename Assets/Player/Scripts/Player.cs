@@ -1,10 +1,11 @@
-using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
 {
     private const string ALIVE_GAME_OBJECT_NAME = "Alive";
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
+    private const string MOVE_ANIMATION_BOOL_NAME = "move";
+    private const string DIRECTION_ANIMATION_FLOAT_NAME = "directionX";
     private const string PROTECTED_ANIMATION_BOOL_NAME = "protect";
     private const string SUMMON_ANIMATION_BOOL_NAME = "summon";
     private const string DEATH_ANIMATION_BOOL_NAME = "dead";
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour, IDamagable
     private Vector2 _currentVelocity;
     private Vector2 _bombPosition;
     private int _facingDirection = 1;
+    private float _lastXValue = 1;
 
     private GameObject _aliveGameObject;
     private PlayerInputHandler _inputHandler;
@@ -65,6 +67,10 @@ public class Player : MonoBehaviour, IDamagable
 
     private void Update()
     {
+        if (_inputHandler.InputX != 0)
+        {
+            _lastXValue = _movementInput.x;
+        }
         _movementInput.Set(_inputHandler.InputX, _inputHandler.InputY);
         _bombPlacedInput = _inputHandler.BombPlaceInput;
 
@@ -80,17 +86,14 @@ public class Player : MonoBehaviour, IDamagable
             _movementInput *= -1;
         }
 
-        if (_inputHandler.InputX != 0)
+        if (_movementInput.x != 0 || _movementInput.y != 0)
         {
-            _myAnimator.SetBool("idle", false);
-            _myAnimator.SetBool("move", true);
-            _myAnimator.SetFloat("directioX", _inputHandler.InputX);
+            PlayMoveAnimation(true, _inputHandler.InputX);
+            CheckIfShouldFlipFacingDirection();
         }
         else
         {
-            _myAnimator.SetBool("move", false);
-            _myAnimator.SetBool("idle", true);
-            CheckIfShouldFlip();
+            PlayMoveAnimation(false, _lastXValue);
         }
     }
 
@@ -100,8 +103,7 @@ public class Player : MonoBehaviour, IDamagable
         {
             SetVelocity(_playerStats.movementSpeed * _movementInput);
         }
-        // When Player is Immobilized
-        else if (IsNotMoving)
+        else if (IsNotMoving) // When Player is Immobilized
         {
             SetVelocity(Vector2.zero);
         }
@@ -136,6 +138,13 @@ public class Player : MonoBehaviour, IDamagable
         PlaySummonAnimation(false);
         _playerStatusesManager.UnlockMovement();
         PlayerStatsManager.IsSpawning = false;
+    }
+
+    private void PlayMoveAnimation(bool isMoving, float directionX)
+    {
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isMoving);
+        _myAnimator.SetBool(MOVE_ANIMATION_BOOL_NAME, isMoving);
+        _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, directionX == 0 ? _lastXValue : directionX);
     }
 
     private void PlaySummonAnimation(bool isSummoned)
@@ -237,7 +246,7 @@ public class Player : MonoBehaviour, IDamagable
         _currentVelocity = _workspace;
     }
 
-    private void CheckIfShouldFlip()
+    private void CheckIfShouldFlipFacingDirection()
     {
         if (ShouldFlip())
         {
@@ -245,13 +254,9 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    private void Flip()
-    {
-        _facingDirection *= -1;
-        _aliveGameObject.transform.Rotate(0, 180, 0);
-    }
+    private void Flip() => _facingDirection *= -1;
 
-    private bool ShouldFlip() => _movementInput.x != 0 && _facingDirection != _movementInput.x;
+    private bool ShouldFlip() => _facingDirection != _movementInput.x;
 
     public void CreateStatsManager(int id) => PlayerStatsManager = new PlayerStatsManager(_playerStats, id);
 
