@@ -205,6 +205,7 @@ public class Player : MonoBehaviour, IDamagable
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
         _myAnimator.SetBool(MOVE_ANIMATION_BOOL_NAME, false);
+        _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, _lastXValue);
         _myAnimator.SetBool(DEATH_ANIMATION_BOOL_NAME, isDead);
     }
 
