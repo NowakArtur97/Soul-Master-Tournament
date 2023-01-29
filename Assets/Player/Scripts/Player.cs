@@ -52,6 +52,7 @@ public class Player : MonoBehaviour, IDamagable
         _aliveGameObject = transform.Find(ALIVE_GAME_OBJECT_NAME).gameObject;
         _myRigidbody2D = _aliveGameObject.GetComponent<Rigidbody2D>();
         _myAnimator = _aliveGameObject.GetComponent<Animator>();
+        _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, _lastXValue);
 
         _playerStatusesManager = new PlayerStatusesManager();
         _playerSoulsManager = new PlayerSoulsManager();
