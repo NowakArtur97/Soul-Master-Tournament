@@ -103,6 +103,11 @@ public class Player : MonoBehaviour, IDamagable
 
     private void SetupMovementAnimations()
     {
+        if (PlayerStatsManager.IsSpawning)
+        {
+            return;
+        }
+
         bool isMovingInAnyDirection = _movementInput.x != 0 || _movementInput.y != 0;
 
         if (_playerStatusesManager.HasReversedControls)
@@ -198,8 +203,9 @@ public class Player : MonoBehaviour, IDamagable
 
     private void PlayDeathAnimation(bool isDead)
     {
+        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
+        _myAnimator.SetBool(MOVE_ANIMATION_BOOL_NAME, false);
         _myAnimator.SetBool(DEATH_ANIMATION_BOOL_NAME, isDead);
-        _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isDead);
     }
 
     private void TakeDamage()
