@@ -19,6 +19,7 @@ public class Player : MonoBehaviour, IDamagable
 
     [SerializeField] private float _timeBetweenDamages = 0.5f;
     private float _lastDamageTime;
+    private bool _isBeingSummoned;
 
     [SerializeField] private string _playerDeathSound = "Player_Death";
 
@@ -162,6 +163,7 @@ public class Player : MonoBehaviour, IDamagable
 
     private void Summoned()
     {
+        _isBeingSummoned = false;
         PlaySummonAnimation(false);
         _playerStatusesManager.UnlockMovement();
         PlayerStatsManager.IsSpawning = false;
@@ -203,6 +205,7 @@ public class Player : MonoBehaviour, IDamagable
 
     private void PlayDeathAnimation(bool isDead)
     {
+        PlayerStatsManager.IsSpawning = true;
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
         _myAnimator.SetBool(MOVE_ANIMATION_BOOL_NAME, false);
         _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, _lastXValue);
@@ -211,6 +214,11 @@ public class Player : MonoBehaviour, IDamagable
 
     private void TakeDamage()
     {
+        if (_isBeingSummoned)
+        {
+            return;
+        }
+        _isBeingSummoned = true;
         PlayerStatsManager.TakeDamage();
         AddStatus(new ImmobilizedStatus(_timeBetweenDamages));
         _playerStatusUI.SetNumberOfLives(PlayerStatsManager.CurrentHealth);
