@@ -321,5 +321,7 @@ public class Player : MonoBehaviour, IDamagable
 
     private bool CanBeDamaged() => _lastDamageTime + _timeBetweenDamages <= Time.time;
 
-    public void SetColorForAnimation(string color) => _myAnimator.SetBool(color, true);
+    public void SetColorForAnimation(string color) => _myAnimator.SetBool(color, true); // TODO: Remove
+
+    public bool IsAlreadyProtected() => _playerStatusesManager.HasShield;
 }

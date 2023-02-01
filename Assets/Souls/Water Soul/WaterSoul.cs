@@ -30,4 +30,6 @@ public class WaterSoul : SoulWithPlayerBuff
             FinishSummoningSoul(IDLE_ANIMATION_BOOL_NAME);
         }
     }
+
+    protected override bool IsPlayerAlreadyBuffed() => PlayerAliveGameObject.GetComponentInParent<Player>().IsAlreadyProtected();
 }
