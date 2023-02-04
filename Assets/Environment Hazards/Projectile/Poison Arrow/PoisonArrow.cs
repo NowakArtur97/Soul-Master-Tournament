@@ -7,6 +7,20 @@ public class PoisonArrow : Projectile
     protected override void ApplyProjectileEffect()
     {
         PlayerStatus reversedControlsStatus = new ReversedControlsStatus(_timeBeingPoisoned);
-        DamageHit.gameObject.transform.parent.GetComponent<Player>()?.AddStatus(reversedControlsStatus);
+        Player player = DamageHit.gameObject.transform.parent.GetComponent<Player>();
+
+        if (player == null)
+        {
+            return;
+        }
+
+        if (player.IsAlreadyProtected())
+        {
+            player.GetComponentInChildren<WaterShield>()?.DealDamage();
+        }
+        else
+        {
+            player.AddStatus(reversedControlsStatus);
+        }
     }
 }
