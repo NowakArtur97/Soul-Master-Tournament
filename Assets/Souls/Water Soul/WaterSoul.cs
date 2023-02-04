@@ -1,6 +1,7 @@
 public class WaterSoul : SoulWithPlayerBuff
 {
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
+    private const string START_ABIlITY_ANIMATION_BOOL_NAME = "active";
 
     protected override void Update()
     {
@@ -16,8 +17,6 @@ public class WaterSoul : SoulWithPlayerBuff
         {
             ShouldStartUsingAbility = false;
             StartUsingAbility();
-            HasUsedAbility = true;
-            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, false);
         }
         else if (IsUsingAbility)
         {
@@ -32,4 +31,6 @@ public class WaterSoul : SoulWithPlayerBuff
     }
 
     protected override bool IsPlayerAlreadyBuffed() => PlayerAliveGameObject.GetComponentInParent<Player>().IsAlreadyProtected();
+
+    protected override string GetAnimationBoolName() => START_ABIlITY_ANIMATION_BOOL_NAME;
 }

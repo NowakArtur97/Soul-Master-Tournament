@@ -19,16 +19,18 @@ public class WaterShield : SoulAbility
         _shieldHealth = _shieldDexterity;
 
         _protectedStatus = new ProtectedStatus(_activeShieldTime);
-        _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
-        _player.AddStatus(_protectedStatus);
         _myAnimator = AliveGameObject.GetComponent<Animator>();
-
-        _myAnimator.SetBool(ACTIVE_ANIMATION_BOOL_NAME, true);
     }
 
     protected override void Update()
     {
         base.Update();
+
+        if (IsActive)
+        {
+            IsActive = false;
+            ProtectPlayer();
+        }
 
         if (HasTimeFinished())
         {
@@ -44,6 +46,12 @@ public class WaterShield : SoulAbility
         {
             DestroyShield();
         }
+    }
+
+    private void ProtectPlayer()
+    {
+        _player = AliveGameObject.transform.parent.GetComponentInParent<Player>();
+        _player.AddStatus(_protectedStatus);
     }
 
     private void DestroyShield()

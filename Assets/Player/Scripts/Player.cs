@@ -267,7 +267,7 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    public void SetProtectedState(bool isInProtectedState)
+    public void SetProtectedState(bool isInProtectedState) // TODO: Remove
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isInProtectedState);
         _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, isInProtectedState);
