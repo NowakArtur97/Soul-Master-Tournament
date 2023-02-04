@@ -233,7 +233,14 @@ public class Player : MonoBehaviour, IDamagable
 
     private void PickUpSoul(Collider2D collision)
     {
-        D_SoulPickUp pickUpData = collision.GetComponent<SoulPickUp>().SoulData;
+        SoulPickUp pickUp = collision.GetComponent<SoulPickUp>();
+        if (pickUp.WasPickedUp)
+        {
+            Destroy(collision.gameObject);
+            return;
+        }
+        pickUp.WasPickedUp = true;
+        D_SoulPickUp pickUpData = pickUp.SoulData;
         _playerSoulsManager.ChangeSoul(pickUpData.soul, pickUpData.numberOfUses);
         Destroy(collision.gameObject);
     }

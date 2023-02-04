@@ -36,7 +36,7 @@ public class PlayerStatusUI : MonoBehaviour
         _soulsSprites = new Dictionary<string, Sprite>()
         {
             { "Fire Soul", _fireSoulImage },
-            { "Water Soul", _waterSoulImage },
+            { "Water Soul 1", _waterSoulImage }, // TODO: Remove
             { "Poisonous Soul", _poisonousSoulImage },
             { "Evil Eye Soul", _evilEyeSoulImage },
             { "Ice Soul", _iceSoulImage }
