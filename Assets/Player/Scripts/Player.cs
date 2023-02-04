@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour, IDamagable
 
     [SerializeField] private D_PlayerStats _playerStats;
     [SerializeField] private GameObject _basicSoul;
+    [SerializeField] private GameObject _poisonedStatus;
 
     [SerializeField] private float _timeBetweenDamages = 0.5f;
     private float _lastDamageTime;
@@ -65,6 +67,8 @@ public class Player : MonoBehaviour, IDamagable
         _playerAnimationToComponent.Player = this;
 
         _lastDamageTime = 0;
+
+        _poisonedStatus.SetActive(false);
     }
 
     private void Update()
@@ -86,6 +90,10 @@ public class Player : MonoBehaviour, IDamagable
         if (_playerStatusesManager.HasReversedControls)
         {
             _movementInput *= -1;
+        }
+        else if (_poisonedStatus.activeInHierarchy)
+        {
+            DisablePoisonedStatus();
         }
 
         SetupMovementAnimations();
@@ -330,5 +338,9 @@ public class Player : MonoBehaviour, IDamagable
 
     public void SetColorForAnimation(string color) => _myAnimator.SetBool(color, true); // TODO: Remove
 
-    public bool IsAlreadyProtected() => _playerStatusesManager.HasShield;
+    public bool IsProtected() => _playerStatusesManager.HasShield;
+
+    public void EnablePoisonedStatus() => _poisonedStatus.SetActive(true);
+
+    public void DisablePoisonedStatus() => _poisonedStatus.SetActive(false);
 }

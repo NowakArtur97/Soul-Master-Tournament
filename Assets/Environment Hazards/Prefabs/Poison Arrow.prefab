@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectileStatsData: {fileID: 11400000, guid: edcac23f50ea6e84abca1631937b5389, type: 2}
   _attackPosition: {fileID: 7533067514065099483}
-  _timeBeingPoisoned: 3
+  _timeBeingPoisoned: 5
 --- !u!1 &8330459000277511518
 GameObject:
   m_ObjectHideFlags: 0

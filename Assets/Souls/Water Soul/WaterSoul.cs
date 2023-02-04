@@ -30,7 +30,7 @@ public class WaterSoul : SoulWithPlayerBuff
         }
     }
 
-    protected override bool IsPlayerAlreadyBuffed() => PlayerAliveGameObject.GetComponentInParent<Player>().IsAlreadyProtected();
+    protected override bool IsPlayerAlreadyBuffed() => PlayerAliveGameObject.GetComponentInParent<Player>().IsProtected();
 
     protected override string GetAnimationBoolName() => START_ABIlITY_ANIMATION_BOOL_NAME;
 }

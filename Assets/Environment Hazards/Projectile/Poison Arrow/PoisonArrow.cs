@@ -14,12 +14,13 @@ public class PoisonArrow : Projectile
             return;
         }
 
-        if (player.IsAlreadyProtected())
+        if (player.IsProtected())
         {
             player.GetComponentInChildren<WaterShield>()?.DealDamage();
         }
         else
         {
+            player.EnablePoisonedStatus();
             player.AddStatus(reversedControlsStatus);
         }
     }

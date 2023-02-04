@@ -1,8 +1,7 @@
 public class ReversedControlsStatus : PlayerStatus
 {
     public ReversedControlsStatus(float activeTime) : base(activeTime)
-    {
-    }
+    { }
 
     public override void ApplyStatus(PlayerStatusesManager playerStatusesManager)
     {
@@ -11,8 +10,5 @@ public class ReversedControlsStatus : PlayerStatus
         playerStatusesManager.ReverseControls();
     }
 
-    public override void CancelStatus(PlayerStatusesManager playerStatusesManager)
-    {
-        playerStatusesManager.CancelReversingControls();
-    }
+    public override void CancelStatus(PlayerStatusesManager playerStatusesManager) => playerStatusesManager.CancelReversingControls();
 }
