@@ -114,31 +114,14 @@ public class Player : MonoBehaviour, IDamagable
             return;
         }
 
-        bool isMovingInAnyDirection = _movementInput.x != 0 || _movementInput.y != 0;
-
-        if (_playerStatusesManager.HasReversedControls)
+        if (_movementInput.x != 0 || _movementInput.y != 0)
         {
-            if (isMovingInAnyDirection)
-            {
-                PlayMoveAnimation(true, _inputHandler.InputX);
-                CheckIfShouldFlipFacingDirection();
-            }
-            else
-            {
-                PlayMoveAnimation(false, _lastXValue);
-            }
+            PlayMoveAnimation(true, _inputHandler.InputX);
+            CheckIfShouldFlipFacingDirection();
         }
         else
         {
-            if (isMovingInAnyDirection)
-            {
-                PlayMoveAnimation(true, _inputHandler.InputX);
-                CheckIfShouldFlipFacingDirection();
-            }
-            else
-            {
-                PlayMoveAnimation(false, _lastXValue);
-            }
+            PlayMoveAnimation(false, _lastXValue);
         }
     }
 
@@ -178,7 +161,19 @@ public class Player : MonoBehaviour, IDamagable
     {
         _myAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, !isMoving);
         _myAnimator.SetBool(MOVE_ANIMATION_BOOL_NAME, isMoving);
-        _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, directionX == 0 ? _lastXValue : directionX);
+        SetDirectionAnimationVariable(directionX);
+    }
+
+    private void SetDirectionAnimationVariable(float directionX)
+    {
+        if (_playerStatusesManager.HasReversedControls)
+        {
+            _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, (directionX == 0 ? _lastXValue : directionX) * -1);
+        }
+        else
+        {
+            _myAnimator.SetFloat(DIRECTION_ANIMATION_FLOAT_NAME, directionX == 0 ? _lastXValue : directionX);
+        }
     }
 
     private void PlaySummonAnimation(bool isSummoned)
@@ -201,6 +196,7 @@ public class Player : MonoBehaviour, IDamagable
 
             AudioManager.Instance.Play(_playerDeathSound);
             PlayerStatsManager.IsSpawning = true;
+            DisablePoisonedStatus();
             PlayDeathAnimation(true);
             _playerStatusesManager.LockMovement();
 
