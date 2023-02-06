@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 public class PlayerStatusesManager
 {
@@ -18,14 +19,14 @@ public class PlayerStatusesManager
 
     public void AddStatus(PlayerStatus status)
     {
-        status.ApplyStatus(this);
         _statuses.Add(status);
+        status.ApplyStatus(this);
     }
 
     public void RemoveStatus(PlayerStatus status)
     {
-        status.CancelStatus(this);
         _statuses.Remove(status);
+        status.CancelStatus(this);
     }
 
     public void RemoveAllStatuses()
@@ -36,20 +37,10 @@ public class PlayerStatusesManager
         DectivateShield();
     }
 
-    public void CheckStatuses()
-    {
-        List<PlayerStatus> toRemove = new List<PlayerStatus>();
-        _statuses.ForEach(status =>
-        {
-            if (!status.ChecIfActive())
-            {
-                status.CancelStatus(this);
-                toRemove.Add(status);
-            }
-        });
-
-        _statuses.RemoveAll(status => toRemove.Contains(status));
-    }
+    public void CheckStatuses() => _statuses
+        .Where(status => !status.ChecIfActive())
+        .ToList()
+        .ForEach(status => RemoveStatus(status));
 
     public bool HasAnyStatusActive() => _statuses.Count > 0;
 
@@ -57,7 +48,13 @@ public class PlayerStatusesManager
     public void UnlockMovement() => CanMove = true;
 
     public void ReverseControls() => HasReversedControls = true;
-    public void CancelReversingControls() => HasReversedControls = false;
+    public void CancelReversingControls()
+    {
+        if (_statuses.OfType<ReversedControlsStatus>().Count() == 0)
+        {
+            HasReversedControls = false;
+        }
+    }
 
     public void ActivateShield() => HasShield = true;
     public void DectivateShield() => HasShield = false;
