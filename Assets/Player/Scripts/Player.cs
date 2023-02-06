@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamagable
@@ -86,12 +85,7 @@ public class Player : MonoBehaviour, IDamagable
         {
             _playerStatusesManager.CheckStatuses();
         }
-
-        if (_playerStatusesManager.HasReversedControls)
-        {
-            _movementInput *= -1;
-        }
-        else if (_poisonedStatus.activeInHierarchy)
+        if (_poisonedStatus.activeInHierarchy && !_playerStatusesManager.HasReversedControls)
         {
             DisablePoisonedStatus();
         }
@@ -103,7 +97,9 @@ public class Player : MonoBehaviour, IDamagable
     {
         if (_playerStatusesManager.CanMove)
         {
-            SetVelocity(_playerStats.movementSpeed * _movementInput);
+            SetVelocity(_playerStatusesManager.HasReversedControls
+             ? _playerStats.movementSpeed * _movementInput * -1
+                : _playerStats.movementSpeed * _movementInput);
         }
         else if (IsNotMoving) // When Player is Immobilized
         {
@@ -124,12 +120,12 @@ public class Player : MonoBehaviour, IDamagable
         {
             if (isMovingInAnyDirection)
             {
-                PlayMoveAnimation(false, _lastXValue);
+                PlayMoveAnimation(true, _inputHandler.InputX);
+                CheckIfShouldFlipFacingDirection();
             }
             else
             {
-                PlayMoveAnimation(true, _inputHandler.InputX);
-                CheckIfShouldFlipFacingDirection();
+                PlayMoveAnimation(false, _lastXValue);
             }
         }
         else
