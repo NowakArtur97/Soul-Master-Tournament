@@ -1,7 +1,199 @@
 fileFormatVersion: 2
 guid: 2ebc21bbe90900a4fb9ed49fed6dd27c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7437047397446905304
+    second: Soul Master Orange_0
+  - first:
+      213: -3798096450346335436
+    second: Soul Master Orange_1
+  - first:
+      213: 7351936453174576908
+    second: Soul Master Orange_2
+  - first:
+      213: 540051839571121344
+    second: Soul Master Orange_3
+  - first:
+      213: 2956398947363027298
+    second: Soul Master Orange_4
+  - first:
+      213: -2914224677259543604
+    second: Soul Master Orange_5
+  - first:
+      213: -6703995845006198841
+    second: Soul Master Orange_6
+  - first:
+      213: 5181204794264933901
+    second: Soul Master Orange_7
+  - first:
+      213: 5748759024061700618
+    second: Soul Master Orange_8
+  - first:
+      213: 3444287545795648278
+    second: Soul Master Orange_9
+  - first:
+      213: -5872114622805697102
+    second: Soul Master Orange_10
+  - first:
+      213: 8708498324872501093
+    second: Soul Master Orange_11
+  - first:
+      213: 2314485529994195892
+    second: Soul Master Orange_12
+  - first:
+      213: 9205673082313276896
+    second: Soul Master Orange_13
+  - first:
+      213: 8720104326448742391
+    second: Soul Master Orange_14
+  - first:
+      213: 5737600580512379527
+    second: Soul Master Orange_15
+  - first:
+      213: 6901970212068539213
+    second: Soul Master Orange_16
+  - first:
+      213: 2649198452374513372
+    second: Soul Master Orange_17
+  - first:
+      213: 3387633996337505782
+    second: Soul Master Orange_18
+  - first:
+      213: -109544941469927565
+    second: Soul Master Orange_19
+  - first:
+      213: 2341982431496918592
+    second: Soul Master Orange_20
+  - first:
+      213: -4247759985354175009
+    second: Soul Master Orange_21
+  - first:
+      213: 3724537505106046947
+    second: Soul Master Orange_22
+  - first:
+      213: -8281937899122818538
+    second: Soul Master Orange_23
+  - first:
+      213: -8840676807634967323
+    second: Soul Master Orange_24
+  - first:
+      213: -661914654961362864
+    second: Soul Master Orange_25
+  - first:
+      213: -135608066007860198
+    second: Soul Master Orange_26
+  - first:
+      213: 7562495928662843304
+    second: Soul Master Orange_27
+  - first:
+      213: 7924221301102069929
+    second: Soul Master Orange_28
+  - first:
+      213: 3992235851367291075
+    second: Soul Master Orange_29
+  - first:
+      213: 1548933397563470915
+    second: Soul Master Orange_30
+  - first:
+      213: 2064314073257889895
+    second: Soul Master Orange_31
+  - first:
+      213: -4569628566117659374
+    second: Soul Master Orange_32
+  - first:
+      213: 8210240136317383340
+    second: Soul Master Orange_33
+  - first:
+      213: 7050730262327424847
+    second: Soul Master Orange_34
+  - first:
+      213: -465541468165653811
+    second: Soul Master Orange_35
+  - first:
+      213: 4371086327916524038
+    second: Soul Master Orange_36
+  - first:
+      213: 7531694773745730983
+    second: Soul Master Orange_37
+  - first:
+      213: -5503794065814627165
+    second: Soul Master Orange_38
+  - first:
+      213: -1305320515054832970
+    second: Soul Master Orange_39
+  - first:
+      213: 6262304565672129375
+    second: Soul Master Orange_40
+  - first:
+      213: 7962740656219123521
+    second: Soul Master Orange_41
+  - first:
+      213: 1355400766706582354
+    second: Soul Master Orange_42
+  - first:
+      213: 2791002392269468921
+    second: Soul Master Orange_43
+  - first:
+      213: -7570898349087222684
+    second: Soul Master Orange_44
+  - first:
+      213: -8565669201230471967
+    second: Soul Master Orange_45
+  - first:
+      213: -651841553340343665
+    second: Soul Master Orange_46
+  - first:
+      213: -7476814185970571607
+    second: Soul Master Orange_47
+  - first:
+      213: -6888426867726422701
+    second: Soul Master Orange_48
+  - first:
+      213: 4638966919761584813
+    second: Soul Master Orange_49
+  - first:
+      213: 5716354542077162821
+    second: Soul Master Orange_50
+  - first:
+      213: 1602429795698818887
+    second: Soul Master Orange_51
+  - first:
+      213: -6092372369732647959
+    second: Soul Master Orange_52
+  - first:
+      213: -9057619370736422807
+    second: Soul Master Orange_53
+  - first:
+      213: 6896175772949052858
+    second: Soul Master Orange_54
+  - first:
+      213: -1258715000258282372
+    second: Soul Master Orange_55
+  - first:
+      213: -2943177269130501267
+    second: Soul Master Orange_56
+  - first:
+      213: -2861624298514043063
+    second: Soul Master Orange_57
+  - first:
+      213: 8821727395138331198
+    second: Soul Master Orange_58
+  - first:
+      213: -331250895684567441
+    second: Soul Master Orange_59
+  - first:
+      213: 6505061651294235238
+    second: Soul Master Orange_60
+  - first:
+      213: 9011590225590552831
+    second: Soul Master Orange_61
+  - first:
+      213: 6598531332213568050
+    second: Soul Master Orange_62
+  - first:
+      213: 1665333716132648041
+    second: Soul Master Orange_63
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +224,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +233,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +260,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +293,1351 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Soul Master Orange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dde09e6433b53760800000000000000
+      internalID: 7437047397446905304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334f6ec6637a4bc0800000000000000
+      internalID: -3798096450346335436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0747be7043570660800000000000000
+      internalID: 7351936453174576908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4dee96946ae7700800000000000000
+      internalID: 540051839571121344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26979efcd2d370920800000000000000
+      internalID: 2956398947363027298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb7444a8189e87d0800000000000000
+      internalID: -2914224677259543604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7f5ba5c4f96f2a0800000000000000
+      internalID: -6703995845006198841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0656b62f4657e740800000000000000
+      internalID: 5181204794264933901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ad488cfd1b7cf40800000000000000
+      internalID: 5748759024061700618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b937736419ccf20800000000000000
+      internalID: 3444287545795648278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd1a43ccde028ea0800000000000000
+      internalID: -5872114622805697102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5671c1d361dcad870800000000000000
+      internalID: 8708498324872501093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3f51da354be1020800000000000000
+      internalID: 2314485529994195892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed78a505ee11cf70800000000000000
+      internalID: 9205673082313276896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_14
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fff25e0fa8040970800000000000000
+      internalID: 8720104326448742391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782f380345d00af40800000000000000
+      internalID: 5737600580512379527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b3ca4f659b8cf50800000000000000
+      internalID: 6901970212068539213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd62c45d4f7d3c420800000000000000
+      internalID: 2649198452374513372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5ebb4db2b430f20800000000000000
+      internalID: 3387633996337505782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_19
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3777eb4c471da7ef0800000000000000
+      internalID: -109544941469927565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_20
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0465493fc94608020800000000000000
+      internalID: 2341982431496918592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_21
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd88d58cccec05c0800000000000000
+      internalID: -4247759985354175009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_22
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef2770a02730b330800000000000000
+      internalID: 3724537505106046947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61280fe3c55a01d80800000000000000
+      internalID: -8281937899122818538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e422ea884b9f4580800000000000000
+      internalID: -8840676807634967323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_25
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0581767d02860d6f0800000000000000
+      internalID: -661914654961362864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_26
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c7ce4be293e1ef0800000000000000
+      internalID: -135608066007860198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af5943baf163f860800000000000000
+      internalID: 7562495928662843304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_28
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8c5cdf94d78fd60800000000000000
+      internalID: 7924221301102069929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_29
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c89354ea55476730800000000000000
+      internalID: 3992235851367291075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_30
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344728ee7baee7510800000000000000
+      internalID: 1548933397563470915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_31
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760506166bae5ac10800000000000000
+      internalID: 2064314073257889895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d4411b70b6590c0800000000000000
+      internalID: -4569628566117659374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_33
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca23add77e1a0f170800000000000000
+      internalID: 8210240136317383340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_34
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f477f1531d939d160800000000000000
+      internalID: 7050730262327424847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_35
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcab5c150801a89f0800000000000000
+      internalID: -465541468165653811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602f7023bd739ac30800000000000000
+      internalID: 4371086327916524038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5c7c9fd74f58860800000000000000
+      internalID: 7531694773745730983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_38
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac573e15789e93b0800000000000000
+      internalID: -5503794065814627165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_39
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2702e48e192ede0800000000000000
+      internalID: -1305320515054832970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53b138c2dc28e650800000000000000
+      internalID: 6262304565672129375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_41
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f608c3076518e60800000000000000
+      internalID: 7962740656219123521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_42
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25386dbe0d95fc210800000000000000
+      internalID: 1355400766706582354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_43
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4bc7e63e1abb620800000000000000
+      internalID: 2791002392269468921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_44
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46490185014cee690800000000000000
+      internalID: -7570898349087222684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec572d8e31a02980800000000000000
+      internalID: -8565669201230471967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_46
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a5f439f8134f6f0800000000000000
+      internalID: -651841553340343665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_47
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a66f999c150d3890800000000000000
+      internalID: -7476814185970571607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_48
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35de8ef92446760a0800000000000000
+      internalID: -6888426867726422701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_49
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da26d21d5dbe06040800000000000000
+      internalID: 4638966919761584813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_50
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54533b26b22945f40800000000000000
+      internalID: 5716354542077162821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_51
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f312eb869fc3610800000000000000
+      internalID: 1602429795698818887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_52
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e34ea6cb9b837ba0800000000000000
+      internalID: -6092372369732647959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_53
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960fe80fb2fdc4280800000000000000
+      internalID: -9057619370736422807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_54
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd7847f35324bf50800000000000000
+      internalID: 6896175772949052858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_55
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c36205065288ee0800000000000000
+      internalID: -1258715000258282372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_56
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63e87a0edbb727d0800000000000000
+      internalID: -2943177269130501267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_57
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fa17eacd77948d0800000000000000
+      internalID: -2861624298514043063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_58
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e326d8c83521d6a70800000000000000
+      internalID: 8821727395138331198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_59
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ef03fb019276bf0800000000000000
+      internalID: -331250895684567441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_60
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aa8674b1f964a50800000000000000
+      internalID: 6505061651294235238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_61
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff805b190999f0d70800000000000000
+      internalID: 9011590225590552831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_62
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232ffdf3941b29b50800000000000000
+      internalID: 6598531332213568050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Orange_63
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964519601347c1710800000000000000
+      internalID: 1665333716132648041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

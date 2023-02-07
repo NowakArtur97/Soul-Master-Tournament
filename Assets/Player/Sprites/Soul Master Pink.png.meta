@@ -1,7 +1,199 @@
 fileFormatVersion: 2
 guid: 7703a9054b44c9e4a9a039aa5d10199b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6956395693496349037
+    second: Soul Master Pink_0
+  - first:
+      213: 4347701424090029831
+    second: Soul Master Pink_1
+  - first:
+      213: -5153577971887026160
+    second: Soul Master Pink_2
+  - first:
+      213: 4554131076516861006
+    second: Soul Master Pink_3
+  - first:
+      213: 3284836932708269269
+    second: Soul Master Pink_4
+  - first:
+      213: 8577643779896915144
+    second: Soul Master Pink_5
+  - first:
+      213: 9002397353638018694
+    second: Soul Master Pink_6
+  - first:
+      213: 2553731100313698936
+    second: Soul Master Pink_7
+  - first:
+      213: 637086964857462889
+    second: Soul Master Pink_8
+  - first:
+      213: 7951978822514721665
+    second: Soul Master Pink_9
+  - first:
+      213: 1035554632260544888
+    second: Soul Master Pink_10
+  - first:
+      213: 1939760126364634558
+    second: Soul Master Pink_11
+  - first:
+      213: 5175743081044450290
+    second: Soul Master Pink_12
+  - first:
+      213: -5112125927018111053
+    second: Soul Master Pink_13
+  - first:
+      213: -3268824194379169063
+    second: Soul Master Pink_14
+  - first:
+      213: -3141940905540312565
+    second: Soul Master Pink_15
+  - first:
+      213: 331015088830400752
+    second: Soul Master Pink_16
+  - first:
+      213: -1495329115151613966
+    second: Soul Master Pink_17
+  - first:
+      213: -4253706597682697136
+    second: Soul Master Pink_18
+  - first:
+      213: -8076210040680130510
+    second: Soul Master Pink_19
+  - first:
+      213: 105246809568525368
+    second: Soul Master Pink_20
+  - first:
+      213: 4728533909023841306
+    second: Soul Master Pink_21
+  - first:
+      213: 173815406711828551
+    second: Soul Master Pink_22
+  - first:
+      213: -5209490138555241015
+    second: Soul Master Pink_23
+  - first:
+      213: 8129567589141573449
+    second: Soul Master Pink_24
+  - first:
+      213: -5238511276314104833
+    second: Soul Master Pink_25
+  - first:
+      213: 4093382892964202445
+    second: Soul Master Pink_26
+  - first:
+      213: -2655577896275638168
+    second: Soul Master Pink_27
+  - first:
+      213: 4157175834940197587
+    second: Soul Master Pink_28
+  - first:
+      213: -3285027268941381567
+    second: Soul Master Pink_29
+  - first:
+      213: 6569281857540904590
+    second: Soul Master Pink_30
+  - first:
+      213: -4163842035296109722
+    second: Soul Master Pink_31
+  - first:
+      213: -5990864662811831177
+    second: Soul Master Pink_32
+  - first:
+      213: 2393747313099735735
+    second: Soul Master Pink_33
+  - first:
+      213: 7765804450088396857
+    second: Soul Master Pink_34
+  - first:
+      213: -330212056643278211
+    second: Soul Master Pink_35
+  - first:
+      213: -5581198671026718871
+    second: Soul Master Pink_36
+  - first:
+      213: 4332833569797598102
+    second: Soul Master Pink_37
+  - first:
+      213: 8661944159540161917
+    second: Soul Master Pink_38
+  - first:
+      213: 3825728645864496449
+    second: Soul Master Pink_39
+  - first:
+      213: 5573837635174307401
+    second: Soul Master Pink_40
+  - first:
+      213: -1234848780057064017
+    second: Soul Master Pink_41
+  - first:
+      213: 2711484442482092112
+    second: Soul Master Pink_42
+  - first:
+      213: 61678444093936040
+    second: Soul Master Pink_43
+  - first:
+      213: 5267761909200809003
+    second: Soul Master Pink_44
+  - first:
+      213: 5316985736552452972
+    second: Soul Master Pink_45
+  - first:
+      213: -114414116047565966
+    second: Soul Master Pink_46
+  - first:
+      213: 3101690930996702144
+    second: Soul Master Pink_47
+  - first:
+      213: 308302191639727593
+    second: Soul Master Pink_48
+  - first:
+      213: 7497400911690288484
+    second: Soul Master Pink_49
+  - first:
+      213: -8998661273053158167
+    second: Soul Master Pink_50
+  - first:
+      213: 2920896080862361659
+    second: Soul Master Pink_51
+  - first:
+      213: 6685364984583562636
+    second: Soul Master Pink_52
+  - first:
+      213: 7361646160460537978
+    second: Soul Master Pink_53
+  - first:
+      213: -7824348333690194118
+    second: Soul Master Pink_54
+  - first:
+      213: 7275011032347614964
+    second: Soul Master Pink_55
+  - first:
+      213: 7556385655634194570
+    second: Soul Master Pink_56
+  - first:
+      213: 3969480781015818531
+    second: Soul Master Pink_57
+  - first:
+      213: 8612794773861540608
+    second: Soul Master Pink_58
+  - first:
+      213: 3138440023143684525
+    second: Soul Master Pink_59
+  - first:
+      213: 6767438590480194499
+    second: Soul Master Pink_60
+  - first:
+      213: 5512634900240956823
+    second: Soul Master Pink_61
+  - first:
+      213: 8864851756640150515
+    second: Soul Master Pink_62
+  - first:
+      213: 703154772724578046
+    second: Soul Master Pink_63
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +224,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +233,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +260,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +293,1351 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Soul Master Pink_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ec71c29fae57f90800000000000000
+      internalID: -6956395693496349037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f985cf863265c30800000000000000
+      internalID: 4347701424090029831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010556fa320da78b0800000000000000
+      internalID: -5153577971887026160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44da54d516833f30800000000000000
+      internalID: 4554131076516861006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcf82759c5169d20800000000000000
+      internalID: 3284836932708269269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4389e4299e90770800000000000000
+      internalID: 8577643779896915144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eb28642b0feec70800000000000000
+      internalID: 9002397353638018694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872c01ec7eca07320800000000000000
+      internalID: 2553731100313698936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9606c57183367d800800000000000000
+      internalID: 637086964857462889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1834b619b9a1b5e60800000000000000
+      internalID: 7951978822514721665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879666193770f5e00800000000000000
+      internalID: 1035554632260544888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd4e61ce896bea10800000000000000
+      internalID: 1939760126364634558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb1752f8eee3d740800000000000000
+      internalID: 5175743081044450290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf5509fd841e09b0800000000000000
+      internalID: -5112125927018111053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_14
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2c3d4d6bdc2a2d0800000000000000
+      internalID: -3268824194379169063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b022004a4659564d0800000000000000
+      internalID: -3141940905540312565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c7013870089400800000000000000
+      internalID: 331015088830400752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffb615a7168f3be0800000000000000
+      internalID: -1495329115151613966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c2362f26cc7f4c0800000000000000
+      internalID: -4253706597682697136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_19
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23851d1f1c98bef80800000000000000
+      internalID: -8076210040680130510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_20
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c331a6a69e57100800000000000000
+      internalID: 105246809568525368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_21
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c51c399802f9140800000000000000
+      internalID: 4728533909023841306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_22
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7407c850134896200800000000000000
+      internalID: 173815406711828551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cda38ee15c24b7b0800000000000000
+      internalID: -5209490138555241015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fef4866a602d070800000000000000
+      internalID: 8129567589141573449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_25
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb6b6fbfb11d47b0800000000000000
+      internalID: -5238511276314104833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_26
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7cac0bd0e9ec830800000000000000
+      internalID: 4093382892964202445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8688c1329fd752bd0800000000000000
+      internalID: -2655577896275638168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_28
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dac27e656141b930800000000000000
+      internalID: 4157175834940197587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_29
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140074d8a1d3962d0800000000000000
+      internalID: -3285027268941381567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_30
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86d42c3b07ca2b50800000000000000
+      internalID: 6569281857540904590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_31
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bf559dabf0736c0800000000000000
+      internalID: -4163842035296109722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77419a3845c2cdca0800000000000000
+      internalID: -5990864662811831177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_33
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b20b57af7c483120800000000000000
+      internalID: 2393747313099735735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_34
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938aaaa900ea5cb60800000000000000
+      internalID: 7765804450088396857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_35
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ae93f42e9da6bf0800000000000000
+      internalID: -330212056643278211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967f19011699b82b0800000000000000
+      internalID: -5581198671026718871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b6ca6ec21512c30800000000000000
+      internalID: 4332833569797598102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_38
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d29a5f158653870800000000000000
+      internalID: 8661944159540161917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_39
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d1acf0fe7b71530800000000000000
+      internalID: 3825728645864496449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94694483ccf3a5d40800000000000000
+      internalID: 5573837635174307401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_41
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadcf59b39fecdee0800000000000000
+      internalID: -1234848780057064017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_42
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058a4200cb021a520800000000000000
+      internalID: 2711484442482092112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_43
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a19486d7302bd000800000000000000
+      internalID: 61678444093936040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_44
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c6f3feb89da1940800000000000000
+      internalID: 5267761909200809003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6317075b5ab9c940800000000000000
+      internalID: 5316985736552452972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_46
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bc1b7b7f4896ef0800000000000000
+      internalID: -114414116047565966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_47
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbeb11e77b6b0b20800000000000000
+      internalID: 3101690930996702144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_48
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed0928b53f474400800000000000000
+      internalID: 308302191639727593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_49
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d4dfff76e1c0860800000000000000
+      internalID: 7497400911690288484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_50
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e42a95cf355e1380800000000000000
+      internalID: -8998661273053158167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_51
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b1ad828b198820800000000000000
+      internalID: 2920896080862361659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_52
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8520fb680037cc50800000000000000
+      internalID: 6685364984583562636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_53
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a706e54ed22d92660800000000000000
+      internalID: 7361646160460537978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_54
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37f97b45a45a6390800000000000000
+      internalID: -7824348333690194118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_55
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe90204df706f460800000000000000
+      internalID: 7275011032347614964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_56
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80fee5e7bcadd860800000000000000
+      internalID: 7556385655634194570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_57
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32120373dbd661730800000000000000
+      internalID: 3969480781015818531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_58
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003ab5bd63bc68770800000000000000
+      internalID: 8612794773861540608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_59
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da91958a29afd8b20800000000000000
+      internalID: 3138440023143684525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_60
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb97d8ea85caed50800000000000000
+      internalID: 6767438590480194499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_61
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d784d0c30d08c40800000000000000
+      internalID: 5512634900240956823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_62
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3a80564b7460b70800000000000000
+      internalID: 8864851756640150515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul Master Pink_63
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef67e525a8b12c900800000000000000
+      internalID: 703154772724578046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

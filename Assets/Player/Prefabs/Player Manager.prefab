@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPrefabs:
-  - {fileID: 1703370525658190180, guid: 44dc9dc6fb39f0344848c53e424aa3c3, type: 3}
-  - {fileID: 1703370525658190180, guid: a445b6565f279334982b8ee32d11e402, type: 3}
-  - {fileID: 1703370525658190180, guid: e374ced04c206ef42b535bb40d3b72f3, type: 3}
-  - {fileID: 1703370525658190180, guid: d225814ee3860d746a6ffa356df75cdb, type: 3}
+  - {fileID: 1703370525658190180, guid: 92599b925c9e7c945866bfac95faa469, type: 3}
+  - {fileID: 1703370525658190180, guid: ce3181f6484b46046a21851c2dac4f8b, type: 3}
+  - {fileID: 1703370525658190180, guid: 487c0842965080147b528d7cfce4bc61, type: 3}
+  - {fileID: 1703370525658190180, guid: 80df53591ce22f14d8b19e81c89b2330, type: 3}
   PlayersPositions:
   - {x: -1, y: 0}
   - {x: 8, y: 0}
