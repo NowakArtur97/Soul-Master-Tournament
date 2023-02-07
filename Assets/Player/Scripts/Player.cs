@@ -16,6 +16,7 @@ public class Player : MonoBehaviour, IDamagable
 
     [SerializeField] private D_PlayerStats _playerStats;
     [SerializeField] private GameObject _basicSoul;
+    [SerializeField] private Transform _bombTransformPosition;
     [SerializeField] private GameObject _poisonedStatus;
 
     [SerializeField] private float _timeBetweenDamages = 0.5f;
@@ -140,7 +141,7 @@ public class Player : MonoBehaviour, IDamagable
 
     private void SummonSoul()
     {
-        _bombPosition = SetBombPosition();
+        SetBombPosition();
         GameObject soul = Instantiate(_playerSoulsManager.CurrentSoul, _bombPosition,
             Quaternion.Euler(0, _facingDirection == 1 ? 0 : 180, 0));
         soul.GetComponent<Soul>().SetPlayer(this);
@@ -280,9 +281,9 @@ public class Player : MonoBehaviour, IDamagable
         _myAnimator.SetBool(PROTECTED_ANIMATION_BOOL_NAME, isInProtectedState);
     }
 
-    private Vector2 SetBombPosition() => new Vector2(
-        Mathf.FloorToInt(_aliveGameObject.transform.position.x),
-        Mathf.FloorToInt(_aliveGameObject.transform.position.y));
+    private void SetBombPosition() => _bombPosition.Set(
+        Mathf.FloorToInt(_bombTransformPosition.transform.position.x),
+        Mathf.FloorToInt(_bombTransformPosition.transform.position.y));
 
     private void SetVelocity(Vector2 velocity)
     {
