@@ -80,7 +80,7 @@ public class PlayerManager : MonoBehaviour
         {
             int winnerPlayerIndex = Array.FindIndex(Players, player => player == _alivePlayers[0]);
             Sprite winnerSprite = _playerSprites[winnerPlayerIndex];
-            FindObjectOfType<WinnerManager>().SetWinnerSprite(winnerSprite);
+            FindObjectOfType<WinnerManager>().SetWinnerIndex(winnerPlayerIndex);
             FindObjectOfType<LevelManager>().LoadWinningScene();
         }
 

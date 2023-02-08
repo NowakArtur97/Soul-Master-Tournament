@@ -3,7 +3,8 @@ using UnityEngine;
 public class WinnerManager : MonoBehaviour
 {
     private static WinnerManager _instance;
-    public Sprite WinnerSprite { get; private set; }
+
+    public int WinnerIndex { get; private set; }
 
     private void Awake()
     {
@@ -18,5 +19,5 @@ public class WinnerManager : MonoBehaviour
         }
     }
 
-    public void SetWinnerSprite(Sprite playerSprite) => WinnerSprite = playerSprite;
+    public void SetWinnerIndex(int winnerIndex) => WinnerIndex = winnerIndex;
 }
