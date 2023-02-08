@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4020c0d77f20e4aacadeee0e4f61d3, type: 3}
   m_Name: BearTrap_TrapPlayerStateData
   m_EditorClassIdentifier: 
-  whatIsInteractable: []
   immobilityTime: 2
-  afterBeingTrappedOffset: {x: -0.05, y: 1}
+  afterBeingTrappedOffset: {x: -0.05, y: 0.2}
