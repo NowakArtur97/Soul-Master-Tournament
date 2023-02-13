@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MovingWall_BlockStateData
   m_EditorClassIdentifier: 
   minBlockTime: 3
-  maxBlockTime: 5
+  maxBlockTime: 3
