@@ -16,12 +16,13 @@ public class MovingWallEntity : EnvironmentHazardEntity
 
     protected override void Awake()
     {
-        StartBlockingState = new StartBlockingState(this, "startBlock");
-        IdleState = new IdleForTimeBeforeNextState(this, "idle", IdleStateData, StartBlockingState);
-        StopBlockingState = new StopBlockingState(this, "stopBlock");
-        ActiveState = new BlockState(this, "active", _blockStateData);
-
+        MyBoxCollider2D = GetComponentInChildren<BoxCollider2D>();
         MyBoxCollider2D.enabled = false;
+
+        StartBlockingState = new StartBlockingState(this, "startBlocking");
+        IdleState = new IdleForTimeBeforeNextState(this, "idle", IdleStateData, StartBlockingState);
+        StopBlockingState = new StopBlockingState(this, "stopBlocking");
+        ActiveState = new BlockState(this, "active", _blockStateData);
 
         base.Awake();
     }

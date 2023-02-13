@@ -17,9 +17,9 @@ public class StopBlockingState : State
 
     public override void Exit()
     {
-        base.Enter();
+        base.Exit();
 
-        _environmentHazardEntity.MyBoxCollider2D.enabled = true;
+        _environmentHazardEntity.MyBoxCollider2D.enabled = false;
     }
 }
 
