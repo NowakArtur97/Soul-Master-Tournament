@@ -99,10 +99,11 @@ public abstract class Soul : MonoBehaviour
         {
             Vector2 checkDirection = AbilityDirection;
             bool isAbilityInOneDirection = AbilityDirections.Length == 1;
-            if (isAbilityInOneDirection)
-            {
-                checkDirection = AbilityDirection * transform.right;
-            }
+            // TODO: Clean up(?)
+            //if (isAbilityInOneDirection)
+            //{
+            checkDirection = AbilityDirection * transform.right;
+            //}
 
             if (CheckIfTouching(AbilityRange, checkDirection, SoulStats.notAfectedLayerMasks))
             {
@@ -150,7 +151,8 @@ public abstract class Soul : MonoBehaviour
     {
         foreach (LayerMask layerMask in layerMasks)
         {
-            if (Physics2D.Raycast(AliveGameObject.transform.position, direction, distance, layerMask))
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(AliveGameObject.transform.position, direction, distance, layerMask);
+            if (raycastHit2D && raycastHit2D.transform.gameObject != AliveGameObject.transform.gameObject)
             {
                 return true;
             }

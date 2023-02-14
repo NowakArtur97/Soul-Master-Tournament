@@ -81,11 +81,7 @@ public class SoulSpawner : MonoBehaviour
         return position;
     }
 
-    public void SpawnPickUp(Vector2 position)
-    {
-        GameObject pickUp = Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
-        pickUp.transform.parent = gameObject.transform;
-    }
+    public void SpawnPickUp(Vector2 position) => Instantiate(ChoseRandomPickUp(), position, Quaternion.identity);
 
     private void OnLevelGenerated()
     {

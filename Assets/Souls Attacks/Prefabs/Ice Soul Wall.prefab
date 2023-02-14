@@ -165,7 +165,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00048089027, y: -0.028934002}
+  m_Offset: {x: 0.00048089027, y: 0.3486439}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -176,7 +176,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8731446, y: 0.9305587}
+  m_Size: {x: 0.75609565, y: 0.6949785}
   m_EdgeRadius: 0
 --- !u!1 &2882806511020542616
 GameObject:
@@ -222,5 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030866542605dc64ab798eeaafff19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AbilityStats: {fileID: 11400000, guid: 3a57f89468e92894ba80d35e91b76ee5, type: 2}
+  _positionOffset: {x: 0, y: 0}
   _abilityTag: Soul Ability
+  _wallDexterity: 0
