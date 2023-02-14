@@ -97,12 +97,12 @@ public abstract class Soul : MonoBehaviour
 
         for (AbilityRange = 1; AbilityRange <= AbilityMaxRange; AbilityRange++)
         {
-            Vector2 checkDirection = AbilityDirection;
-            bool isAbilityInOneDirection = AbilityDirections.Length == 1;
+            //Vector2 checkDirection = AbilityDirection;
+            //bool isAbilityInOneDirection = AbilityDirections.Length == 1;
             // TODO: Clean up(?)
             //if (isAbilityInOneDirection)
             //{
-            checkDirection = AbilityDirection * transform.right;
+            Vector2 checkDirection = AbilityDirection * transform.right;
             //}
 
             if (CheckIfTouching(AbilityRange, checkDirection, SoulStats.notAfectedLayerMasks))
