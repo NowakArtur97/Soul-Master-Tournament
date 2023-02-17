@@ -11,30 +11,41 @@ public class PoisonousWhirl : SoulAbility
     [SerializeField]
     private string _abilitySound = "PoisonousSoul_Ability";
 
-    protected Animator MyAnimator { get; private set; }
+    private Animator _myAnimator;
+    private BoxCollider2D _myBoxCollider2D;
 
     private void Start()
     {
-        MyAnimator = AliveGameObject.GetComponent<Animator>();
+        _myBoxCollider2D = AliveGameObject.GetComponent<BoxCollider2D>();
+        _myAnimator = AliveGameObject.GetComponent<Animator>();
 
-        MyAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, true);
+        _myBoxCollider2D.enabled = false;
+        _myAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, true);
     }
 
     protected override void Update()
     {
         base.Update();
 
-        if (Time.time >= StartTime + _activeTime)
+        if (Time.time >= StartTime + _activeTime && IsActive)
         {
             IsActive = false;
+            _myBoxCollider2D.enabled = false;
             AudioManager.Instance.Stop(_abilitySound);
-            MyAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, false);
-            MyAnimator.SetBool(ABILITY_FINISH_ANIMATION_BOOL_NAME, true);
+            _myAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, false);
+            _myAnimator.SetBool(ABILITY_FINISH_ANIMATION_BOOL_NAME, true);
         }
         else if (IsActive)
         {
-            MyAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, false);
-            MyAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, true);
+            _myAnimator.SetBool(ABILITY_START_ANIMATION_BOOL_NAME, false);
+            _myAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, true);
         }
+    }
+
+    public override void ActiveTrigger()
+    {
+        base.ActiveTrigger();
+
+        _myBoxCollider2D.enabled = true;
     }
 }
