@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoulStats: {fileID: 11400000, guid: dd53c14184d373641aff8f6a7e3e81de, type: 2}
   SoulAbility: {fileID: 2463042704213530980, guid: 8bcbae8554ddc8a48a76eaa2701a0915, type: 3}
+  DebugRay: {fileID: 6941049751798283638, guid: 3a21bf8e4acf7f8438f1286bda016d8e, type: 3}
 --- !u!1 &6361494506268554441
 GameObject:
   m_ObjectHideFlags: 0

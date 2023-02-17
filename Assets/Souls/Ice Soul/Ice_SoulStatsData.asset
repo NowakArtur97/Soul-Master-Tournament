@@ -18,15 +18,13 @@ MonoBehaviour:
   isAbilityTriggeredAfterTime: 1
   directions:
   - {x: 1, y: 0}
-  - {x: 1, y: 0}
-  - {x: 1, y: 0}
   startPositionOffset: {x: 0.5, y: -0.75}
   abilityPositionOffset: {x: 0.5, y: -0.75}
   notAfectedLayerMasks:
   - serializedVersion: 2
-    m_Bits: 256
-  - serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 262144
   - serializedVersion: 2
     m_Bits: 4096
+  - serializedVersion: 2
+    m_Bits: 64
   afectedLayerMasks: []
