@@ -25,4 +25,6 @@ public class PortalEntity : EnvironmentHazardEntity
     }
 
     public void SetConnectedPortal(PortalEntity connectedPortal) => _connectedPortal = connectedPortal;
+
+    protected override bool HasSpecificTag(GameObject collisionGameObject) => collisionGameObject.tag == PLAYER_GAME_TAG;
 }

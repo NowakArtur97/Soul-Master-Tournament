@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnvironmentHazardEntity : MonoBehaviour
 {
     private readonly float[] ON_WALL_EULER_ANGLES = { 90, 180, 270 };
+    protected readonly string PLAYER_GAME_TAG = "Player";
 
     [SerializeField] private string _environmentHazardName;
     [SerializeField] private Vector2[] _offsetsFromWall;
@@ -56,7 +57,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collisionGameObject = collision.gameObject;
-        if (!ToInteract.Contains(collisionGameObject))
+        if (!ToInteract.Contains(collisionGameObject) && HasSpecificTag(collisionGameObject))
         {
             ToInteract.Add(collisionGameObject);
         }
@@ -102,4 +103,6 @@ public class EnvironmentHazardEntity : MonoBehaviour
     }
 
     private void CheckIfIsOnWall() => IsOnWall = ON_WALL_EULER_ANGLES.Contains(transform.rotation.eulerAngles.z);
+
+    protected virtual bool HasSpecificTag(GameObject collisionGameObject) => true;
 }
