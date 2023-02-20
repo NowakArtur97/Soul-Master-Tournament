@@ -8,8 +8,6 @@ public class PoisonousWhirl : SoulAbility
 
     [SerializeField]
     private float _activeTime = 10f;
-    [SerializeField]
-    private string _abilitySound = "PoisonousSoul_Ability";
 
     private Animator _myAnimator;
     private BoxCollider2D _myBoxCollider2D;
@@ -31,7 +29,6 @@ public class PoisonousWhirl : SoulAbility
         {
             IsActive = false;
             _myBoxCollider2D.enabled = false;
-            AudioManager.Instance.Stop(_abilitySound);
             _myAnimator.SetBool(ABILITY_ACTIVE_ANIMATION_BOOL_NAME, false);
             _myAnimator.SetBool(ABILITY_FINISH_ANIMATION_BOOL_NAME, true);
         }

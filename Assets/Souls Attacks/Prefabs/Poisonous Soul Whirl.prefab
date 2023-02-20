@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _positionOffset: {x: 0.5, y: 0.55}
-  _activeTime: 10
+  _activeTime: 8
 --- !u!1 &269421539231551756
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,4 +17,6 @@ public class SoulAnimationToComponent : MonoBehaviour
     private void PlayUnsummonSoundTrigger() => Soul.PlayUnsummonSoundTrigger();
 
     private void PlayAbilitySoundTrigger() => Soul.PlayAbilitySoundTrigger();
+
+    private void StopAbilitySoundTrigger() => Soul.StopAbilitySoundTrigger();
 }

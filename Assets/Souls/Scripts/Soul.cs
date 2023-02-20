@@ -173,7 +173,7 @@ public abstract class Soul : MonoBehaviour
 
     public void PlayAbilitySoundTrigger() => AudioManager.Instance.Play(_soulName + ABILITY_CLIP_TITLE);
 
-    protected void StopAbilitySound() => AudioManager.Instance.Stop(_soulName + ABILITY_CLIP_TITLE);
+    public void StopAbilitySoundTrigger() => AudioManager.Instance.Stop(_soulName + ABILITY_CLIP_TITLE);
 
     public void SetPlayer(Player player) => Player = player;
 

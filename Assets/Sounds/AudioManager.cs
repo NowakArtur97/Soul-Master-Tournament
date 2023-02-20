@@ -63,9 +63,17 @@ public class AudioManager : MonoBehaviour
         {
             if (sound.source != null)
             {
-                sound.source.Stop();
+                DestroyAudioSource(title, sound);
             }
         }
+    }
+
+    private void DestroyAudioSource(string title, Sound sound)
+    {
+        sound.source.Stop();
+        AudioSource audio = gameObject.GetComponents<AudioSource>()
+            .First(audioSource => audioSource.clip.name == title);
+        Destroy(audio);
     }
 
     public void DestroyAudioSources() => GetComponents<AudioSource>().ToList()
