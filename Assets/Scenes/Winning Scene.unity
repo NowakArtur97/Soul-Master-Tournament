@@ -15225,7 +15225,7 @@ MonoBehaviour:
   - {fileID: 1703370525658190180, guid: b9e715df1e589e242a9f10ed3c5959ad, type: 3}
   - {fileID: 1703370525658190180, guid: b2a195e80d8e4c8448063b7bada609da, type: 3}
   - {fileID: 1703370525658190180, guid: f06e27ab0f02735438998c5e70013194, type: 3}
-  _winnerPosition: {x: 0.06, y: 0.78}
+  _winnerPosition: {x: 0.06, y: 0.2}
 --- !u!4 &477895367
 Transform:
   m_ObjectHideFlags: 0
