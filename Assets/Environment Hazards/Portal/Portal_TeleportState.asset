@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Portal_TeleportState
   m_EditorClassIdentifier: 
   teleportWaitTime: 3
-  teleportationOffset: {x: 0, y: 0.2}
+  teleportationOffset: {x: 0, y: 0.15}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 29314633131223113}
   - component: {fileID: 4759360560623045941}
   - component: {fileID: -3074332294921454328}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: Portal SM
   m_TagString: Damagable
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478484687904921297}
   - component: {fileID: 7459423785723917217}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: Core Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 7563485273471247342}
   - component: {fileID: 3327286316225679613}
   - component: {fileID: 4226437022319736139}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4985577300665744123}
   - component: {fileID: 6537275754916619796}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: Sounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
