@@ -33,7 +33,8 @@ public class MoveAndDealDamageState : ActiveState
         EnvironmentHazardEntity.transform.position +=
          _movingDirection * EnvironmentHazardEntity.transform.right * _moveAndDealDamageOnContactStateData.movementSpeed * Time.deltaTime;
 
-        if (EnvironmentHazardEntity.ToInteract.Count > 0)
+        if (EnvironmentHazardEntity.ToInteract.Count > 0
+            && Time.time >= StateStartTime + _moveAndDealDamageOnContactStateData.startDealingDamageTime)
         {
             DamageAll(EnvironmentHazardEntity.ToInteract);
         }

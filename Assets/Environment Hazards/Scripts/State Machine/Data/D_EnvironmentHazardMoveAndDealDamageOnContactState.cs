@@ -8,4 +8,5 @@ public class D_EnvironmentHazardMoveAndDealDamageOnContactState : D_EnvironmentH
     public float floorCheckDistance = 0.39f;
     public float minMoveTime = 4.0f;
     public float maxMoveTime = 7.0f;
+    public float startDealingDamageTime = 1.0f;
 }
