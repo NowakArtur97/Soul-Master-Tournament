@@ -266,8 +266,9 @@ MonoBehaviour:
   _offsetsFromWall: []
   _waitStateData: {fileID: 11400000, guid: a605d2fdc6eb2fe40a04ca811fc2ce5d, type: 2}
   _idleStateData: {fileID: 11400000, guid: 0671c0e634cd0f94fb04480069510a73, type: 2}
-  _trapPlayerStateData: {fileID: 11400000, guid: 33922c509519d584582fc410de696354, type: 2}
   _playerDetectedStateData: {fileID: 11400000, guid: cc716c0e7b585e94bbda4071b14575e0, type: 2}
+  _canBeOnWall: 0
+  _trapPlayerStateData: {fileID: 11400000, guid: 33922c509519d584582fc410de696354, type: 2}
 --- !u!50 &1984431716767013354
 Rigidbody2D:
   serializedVersion: 4
@@ -313,5 +314,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50359404, y: 0.503594}
+  m_Size: {x: 0.50359404, y: 0.29712236}
   m_EdgeRadius: 0
