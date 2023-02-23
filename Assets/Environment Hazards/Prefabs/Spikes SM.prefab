@@ -46,8 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _environmentHazardName: 
+  _offsetsFromWall: []
   _waitStateData: {fileID: 11400000, guid: 9c4325fd240264a448b7ccb7ab1b892e, type: 2}
   _idleStateData: {fileID: 11400000, guid: 437d4236b6744494ba5fca27fdd78078, type: 2}
+  _playerDetectedStateData: {fileID: 0}
+  _canBeOnWall: 0
   _dealDamageOnContactStateData: {fileID: 11400000, guid: aa3d61558b756bc45a2e0b00bacb5c38, type: 2}
 --- !u!61 &4759360560623045941
 BoxCollider2D:
@@ -218,7 +221,7 @@ SpriteRenderer:
   m_SortingLayerID: 1808362087
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3911664205820134229, guid: eb33d988cc6903a43a5c67ffe290b8bc, type: 3}
+  m_Sprite: {fileID: -1705996488640852580, guid: eb33d988cc6903a43a5c67ffe290b8bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
