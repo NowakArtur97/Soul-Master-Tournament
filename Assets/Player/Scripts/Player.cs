@@ -200,7 +200,6 @@ public class Player : MonoBehaviour, IDamagable
             DisablePoisonedStatus();
             PlayDeathAnimation(true);
             _playerStatusesManager.LockMovement();
-
             SetVelocity(Vector2.zero);
         }
     }

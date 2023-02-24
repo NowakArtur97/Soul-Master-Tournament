@@ -149,6 +149,15 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
+        time: 0.2
+        value: 0.0017531666
+        inSlope: -0.0127227595
+        outSlope: -0.0127227595
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.3
         value: 0.00048089027
         inSlope: 0
@@ -179,8 +188,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.1
         value: 0.76118475
-        inSlope: -0.06785472
-        outSlope: -0.06785472
+        inSlope: -0.0848186
+        outSlope: -0.0848186
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.2
+        value: 0.7569438
+        inSlope: -0.016963482
+        outSlope: -0.016963482
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -424,6 +442,15 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
+        time: 0.2
+        value: 0.0017531666
+        inSlope: -0.0127227595
+        outSlope: -0.0127227595
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.3
         value: 0.00048089027
         inSlope: 0
@@ -454,8 +481,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.1
         value: 0.76118475
-        inSlope: -0.06785472
-        outSlope: -0.06785472
+        inSlope: -0.0848186
+        outSlope: -0.0848186
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.2
+        value: 0.7569438
+        inSlope: -0.016963482
+        outSlope: -0.016963482
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -480,6 +516,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: ActiveTrigger
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.6
     functionName: FinishTrigger
     data: 
