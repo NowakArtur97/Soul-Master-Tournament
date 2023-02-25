@@ -150,7 +150,7 @@ public abstract class Soul : MonoBehaviour
     {
         foreach (LayerMask layerMask in layerMasks)
         {
-            if (Physics2D.Raycast(transform.position, direction, distance, layerMask))
+            if (Physics2D.Raycast((Vector2)transform.position + SoulStats.checkOffset, direction, distance, layerMask))
             {
                 return true;
             }
