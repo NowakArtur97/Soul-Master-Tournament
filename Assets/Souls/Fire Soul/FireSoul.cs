@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class FireSoul : SoulWithDirectionalAbility
 {
     private const string IDLE_ANIMATION_BOOL_NAME = "idle";
@@ -15,13 +17,29 @@ public class FireSoul : SoulWithDirectionalAbility
         }
         else if (ShouldStartUsingAbility)
         {
-            ShouldStartUsingAbility = false;
-            StartUsingAbility();
+            if (Player.PlayerStatsManager.IsSpawning || Player == null)
+            {
+                ResetAllAnimatorBoolVariables();
+                HasUsedAbility = true;
+            }
+            else
+            {
+                ShouldStartUsingAbility = false;
+                StartUsingAbility();
+            }
         }
-        else if (IsUsingAbility)
+        else if (IsUsingAbility && MyAnimator.GetBool(ABILITY_ANIMATION_BOOL_NAME) != true)
         {
-            MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
-            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+            if (Player.PlayerStatsManager.IsSpawning || Player == null)
+            {
+                ResetAllAnimatorBoolVariables();
+                HasUsedAbility = true;
+            }
+            else
+            {
+                MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
+                MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+            }
         }
         else if (IsSummoned && !HasAppeared)
         {

@@ -3,6 +3,7 @@ using UnityEngine;
 public abstract class SoulWithPlayerBuff : Soul
 {
     protected GameObject PlayerAliveGameObject { get; private set; }
+    protected bool StopFollowingPlayer;
 
     private void Start() => PlayerAliveGameObject = Player.transform.Find("Alive").gameObject;
 
@@ -10,7 +11,7 @@ public abstract class SoulWithPlayerBuff : Soul
     {
         base.Update();
 
-        if (Player != null)
+        if (PlayerAliveGameObject != null && !StopFollowingPlayer)
         {
             LockToPlayerPosition();
         }

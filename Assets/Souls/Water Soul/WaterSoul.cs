@@ -14,14 +14,32 @@ public class WaterSoul : SoulWithPlayerBuff
         }
         else if (ShouldStartUsingAbility)
         {
-            ShouldStartUsingAbility = false;
-            StartUsingAbility();
+            if (Player.PlayerStatsManager.IsSpawning || Player == null)
+            {
+                StopFollowingPlayer = true;
+                ResetAllAnimatorBoolVariables();
+                HasUsedAbility = true;
+            }
+            else
+            {
+                ShouldStartUsingAbility = false;
+                StartUsingAbility();
+            }
         }
-        else if (IsUsingAbility)
+        else if (IsUsingAbility && MyAnimator.GetBool(ABILITY_ANIMATION_BOOL_NAME) != true)
         {
-            MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
-            MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
-            Player.SetProtectedState(true);
+            if (Player.PlayerStatsManager.IsSpawning || Player == null)
+            {
+                StopFollowingPlayer = true;
+                ResetAllAnimatorBoolVariables();
+                HasUsedAbility = true;
+            }
+            else
+            {
+                MyAnimator.SetBool(IDLE_ANIMATION_BOOL_NAME, false);
+                MyAnimator.SetBool(ABILITY_ANIMATION_BOOL_NAME, true);
+                Player.SetProtectedState(true);
+            }
         }
         else if (IsSummoned && !HasAppeared)
         {

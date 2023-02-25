@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ice_SoulStatsData
   m_EditorClassIdentifier: 
   abilityRange: 3
-  abilityCooldown: 0
+  abilityCooldown: 0.5
   maxAbilityDuration: 5
   isAbilityTriggeredAfterTime: 1
   directions:

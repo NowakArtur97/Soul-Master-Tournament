@@ -13,8 +13,16 @@ public class IceSoul : SoulWithLinearAbility
         }
         else if (ShouldStartUsingAbility)
         {
-            ShouldStartUsingAbility = false;
-            StartUsingAbility();
+            if (Player.PlayerStatsManager.IsSpawning || Player == null)
+            {
+                ResetAllAnimatorBoolVariables();
+                HasUsedAbility = true;
+            }
+            else
+            {
+                ShouldStartUsingAbility = false;
+                StartUsingAbility();
+            }
         }
         else if (IsSummoned && !HasAppeared)
         {

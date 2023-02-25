@@ -54,8 +54,6 @@ public abstract class Soul : MonoBehaviour
         _isAbilityTriggeredAfterTime = SoulStats.isAbilityTriggeredAfterTime;
         AbilityMaxRange = SoulStats.abilityRange;
 
-        StartTime = Time.time;
-
         transform.position += (Vector3)SoulStats.startPositionOffset;
 
         MyAnimator.SetBool(SUMMON_ANIMATION_BOOL_NAME, true);
@@ -159,7 +157,11 @@ public abstract class Soul : MonoBehaviour
         return false;
     }
 
-    public void SummonedTrigger() => IsSummoned = true;
+    public void SummonedTrigger()
+    {
+        IsSummoned = true;
+        StartTime = Time.time;
+    }
 
     public void UnsummonedTrigger() => _isUnsummoned = true;
 
@@ -180,4 +182,15 @@ public abstract class Soul : MonoBehaviour
     private bool IsAbilityCooldownOver() => Time.time >= StartTime + _abilityCooldown;
 
     private bool IsMaxAbilityDurationFinished() => Time.time >= StartTime + _maxAbilityDuration;
+
+    protected void ResetAllAnimatorBoolVariables()
+    {
+        foreach (AnimatorControllerParameter trigger in MyAnimator.parameters)
+        {
+            if (trigger.type == AnimatorControllerParameterType.Bool)
+            {
+                MyAnimator.ResetTrigger(trigger.name);
+            }
+        }
+    }
 }

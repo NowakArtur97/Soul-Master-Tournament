@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Poisonous_SoulStatsData
   m_EditorClassIdentifier: 
   abilityRange: 3
-  abilityCooldown: 2
+  abilityCooldown: 0.5
   maxAbilityDuration: 10
   isAbilityTriggeredAfterTime: 0
   directions:
@@ -31,3 +31,4 @@ MonoBehaviour:
   afectedLayerMasks:
   - serializedVersion: 2
     m_Bits: 1024
+  checkOffset: {x: 0, y: 0}

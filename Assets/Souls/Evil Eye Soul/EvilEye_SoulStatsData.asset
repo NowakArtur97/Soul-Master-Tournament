@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EvilEye_SoulStatsData
   m_EditorClassIdentifier: 
   abilityRange: 8
-  abilityCooldown: 3
+  abilityCooldown: 0.5
   maxAbilityDuration: 5
   isAbilityTriggeredAfterTime: 1
   directions:
@@ -28,3 +28,4 @@ MonoBehaviour:
   afectedLayerMasks:
   - serializedVersion: 2
     m_Bits: 4096
+  checkOffset: {x: 0, y: 0.5}

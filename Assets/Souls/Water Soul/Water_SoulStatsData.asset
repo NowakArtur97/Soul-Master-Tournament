@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Water_SoulStatsData
   m_EditorClassIdentifier: 
   abilityRange: 3
-  abilityCooldown: 3
+  abilityCooldown: 0.5
   maxAbilityDuration: 5
   isAbilityTriggeredAfterTime: 1
   directions:
@@ -22,3 +22,4 @@ MonoBehaviour:
   abilityPositionOffset: {x: 0, y: 0}
   notAfectedLayerMasks: []
   afectedLayerMasks: []
+  checkOffset: {x: 0, y: 0}
