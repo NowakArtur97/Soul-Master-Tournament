@@ -45,7 +45,7 @@ public class EnvironmentHazardEntity : MonoBehaviour
 
     protected virtual void Start()
     {
-        CoreContainer.Sounds?.SetName(_environmentHazardName);
+        CoreContainer?.Sounds?.SetName(_environmentHazardName);
         StateMachine = new FiniteStateMachine(WaitState);
     }
 

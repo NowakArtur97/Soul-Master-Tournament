@@ -24,12 +24,12 @@ public abstract class State
         IsAnimationFinished = false;
         StateStartTime = Time.time;
 
-        if (EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine != null)
+        if (EnvironmentHazardEntity.CoreContainer?.AnimationToStateMachine != null)
         {
             EnvironmentHazardEntity.CoreContainer.AnimationToStateMachine.CurrentState = this;
         }
 
-        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(GetAnimationBoolName(), true);
+        EnvironmentHazardEntity.CoreContainer?.Animation?.SetBoolVariable(GetAnimationBoolName(), true);
     }
 
     public virtual void LogicUpdate() { }
@@ -38,7 +38,7 @@ public abstract class State
 
     public virtual void Exit()
     {
-        EnvironmentHazardEntity.CoreContainer.Animation?.SetBoolVariable(GetAnimationBoolName(), false);
+        EnvironmentHazardEntity.CoreContainer?.Animation?.SetBoolVariable(GetAnimationBoolName(), false);
 
         IsExitingState = true;
     }
