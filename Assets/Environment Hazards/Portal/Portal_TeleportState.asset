@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1542c0683912c841a386892261979a3, type: 3}
   m_Name: Portal_TeleportState
   m_EditorClassIdentifier: 
-  teleportWaitTime: 3
+  teleportWaitTime: 2
   teleportationOffset: {x: 0, y: 0.15}
