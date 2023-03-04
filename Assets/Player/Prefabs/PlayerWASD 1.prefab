@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 11400000, guid: 25d887a85c8181e43a5156bb4ddd056c, type: 2}
-  _basicSoul: {fileID: 5979218921613485506, guid: c70a28187352c724eb0968774eccee6f, type: 3}
+  _basicSoul: {fileID: 7533329418422929363, guid: 48c3b31aefce328408fb7b54ce753ce3, type: 3}
   _bombTransformPosition: {fileID: 457319014501438905}
   _poisonedStatus: {fileID: 19363453545570447}
   _timeBetweenDamages: 2

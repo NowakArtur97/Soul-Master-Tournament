@@ -28,4 +28,4 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Bits: 64
   afectedLayerMasks: []
-  checkOffset: {x: 0, y: 0}
+  checkOffset: {x: 0.2, y: 0}
