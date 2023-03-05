@@ -200,5 +200,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030866542605dc64ab798eeaafff19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positionOffset: {x: 0, y: 0}
+  _positionOffset: {x: 0, y: -0.15}
   _wallDexterity: 0

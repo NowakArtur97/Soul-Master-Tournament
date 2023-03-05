@@ -104,7 +104,8 @@ public abstract class Soul : MonoBehaviour
 
             if (CheckIfTouching(AbilityRange, checkDirection, SoulStats.notAfectedLayerMasks))
             {
-                return;
+                AbilityDirectionIndex = AbilityDirections.Length;
+                break;
             }
 
             ability = Instantiate(SoulAbility, GetSoulPosition(), GetSoulRotation());
