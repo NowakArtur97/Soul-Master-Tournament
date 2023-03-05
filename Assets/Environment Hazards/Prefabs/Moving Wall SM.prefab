@@ -51,6 +51,7 @@ MonoBehaviour:
   _playerDetectedStateData: {fileID: 0}
   _canBeOnWall: 0
   _blockStateData: {fileID: 11400000, guid: 7462873037489a742a24fd9471956921, type: 2}
+  _blockedStateData: {fileID: 11400000, guid: c62a86b383c57aa4c80b7821588a8e5c, type: 2}
 --- !u!1 &478484687904921296
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,12 @@ public class MovingWallEntity : EnvironmentHazardEntity
         get { return _blockStateData; }
         private set { BlockStateData = value; }
     }
+    [SerializeField] private D_EnvironmentHazardBlockedState _blockedStateData;
+    public D_EnvironmentHazardBlockedState BlockedStateData
+    {
+        get { return _blockedStateData; }
+        private set { BlockedStateData = value; }
+    }
 
     public StartBlockingState StartBlockingState { get; private set; }
     public StopBlockingState StopBlockingState { get; private set; }
@@ -20,7 +26,7 @@ public class MovingWallEntity : EnvironmentHazardEntity
         MyBoxCollider2D.enabled = false;
 
         StartBlockingState = new StartBlockingState(this, "startBlocking");
-        IdleState = new IdleForTimeBeforeNextState(this, "idle", IdleStateData, StartBlockingState);
+        IdleState = new MovingWallIdleForTimeBeforeNextState(this, "idle", IdleStateData, StartBlockingState);
         StopBlockingState = new StopBlockingState(this, "stopBlocking");
         ActiveState = new BlockState(this, "active", _blockStateData);
 
