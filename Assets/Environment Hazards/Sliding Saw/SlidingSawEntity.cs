@@ -19,6 +19,7 @@ public class SlidingSawEntity : EnvironmentHazardEntity
     {
         IdleState = new IdleForTimeState(this, "idle", IdleStateData);
         ActiveState = new MoveAndDealDamageState(this, "active", _moveAndDealDamageOnContactStateData);
+        WaitState = new WaitState(this, "wait", WaitStateData, ActiveState);
 
         base.Awake();
     }
