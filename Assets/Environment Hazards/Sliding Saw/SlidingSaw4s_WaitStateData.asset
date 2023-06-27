@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b44ca7ac497b146bf9f15132468b6c, type: 3}
   m_Name: SlidingSaw4s_WaitStateData
   m_EditorClassIdentifier: 
-  waitTime: 4
+  waitTime: 14
