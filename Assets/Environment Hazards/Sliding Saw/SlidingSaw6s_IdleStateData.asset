@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b44ca7ac497b146bf9f15132468b6c, type: 3}
-  m_Name: SlidingSaw2s_WaitStateData
+  m_Script: {fileID: 11500000, guid: 0c46a5e86c288944bafb07f6d3a098f1, type: 3}
+  m_Name: SlidingSaw6s_IdleStateData
   m_EditorClassIdentifier: 
-  waitTime: 2
+  minIdleTime: 6
+  maxIdleTime: 6
